@@ -1,0 +1,28 @@
+N,Materials of Work Order,
+FS,2
+DS,2
+W,1=43&2=202&3=-32&4=120&5=120&undefined=0,
+TF,2001657
+KF,2001664
+SF,2001657
+S,2001654,standard/ragicproduction-management/10008,
+S,2001656,standard/ragicinventory-management/10002,
+S,2001659,
+A,MANAGER=6&EVERYONE=0&NULL=0&USER=3,0,3,1144992175
+A2,
+D,1,1,2001655,Item #,fmt_n_ts=`&fmt_n_ds=.&fmt_n=#`###&dv=$SEQ&ro=true
+L,1,2,2001654,Work Order #,stf=2001640&mvp=/ragicproduction-management|10008_Sheet10008&ro=true
+L,1,3,2001656,Component No.,s=2000224&stf=2000211&mvp=/ragicproduction-management|10001_Sheet10001&must=true&ro=true
+D,1,4,2001657,Component,vd=2000213&l=2001656&ro=true
+D,1,5,2001658,Specification,vd=2000840&l=2001656&ro=true
+L,1,6,2001659,Unit,vd=2001570&l=2001656&ro=true
+D,1,7,2001660,Qty To Consume,fmt_n_ts=`&fmt_n_ds=.&fmt_n=#`####.##&must=true&ro=true
+D,1,8,2001661,Qty Received,fmt_n_ts=`&fmt_n_ds=.&fmt_n=#`####.##&ro=true
+D,1,9,2001662,Qty Consumed,fmt_n_ts=`&fmt_n_ds=.&fmt_n=#`####.##&ro=true
+D,1,10,2001663,Qty Left,fmt_n_ts=`&fmt_n_ds=.&fmt_n=#`####.##&f=A8-A9&ro=true
+D,1,11,2001665,Note,ro=true
+D,1,12,2001682,Auto generate,ag={0`number`00000}&hide=true
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+QS,1

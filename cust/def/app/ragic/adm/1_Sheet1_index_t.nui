@@ -1,0 +1,37 @@
+N,Account Monitor,
+FS,0
+DS,2
+W,2=36&3=63&4=-66&5=-68&6=-14&7=122&8=100&10=41,
+TF,1
+SF,1
+S,227,,No,Yes
+S,45,
+S,30,,FREE2,PROF,COMM,LITE2
+A,MANAGER=6&USER=2&EVERYONE=0,0,2,1672859558
+A2,
+D,1,1,1,User1,text=1&noSyncName=true
+D,2,1,26,Pre-confirm e-mail,
+D,3,1,33,Register Date,fmt_d=yyyy/MM/dd HH:mm:ss
+D,4,1,213,U#,noSyncName=true
+L,5,1,227,Pay?,noSyncName=true
+D,6,1,220,ACCOUNT_SERVER,nowrap=true
+D,7,1,47,referrer,
+D,8,1,224,init URL,
+D,9,1,48,campaign,
+L,10,1,45,Country,
+L,11,1,30,Account Status,
+D,12,1,200,last active date,fmt_d=yyyy/MM/dd
+D,13,1,46,refcode,
+D,14,1,49,Full Name,
+D,15,1,89,IP,
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,1_Sheet1_index_t.nui
+QS,0

@@ -1,0 +1,77 @@
+N,Equipment Checkout,
+FS,2
+DS,2
+W,1=52&2=100&3=60&4=100&undefined=0,18=125
+TF,2000013
+KF,2000030
+SF,2000013
+S,2000014,standard/ragicadministration/10002,
+S,2000016,,Computer,Case,Cable,Audio,Software,Display,Peripheral,Media,Appliances,Furniture
+S,2002601,,On Loan,Returned
+S,2000017,standard/ragic-setup/1,
+A,MANAGER=6&USER=3&EVERYONE=0,0,3,1119611834
+A2,
+D,1,2,2000013,Checkout ID,ag={0`number`00000}
+L,3,2,2000014,Equipment ID,stf=2000031&s=2000034&mvp=/ragicadministration|10002_Sheet10002&cs=2&mvpf=2002602|1|$2002604
+D,1,3,2000015,Equipment Name,vd=2000032&l=2000014&cs=4
+L,1,4,2000016,Category,vd=2000033&l=2000014&cs=4
+L,1,5,2002601,Status,cs=4&dv=On Loan
+L,1,8,2000017,Employee Name,usrref=2
+D,3,8,2000018,E-mail,email=2$&vd=1&l=2000017&cs=2
+D,1,9,2000019,Employee Number,vd=608&l=2000017
+D,3,9,2000020,Phone,phone=1&vd=613&l=2000017&phonefmt=XXXXXXXXXX&cs=2
+D,1,10,2000021,Title,vd=609&l=2000017
+D,3,10,2000022,Extension,vd=614&l=2000017&cs=2
+D,1,11,2000023,Department,vd=611&l=2000017
+D,3,11,2000024,Mobile,phone=1&vd=616&l=2000017&phonefmt=XXXXXXXXXX&cs=2
+D,1,14,2002606,Checkout Date,fmt_d=yyyy/MM/dd HH:mm&ro=true
+D,3,14,2002605,Estimate Return Date,fmt_d=yyyy/MM/dd HH:mm&cs=2
+D,1,15,2002607,Returned Date,fmt_d=yyyy/MM/dd HH:mm&ro=true&cs=4
+D,1,16,2002603,Update Equipment Loan,dv=Unavailable&hide=true
+D,3,16,2002604,Update Equipment Return,dv=Available&hide=true&cs=2
+D,1,18,2000029,Comment,cs=4
+F,1,1,,Checkout Information,background=#0055BB&color=#ffffff&textAlign=center&cs=5
+F,1,7,,Checkout By,background=#0055BB&color=#ffffff&textAlign=center&cs=5
+F,1,13,,Check-out Schedule,background=#0055BB&color=#ffffff&textAlign=center&cs=5
+F,1,17,,Additional Commnets,background=#0055BB&color=#ffffff&textAlign=center&cs=5
+X_MAX_DESIGNER_ID,101
+K,{"type":"B","seq":"1","name":"Check-out","action":"_RAGIC_AUTOGEN_ENTRY_UPDATER_93957({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"false","userGroups":["EVERYONE"],"checkIfUserCanEdit":false}
+K,{"type":"B","seq":"2","name":"Update Checkout Status","action":"_RAGIC_AUTOGEN_FIELD_UPDATER_15343({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"true","userGroups":["EVERYONE","SYSAdmin"],"checkIfUserCanEdit":false}
+K,{"type":"B","seq":"3","name":"Update Equipment Status","action":"_RAGIC_AUTOGEN_ENTRY_UPDATER_36195({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"true","userGroups":["EVERYONE","SYSAdmin"],"checkIfUserCanEdit":false}
+K,{"type":"B","seq":"4","name":"Returned","action":"_RAGIC_AUTOGEN_MERGED_BUTTON_95292({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"false","userGroups":["EVERYONE"],"checkIfUserCanEdit":false}
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10001_Sheet10001_index.nui
+QS,1
+SCRIPT_START
+
+SHEET_SCOPE_START
+function _RAGIC_AUTOGEN_ENTRY_UPDATER_93957(nodeId){
+  var result = db.entryUpdater(JSON.stringify(
+{"THIS_PATH":"/ragicadministration/10001","UPDATE_PATH":"/ragicadministration/10002","THIS_NODE_ID":nodeId,"MATCH":{"2000031":"2000014"},"ACTIONS":[{"THIS_NUMBER_FIELD":"2002603","UPDATE_ACTION":"SET","UPDATE_NUMBER_FIELD":"2002602"}],"MULTI_FIELDS":true,"LAST_UPDATE_FIELD":"2002606","RECALCULATE":false,"CHECK_USER_GROUPS":false,"CHECK_MUST_FIELDS":false,"CHECK_VALIDATION_FIELDS":false,"FAILED_IF_NO_RECORD_UPDATED":false,"LOAD_DEFAULT_VALUES_ON_TARGET":false,"LOAD_DEFAULT_VALUES_ON_THIS_SHEET":false}
+  ), response);
+}//END_RAGIC_AUTOGEN_ENTRY_UPDATER_93957
+
+function _RAGIC_AUTOGEN_FIELD_UPDATER_15343(nodeId){
+  var result = db.fieldUpdater(JSON.stringify(
+{"THIS_PATH":"/ragicadministration/10001","THIS_NODE_ID":nodeId,"RECALCULATE":false,"CHECK_VA_UPDATED_FIELDS":false,"CHECK_VA_ALL_FIELDS":false,"SUBTABLE_UPDATE_POLICY":"FORCE_CREATE","UPD_FIELDS":{"2002601":"Returned"}}
+  ), response);
+}//END_RAGIC_AUTOGEN_FIELD_UPDATER_15343
+
+function _RAGIC_AUTOGEN_ENTRY_UPDATER_36195(nodeId){
+  var result = db.entryUpdater(JSON.stringify(
+{"THIS_PATH":"/ragicadministration/10001","UPDATE_PATH":"/ragicadministration/10002","THIS_NODE_ID":nodeId,"MATCH":{"2000031":"2000014"},"ACTIONS":[{"THIS_NUMBER_FIELD":"2002604","UPDATE_ACTION":"SET","UPDATE_NUMBER_FIELD":"2002602"}],"MULTI_FIELDS":true,"LAST_UPDATE_FIELD":"2002607","RECALCULATE":false,"CHECK_USER_GROUPS":false,"CHECK_MUST_FIELDS":false,"CHECK_VALIDATION_FIELDS":false,"FAILED_IF_NO_RECORD_UPDATED":false,"LOAD_DEFAULT_VALUES_ON_TARGET":false,"LOAD_DEFAULT_VALUES_ON_THIS_SHEET":false}
+  ), response);
+}//END_RAGIC_AUTOGEN_ENTRY_UPDATER_36195
+
+function _RAGIC_AUTOGEN_MERGED_BUTTON_95292(nodeId){
+  var result = db.executeMergedActionButtons(JSON.stringify(
+{"THIS_NODE_ID":nodeId,"THIS_PATH":"/ragicadministration","THIS_SHEETINDEX":10001,"ACTIONS":["_RAGIC_AUTOGEN_FIELD_UPDATER_15343","_RAGIC_AUTOGEN_ENTRY_UPDATER_36195"]}
+  ), response);
+}//END_RAGIC_AUTOGEN_MERGED_BUTTON_95292

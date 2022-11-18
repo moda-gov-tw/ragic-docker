@@ -1,0 +1,26 @@
+N,訓練菜單紀錄,
+FS,2
+DS,2
+W,undefined=0,
+TF,3003439
+KF,3003443
+SF,3003439
+S,3003439,standardzhtw/ragicsohardtoloseweight/20001,
+S,3003442,,胸,背,肩,肱二頭,肱三頭,臀腿,腹/核心,有氧
+A,NULL=0&MANAGER=6&USER=3&EVERYONE=0,0,2,502103276
+A2,
+L,1,1,3003439,姓名,s=3003381&stf=3003378&mvp=/ragicsohardtoloseweight|20001_Sheet20001&stylebackgroundColor=#D53333&stylecolor=#FFFFFF&stylefontWeight=bold&styleVfontWeight=bold
+D,2,1,3003440,紀錄日期,fmt_d=yyyy/MM/dd&dv=$DATE&stylebackgroundColor=#D53333&stylecolor=#FFFFFF&stylefontWeight=bold&styleVfontWeight=bold
+D,3,1,3003441,訓練時數,fmt_n=#`###.##### 分鐘&stylebackgroundColor=#D53333&stylecolor=#FFFFFF&stylefontWeight=bold&styleVfontWeight=bold
+M,4,1,3003442,訓練部位,userOps=true&stylebackgroundColor=#D53333&stylecolor=#FFFFFF&stylefontWeight=bold&styleVfontWeight=bold
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,20004_Sheet20004_index_t.nui
+QS,0

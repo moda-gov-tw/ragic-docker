@@ -1,0 +1,27 @@
+N,HVAC Jobs,
+FS,2
+DS,2
+W,1=46&2=59&4=143&5=86,
+TF,2002969
+KF,2002977
+SF,2002969
+S,2002981,,Stack Inspection,Concealed Duct Inspection,Final Inspection
+S,2002972,,Not Started,Scheduled,Paused,Completed,Canceled by Customer,Canceled by Us
+A,null=0&MANAGER=6&USER=3&EVERYONE=0,0,2,258421331
+A2,
+D,1,1,2002969,Job ID,ag=JOB{1`date`yyyy}-{0`number`000}&noDup=true
+D,2,1,2002971,Created on,dv=$DATE
+D,3,1,2003020,Client Name,vd=2003060&l=2003018
+L,4,1,2002981,Type of Inspection,userOps=true
+L,5,1,2002972,Job Status,dv=Not Started
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10001_Sheet10001_index_t.nui
+QS,5

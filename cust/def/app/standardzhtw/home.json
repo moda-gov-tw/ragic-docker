@@ -1,0 +1,2434 @@
+{
+  "tabIconList": {
+    "/ragicadministration": {
+      "type": "fontAwesome",
+      "icon": "fas fa-chalkboard-teacher"
+    },
+    "/ragicforms": {
+      "type": "fontAwesome",
+      "icon": "fas fa-rocket"
+    },
+    "/ragicforms2": {
+      "type": "fontAwesome",
+      "icon": "fas fa-bullhorn"
+    },
+    "/ragicforms3": {
+      "type": "fontAwesome",
+      "icon": "fas fa-donate"
+    },
+    "/ragicproject-management": {
+      "type": "fontAwesome",
+      "icon": "fas fa-tasks"
+    },
+    "/ragicsupport": {
+      "type": "fontAwesome",
+      "icon": "fas fa-bug"
+    },
+    "/ragicsales": {
+      "type": "fontAwesome",
+      "icon": "fas fa-hands-helping"
+    },
+    "/ragicforms4": {
+      "type": "fontAwesome",
+      "icon": "far fa-address-book"
+    },
+    "/ragicforms5": {
+      "type": "fontAwesome",
+      "icon": "fas fa-users"
+    },
+    "/ragicsales-order-management": {
+      "type": "fontAwesome",
+      "icon": "fas fa-dolly"
+    },
+    "/ragicinventory": {
+      "type": "fontAwesome",
+      "icon": "fas fa-warehouse"
+    },
+    "/ragicpurchasing": {
+      "type": "fontAwesome",
+      "icon": "fas fa-shopping-cart"
+    },
+    "/ragicforms7": {
+      "type": "fontAwesome",
+      "icon": "fas fa-wrench"
+    },
+    "/ragicrd": {
+      "type": "fontAwesome",
+      "icon": "far fa-lightbulb"
+    },
+    "/ragic-copy": {
+      "type": "fontAwesome",
+      "icon": "fas fa-search"
+    },
+    "/ragicforms6": {
+      "type": "fontAwesome",
+      "icon": "fas fa-glasses"
+    },
+    "/ragicforms8": {
+      "type": "fontAwesome",
+      "icon": "fas fa-dollar-sign"
+    },
+    "/ragicforms12": {
+      "type": "fontAwesome",
+      "icon": "fas fa-dollar-sign"
+    },
+    "/ragicforms10": {
+      "type": "fontAwesome",
+      "icon": "fas fa-building"
+    },
+    "/ragicforms9": {
+      "type": "fontAwesome",
+      "icon": "fas fa-utensils"
+    },
+    "/ragicforms14": {
+      "type": "fontAwesome",
+      "icon": "fas fa-basketball-ball"
+    },
+    "/ragicforms15": {
+      "type": "fontAwesome",
+      "icon": "far fa-newspaper"
+    },
+    "/ragicsohardtoloseweight": {
+      "type": "fontAwesome",
+      "icon": "fas fa-dumbbell"
+    },
+    "/ragicforms16": {
+      "type": "fontAwesome",
+      "icon": "far fa-heart"
+    },
+    "/ragicforms19": {
+      "type": "fontAwesome",
+      "icon": "fas fa-magic"
+    },
+    "/ragicforms25": {
+      "type": "fontAwesome",
+      "icon": "fas fa-book"
+    },
+    "/ragicforms31": {
+      "type": "fontAwesome",
+      "icon": "fas fa-highlighter"
+    },
+    "/ragic-": {
+      "type": "fontAwesome",
+      "icon": "fas fa-highlighter"
+    },
+    "/ragicforms32": {
+      "type": "fontAwesome",
+      "icon": "fas fa-heart"
+    },
+    "/ragicforms35": {
+      "type": "fontAwesome",
+      "icon": "fas fa-plane"
+    },
+    "/ragicforms37": {
+      "type": "fontAwesome",
+      "icon": "far fa-newspaper"
+    }
+  },
+  "dbConfig": {"maxDomainId": 3005305},
+  "install": {
+    "00048": {
+      "createDate": "2018/07/10",
+      "updateDate": "2018/07/13",
+      "createUser": "lillian@ragic.com",
+      "updateUser": "lillian@ragic.com"
+    },
+    "00081": {
+      "createDate": "2019/06/15",
+      "updateDate": "2019/06/15",
+      "createUser": "lillian@ragic.com",
+      "updateUser": "lillian@ragic.com"
+    },
+    "00099": {
+      "createDate": "2020/12/15",
+      "updateDate": "2020/12/15",
+      "createUser": "angie@ragic.com",
+      "updateUser": "angie@ragic.com"
+    }
+  },
+  "eventConfig": {"hiddenCal": [
+    {
+      "pathSheet": "/ragicforms8/20008",
+      "dateField": 3002204
+    },
+    {
+      "pathSheet": "/ragicforms8/20004",
+      "dateField": 3002202
+    },
+    {
+      "pathSheet": "/ragicforms8/20006",
+      "dateField": 3002206
+    },
+    {
+      "pathSheet": "/ragicforms8/20010",
+      "dateField": 3002203
+    },
+    {
+      "pathSheet": "/ragicforms15/20003",
+      "dateField": 3003371
+    },
+    {
+      "pathSheet": "/ragicforms12/20008",
+      "dateField": 3002903
+    },
+    {
+      "pathSheet": "/ragicforms15/20001",
+      "dateField": 3003402
+    }
+  ]},
+  "urlMappings": {
+    "/ragicforms12/20016": "/ragicforms18/20001",
+    "/ragicforms12/20017": "/ragicforms18/20002",
+    "/ragicsales-order-management/20007": "/ragicpurchasing/20009",
+    "/ragicforms4/20014": "/ragicforms29/20001",
+    "/ragicadministration/20014": "/ragicforms29/20002",
+    "/ragicadministration/20015": "/ragicforms30/20002",
+    "/ragicproject-management/20003": "/ragicforms30/20003",
+    "/ragicproject-management/20004": "/ragicforms30/20004",
+    "/ragicproject-management/20005": "/ragicforms30/20005",
+    "/ragicadministration/20016": "/ragicforms30/20006",
+    "/ragicforms31/20009": "/ragic-/20003",
+    "/ragicforms4/20016": "/ragicforms39/20010"
+  },
+  "menuv2_1": {"menuSets": [{
+    "id": "1",
+    "name": "$defalul_menuset",
+    "web": true,
+    "mobile": true,
+    "tabs": [
+      {
+        "name": "行政",
+        "path": "/ragicadministration",
+        "type": "tab",
+        "items": [
+          {
+            "name": "員工通訊錄",
+            "type": "sheet",
+            "path": "/ragicadministration",
+            "si": 20012
+          },
+          {
+            "name": "辦公用品列表",
+            "type": "sheet",
+            "path": "/ragicadministration",
+            "si": 20003
+          },
+          {
+            "name": "辦公用品申請單",
+            "type": "sheet",
+            "path": "/ragicadministration",
+            "si": 20002
+          },
+          {
+            "name": "辦公用品採購單",
+            "type": "sheet",
+            "path": "/ragicadministration",
+            "si": 20004
+          },
+          {
+            "name": "費用報支",
+            "type": "sheet",
+            "path": "/ragicadministration",
+            "si": 20005
+          },
+          {
+            "name": "固定資產管理",
+            "type": "sheet",
+            "path": "/ragicadministration",
+            "si": 20006
+          },
+          {
+            "name": "設備列表",
+            "type": "sheet",
+            "path": "/ragicadministration",
+            "si": 20007
+          },
+          {
+            "name": "設備出借",
+            "type": "sheet",
+            "path": "/ragicadministration",
+            "si": 20008
+          },
+          {
+            "name": "設備報修單",
+            "type": "sheet",
+            "path": "/ragicadministration",
+            "si": 20009
+          },
+          {
+            "name": "設備報修派工單",
+            "type": "sheet",
+            "path": "/ragicadministration",
+            "si": 20011
+          },
+          {
+            "name": "公告系統",
+            "type": "sheet",
+            "path": "/ragicadministration",
+            "si": 20010
+          },
+          {
+            "name": "公文發文管理",
+            "type": "sheet",
+            "path": "/ragicadministration",
+            "si": 20017
+          },
+          {
+            "name": "公文收文管理",
+            "type": "sheet",
+            "path": "/ragicadministration",
+            "si": 20018
+          }
+        ]
+      },
+      {
+        "name": "活動管理",
+        "path": "/ragicforms",
+        "type": "tab",
+        "items": [
+          {
+            "name": "活動資訊",
+            "type": "sheet",
+            "path": "/ragicforms",
+            "si": 20009
+          },
+          {
+            "name": "活動流程",
+            "type": "sheet",
+            "path": "/ragicforms",
+            "si": 20010
+          },
+          {
+            "name": "場地資訊",
+            "type": "sheet",
+            "path": "/ragicforms",
+            "si": 20001
+          },
+          {
+            "name": "活動預算",
+            "type": "sheet",
+            "path": "/ragicforms",
+            "si": 20006
+          },
+          {
+            "name": "設備租借資訊",
+            "type": "sheet",
+            "path": "/ragicforms",
+            "si": 20005
+          },
+          {
+            "name": "活動報名表",
+            "type": "sheet",
+            "path": "/ragicforms",
+            "si": 20003
+          },
+          {
+            "name": "個人資料表",
+            "type": "sheet",
+            "path": "/ragicforms",
+            "si": 20004
+          },
+          {
+            "name": "活動收入",
+            "type": "sheet",
+            "path": "/ragicforms",
+            "si": 20008
+          }
+        ]
+      },
+      {
+        "name": "行銷",
+        "path": "/ragicforms2",
+        "type": "tab",
+        "items": [{
+          "name": "潛在客戶管理",
+          "type": "sheet",
+          "path": "/ragicforms2",
+          "si": 20004
+        }]
+      },
+      {
+        "name": "專案預算及支出",
+        "path": "/ragicforms3",
+        "type": "tab",
+        "items": [
+          {
+            "name": "專案項目",
+            "type": "sheet",
+            "path": "/ragicforms3",
+            "si": 20001
+          },
+          {
+            "name": "收入表",
+            "type": "sheet",
+            "path": "/ragicforms3",
+            "si": 20006
+          },
+          {
+            "name": "預算表",
+            "type": "sheet",
+            "path": "/ragicforms3",
+            "si": 20007
+          },
+          {
+            "name": "請款單",
+            "type": "sheet",
+            "path": "/ragicforms3",
+            "si": 20008
+          },
+          {
+            "name": "請款單(會計專用)",
+            "type": "sheet",
+            "path": "/ragicforms3",
+            "si": 20009
+          }
+        ]
+      },
+      {
+        "name": "專案管理",
+        "path": "/ragicproject-management",
+        "type": "tab",
+        "items": [
+          {
+            "name": "會議記錄",
+            "type": "sheet",
+            "path": "/ragicproject-management",
+            "si": 20001
+          },
+          {
+            "name": "工作進度報告",
+            "type": "sheet",
+            "path": "/ragicproject-management",
+            "si": 20002
+          }
+        ]
+      },
+      {
+        "name": "業務",
+        "path": "/ragicsales",
+        "type": "tab",
+        "items": [
+          {
+            "name": "客戶",
+            "type": "sheet",
+            "path": "/ragicsales",
+            "si": 20001
+          },
+          {
+            "name": "聯絡人",
+            "type": "sheet",
+            "path": "/ragicsales",
+            "si": 20002
+          },
+          {
+            "name": "潛在客戶",
+            "type": "sheet",
+            "path": "/ragicsales",
+            "si": 20003
+          },
+          {
+            "name": "銷售機會",
+            "type": "sheet",
+            "path": "/ragicsales",
+            "si": 20004
+          },
+          {
+            "name": "銷售商品",
+            "type": "sheet",
+            "path": "/ragicsales",
+            "si": 20009
+          },
+          {
+            "name": "商品單價管理",
+            "type": "sheet",
+            "path": "/ragicsales",
+            "si": 20010
+          },
+          {
+            "name": "報價單",
+            "type": "sheet",
+            "path": "/ragicsales",
+            "si": 20006
+          },
+          {
+            "name": "工作項目",
+            "type": "sheet",
+            "path": "/ragicsales",
+            "si": 20007
+          },
+          {
+            "name": "合約",
+            "type": "sheet",
+            "path": "/ragicsales",
+            "si": 20008
+          }
+        ]
+      },
+      {
+        "name": "客服",
+        "path": "/ragicsupport",
+        "type": "tab",
+        "items": [
+          {
+            "name": "客服信件",
+            "type": "sheet",
+            "path": "/ragicsupport",
+            "si": 20002
+          },
+          {
+            "name": "客服知識庫 ",
+            "type": "sheet",
+            "path": "/ragicsupport",
+            "si": 20003
+          }
+        ]
+      },
+      {
+        "name": "人資",
+        "path": "/ragicforms4",
+        "type": "tab",
+        "items": [
+          {
+            "name": "人事資料表",
+            "type": "sheet",
+            "path": "/ragicforms4",
+            "si": 20004
+          },
+          {
+            "name": "工時表",
+            "type": "sheet",
+            "path": "/ragicforms4",
+            "si": 20005
+          },
+          {
+            "name": "加班申請單",
+            "type": "sheet",
+            "path": "/ragicforms4",
+            "si": 20001
+          },
+          {
+            "name": "請假單",
+            "type": "sheet",
+            "path": "/ragicforms4",
+            "si": 20003
+          },
+          {
+            "name": "徵才職缺提報與進度（內部用）",
+            "type": "sheet",
+            "path": "/ragicforms4",
+            "si": 20006
+          },
+          {
+            "name": "職缺說明",
+            "type": "sheet",
+            "path": "/ragicforms4",
+            "si": 20010
+          },
+          {
+            "name": "應徵履歷表",
+            "type": "sheet",
+            "path": "/ragicforms4",
+            "si": 20007
+          },
+          {
+            "name": "應徵者資料管理",
+            "type": "sheet",
+            "path": "/ragicforms4",
+            "si": 20009
+          },
+          {
+            "name": "考勤表",
+            "type": "sheet",
+            "path": "/ragicforms4",
+            "si": 20013
+          }
+        ]
+      },
+      {
+        "name": "績效評估",
+        "path": "/ragicforms5",
+        "type": "tab",
+        "items": [
+          {
+            "name": "績效考核－質化",
+            "type": "sheet",
+            "path": "/ragicforms5",
+            "si": 20001
+          },
+          {
+            "name": "自我評鑑",
+            "type": "sheet",
+            "path": "/ragicforms5",
+            "si": 20002
+          },
+          {
+            "name": "績效考核－量化 (主管評鑑)",
+            "type": "sheet",
+            "path": "/ragicforms5",
+            "si": 20003
+          },
+          {
+            "name": "績效考核－量化 (非主管評鑑)",
+            "type": "sheet",
+            "path": "/ragicforms5",
+            "si": 20004
+          }
+        ]
+      },
+      {
+        "name": "訂單管理",
+        "path": "/ragicsales-order-management",
+        "type": "tab",
+        "items": [
+          {
+            "name": "銷售訂單",
+            "type": "sheet",
+            "path": "/ragicsales-order-management",
+            "si": 20001
+          },
+          {
+            "name": "出貨單",
+            "type": "sheet",
+            "path": "/ragicsales-order-management",
+            "si": 20002
+          },
+          {
+            "name": "郵遞區號",
+            "type": "sheet",
+            "path": "/ragicsales-order-management",
+            "si": 20003
+          },
+          {
+            "name": "客戶",
+            "type": "sheet",
+            "path": "/ragicsales-order-management",
+            "si": 20004
+          },
+          {
+            "name": "銷售商品",
+            "type": "sheet",
+            "path": "/ragicsales-order-management",
+            "si": 20005
+          },
+          {
+            "name": "商品單價管理",
+            "type": "sheet",
+            "path": "/ragicsales-order-management",
+            "si": 20006
+          },
+          {
+            "name": "銷售細項",
+            "type": "sheet",
+            "path": "/ragicsales-order-management",
+            "si": 20008
+          }
+        ]
+      },
+      {
+        "name": "庫存",
+        "path": "/ragicinventory",
+        "type": "tab",
+        "items": [
+          {
+            "name": "倉庫管理",
+            "type": "sheet",
+            "path": "/ragicinventory",
+            "si": 20001
+          },
+          {
+            "name": "商品庫存",
+            "type": "sheet",
+            "path": "/ragicinventory",
+            "si": 20002
+          },
+          {
+            "name": "倉庫庫存",
+            "type": "sheet",
+            "path": "/ragicinventory",
+            "si": 20008
+          },
+          {
+            "name": "出庫單",
+            "type": "sheet",
+            "path": "/ragicinventory",
+            "si": 20009
+          },
+          {
+            "name": "入庫單",
+            "type": "sheet",
+            "path": "/ragicinventory",
+            "si": 20005
+          },
+          {
+            "name": "調撥作業",
+            "type": "sheet",
+            "path": "/ragicinventory",
+            "si": 20010
+          }
+        ]
+      },
+      {
+        "name": "採購",
+        "path": "/ragicpurchasing",
+        "type": "tab",
+        "items": [
+          {
+            "name": "廠商",
+            "type": "sheet",
+            "path": "/ragicpurchasing",
+            "si": 20001
+          },
+          {
+            "name": "採購商品",
+            "type": "sheet",
+            "path": "/ragicpurchasing",
+            "si": 20004
+          },
+          {
+            "name": "商品廠商價格",
+            "type": "sheet",
+            "path": "/ragicpurchasing",
+            "si": 20005
+          },
+          {
+            "name": "請購單",
+            "type": "sheet",
+            "path": "/ragicpurchasing",
+            "si": 20002
+          },
+          {
+            "name": "採購單",
+            "type": "sheet",
+            "path": "/ragicpurchasing",
+            "si": 20003
+          },
+          {
+            "name": "採購細項",
+            "type": "sheet",
+            "path": "/ragicpurchasing",
+            "si": 20006
+          },
+          {
+            "name": "進貨單",
+            "type": "sheet",
+            "path": "/ragicpurchasing",
+            "si": 20007
+          },
+          {
+            "name": "驗收作業",
+            "type": "sheet",
+            "path": "/ragicpurchasing",
+            "si": 20008
+          },
+          {
+            "name": "郵遞區號",
+            "type": "sheet",
+            "path": "/ragicpurchasing",
+            "si": 20009
+          }
+        ]
+      },
+      {
+        "name": "生產管理",
+        "path": "/ragicforms7",
+        "type": "tab",
+        "items": [
+          {
+            "name": "物料主檔",
+            "type": "sheet",
+            "path": "/ragicforms7",
+            "si": 20001
+          },
+          {
+            "name": "物料清單(BOM)",
+            "type": "sheet",
+            "path": "/ragicforms7",
+            "si": 20002
+          },
+          {
+            "name": "物料生產流程",
+            "type": "sheet",
+            "path": "/ragicforms7",
+            "si": 20004
+          },
+          {
+            "name": "工單",
+            "type": "sheet",
+            "path": "/ragicforms7",
+            "si": 20003
+          },
+          {
+            "name": "製程碼",
+            "type": "sheet",
+            "path": "/ragicforms7",
+            "si": 20007
+          },
+          {
+            "name": "工作站",
+            "type": "sheet",
+            "path": "/ragicforms7",
+            "si": 20006
+          },
+          {
+            "name": "領料單",
+            "type": "sheet",
+            "path": "/ragicforms7",
+            "si": 20008
+          },
+          {
+            "name": "退料單",
+            "type": "sheet",
+            "path": "/ragicforms7",
+            "si": 20009
+          },
+          {
+            "name": "工單所需之物料細項",
+            "type": "sheet",
+            "path": "/ragicforms7",
+            "si": 20010
+          }
+        ]
+      },
+      {
+        "name": "研發",
+        "path": "/ragicrd",
+        "type": "tab",
+        "items": [
+          {
+            "name": "研發知識庫",
+            "type": "sheet",
+            "path": "/ragicrd",
+            "si": 20001
+          },
+          {
+            "name": "研發文件管理 - Dropbox",
+            "type": "sheet",
+            "path": "/ragicrd",
+            "si": 20002
+          },
+          {
+            "name": "文件新增及修訂需求單 - Dropbox",
+            "type": "sheet",
+            "path": "/ragicrd",
+            "si": 20003
+          },
+          {
+            "name": "研發文件管理",
+            "type": "sheet",
+            "path": "/ragicrd",
+            "si": 20005
+          },
+          {
+            "name": "文件新增及修訂需求單",
+            "type": "sheet",
+            "path": "/ragicrd",
+            "si": 20006
+          },
+          {
+            "name": "問題追蹤單",
+            "type": "sheet",
+            "path": "/ragicrd",
+            "si": 20004
+          }
+        ]
+      },
+      {
+        "name": "法務",
+        "path": "/ragicforms6",
+        "type": "tab",
+        "items": [
+          {
+            "name": "法務文件審查",
+            "type": "sheet",
+            "path": "/ragicforms6",
+            "si": 20001
+          },
+          {
+            "name": "客戶資訊",
+            "type": "sheet",
+            "path": "/ragicforms6",
+            "si": 20004
+          },
+          {
+            "name": "客戶合約管理",
+            "type": "sheet",
+            "path": "/ragicforms6",
+            "si": 20003
+          },
+          {
+            "name": "供應商資訊",
+            "type": "sheet",
+            "path": "/ragicforms6",
+            "si": 20005
+          },
+          {
+            "name": "供應商合約管理",
+            "type": "sheet",
+            "path": "/ragicforms6",
+            "si": 20006
+          }
+        ]
+      },
+      {
+        "name": "品保",
+        "path": "/ragic-copy",
+        "type": "tab",
+        "items": [
+          {
+            "name": "品保文件管理",
+            "type": "sheet",
+            "path": "/ragic-copy",
+            "si": 20002
+          },
+          {
+            "name": "文件新增及修訂需求單",
+            "type": "sheet",
+            "path": "/ragic-copy",
+            "si": 20001
+          }
+        ]
+      },
+      {
+        "name": "財會系統（整合進銷存）",
+        "path": "/ragicforms8",
+        "type": "tab",
+        "items": [
+          {
+            "name": "員工薪資",
+            "type": "sheet",
+            "path": "/ragicforms8",
+            "si": 20003
+          },
+          {
+            "name": "產品應收發票",
+            "type": "sheet",
+            "path": "/ragicforms8",
+            "si": 20004
+          },
+          {
+            "name": "其他應收發票",
+            "type": "sheet",
+            "path": "/ragicforms8",
+            "si": 20010
+          },
+          {
+            "name": "物料應付發票",
+            "type": "sheet",
+            "path": "/ragicforms8",
+            "si": 20006
+          },
+          {
+            "name": "其他應付發票",
+            "type": "sheet",
+            "path": "/ragicforms8",
+            "si": 20008
+          },
+          {
+            "name": "票據管理",
+            "type": "sheet",
+            "path": "/ragicforms8",
+            "si": 20014
+          },
+          {
+            "name": "分錄帳",
+            "type": "sheet",
+            "path": "/ragicforms8",
+            "si": 20016
+          },
+          {
+            "name": "分錄帳明細",
+            "type": "sheet",
+            "path": "/ragicforms8",
+            "si": 20017
+          },
+          {
+            "name": "傳票對應憑證明細",
+            "type": "sheet",
+            "path": "/ragicforms8",
+            "si": 20018
+          },
+          {
+            "name": "固定資產管理（會計用）",
+            "type": "sheet",
+            "path": "/ragicforms8",
+            "si": 20013
+          },
+          {
+            "name": "會計科目",
+            "type": "sheet",
+            "path": "/ragicforms8",
+            "si": 20015
+          }
+        ]
+      },
+      {
+        "name": "進銷存（簡易版）",
+        "path": "/ragicforms18",
+        "type": "tab",
+        "items": [
+          {
+            "name": "客戶及廠商",
+            "type": "sheet",
+            "path": "/ragicforms18",
+            "si": 20001
+          },
+          {
+            "name": "商品庫存",
+            "type": "sheet",
+            "path": "/ragicforms18",
+            "si": 20002
+          },
+          {
+            "name": "銷售訂單",
+            "type": "sheet",
+            "path": "/ragicforms18",
+            "si": 20003
+          },
+          {
+            "name": "訂單細項",
+            "type": "sheet",
+            "path": "/ragicforms18",
+            "si": 20004
+          },
+          {
+            "name": "採購單",
+            "type": "sheet",
+            "path": "/ragicforms18",
+            "si": 20005
+          },
+          {
+            "name": "採購細項",
+            "type": "sheet",
+            "path": "/ragicforms18",
+            "si": 20006
+          }
+        ]
+      },
+      {
+        "name": "財會系統（簡易版）",
+        "path": "/ragicforms12",
+        "type": "tab",
+        "items": [
+          {
+            "name": "客戶及供應商",
+            "type": "sheet",
+            "path": "/ragicforms12",
+            "si": 20004
+          },
+          {
+            "name": "產品及服務",
+            "type": "sheet",
+            "path": "/ragicforms12",
+            "si": 20003
+          },
+          {
+            "name": "報價單",
+            "type": "sheet",
+            "path": "/ragicforms12",
+            "si": 20005
+          },
+          {
+            "name": "應收發票",
+            "type": "sheet",
+            "path": "/ragicforms12",
+            "si": 20007
+          },
+          {
+            "name": "採購單",
+            "type": "sheet",
+            "path": "/ragicforms12",
+            "si": 20006
+          },
+          {
+            "name": "應付發票",
+            "type": "sheet",
+            "path": "/ragicforms12",
+            "si": 20008
+          },
+          {
+            "name": "票據管理",
+            "type": "sheet",
+            "path": "/ragicforms12",
+            "si": 20013
+          },
+          {
+            "name": "員工薪資",
+            "type": "sheet",
+            "path": "/ragicforms12",
+            "si": 20001
+          },
+          {
+            "name": "分錄帳",
+            "type": "sheet",
+            "path": "/ragicforms12",
+            "si": 20009
+          },
+          {
+            "name": "分錄帳明細",
+            "type": "sheet",
+            "path": "/ragicforms12",
+            "si": 20012
+          },
+          {
+            "name": "傳票對應憑證明細",
+            "type": "sheet",
+            "path": "/ragicforms12",
+            "si": 20011
+          },
+          {
+            "name": "固定資產管理（會計用）",
+            "type": "sheet",
+            "path": "/ragicforms12",
+            "si": 20014
+          },
+          {
+            "name": "會計科目",
+            "type": "sheet",
+            "path": "/ragicforms12",
+            "si": 20015
+          }
+        ]
+      },
+      {
+        "name": "輕鬆訂便當",
+        "path": "/ragicforms9",
+        "type": "tab",
+        "items": [
+          {
+            "name": "個人訂購單 (訂餐填單來這裡)",
+            "type": "sheet",
+            "path": "/ragicforms9",
+            "si": 20005
+          },
+          {
+            "name": "個人訂購細項",
+            "type": "sheet",
+            "path": "/ragicforms9",
+            "si": 20007
+          },
+          {
+            "name": "便當飲料店家列表",
+            "type": "sheet",
+            "path": "/ragicforms9",
+            "si": 20001
+          },
+          {
+            "name": "便當飲料店菜色清單",
+            "type": "sheet",
+            "path": "/ragicforms9",
+            "si": 20003
+          },
+          {
+            "name": "統整訂購單 (負責人每次開放訂餐時開立)",
+            "type": "sheet",
+            "path": "/ragicforms9",
+            "si": 20008
+          }
+        ]
+      },
+      {
+        "name": "社區管理",
+        "path": "/ragicforms10",
+        "type": "tab",
+        "items": [
+          {
+            "name": "戶號資訊",
+            "type": "sheet",
+            "path": "/ragicforms10",
+            "si": 20001
+          },
+          {
+            "name": "住戶詳細資訊",
+            "type": "sheet",
+            "path": "/ragicforms10",
+            "si": 20002
+          },
+          {
+            "name": "公共設施清單",
+            "type": "sheet",
+            "path": "/ragicforms10",
+            "si": 20004
+          },
+          {
+            "name": "廠商資訊",
+            "type": "sheet",
+            "path": "/ragicforms10",
+            "si": 20008
+          },
+          {
+            "name": "公告系統",
+            "type": "sheet",
+            "path": "/ragicforms10",
+            "si": 20003
+          },
+          {
+            "name": "場地租借單",
+            "type": "sheet",
+            "path": "/ragicforms10",
+            "si": 20005
+          },
+          {
+            "name": "代收代付單",
+            "type": "sheet",
+            "path": "/ragicforms10",
+            "si": 20006
+          },
+          {
+            "name": "公共設施報修單",
+            "type": "sheet",
+            "path": "/ragicforms10",
+            "si": 20007
+          },
+          {
+            "name": "掛號包裹收發",
+            "type": "sheet",
+            "path": "/ragicforms10",
+            "si": 20009
+          },
+          {
+            "name": "場地租借明細",
+            "type": "sheet",
+            "path": "/ragicforms10",
+            "si": 20010
+          },
+          {
+            "name": "管理費繳費單",
+            "type": "sheet",
+            "path": "/ragicforms10",
+            "si": 20011
+          }
+        ]
+      },
+      {
+        "name": "資訊",
+        "path": "/ragicforms13",
+        "type": "tab",
+        "items": [
+          {
+            "name": "IT使用者管理",
+            "type": "sheet",
+            "path": "/ragicforms13",
+            "si": 20001
+          },
+          {
+            "name": "硬體設備管理",
+            "type": "sheet",
+            "path": "/ragicforms13",
+            "si": 20003
+          },
+          {
+            "name": "軟體授權管理",
+            "type": "sheet",
+            "path": "/ragicforms13",
+            "si": 20004
+          },
+          {
+            "name": "軟體配發列表",
+            "type": "sheet",
+            "path": "/ragicforms13",
+            "si": 20005
+          },
+          {
+            "name": "IT需求申請單  ",
+            "type": "sheet",
+            "path": "/ragicforms13",
+            "si": 20006
+          },
+          {
+            "name": "IT需求派工單",
+            "type": "sheet",
+            "path": "/ragicforms13",
+            "si": 20008
+          },
+          {
+            "name": "電腦機房廠商進出管制登記表",
+            "type": "sheet",
+            "path": "/ragicforms13",
+            "si": 20009
+          },
+          {
+            "name": "機房每日巡檢表",
+            "type": "sheet",
+            "path": "/ragicforms13",
+            "si": 20010
+          },
+          {
+            "name": "異常事件記錄表",
+            "type": "sheet",
+            "path": "/ragicforms13",
+            "si": 20011
+          },
+          {
+            "name": "備份紀錄表",
+            "type": "sheet",
+            "path": "/ragicforms13",
+            "si": 20012
+          },
+          {
+            "name": "災難還原演練記錄表",
+            "type": "sheet",
+            "path": "/ragicforms13",
+            "si": 20013
+          },
+          {
+            "name": "帳號停用查核表",
+            "type": "sheet",
+            "path": "/ragicforms13",
+            "si": 20014
+          },
+          {
+            "name": "帳號申請記錄表",
+            "type": "sheet",
+            "path": "/ragicforms13",
+            "si": 20015
+          },
+          {
+            "name": "檔案管理權限申請表",
+            "type": "sheet",
+            "path": "/ragicforms13",
+            "si": 20016
+          },
+          {
+            "name": "主機帳號清查記錄表",
+            "type": "sheet",
+            "path": "/ragicforms13",
+            "si": 20017
+          },
+          {
+            "name": "修補程式管理",
+            "type": "sheet",
+            "path": "/ragicforms13",
+            "si": 20018
+          }
+        ]
+      },
+      {
+        "name": "盃賽數據庫",
+        "path": "/ragicforms14",
+        "type": "tab",
+        "items": [
+          {
+            "name": "盃賽列表",
+            "type": "sheet",
+            "path": "/ragicforms14",
+            "si": 20004
+          },
+          {
+            "name": "隊伍名單",
+            "type": "sheet",
+            "path": "/ragicforms14",
+            "si": 20001
+          },
+          {
+            "name": "球員名單",
+            "type": "sheet",
+            "path": "/ragicforms14",
+            "si": 20002
+          },
+          {
+            "name": "比賽記錄表",
+            "type": "sheet",
+            "path": "/ragicforms14",
+            "si": 20003
+          },
+          {
+            "name": "比賽數據",
+            "type": "sheet",
+            "path": "/ragicforms14",
+            "si": 20005
+          }
+        ]
+      },
+      {
+        "name": "課程管理",
+        "path": "/ragicforms15",
+        "type": "tab",
+        "items": [
+          {
+            "name": "開課清單",
+            "type": "sheet",
+            "path": "/ragicforms15",
+            "si": 20002
+          },
+          {
+            "name": "上課地點",
+            "type": "sheet",
+            "path": "/ragicforms15",
+            "si": 20010
+          },
+          {
+            "name": "老師名單",
+            "type": "sheet",
+            "path": "/ragicforms15",
+            "si": 20001
+          },
+          {
+            "name": "學員名單",
+            "type": "sheet",
+            "path": "/ragicforms15",
+            "si": 20003
+          },
+          {
+            "name": "課程訂購單",
+            "type": "sheet",
+            "path": "/ragicforms15",
+            "si": 20005
+          },
+          {
+            "name": "點名單（上課紀錄）",
+            "type": "sheet",
+            "path": "/ragicforms15",
+            "si": 20006
+          },
+          {
+            "name": "請假單",
+            "type": "sheet",
+            "path": "/ragicforms15",
+            "si": 20008
+          },
+          {
+            "name": "加補課申請單",
+            "type": "sheet",
+            "path": "/ragicforms15",
+            "si": 20007
+          }
+        ]
+      },
+      {
+        "name": "人生好難 體重更難",
+        "path": "/ragicsohardtoloseweight",
+        "type": "tab",
+        "items": [
+          {
+            "name": "個人身體數據計算",
+            "type": "sheet",
+            "path": "/ragicsohardtoloseweight",
+            "si": 20001
+          },
+          {
+            "name": "每日飲食攝取紀錄",
+            "type": "sheet",
+            "path": "/ragicsohardtoloseweight",
+            "si": 20002
+          },
+          {
+            "name": "食物營養成分表",
+            "type": "sheet",
+            "path": "/ragicsohardtoloseweight",
+            "si": 20003
+          },
+          {
+            "name": "訓練菜單紀錄",
+            "type": "sheet",
+            "path": "/ragicsohardtoloseweight",
+            "si": 20004
+          }
+        ]
+      },
+      {
+        "name": "婚禮籌備",
+        "path": "/ragicforms16",
+        "type": "tab",
+        "items": [
+          {
+            "name": "工作人員聯絡簿",
+            "type": "sheet",
+            "path": "/ragicforms16",
+            "si": 20005
+          },
+          {
+            "name": "賓客規劃（預擬邀請名單）",
+            "type": "sheet",
+            "path": "/ragicforms16",
+            "si": 20001
+          },
+          {
+            "name": "賓客總表（帖餅禮金出席意願全紀錄）",
+            "type": "sheet",
+            "path": "/ragicforms16",
+            "si": 20002
+          },
+          {
+            "name": "賓客邀請函（線上調查出席意願）",
+            "type": "sheet",
+            "path": "/ragicforms16",
+            "si": 20003
+          },
+          {
+            "name": "賓客桌次表",
+            "type": "sheet",
+            "path": "/ragicforms16",
+            "si": 20004
+          },
+          {
+            "name": "長期籌備時程表",
+            "type": "sheet",
+            "path": "/ragicforms16",
+            "si": 20006
+          },
+          {
+            "name": "長期待辦事項清單",
+            "type": "sheet",
+            "path": "/ragicforms16",
+            "si": 20007
+          },
+          {
+            "name": "婚宴當日流程",
+            "type": "sheet",
+            "path": "/ragicforms16",
+            "si": 20008
+          },
+          {
+            "name": "需要準備的物品",
+            "type": "sheet",
+            "path": "/ragicforms16",
+            "si": 20009
+          },
+          {
+            "name": "採買評比清單",
+            "type": "sheet",
+            "path": "/ragicforms16",
+            "si": 20010
+          }
+        ]
+      },
+      {
+        "name": "抽籤小幫手",
+        "path": "/ragicforms19",
+        "type": "tab",
+        "items": [
+          {
+            "name": "抽籤小幫手",
+            "type": "sheet",
+            "path": "/ragicforms19",
+            "si": 20001
+          },
+          {
+            "name": "抽籤名單（輔助表單，直接填表時用）",
+            "type": "sheet",
+            "path": "/ragicforms19",
+            "si": 20002
+          }
+        ]
+      },
+      {
+        "name": "求職管理",
+        "path": "/ragicforms20",
+        "type": "tab",
+        "items": [{
+          "name": "職缺列表",
+          "type": "sheet",
+          "path": "/ragicforms20",
+          "si": 20001
+        }]
+      },
+      {
+        "name": "訂閱管理",
+        "path": "/ragicforms21",
+        "type": "tab",
+        "items": [{
+          "name": "訂閱/會員管理",
+          "type": "sheet",
+          "path": "/ragicforms21",
+          "si": 20001
+        }]
+      },
+      {
+        "name": "電子發票",
+        "path": "/ragicforms22",
+        "type": "tab",
+        "items": [
+          {
+            "name": "公司資訊",
+            "type": "sheet",
+            "path": "/ragicforms22",
+            "si": 20002
+          },
+          {
+            "name": "電子發票開立",
+            "type": "sheet",
+            "path": "/ragicforms22",
+            "si": 20001
+          },
+          {
+            "name": "電子發票B2C開立",
+            "type": "sheet",
+            "path": "/ragicforms22",
+            "si": 20003
+          }
+        ]
+      },
+      {
+        "name": "健康管理",
+        "path": "/ragicforms23",
+        "type": "tab",
+        "items": [
+          {
+            "name": "學生每月體溫測量",
+            "type": "sheet",
+            "path": "/ragicforms23",
+            "si": 20001
+          },
+          {
+            "name": "學生每月每日體溫記錄(老師用)",
+            "type": "sheet",
+            "path": "/ragicforms23",
+            "si": 20002
+          },
+          {
+            "name": "班級導師資訊",
+            "type": "sheet",
+            "path": "/ragicforms23",
+            "si": 20003
+          },
+          {
+            "name": "防疫出國旅遊史調查",
+            "type": "sheet",
+            "path": "/ragicforms23",
+            "si": 20005
+          },
+          {
+            "name": "員工每日體溫測量",
+            "type": "sheet",
+            "path": "/ragicforms23",
+            "si": 20004
+          },
+          {
+            "name": "防疫出國旅遊史調查",
+            "type": "sheet",
+            "path": "/ragicforms23",
+            "si": 20007
+          },
+          {
+            "name": "訪客防疫自我申告書",
+            "type": "sheet",
+            "path": "/ragicforms23",
+            "si": 20006
+          },
+          {
+            "name": "員工防疫自主通報",
+            "type": "sheet",
+            "path": "/ragicforms23",
+            "si": 20009
+          },
+          {
+            "name": "個人健康資料卡",
+            "type": "sheet",
+            "path": "/ragicforms23",
+            "si": 20010
+          },
+          {
+            "name": "血壓紀錄",
+            "type": "sheet",
+            "path": "/ragicforms23",
+            "si": 20011
+          },
+          {
+            "name": "血糖紀錄",
+            "type": "sheet",
+            "path": "/ragicforms23",
+            "si": 20012
+          },
+          {
+            "name": "個人體溫量測",
+            "type": "sheet",
+            "path": "/ragicforms23",
+            "si": 20013
+          }
+        ]
+      },
+      {
+        "name": "系統",
+        "path": "/ragicsystem",
+        "type": "tab",
+        "items": [
+          {
+            "name": "使用者",
+            "type": "sheet",
+            "path": "/ragicsystem",
+            "si": 20001
+          },
+          {
+            "name": "外部使用者",
+            "type": "sheet",
+            "path": "/ragicsystem",
+            "si": 20002
+          },
+          {
+            "name": "資料庫存取申請",
+            "type": "sheet",
+            "path": "/ragicsystem",
+            "si": 20003
+          }
+        ]
+      },
+      {
+        "name": "借還書系統",
+        "path": "/ragicforms25",
+        "type": "tab",
+        "items": [
+          {
+            "name": "會員資料",
+            "type": "sheet",
+            "path": "/ragicforms25",
+            "si": 20006
+          },
+          {
+            "name": "書籍清單",
+            "type": "sheet",
+            "path": "/ragicforms25",
+            "si": 20001
+          },
+          {
+            "name": "藏書細目",
+            "type": "sheet",
+            "path": "/ragicforms25",
+            "si": 20002
+          },
+          {
+            "name": "借書單",
+            "type": "sheet",
+            "path": "/ragicforms25",
+            "si": 20003
+          },
+          {
+            "name": "還書單",
+            "type": "sheet",
+            "path": "/ragicforms25",
+            "si": 20005
+          },
+          {
+            "name": "借還紀錄",
+            "type": "sheet",
+            "path": "/ragicforms25",
+            "si": 20004
+          }
+        ]
+      },
+      {
+        "name": "活動報名管理",
+        "path": "/ragicforms26",
+        "type": "tab",
+        "items": []
+      },
+      {
+        "name": "資產管理",
+        "path": "/ragicforms27",
+        "type": "tab",
+        "items": [{
+          "name": "股票管理",
+          "type": "sheet",
+          "path": "/ragicforms27",
+          "si": 20001
+        }]
+      },
+      {
+        "name": "防疫實聯制",
+        "path": "/ragicforms28",
+        "type": "tab",
+        "items": [{
+          "name": "防疫實聯制登記表",
+          "type": "sheet",
+          "path": "/ragicforms28",
+          "si": 20001
+        }]
+      },
+      {
+        "name": "教育訓練管理",
+        "path": "/ragicforms29",
+        "type": "tab",
+        "items": [
+          {
+            "name": "課程列表",
+            "type": "sheet",
+            "path": "/ragicforms29",
+            "si": 20003
+          },
+          {
+            "name": "員工教育訓練進度",
+            "type": "sheet",
+            "path": "/ragicforms29",
+            "si": 20002
+          },
+          {
+            "name": "教育訓練管理",
+            "type": "sheet",
+            "path": "/ragicforms29",
+            "si": 20004
+          },
+          {
+            "name": "課程簽到表",
+            "type": "sheet",
+            "path": "/ragicforms29",
+            "si": 20005
+          }
+        ]
+      },
+      {
+        "name": "遠端工作",
+        "path": "/ragicforms30",
+        "type": "tab",
+        "items": [
+          {
+            "name": "員工通訊錄",
+            "type": "sheet",
+            "path": "/ragicforms30",
+            "si": 20002
+          },
+          {
+            "name": "打卡單",
+            "type": "sheet",
+            "path": "/ragicforms30",
+            "si": 20001
+          },
+          {
+            "name": "遠端工作回報",
+            "type": "sheet",
+            "path": "/ragicforms30",
+            "si": 20005
+          },
+          {
+            "name": "線上會議紀錄",
+            "type": "sheet",
+            "path": "/ragicforms30",
+            "si": 20003
+          },
+          {
+            "name": "公告系統",
+            "type": "sheet",
+            "path": "/ragicforms30",
+            "si": 20006
+          }
+        ]
+      },
+      {
+        "name": "預約系統 (限內部/外部使用者使用)",
+        "path": "/ragicforms31",
+        "type": "tab",
+        "items": [
+          {
+            "name": "場地列表",
+            "type": "sheet",
+            "path": "/ragicforms31",
+            "si": 20002
+          },
+          {
+            "name": "個人預約細項",
+            "type": "sheet",
+            "path": "/ragicforms31",
+            "si": 20007
+          }
+        ]
+      },
+      {
+        "name": "預約系統 (供內部、外部、訪客使用者使用)",
+        "path": "/ragic-",
+        "type": "tab",
+        "items": [
+          {
+            "name": "場地列表",
+            "type": "sheet",
+            "path": "/ragic-",
+            "si": 20001
+          },
+          {
+            "name": "個人預約細項",
+            "type": "sheet",
+            "path": "/ragic-",
+            "si": 20002
+          }
+        ]
+      },
+      {
+        "name": "$tab_report",
+        "path": "Report",
+        "type": "tab",
+        "reportTab": true,
+        "items": [
+          {
+            "name": "場地租借狀況",
+            "type": "report",
+            "reportId": 1
+          },
+          {
+            "name": "管理費繳費記錄表",
+            "type": "report",
+            "reportId": 2
+          },
+          {
+            "name": "資產負債表",
+            "type": "report",
+            "reportId": 3
+          },
+          {
+            "name": "逾期應付發票",
+            "type": "report",
+            "reportId": 4
+          },
+          {
+            "name": "逾期應收發票",
+            "type": "report",
+            "reportId": 5
+          },
+          {
+            "name": "損益表",
+            "type": "report",
+            "reportId": 6
+          },
+          {
+            "name": "現金流量表",
+            "type": "report",
+            "reportId": 7
+          },
+          {
+            "name": "資產負債表 (簡易版)",
+            "type": "report",
+            "reportId": 8
+          },
+          {
+            "name": "損益表 (簡易版)",
+            "type": "report",
+            "reportId": 9
+          },
+          {
+            "name": "現金流量表 (簡易版)",
+            "type": "report",
+            "reportId": 10
+          },
+          {
+            "name": "使用者報表",
+            "type": "report",
+            "reportId": 11
+          },
+          {
+            "name": "簽核報表",
+            "type": "report",
+            "reportId": 13
+          },
+          {
+            "name": "訂單分析",
+            "type": "report",
+            "reportId": 14
+          },
+          {
+            "name": "銷售細項分析",
+            "type": "report",
+            "reportId": 15
+          },
+          {
+            "name": "預約系統 (限內部/外部使用者使用)",
+            "type": "report",
+            "reportId": 16
+          },
+          {
+            "name": "預約系統 (供內部、外部、訪客使用者使用)",
+            "type": "report",
+            "reportId": 17
+          },
+          {
+            "name": "血壓紀錄",
+            "type": "report",
+            "reportId": 18
+          },
+          {
+            "name": "血糖紀錄",
+            "type": "report",
+            "reportId": 19
+          },
+          {
+            "name": "體溫量測紀錄",
+            "type": "report",
+            "reportId": 20
+          },
+          {
+            "name": "一對一預約上課系統",
+            "type": "report",
+            "reportId": 21
+          }
+        ]
+      },
+      {
+        "name": "交友紀錄",
+        "path": "/ragicforms32",
+        "type": "tab",
+        "items": [{
+          "name": "交友紀錄",
+          "type": "sheet",
+          "path": "/ragicforms32",
+          "si": 20001
+        }]
+      },
+      {
+        "name": "怦然心動的整理術",
+        "path": "/ragicforms33",
+        "type": "tab",
+        "items": [{
+          "name": "衣櫃盤點表",
+          "type": "sheet",
+          "path": "/ragicforms33",
+          "si": 20001
+        }]
+      },
+      {
+        "name": "室內設計專案管理",
+        "path": "/ragicforms34",
+        "type": "tab",
+        "items": [
+          {
+            "name": "業主資訊",
+            "type": "sheet",
+            "path": "/ragicforms34",
+            "si": 20001
+          },
+          {
+            "name": "案場資訊",
+            "type": "sheet",
+            "path": "/ragicforms34",
+            "si": 20002
+          },
+          {
+            "name": "案件資訊",
+            "type": "sheet",
+            "path": "/ragicforms34",
+            "si": 20003
+          },
+          {
+            "name": "報價單 （內部用 含成本機密）",
+            "type": "sheet",
+            "path": "/ragicforms34",
+            "si": 20004
+          },
+          {
+            "name": "報價單（客戶用）",
+            "type": "sheet",
+            "path": "/ragicforms34",
+            "si": 20008
+          },
+          {
+            "name": "報價明細",
+            "type": "sheet",
+            "path": "/ragicforms34",
+            "si": 20011
+          },
+          {
+            "name": "廠商基本資料表",
+            "type": "sheet",
+            "path": "/ragicforms34",
+            "si": 20007
+          },
+          {
+            "name": "請款單",
+            "type": "sheet",
+            "path": "/ragicforms34",
+            "si": 20009
+          },
+          {
+            "name": "請款項目明細",
+            "type": "sheet",
+            "path": "/ragicforms34",
+            "si": 20012
+          },
+          {
+            "name": "工程類別",
+            "type": "sheet",
+            "path": "/ragicforms34",
+            "si": 20005
+          },
+          {
+            "name": "工程類別總價明細（拋轉計算用）",
+            "type": "sheet",
+            "path": "/ragicforms34",
+            "si": 20006
+          }
+        ]
+      },
+      {
+        "name": "長途旅遊規劃",
+        "path": "/ragicforms35",
+        "type": "tab",
+        "items": [{
+          "name": "旅遊規劃表",
+          "type": "sheet",
+          "path": "/ragicforms35",
+          "si": 20001
+        }]
+      },
+      {
+        "name": "餐點計畫",
+        "path": "/ragicforms36",
+        "type": "tab",
+        "items": [
+          {
+            "name": "食材",
+            "type": "sheet",
+            "path": "/ragicforms36",
+            "si": 20001
+          },
+          {
+            "name": "食譜",
+            "type": "sheet",
+            "path": "/ragicforms36",
+            "si": 20002
+          },
+          {
+            "name": "餐點計劃",
+            "type": "sheet",
+            "path": "/ragicforms36",
+            "si": 20004
+          },
+          {
+            "name": "購物清單",
+            "type": "sheet",
+            "path": "/ragicforms36",
+            "si": 20005
+          },
+          {
+            "name": "各食譜食材明細",
+            "type": "sheet",
+            "path": "/ragicforms36",
+            "si": 20003
+          }
+        ]
+      },
+      {
+        "name": "Ragic系統管理",
+        "path": "/ragic-setup",
+        "type": "tab",
+        "ragicSetupTab": true,
+        "items": [
+          {
+            "name": "使用者",
+            "type": "sheet",
+            "path": "/ragic-setup",
+            "si": 1
+          },
+          {
+            "name": "群組",
+            "type": "sheet",
+            "path": "/ragic-setup",
+            "si": 2
+          },
+          {
+            "name": "功能權限設定",
+            "type": "sheet",
+            "path": "/ragic-setup",
+            "si": 3
+          },
+          {
+            "name": "公司設定",
+            "type": "sheet",
+            "path": "/ragic-setup",
+            "si": 4
+          },
+          {
+            "name": "外部使用者",
+            "type": "sheet",
+            "path": "/ragic-setup",
+            "si": 5
+          },
+          {
+            "name": "資料庫存取申請",
+            "type": "sheet",
+            "path": "/ragic-setup",
+            "si": 6
+          },
+          {
+            "name": "全域常數",
+            "type": "sheet",
+            "path": "/ragic-setup",
+            "si": 7
+          }
+        ]
+      },
+      {
+        "name": "課程管理（一對一預約）",
+        "path": "/ragicforms37",
+        "type": "tab",
+        "items": [
+          {
+            "name": "上課地點",
+            "type": "sheet",
+            "path": "/ragicforms37",
+            "si": 20001
+          },
+          {
+            "name": "老師名單",
+            "type": "sheet",
+            "path": "/ragicforms37",
+            "si": 20002
+          },
+          {
+            "name": "學員名單",
+            "type": "sheet",
+            "path": "/ragicforms37",
+            "si": 20007
+          },
+          {
+            "name": "付費方案表",
+            "type": "sheet",
+            "path": "/ragicforms37",
+            "si": 20004
+          },
+          {
+            "name": "方案訂購單",
+            "type": "sheet",
+            "path": "/ragicforms37",
+            "si": 20005
+          },
+          {
+            "name": "可預約學員名單",
+            "type": "sheet",
+            "path": "/ragicforms37",
+            "si": 20008
+          },
+          {
+            "name": "預約資訊",
+            "type": "sheet",
+            "path": "/ragicforms37",
+            "si": 20006
+          },
+          {
+            "name": "預約紀錄（內部管理用）",
+            "type": "sheet",
+            "path": "/ragicforms37",
+            "si": 20010
+          }
+        ]
+      },
+      {
+        "name": "班費管理",
+        "path": "/ragicforms38",
+        "type": "tab",
+        "items": [
+          {
+            "name": "班級學生名單",
+            "type": "sheet",
+            "path": "/ragicforms38",
+            "si": 20001
+          },
+          {
+            "name": "班費支出明細",
+            "type": "sheet",
+            "path": "/ragicforms38",
+            "si": 20002
+          }
+        ]
+      },
+      {
+        "name": "薪酬管理",
+        "path": "/ragicforms39",
+        "type": "tab",
+        "items": [
+          {
+            "name": "人事資料表",
+            "type": "sheet",
+            "path": "/ragicforms39",
+            "si": 20010
+          },
+          {
+            "name": "假期管理",
+            "type": "sheet",
+            "path": "/ragicforms39",
+            "si": 20011
+          },
+          {
+            "name": "假期細節",
+            "type": "sheet",
+            "path": "/ragicforms39",
+            "si": 20012
+          },
+          {
+            "name": "薪資結構",
+            "type": "sheet",
+            "path": "/ragicforms39",
+            "si": 20001
+          },
+          {
+            "name": "薪資單",
+            "type": "sheet",
+            "path": "/ragicforms39",
+            "si": 20005
+          },
+          {
+            "name": "請假單",
+            "type": "sheet",
+            "path": "/ragicforms39",
+            "si": 20008
+          },
+          {
+            "name": "加班申請單",
+            "type": "sheet",
+            "path": "/ragicforms39",
+            "si": 20009
+          },
+          {
+            "name": "假別管理",
+            "type": "sheet",
+            "path": "/ragicforms39",
+            "si": 20007
+          },
+          {
+            "name": "年資特休對照",
+            "type": "sheet",
+            "path": "/ragicforms39",
+            "si": 20006
+          },
+          {
+            "name": "健保級距對照表",
+            "type": "sheet",
+            "path": "/ragicforms39",
+            "si": 20002
+          },
+          {
+            "name": "勞保級距對照表",
+            "type": "sheet",
+            "path": "/ragicforms39",
+            "si": 20003
+          },
+          {
+            "name": "參數",
+            "type": "sheet",
+            "path": "/ragicforms39",
+            "si": 20004
+          }
+        ]
+      },
+      {
+        "name": "追劇人生",
+        "path": "/ragicforms40",
+        "type": "tab",
+        "items": [{
+          "name": "追劇紀錄",
+          "type": "sheet",
+          "path": "/ragicforms40",
+          "si": 20001
+        }]
+      }
+    ]
+  }]},
+  "customizedSheets": [
+    "/ragicforms28/20001",
+    "/ragicforms23/20009",
+    "/ragicforms29/20002",
+    "/ragicforms29/20003",
+    "/ragicforms29/20004",
+    "/ragicforms29/20005",
+    "/ragicforms22/20001",
+    "/ragicforms30/20001",
+    "/ragicforms30/20002",
+    "/ragicforms30/20003",
+    "/ragicforms30/20005",
+    "/ragicforms30/20006",
+    "/ragicforms8/20015",
+    "/ragicforms12/20015",
+    "/ragicforms31/20002",
+    "/ragicforms31/20007",
+    "/ragic-/20001",
+    "/ragic-/20002",
+    "/ragicforms32/20001",
+    "/ragicforms4/20003",
+    "/ragicsystem/20001",
+    "/ragicforms19/20001",
+    "/ragicforms22/20003",
+    "/ragicforms22/20002",
+    "/ragicforms23/20010",
+    "/ragicforms23/20011",
+    "/ragicforms23/20012",
+    "/ragicforms23/20013",
+    "/ragicforms8/20010",
+    "/ragicforms8/20008",
+    "/ragicforms12/20007",
+    "/ragicforms12/20008",
+    "/ragicinventory/20002",
+    "/ragicpurchasing/20004",
+    "/ragicforms33/20001",
+    "/ragicforms34/20001",
+    "/ragicforms34/20002",
+    "/ragicforms34/20003",
+    "/ragicforms34/20004",
+    "/ragicforms34/20005",
+    "/ragicforms34/20007",
+    "/ragicforms34/20008",
+    "/ragicforms34/20009",
+    "/ragicforms34/20011",
+    "/ragicforms34/20012",
+    "/ragicforms34/20006",
+    "/ragicpurchasing/20002",
+    "/ragicforms8/20016",
+    "/ragicforms12/20009",
+    "/ragicforms/20004",
+    "/ragicforms35/20001",
+    "/ragicforms8/20017",
+    "/ragicforms12/20012",
+    "/ragicforms7/20009",
+    "/ragicforms25/20002",
+    "/ragicsales/20006",
+    "/ragicforms36/20001",
+    "/ragicforms36/20002",
+    "/ragicforms36/20003",
+    "/ragicforms36/20004",
+    "/ragicforms36/20005",
+    "/ragicadministration/20002",
+    "/ragicadministration/20003",
+    "/ragicadministration/20004",
+    "/ragicsales-order-management/20001",
+    "/ragicsales-order-management/20002",
+    "/ragicpurchasing/20003",
+    "/ragicpurchasing/20007",
+    "/ragicforms8/20004",
+    "/ragicforms8/20006",
+    "/ragicforms18/20003",
+    "/ragicforms18/20005",
+    "/ragicforms12/20005",
+    "/ragicforms12/20006",
+    "/ragicforms37/20001",
+    "/ragicforms37/20002",
+    "/ragicforms37/20004",
+    "/ragicforms37/20005",
+    "/ragicforms37/20006",
+    "/ragicforms13/20009",
+    "/ragicforms13/20010",
+    "/ragicforms13/20011",
+    "/ragicforms13/20012",
+    "/ragicforms13/20013",
+    "/ragicforms13/20014",
+    "/ragicforms13/20015",
+    "/ragicforms13/20016",
+    "/ragicforms13/20017",
+    "/ragicadministration/20017",
+    "/ragicadministration/20018",
+    "/ragicforms37/20007",
+    "/ragicforms37/20008",
+    "/ragicforms37/20010",
+    "/ragicforms38/20001",
+    "/ragicforms38/20002",
+    "/ragicforms39/20001",
+    "/ragicforms39/20002",
+    "/ragicforms39/20003",
+    "/ragicforms39/20004",
+    "/ragicforms39/20005",
+    "/ragicforms39/20006",
+    "/ragicforms39/20007",
+    "/ragicforms39/20008",
+    "/ragicforms39/20009",
+    "/ragicforms40/20001",
+    "/ragicforms13/20018",
+    "/ragicforms39/20010",
+    "/ragicforms39/20011",
+    "/ragicforms39/20012",
+    "/ragicsystem/20002"
+  ],
+  "menuSaveEdit": "20221025 08:34:06",
+  "layout": {
+    "type": "2022",
+    "regions": {
+      "main": [{"type": "tabSheets"}],
+      "right": [
+        {"type": "tasks"},
+        {"type": "events"}
+      ],
+      "bottomLeft": [],
+      "bottomRight": []
+    }
+  }
+}

@@ -1,0 +1,32 @@
+N,Employee Performance - Quantitative (Supervisor),This sheet is an form to evaluate supervisory employees (with management duties).
+FS,2
+DS,2
+W,1=48&2=107&3=58&4=25&5=22&6=10&7=0&8=73,
+TF,2000664
+KF,2000683
+SF,2000664
+S,2000666,,Production,Sales,Marketing,Human Resource,Research %26 Development,Finance,Legal Affairs,IT,Executive
+S,2000670,standard/ragicaccounting-integrate/10001,
+S,2000671,,2017,2018,2019
+S,312,null,
+S,320,null,
+A,MANAGEMENT=6&MANAGER=6&HR=6&USER=1&EVERYONE=1,1,2,333022250
+A2,USER=11&EVERYONE=11
+D,1,1,2000662,Employee Name,l=2000829&vd=2000756
+D,2,1,2000663,E-mail,email=2&l=2000829&vd=2000775
+D,3,1,2000664,Employee Number,l=2000829&vd=2000766
+L,4,1,2000666,Department,userOps=true&l=2000829&vd=2000767
+L,5,1,2000670,Supervisor,l=2000829&vd=2000769&mvp=/ragichr|10004_Sheet10004&s=2000754&stf=2000756
+L,6,1,2000671,Review Period,userOps=true
+L,7,1,312,Approval,ro=true
+L,8,1,320,Next Signer,ro=true
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10003_Sheet10003_index_t.nui
+QS,0

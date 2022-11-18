@@ -1,0 +1,28 @@
+N,製程碼,
+FS,2
+DS,2
+W,2=29&4=27&6=21&undefined=0,
+TF,3002386
+KF,3002388
+SF,3002386
+S,3002447,standardzhtw/ragic-setup/1,
+S,3002449,standardzhtw/ragic-setup/1,
+A,NULL=0&MANAGER=6&USER=3&EVERYONE=0,0,3,725975161
+A2,
+D,1,1,3002386,製程碼,noDup=true&text=1
+D,3,1,3002387,製程,cs=3
+L,1,5,3002447,建檔人員,cs=2&usrref=2&dv=$USER&ro=true
+D,4,5,3002448,建檔日期時間,fmt_d=yyyy/MM/dd HH:mm&cs=2&dv=$DATETIME&ro=true
+L,1,6,3002449,最後修改人員,cs=2&usrref=2&dv=#USER&ro=true
+D,4,6,3002450,最後修改日期時間,fmt_d=yyyy/MM/dd HH:mm&cs=2&dv=#DATETIME&ro=true
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,20007_Sheet20007_index.nui
+QS,1

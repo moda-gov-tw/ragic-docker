@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+  <name>Employee Performance</name>
+  <desc />
+  <publisher />
+  <createDate />
+  <updateDate />
+  <version />
+  <price />
+  <status />
+  <sourcePath />
+  <appId />
+  <forms seq="10">
+    <form sheetIndex="10001" type="NUI" seq="1">Employee Performance - Narrative</form>
+    <form sheetIndex="10002" type="NUI" seq="2">Self-Appraisal</form>
+    <form sheetIndex="10003" type="NUI" seq="3">Employee Performance - Quantitative (Supervisor)</form>
+    <form sheetIndex="10004" type="NUI" seq="4">Employee Performance - Quantitative (Non-supervisor)</form>
+  </forms>
+</module>
+

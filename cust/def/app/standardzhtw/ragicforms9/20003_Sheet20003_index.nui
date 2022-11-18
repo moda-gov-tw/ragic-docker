@@ -1,0 +1,30 @@
+N,便當飲料店菜色清單,
+FS,2
+DS,2
+W,1=-30&2=200&undefined=0,2=14&3=15&4=14&5=14&6=14&7=44&8=44&9=15
+TF,3002342
+KF,3002350
+SF,3002342
+S,3002349,standardzhtw/ragicforms9/20001,
+A,NULL=0&MANAGER=6&USER=3&EVERYONE=0,0,3,1357274348
+A2,
+D,1,2,3002342,  品項編號,ag=D-{0`number`00000}&ro=true&stylebackgroundColor=#FFDCE5&stylecolor=#666666&stylefontWeight=bold&styleVfontWeight=bold&styleVcolor=#666666&stylefontSize=14&styleVfontSize=14&styletextAlign=left
+L,1,3,3002349,  店家編號,stf=3002336&mvp=/ragicforms9|20001_Sheet20001&ro=true&stylebackgroundColor=#FFDCE5&stylecolor=#666666&stylefontWeight=bold&styleVfontWeight=bold&styleVcolor=#666666&stylefontSize=14&styleVfontSize=14&styletextAlign=left
+D,1,4,3002347,  店家名稱,ro=true&stylebackgroundColor=#FFDCE5&stylecolor=#666666&stylefontWeight=bold&styleVfontWeight=bold&styleVcolor=#666666&stylefontSize=14&styleVfontSize=14&styletextAlign=left
+D,1,5,3002348,  店家菜色,ro=true&f=A4+A9&stylebackgroundColor=#FFDCE5&stylecolor=#666666&stylefontWeight=bold&styleVfontWeight=bold&styleVcolor=#666666&stylefontSize=14&styleVfontSize=14&styletextAlign=left&mobile_title=true
+D,1,6,3002344,  單價,fmt_n=$#`###&ro=true&stylebackgroundColor=#FFDCE5&stylecolor=#666666&stylefontWeight=bold&styleVfontWeight=bold&styleVcolor=#666666&stylefontSize=14&styleVfontSize=14&styletextAlign=left
+D,1,7,3002345,  描述,ro=true&stylebackgroundColor=#FFDCE5&stylecolor=#666666&stylefontWeight=bold&styleVfontWeight=bold&styleVcolor=#666666&stylefontSize=14&styleVfontSize=14&styletextAlign=left
+G,1,8,3002346,  圖片,ro=true&stylebackgroundColor=#FFDCE5&stylecolor=#666666&stylefontWeight=bold&styleVfontWeight=bold&styleVcolor=#666666&stylefontSize=14&styleVfontSize=14&styletextAlign=left
+D,1,9,3002343,菜色,hide=true&stylebackgroundColor=#FFDCE5&stylecolor=#666666&stylefontWeight=bold&styleVfontWeight=bold&styleVcolor=#666666&stylefontSize=14&styleVfontSize=14&styletextAlign=left
+F,1,1,,[img]https://www.ragic.com/sims/file.jsp?a=blogman&f=Bento+Banner+4.PNG[/img],cs=2&background=#0055BB&color=#ffffff&backgroundColor=#DF7380
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,20003_Sheet20003_index.nui
+QS,1

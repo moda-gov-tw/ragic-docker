@@ -1,0 +1,31 @@
+N,Income Statement ,
+FS,2
+DS,2
+W,1=21&2=28&3=34&4=43&5=21&6=39&7=14&8=77.20001220703125&9=43.20001220703125,
+TF,2000380
+KF,2000382
+SF,2000380
+S,2000363,standard/ragicproject-budget-and-expense/10001,
+S,2000381,,First Phase,Second Phase,Third Phase,Project Income,Etc. Income,Sales Income,Commission Income
+A,MANAGER=6&USER=3&EVERYONE=0,0,2,577269736
+A2,
+D,1,1,2000380,Income ID,ro=true&ag=I-{0`number`00000}
+L,2,1,2000363,Project ID,stf=2000362&mvp=/ragicproject-budget-and-expense|10001_Sheet10001
+L,3,1,2000381,Type of Income,userOps=true
+D,4,1,2000384,Expected Amount,fmt_n=$#`###.#####
+D,5,1,2000385,Expected Date,fmt_d=yyyy/MM/dd
+D,6,1,2000386,Actual Amount,fmt_n=$#`###.#####
+D,7,1,2000387,Actual Date,fmt_d=yyyy/MM/dd
+D,8,1,2000388,Overcharge/Shortage,ro=true&fmt_n=$#`###.#####
+D,9,1,2000389,Reason of Shortage,text=1
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10002_Sheet10002_index_t.nui
+QS,0

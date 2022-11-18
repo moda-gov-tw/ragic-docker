@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+  <name>Nonprofit</name>
+  <desc />
+  <publisher />
+  <createDate />
+  <updateDate />
+  <version />
+  <price />
+  <status />
+  <sourcePath />
+  <appId />
+  <forms seq="25">
+    <form sheetIndex="10001" type="NUI" seq="1">Donations</form>
+    <form sheetIndex="10002" type="NUI" seq="2">Volunteer Programs</form>
+    <form sheetIndex="10003" type="NUI" seq="3">Individual Sponsors</form>
+    <form sheetIndex="10004" type="NUI" seq="4">Corporate Sponsors</form>
+    <form sheetIndex="10005" type="NUI" seq="5">Volunteers</form>
+    <form sheetIndex="10006" type="NUI" seq="6">Fundraising Events</form>
+  </forms>
+</module>

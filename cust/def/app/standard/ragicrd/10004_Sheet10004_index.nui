@@ -1,0 +1,43 @@
+N,Issue Tracking,
+FS,2
+DS,2
+W,1=100&2=100&3=100&4=100&5=100&undefined=0,5=34&8=84
+TF,2001261
+KF,2001267
+SF,2001261
+ST,1,13,2001279,,,
+S,2001263,standard/ragic-setup/1,
+S,2001265,,New,Working,Resolved
+S,2001266,,High,Medium,Low
+S,2001269,,Sysyem
+S,2001270,standard/ragic-setup/1,
+S,2001274,standard/ragic-setup/1,
+S,2001277,standard/ragic-setup/1,
+A,NULL=0&MANAGER=6&USER=3&EVERYONE=0,0,3,1364678508
+A2,
+D,1,2,2001261,Issue ID,ag=Issue - {0`number`00000}
+D,3,2,2001262,Reported Date,fmt_d=yyyy/MM/dd&dv=$DATE
+L,1,3,2001263,Report By,usrref=2&dv=$USER
+D,3,3,2001264,Related Customer,
+L,1,4,2001265,Status,userOps=true&dv=New
+L,3,4,2001266,Priority,dv=Medium
+D,1,5,2001268,Issue Summary,cs=3
+M,1,6,2001269,Tags,userOps=true&cs=3
+M,1,7,2001270,Notify User,usrref=2&ifReadInfo=true&cs=3
+D,1,8,2001271,Description,cs=3
+U,1,9,2001272,Attachment I,
+U,3,9,2001273,Attachment II,
+M,1,12,2001274,Assign To,usrref=1&cs=4
+D,1,13,2001275,Description,cs=2
+D,2,13,2001276,Update Date,fmt_d=yyyy/MM/dd&dv=$DATE
+L,3,13,2001277,Update By,usrref=2&dv=$USER
+U,4,13,2001278,Attachment,
+F,1,1,,Issue Details,background=#883333&color=#ffffff&cs=4&textAlign=center
+F,1,11,,Tracking,background=#883333&color=#ffffff&backgroundColor=#CC9933&textAlign=center&cs=5
+RMD_MAX_SEQ,0
+ET,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10004_Sheet10004_index.nui
+QS,1

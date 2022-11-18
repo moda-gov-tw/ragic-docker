@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+  <name>行政</name>
+  <desc />
+  <publisher />
+  <createDate />
+  <updateDate />
+  <version />
+  <price />
+  <status />
+  <sourcePath />
+  <appId />
+  <forms seq="2">
+    <form sheetIndex="20002" type="NUI" seq="3">辦公用品申請單</form>
+    <form sheetIndex="20003" type="NUI" seq="2">辦公用品列表</form>
+    <form sheetIndex="20004" type="NUI" seq="4">辦公用品採購單</form>
+    <form sheetIndex="20005" type="NUI" seq="5">費用報支</form>
+    <form sheetIndex="20006" type="NUI" seq="6">固定資產管理</form>
+    <form sheetIndex="20007" type="NUI" seq="7">設備列表</form>
+    <form sheetIndex="20008" type="NUI" seq="8">設備出借</form>
+    <form sheetIndex="20009" type="NUI" seq="9">設備報修單</form>
+    <form sheetIndex="20010" type="NUI" seq="11">公告系統</form>
+    <form sheetIndex="20011" type="NUI" seq="10">設備報修派工單</form>
+    <form sheetIndex="20012" type="NUI" seq="1">員工通訊錄</form>
+    <form sheetIndex="20017" type="NUI" seq="12">公文發文管理</form>
+    <form sheetIndex="20018" type="NUI" seq="13">公文收文管理</form>
+  </forms>
+</module>

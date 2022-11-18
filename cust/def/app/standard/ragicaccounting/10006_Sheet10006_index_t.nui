@@ -1,0 +1,26 @@
+N,Quotes,
+FS,2
+DS,2
+W,1=73&2=-10&3=134&4=57&5=-4&6=97&undefined=0,
+TF,2001858
+KF,2001887
+SF,2001859
+S,2001858,standard/ragicaccounting/10004,
+S,2001863,standard/ragic-setup/1,
+A,MANAGER=6&USER=3&EVERYONE=0,0,2,170521263
+A2,
+D,1,1,2001859,Quote Id,ag=QUOTE-{1`date`yyyyMMdd}-{0`number`000}
+D,2,1,2001861,Quote Date,fmt_d=yyyy/MM/dd&dv=$DATE
+L,3,1,2001858,Client ID,mvp=/ragicaccounting|10004_Sheet10004&s=2001828&stf=2001822
+D,4,1,2001860,Contact Name,mvpf=2000153|1|$2001858&l=2001858&vd=2001841
+D,5,1,2001885,Grand Total,fmt_n=$#`###.##
+L,6,1,2001863,Prepared By,dv=$USER&usrref=1
+RMD_MAX_SEQ,0
+ET,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10006_Sheet10006_index_t.nui
+QS,3
+SHEET_SCOPE_START
+

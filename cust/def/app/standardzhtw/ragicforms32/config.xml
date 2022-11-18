@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+  <name>交友紀錄</name>
+  <desc />
+  <publisher />
+  <createDate />
+  <updateDate />
+  <version />
+  <price />
+  <status />
+  <sourcePath />
+  <appId />
+  <forms seq="42">
+    <form sheetIndex="20001" type="NUI" seq="1">交友紀錄</form>
+  </forms>
+</module>

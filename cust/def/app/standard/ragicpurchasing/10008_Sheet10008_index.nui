@@ -1,0 +1,128 @@
+N,PO Receipt,
+FS,2
+DS,2
+W,1=6&2=37&3=130&4=-53&5=48&6=-25&7=3&8=22&9=-21&10=38&undefined=0,22=1&23=47
+TF,2001170
+KF,2001193
+SF,2001170
+ST,1,14,2001194,,,
+S,2001172,standard/ragic-setup/1,
+S,2001174,standard/ragicpurchasing/10005,
+S,2001176,standard/ragiclegal/10004,
+S,2001185,standard/ragicpurchasing/10003,
+S,2001192,standard/ragicinventory-management/10002,
+S,2001969,
+S,2001221,,Sales Tax
+S,2001223,,0%
+S,2001226,standard/ragic-setup/1,
+S,2001228,standard/ragic-setup/1,
+S,2001485,,No,Yes
+A,NULL=0&MANAGER=6&USER=3&EVERYONE=0,0,3,1238346237
+A2,
+D,1,2,2001170,PO Receipt #,ag={0`number`00000}&cs=3&noDup=true
+D,5,2,2001230,PO Receipt Timestamp,fmt_d=yyyy/MM/dd HH:mm&ro=true&cs=5&stylefontSize=12&stylefontWeight=bold
+L,1,3,2001172,Agent,usrref=2&dv=$USER&cs=3
+D,5,3,2001173,Invoice No.,cs=5
+L,1,4,2001174,From PO #,cs=3&s=2001111&stf=2001105&mvp=/ragicpurchasing|10005_Sheet10005&ro=true
+D,5,4,2001175,Invoice Date,fmt_d=yyyy/MM/dd&cs=5
+L,1,7,2001176,Vendor No.,s=2001073&stf=2001043&mvp=/ragicpurchasing|10001_Sheet10001&cs=3&ro=true
+D,5,7,2001177,EIN / VAT Number,vd=2001049&l=2001176&cs=5&ro=true&stylefontSize=12
+D,1,8,2001178,Vendor Name,vd=2001045&l=2001176&cs=3&ro=true
+D,5,8,2001179,Phone,phonefmt=XXX-XXX-XXXX&phone=1&vd=2001051&l=2001176&cs=5&ro=true
+D,1,9,2001180,Contact Person,vd=2001044&l=2001176&cs=3&ro=true
+D,5,9,2001181,Fax,phonefmt=XXX-XXX-XXXX&phone=1&vd=2001053&l=2001176&cs=5&ro=true
+D,1,10,2001182,Contact E-mail,email=2&vd=2001052&l=2001176&cs=3&ro=true
+D,1,11,2001183,Full Address,addr=1&vd=2001060&l=2001176&cs=9&ro=true
+D,1,14,2001184,#,ro=true&fmt_n=#`###&dv=$SEQ
+L,2,14,2001185,Product  Purchasing #,ro=true&s=2001084&stf=2001074&mvp=/ragicpurchasing|10003_Sheet10003&mvpf=2001080|1|$2001176&stylefontSize=12
+D,3,14,2001186,Product Name,vd=2001078&l=2001185&ro=true
+D,4,14,2001472,Specification,cs=2&vd=2001079&l=2001185&ro=true
+D,5,14,2001187,Unit Price,fmt_n=$#`###.####&vd=2001083&l=2001185&ro=true
+D,6,14,2001188,Unreceived Qty,fmt_n=#`###.##&ro=true&stylefontSize=12
+D,7,14,2001189,Received Qty,fmt_n=#`###.##&must=true&stylefontSize=12
+D,8,14,2001190,Amount,fmt_n=$#`###.####&f=F14*H14
+D,9,14,2001191,Note,
+L,10,14,2001192,Product No*,s=2000224&stf=2000211&mvp=/ragicpurchasing|10002_Sheet10002&vd=2001076&l=2001185&hide=true
+L,11,14,2001969,Unit*,vd=2001966&l=2001185&hide=true
+D,8,18,2001220,Subtotal,fmt_n=$#`###.####&f=I14
+L,1,19,2001221,Tax Category,userOps=true&dv=Sales Tax
+D,8,19,2001222,Tax,fmt_n=$#`###.####&f=I14*A20
+L,1,20,2001223,Tax Rate,userOps=true&dv=0%
+D,8,20,2001563,Shipping / Handling,fmt_n_ts=`&fmt_n_ds=.&fmt_n=$#`###.####&stylefontSize=10
+D,8,21,2001224,Total,fmt_n=$#`###.####&f=H18+H19+H20
+D,1,23,2001225,Remarks,cs=9
+L,1,26,2001226,Created By,usrref=2&cs=3&ro=true&dv=$USER
+D,5,26,2001227,Creation Time,fmt_d=yyyy/MM/dd HH:mm&cs=5&ro=true&dv=$DATETIME
+L,1,27,2001228,Last Modified By,usrref=2&dv=#USER&ro=true&cs=3&stylefontSize=12
+D,5,27,2001229,Last Modified Time,fmt_d=yyyy/MM/dd HH:mm&ro=true&dv=#DATETIME&cs=5
+L,1,29,2001485,IQC Created?,checkbox=1&dv=No&stylefontWeight=bold
+F,1,1,,PO Receipt Information,backgroundColor=#4a6452&color=#FFFFFF&fontWeight=bold&textAlign=center&cs=10
+F,1,6,,Vendor Information,backgroundColor=#4a6452&color=#FFFFFF&fontWeight=bold&textAlign=center&cs=10
+F,1,13,,PO Receipt Items,backgroundColor=#4a6452&color=#FFFFFF&fontWeight=bold&textAlign=center&cs=10
+F,1,25,,Entry Log,backgroundColor=#4a6452&color=#FFFFFF&fontWeight=bold&textAlign=center&cs=10
+X_MAX_DESIGNER_ID,101
+K,{"type":"B","seq":"1","name":"Confirm Receipt","action":"_RAGIC_AUTOGEN_ENTRY_UPDATER_33863({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"false","userGroups":["EVERYONE"]}
+K,{"type":"B","seq":"2","name":"Reverse Confirm Receipt","action":"_RAGIC_AUTOGEN_ENTRY_UPDATER_33863_REVERSE({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"false","userGroups":["EVERYONE"]}
+K,{"type":"B","seq":"3","name":"Create IQC","action":"_RAGIC_AUTOGEN_CR_50188({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"true","userGroups":["EVERYONE"]}
+K,{"type":"B","seq":"4","name":"IQC Created: Yes","action":"_RAGIC_AUTOGEN_FIELD_UPDATER_78717({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"true","userGroups":["EVERYONE"]}
+K,{"type":"B","seq":"5","name":"Create IQC","action":"_RAGIC_AUTOGEN_MERGED_BUTTON_36050({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"false","userGroups":["EVERYONE"]}
+K,{"type":"B","seq":"6","name":"Create Material Bill","action":"_RAGIC_AUTOGEN_CR_75521({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"false","userGroups":["EVERYONE"]}
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10008_Sheet10008_index.nui
+QS,1
+SCRIPT_START
+
+SHEET_SCOPE_START
+function _RAGIC_AUTOGEN_ENTRY_UPDATER_33863(nodeId){
+  var result = db.entryUpdater(JSON.stringify(
+{"THIS_PATH":"/ragicpurchasing/10008","UPDATE_PATH":"/ragicpurchasing/10006","THIS_NODE_ID":nodeId,"MATCH":{"2001111":"2001174","2001128":"2001185","2001135":"2001192"},"ACTIONS":[{"THIS_NUMBER_FIELD":"2001189","UPDATE_ACTION":"ADD","UPDATE_NUMBER_FIELD":"2001133"}],"MULTI_FIELDS":true,"LAST_UPDATE_FIELD":"2001230","RECALCULATE":true}
+  ), response);
+}//END_RAGIC_AUTOGEN_ENTRY_UPDATER_33863
+
+function _RAGIC_AUTOGEN_ENTRY_UPDATER_33863_REVERSE(nodeId){
+  var result = db.entryUpdater(JSON.stringify(
+{"THIS_PATH":"/ragicpurchasing/10008","UPDATE_PATH":"/ragicpurchasing/10006","THIS_NODE_ID":nodeId,"MATCH":{"2001111":"2001174","2001128":"2001185","2001135":"2001192"},"ACTIONS":[{"THIS_NUMBER_FIELD":"2001189","UPDATE_ACTION":"SUBSTRACT","UPDATE_NUMBER_FIELD":"2001133"}],"MULTI_FIELDS":true,"LAST_UPDATE_FIELD":"2001230","RECALCULATE":true,"REVERSE":true}
+  ), response);
+}//END_RAGIC_AUTOGEN_ENTRY_UPDATER_33863
+
+function _RAGIC_AUTOGEN_CR_50188(nodeId){
+  var result = db.entryCopier(JSON.stringify(
+{"THIS_PATH":"/ragicpurchasing/10008","THIS_NODEID":nodeId,"NEW_PATH":"/ragicpurchasing/10009","CHECK_MUST_FIELDS":false,"COPY":{"2001235":"2001170","2001236":"2001174","2001237":"2001172","2001238":"2001230","2001239":"2001176","2001240":"2001178","2001241":"2001180","2001242":"2001179","2001243":"2001182","2001244":"2001181","2001245":"2001183","2001247":"2001184","2001248":"2001185","2001249":"2001186","2001250":"2001188","2001251":"2001189","2001281":"2001192"}}
+  ), response);
+  if(result) return result;
+}//END_RAGIC_AUTOGEN_CR_50188
+
+function _RAGIC_AUTOGEN_FIELD_UPDATER_78717(nodeId){
+  var result = db.fieldUpdater(JSON.stringify(
+{"THIS_PATH":"/ragicpurchasing/10008","THIS_NODE_ID":nodeId,"UPD_FIELDS":{"2001485":"Yes"}}
+  ));
+}//END_RAGIC_AUTOGEN_FIELD_UPDATER_78717
+
+
+
+
+
+function _RAGIC_AUTOGEN_MERGED_BUTTON_36050(nodeId){
+  db.executeMergedActionButtons(JSON.stringify(
+{"THIS_NODE_ID":nodeId,"THIS_PATH":"/ragicpurchasing","THIS_SHEETINDEX":10008,"ACTIONS":["_RAGIC_AUTOGEN_CR_50188","_RAGIC_AUTOGEN_FIELD_UPDATER_78717"]}
+  ), response);
+  response.setDisplayButtonNameAsMessage(true)
+}//END_RAGIC_AUTOGEN_MERGED_BUTTON_36050
+
+
+
+
+
+function _RAGIC_AUTOGEN_CR_75521(nodeId){
+  var result = db.entryCopier(JSON.stringify(
+{"TEMPLATE_NAME":"Accounting (Integrate)", "TEMPLATE_SHEET_NAME":"Material Bill", "THIS_PATH":"/ragicpurchasing/10008","THIS_NODEID":nodeId,"NEW_PATH":"/ragicaccounting-integrate/10007","CHECK_MUST_FIELDS":false,"CHECK_VALIDATION_FIELDS":false,"CHECK_ALL_MUST_FIELDS_MAPPED":false,"SILENT":false,"RECAL_ALL_FORMULAS":true,"EXEC_WORKFLOW":true,"COPY":{"2002266":"2001176","2002268":"2001178","2002274":"2001184","2002275":"2001185","2002276":"2001186","2002277":"2001472","2002278":"2001187","2002280":"2001189","2002281":"2001190","2002283":"2001192","2002284":"2001969","2002285":"2001220","2002286":"2001221","2002287":"2001222","2002288":"2001223","2002289":"2001563","2002290":"2001224","2002300":"2001170"}}
+  ), response);
+  if(result) return result;
+}//END_RAGIC_AUTOGEN_CR_75521

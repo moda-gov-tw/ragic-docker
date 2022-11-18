@@ -1,0 +1,25 @@
+N,Phone Book,
+FS,2
+DS,2
+W,1=29&2=32&3=28&4=30&5=28&7=26,
+TF,2000756
+KF,2000754
+SF,2000756
+S,2000767,,Production,Sales,Marketing,Human Resource,Research %26 Development,Finance,Legal Affairs,IT,Executive
+S,2000764,,Confirmed,Leave without pay,Resigned,Probation,Contract Ended,Retired,Deceased
+A,MANAGER=6&USER=3&EVERYONE=0,0,2,725906047
+A2,
+D,1,1,2000756,Full Name,must=true
+L,2,1,2000767,Department,userOps=true
+D,3,1,2000773,Office Phone,phonefmt=XXX-XXX-XXXX&phone=1
+D,4,1,2000774,Extension,
+D,5,1,2000775,Email,email=2
+L,6,1,2000764,Job Status,userOps=true
+X,On duty,102,2000764|1|Confirmed&2000764|1|Probation,1,%7B%22emails%22%3A%5B%5D%7D,%7B%7D
+RMD_MAX_SEQ,0
+ET,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10012_Sheet10012_index_t.nui
+QS,0

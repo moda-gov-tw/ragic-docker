@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+  <name>電子發票</name>
+  <desc />
+  <publisher />
+  <createDate />
+  <updateDate />
+  <version />
+  <price />
+  <status />
+  <sourcePath />
+  <appId />
+  <forms seq="31">
+    <form sheetIndex="20001" type="NUI" seq="2">電子發票開立</form>
+    <form sheetIndex="20002" type="NUI" seq="1">公司資訊</form>
+    <form sheetIndex="20003" type="NUI" seq="3">電子發票B2C開立</form>
+  </forms>
+</module>

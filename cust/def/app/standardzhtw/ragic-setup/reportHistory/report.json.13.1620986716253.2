@@ -1,0 +1,174 @@
+{"reports": [
+  {
+    "name": "場地租借狀況",
+    "type": "ragic/pivot",
+    "param": {
+      "filter": [
+        3002485,
+        3002483
+      ],
+      "dataSource": "/ragicforms10/20010",
+      "col": "3002485",
+      "fact": "3002492",
+      "row": "3002493",
+      "hideTitle": "false",
+      "colAgg": "D"
+    },
+    "templateId": "00073-1",
+    "id": 1
+  },
+  {
+    "name": "管理費繳費記錄表",
+    "type": "ragic/pivot",
+    "param": {
+      "filter": [3002574],
+      "dataSource": "/ragicforms10/20011",
+      "row": "3002572",
+      "col": "3002574",
+      "fact": "3002576"
+    },
+    "templateId": "00073-2",
+    "id": 2
+  },
+  {
+    "name": "資產負債表",
+    "type": "fixed/balance",
+    "param": {
+      "filter": [],
+      "dataSource": "/ragicforms8/20015",
+      "dataSource2": "/ragicforms8/20017",
+      "balanceSheetParams": "{}",
+      "lang": "zhtw"
+    },
+    "templateId": "00077-1",
+    "id": 3
+  },
+  {
+    "name": "逾期應付發票",
+    "type": "fixed/payable",
+    "param": {
+      "filter": [],
+      "dataSource": "/ragicforms8/20006",
+      "dataSource2": "/ragicforms8/20008",
+      "lang": "zhtw"
+    },
+    "templateId": "00077-2",
+    "id": 4
+  },
+  {
+    "name": "逾期應收發票",
+    "type": "fixed/receivable",
+    "param": {
+      "filter": [],
+      "dataSource": "/ragicforms8/20004",
+      "dataSource2": "/ragicforms8/20010",
+      "lang": "zhtw"
+    },
+    "templateId": "00077-3",
+    "id": 5
+  },
+  {
+    "name": "損益表",
+    "type": "fixed/profitnloss",
+    "param": {
+      "filter": [],
+      "dataSource": "/ragicforms8/20015",
+      "dataSource2": "/ragicforms8/20017",
+      "lang": "zhtw"
+    },
+    "templateId": "00077-4",
+    "id": 6
+  },
+  {
+    "name": "現金流量表",
+    "type": "fixed/cashflow",
+    "param": {
+      "filter": [],
+      "dataSource": "/ragicforms8/20015",
+      "dataSource2": "/ragicforms8/20017",
+      "lang": "zhtw"
+    },
+    "templateId": "00077-5",
+    "id": 7
+  },
+  {
+    "name": "資產負債表 (簡易版)",
+    "type": "fixed/balanceSimple",
+    "param": {
+      "filter": [],
+      "dataSource": "/ragicforms12/20015",
+      "dataSource2": "/ragicforms12/20012",
+      "lang": "zhtw"
+    },
+    "templateId": "00076-1",
+    "id": 8
+  },
+  {
+    "name": "損益表 (簡易版)",
+    "type": "fixed/profitnlossSimple",
+    "param": {
+      "filter": [],
+      "dataSource": "/ragicforms12/20015",
+      "dataSource2": "/ragicforms12/20012",
+      "lang": "zhtw"
+    },
+    "templateId": "00076-2",
+    "id": 9
+  },
+  {
+    "name": "現金流量表 (簡易版)",
+    "type": "fixed/cashflowSimple",
+    "param": {
+      "filter": [],
+      "dataSource": "/ragicforms12/20015",
+      "dataSource2": "/ragicforms12/20012",
+      "lang": "zhtw"
+    },
+    "templateId": "00076-3",
+    "id": 10
+  },
+  {
+    "name": "使用者報表",
+    "type": "ragic/userStatus",
+    "param": {
+      "filter": [],
+      "dataSource": "/ragic-setup/1"
+    },
+    "id": 11
+  },
+  {
+    "name": "待簽核報表",
+    "type": "fixed/approval",
+    "param": {
+      "filter": [],
+      "noDataSource": true
+    },
+    "id": 13
+  },
+  {
+    "name": "訂單分析",
+    "type": "ragic/dashboard",
+    "param": {
+      "filter": [
+        3000813,
+        3000812,
+        3000814,
+        3000815,
+        3000816
+      ],
+      "changed": [],
+      "dataSource": "/ragicsales-order-management/20001",
+      "remove": [
+        "3000829",
+        "3000829avg",
+        "3000848",
+        "3000838",
+        "3000846",
+        "3000847"
+      ],
+      "fact": "-1",
+      "styleParams": "{\"name_reportFontFamily\":\"\",\"name_reportFontSize\":\"24\",\"name_align\":\"left\",\"unifyFontFamily\":\"false\",\"des_reportFontFamily\":\"\",\"des_reportFontSize\":\"16\",\"des_align\":\"left\",\"ds_reportFontFamily\":\"\",\"ds_reportFontSize\":\"12\",\"ds_align\":\"flex-start\",\"cnt_reportFontFamily\":\"\",\"cnt_reportFontSize\":\"1\",\"boundaryType\":\"in\",\"boundaryWidth\":\"0.5,0,0.5,1\",\"outBoundaryWidth\":\"0.5,0.7,0.5,0.7\",\"boundaryMargins\":\"0.5,0,0.5,1\",\"outBoundaryMargins\":\"0.5,0.7,0.5,0.7\",\"showResetDefaultMarginBtn\":\"false\",\"showResetDefaultOutMarginBtn\":\"false\",\"isShowTitle\":\"true\",\"isShowDataSource\":\"true\",\"isShowBorder\":\"true\",\"isShowA4Block\":\"false\",\"isOneLabelOnePage\":\"false\"}"
+    },
+    "id": 14
+  }
+]}

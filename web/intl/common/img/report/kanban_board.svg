@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="101" height="85" viewBox="0 0 101 85">
+  <g id="icon_彩色" data-name="icon 彩色" transform="translate(0.5 0.5)">
+    <rect id="Rectangle_14" data-name="Rectangle 14" width="100" height="84" fill="#fff" stroke="#707070" stroke-width="1"/>
+    <path id="Path_31" data-name="Path 31" d="M34.6,73.45H33.31V10.55H34.6Zm32.09-62.9H65.4v62.9h1.29Z" fill="#333"/>
+    <path id="Path_32" data-name="Path 32" d="M28.32,47H7.5V26.2H28.32ZM10.79,43.73H25V29.49H10.79ZM28.32,73.45H7.5V52.63H28.32ZM10.79,70.16H25V55.92H10.79Z" fill="#3361ad"/>
+    <path id="Path_33" data-name="Path 33" d="M60.41,47H39.59V26.2H60.41ZM42.88,43.73H57.12V29.49H42.88ZM28.32,20.82H7.5V10.64H28.32Zm32.09,0H39.59V10.64H60.41Zm32.09,0H71.68V10.64H92.5Z" fill="#c33"/>
+    <path id="Path_34" data-name="Path 34" d="M71.68,26.2V47H92.5V26.2ZM89.21,43.73H75V29.49H89.21Z" fill="#6bb73e"/>
+  </g>
+</svg>

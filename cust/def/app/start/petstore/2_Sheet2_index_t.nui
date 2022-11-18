@@ -1,0 +1,12 @@
+N,Customer,Ragic Pet Store is a sample application designed to show you how a simple Ragic application works
+FS,0
+DS,2
+W,2=133&4=327,
+TF,1000009
+KF,2000002
+SF,1000009
+A,MANAGER=6&EVERYONE=3&USER=3,3,2,300047216
+D,1,1,1000008,Customer Id,ag={0`number`0000000}
+D,2,1,1000009,Customer Name,
+D,3,1,1000010,Birthday,fmt_d=yyyy/MM/dd
+D,4,1,1000012,Address,

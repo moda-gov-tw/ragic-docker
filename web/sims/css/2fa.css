@@ -1,0 +1,238 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+    font-family: "Open Sans", "Noto Sans CJK TC", "Noto Sans CJK SC", "Noto Sans CJK JP", "Noto Sans CJK KR", "Lucida Grande", Tahoma, arial, sans-serif;
+}
+*, *:before, *:after {
+    box-sizing:inherit;
+}
+footer {
+    font-size:12px;
+    color:#787878;
+    margin-top:20px;
+    padding-top:20px;
+    text-align:center;
+}
+footer i {
+    color:#ff0000;
+}
+nav a:focus {
+    text-decoration:none;
+    color:#337ab7;
+}
+td {
+    padding:10px;
+}
+#main {
+    margin-top:10px;
+}
+#messages p {
+    padding:10px;
+    border:1px solid #eee;
+}
+#messages i {
+    float:right;
+    margin-left:5px;
+    cursor:pointer;
+}
+.countries-input{
+    /*display: block;*/
+    width: 40%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #555;
+    background-color: #FFF;
+    background-image: none;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+.auth-ot, .auth-token {
+    display:none;
+}
+.thebutton:visited,.thebutton:hover,.thebutton:active,.thebutton:link{color:white;text-decoration:none;cursor:pointer;}
+.thebutton {
+    background-color:#d14836;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    border:1px solid #d83526;
+    display:inline-block;
+    color:#ffffff;
+    font-size:17px;
+    font-weight:600;
+    padding:14px 30px;
+    text-decoration:none;
+    text-shadow:1px 1px 0 #b23e35;
+}
+.thebutton:hover { background-color:#F70E0E;}
+.thebutton:active { background-color:#d83526;}
+.bigInput{
+    font-size:14px;
+    padding:7px;
+    border: 1px solid #bfbfbf;
+    border-radius: 3px;
+}
+td{
+    text-align:left;
+    font-size: 14px;
+    padding: 3px;
+}
+._2faStep{
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+}
+.body2fa{
+    flex: 4;
+    color: #6f6f6f;
+}
+.body2fa > div, .body2fa > div > div{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.body2fa h3, .body2fa h4{
+    margin: 10px 0;
+}
+select{
+    font-size: 14px;
+    padding: 3px;
+    border: 1px solid #CCCCCC;
+}
+input[list]{
+    cursor: pointer;
+}
+input{
+    border: 1px solid #CCCCCC;
+    padding-left: 5px;
+}
+.footer2fa{
+    display: flex;
+    align-items: flex-end;
+    flex: 1;
+}
+.footer2fa a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #5499ff;
+}
+.footer2fa > div:nth-child(1){
+    flex: 1;
+}
+.footer2fa > div:nth-child(2){
+    flex: 4;
+    text-align: center;
+    color: #a7a7a7;
+}
+.footer2fa > div:nth-child(3){
+    flex: 1;
+    text-align: right;
+}
+#_2faToken{
+    width: 100%;
+    /*padding: 20px;*/
+    font-size: 14px;
+    text-indent: 10px;
+    height: 42px;
+    /*line-height: 1.42857;*/
+    color: #555;
+    background-color: lightgoldenrodyellow;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    outline: none;
+}
+.tokenWrong input#_2faToken, .tokenEmpty input#_2faToken{
+    border-color: #f64747 !important;
+    outline: none;
+    border-width: 2px !important;
+}
+.tokenWrong ~ #tokenError, .tokenEmpty ~ #tokenEmptyError{
+    display: inline-block !important;
+}
+
+.tokenWrong ~ i#error-times, .tokenEmpty ~ i#error-times{
+    display: inline !important;
+}
+.errorIcon{
+    position: absolute;
+    color: rgba(255,0,0,0.5);
+    z-index: -10;
+    text-align: center;
+    top:110px;
+    width: 100%;
+}
+.successIcon{
+    color: rgba(0, 168, 127, 0.59);
+    z-index: -10;
+    text-align: center;
+}
+#mainOneTouch > div{
+    display: none;
+}
+.pending > div#pending{
+    display: block;
+}
+.denied > div#denied{
+    display: block;
+}
+.expired > div#expired{
+    display: block;
+}
+
+#pending{
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+#denied, #expired{
+    margin-top: 20px;
+}
+
+#mainOneTouch #denied, #mainOneTouch #pending, #mainOneTouch #expired{
+    position: relative;
+    text-align: center;
+}
+._2faStep #mainOneTouch #denied, ._2faStep #mainOneTouch #pending, ._2faStep #mainOneTouch #expired{
+    text-align: left;
+}
+.errorText{
+    color:red;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+.remindText{
+    color:grey;
+    font-size: 14px;
+}
+.hide{
+    display: none;
+}
+.loadingContainer {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+}
+
+.loading::after {
+    content: "";
+    width: 70px;
+    height: 70px;
+    border: 10px solid #dddddd;
+    border-top-color: #ff6161;
+    border-radius: 50%;
+    animation: loading 1s ease infinite;
+}
+
+@keyframes loading {
+    to {
+        transform: rotate(1turn);
+    }
+}

@@ -1,0 +1,44 @@
+N,婚宴當日流程,
+FS,2
+DS,2
+W,1=27&2=26&3=328&5=193&undefined=0,
+TF,3003558
+KF,3003570
+SF,3003558
+ST,1,14,3003571,,,
+ST,1,20,3003572,,,
+S,3003554,,男方,女方,雙方
+S,3003566,standardzhtw/ragicforms16/20009,
+A,NULL=0&MANAGER=6&USER=3&EVERYONE=0,0,3,1644640983
+A2,
+D,1,1,3003553,日期,fmt_d=yyyy/MM/dd
+L,1,2,3003554,男方或女方流程？,noSyncName=true
+D,1,4,3003555,耗時幾分鐘？,fmt_n=0&f=A6-A5
+D,1,5,3003556,開始時間,fmt_d=yyyy/MM/dd HH:mm
+D,1,6,3003557,結束時間,fmt_d=yyyy/MM/dd HH:mm
+D,1,7,3003559,準備物品多尾,f=E20&hide=true
+D,1,9,3003558,行程大綱,cs=3
+D,1,10,3003560,需準備物品,f=LEFT(A7`A12-2)&cs=3
+D,1,11,3003562,流程細節,cs=3
+D,1,12,3003561,算字元,hide=true&f=LEN(A7)
+D,1,14,3003563,相關人員姓名,
+D,2,14,3003564,角色,
+D,3,14,3003565,負責內容,cs=2
+L,1,20,3003566,編號,s=3003577&stf=3003573&mvp=/ragicforms16|20009_Sheet20009
+D,2,20,3003567,需要準備的物品,cs=2&vd=3003574&l=3003566
+D,3,20,3003568,數量,fmt_n=0
+D,4,20,3003569,公式,f=B20.RAW+'x'+D20.RAW+'` '&hide=true
+F,1,8,,準備事項,cs=4&textAlign=center&backgroundColor=#d9c0d6&color=#FFFFFF
+F,1,13,,相關人員,cs=4&textAlign=center&backgroundColor=#d9c0d6&color=#FFFFFF
+F,1,19,,物品清單,cs=4&textAlign=center&backgroundColor=#d9c0d6&color=#FFFFFF
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,20008_Sheet20008_index.nui
+QS,1

@@ -1,0 +1,1248 @@
+{
+	"default":{
+		"_ragic_theme_name":"${ragic_theme_default}",
+		"header": {
+			    "border-bottom": "1px solid rgb(225, 225, 225)",
+			    "color": "rgb(136, 136, 136)",
+			    "padding": "0px 12px 0px 0px",
+			    "background-color": "#f5f5f5",
+			    "overflow": "hidden"
+		},
+		"value": {
+		    "border-bottom": "1px solid rgb(225, 225, 225)",
+		    "padding-left": "3px",
+		    "overflow": "hidden",
+		    "cursor": "pointer"
+		},
+		"freetext": {
+			"padding-left": "3px",
+    		"overflow": "hidden"
+		},
+		"freetext_subtable_title": {
+			"padding-left": "3px",
+    		"overflow": "hidden"
+		},
+		"freetext_title": {
+			"padding-left": "3px",
+    		"overflow": "hidden"
+		},
+		"subtable": {
+			"header": {
+				"border-bottom": "2px solid rgb(153, 153, 153)",
+			    "color": "rgb(136, 136, 136)",
+			    "padding": "0px 12px 0px 0px", 
+			    "background-color": "rgb(245, 245, 245)",
+			    "overflow": "hidden"
+			},
+			"value": {
+				"border-bottom": "1px solid rgb(225, 225, 225)",
+			    "padding-left": "3px",
+			    "overflow": "hidden",
+			    "cursor": "pointer"
+			}
+		}
+	},
+	"default_builder": {
+		"_ragic_theme_name":"${ragic_theme_default}",
+		"header": {
+		},
+		"value": {
+		},
+		"freetext": {
+		},
+		"freetext_subtable_title": {
+		},
+		"freetext_title": {
+		},
+		"subtable": {
+			"header": {
+			},
+			"value": {
+			}
+		}
+	},
+	"theme1":{
+		"_ragic_theme_name":"${ragic_theme_1}",
+		"header": {
+			"background-color":"#111111",
+			"color":"#FFFFFF",
+			"border-top":"1px solid #000000",
+			"border-bottom":"1px solid #000000",
+			"border-left":"1px solid #000000",
+			"border-right":"1px solid #000000"
+		},
+		"value": {
+			"background-color":"#CCCCCC",
+			"color":"#3D3D3D",
+			"border-top":"1px solid #000000",
+			"border-bottom":"1px solid #000000",
+			"border-left":"1px solid #000000",
+			"border-right":"1px solid #000000"
+		},
+		"focus": {
+			"background-color":"#ffffff"
+		},
+		"freetext": {
+			"background-color":"#ff0000"
+		},
+		"freetext_subtable_title": {
+			"background-color":"#008000",
+			"color":"#FFFFFF"
+		},
+		"freetext_title": {
+			"background-color":"#A52A2A",
+			"color":"#FFFFFF"
+		},
+		"subtable": {
+			"header": {
+				"background-color":"#3858AF",
+				"color":"#FFFFFF",
+				"border-top":"1px solid #000000",
+				"border-bottom":"1px solid #000000",
+				"border-left":"1px solid #000000",
+				"border-right":"1px solid #000000"
+			},
+			"value": {
+				"background-color":"#FFF8AF",
+				"color":"#3D3D3D",
+				"border-top":"1px solid #000000",
+				"border-bottom":"1px solid #000000",
+				"border-left":"1px solid #000000",
+				"border-right":"1px solid #000000"
+			},
+			"focus": {
+			    "background-color":"#ffffff"
+			}
+		}
+	},
+	"theme2":{
+		"_ragic_theme_name":"${ragic_theme_2}",
+		"header": {
+			"color":"#111111"
+		},
+		"value": {
+			"background-color":"#CCCCCC",
+			"color":"#111111"
+		},
+		"focus": {
+			"background-color":"#e1fffe"
+		},
+		"freetext": {
+			"background-color":"#ffffff"
+		},
+		"freetext_subtable_title": {
+			"background-color":"#000000",
+			"color":"#ffffff"
+		},
+		"freetext_title": {
+			"background-color":"#808080"
+		},
+		"subtable": {
+			"header": {
+				"color":"#800080"
+			},
+			"value": {
+				"background-color":"#FFF359",
+				"color":"#111111"
+			},
+			"focus": {
+			    "background-color":"#ffffff"
+			}
+		}
+	},
+	"theme3":{
+		"_ragic_theme_name":"${ragic_theme_3}",
+		"header": {
+			"background-color":"#385460",
+			"color":"#FFFFFF",
+			"border-top":"1px solid #404F78",
+			"border-bottom":"1px solid #404F78",
+			"border-left":"1px solid #404F78",
+			"border-right":"1px solid #404F78"
+		},
+		"value": {
+			"color":"#385460",
+			"border-top":"1px solid #000000",
+			"border-bottom":"1px solid #000000",
+			"border-left":"1px solid #000000",
+			"border-right":"1px solid #000000"
+        },
+		"focus": {
+			"background-color":"#eeffee"
+		},
+		"freetext": {
+			"background-color":"#A1B226"
+		},
+		"freetext_subtable_title": {
+			"background-color":"#483E59",
+			"color":"#ffffff"
+		},
+		"freetext_title": {
+			"background-color":"#483E59",
+			"color":"#ffffff"
+		},
+		"subtable": {
+			"header": {
+				"background-color":"#404F78",
+				"color":"#ffffff",
+				"border-top":"1px solid #000000",
+				"border-bottom":"1px solid #000000",
+				"border-left":"1px solid #000000",
+				"border-right":"1px solid #000000"
+			},
+			"value": {
+				"color":"#385460",
+				"border-top":"1px solid #000000",
+				"border-bottom":"1px solid #000000",
+				"border-left":"1px solid #000000",
+				"border-right":"1px solid #000000"
+            },
+		    "focus": {
+			    "background-color":"#eeffee"
+		    }
+		}
+	},
+	"theme4":{
+		"_ragic_theme_name":"${ragic_theme_4}",
+		"header": {
+			"background-color":"#67917A",
+			"color":"#ffffff",
+			"border-top":"1px solid #000000",
+			"border-bottom":"1px solid #000000",
+			"border-left":"1px solid #000000",
+			"border-right":"1px solid #000000"
+		},
+		"value": {
+			"color":"#170409",
+			"border-top":"1px solid #000000",
+			"border-bottom":"1px solid #000000",
+			"border-left":"1px solid #000000",
+			"border-right":"1px solid #000000"
+		},
+		"focus": {
+			"background-color":"#fffee1"
+		},
+		"freetext": {
+			"background-color":"#E33258",
+			"color":"#FFFFFF"
+		},
+		"freetext_subtable_title": {
+			"background-color":"#E33258"
+		},
+		"freetext_title": {
+			"background-color":"#B8AF03"
+		},
+		"subtable": {
+			"header": {
+				"background-color":"#B8AF03",
+				"color":"#ffffff",
+				"border-top":"1px solid #000000",
+				"border-bottom":"1px solid #000000",
+				"border-left":"1px solid #000000",
+				"border-right":"1px solid #000000"
+			},
+			"value": {
+				"color":"#170409",
+				"border-top":"1px solid #000000",
+				"border-bottom":"1px solid #000000",
+				"border-left":"1px solid #000000",
+				"border-right":"1px solid #000000"
+			},
+			"focus": {
+				"background-color":"#fffee1"
+			}
+		}
+	},
+	"theme5":{
+		"_ragic_theme_name":"${ragic_theme_5}",
+		"header": {
+			"background-color":"#033649",
+			"color":"#ffffff",
+			"border-top":"1px solid #000000",
+			"border-bottom":"1px solid #000000",
+			"border-left":"1px solid #000000",
+			"border-right":"1px solid #000000"
+		},
+		"value": {
+			"color":"#033649",
+			"border-top":"1px solid #000000",
+			"border-bottom":"1px solid #000000",
+			"border-left":"1px solid #000000",
+			"border-right":"1px solid #000000"
+		},
+		"focus": {
+			"background-color":"#fffee1"
+		},
+		"freetext": {
+			"background-color":"#036564",
+			"color":"#FFFFFF"
+		},
+		"freetext_subtable_title": {
+			"background-color":"#036564",
+			"color":"#FFFFFF"
+		},
+		"freetext_title": {
+			"background-color":"#031634",
+			"color":"#FFFFFF"
+		},
+		"subtable": {
+			"header": {
+				"background-color":"#CDB380",
+				"color":"#111111"
+			},
+			"value": {
+				"background-color":"#E8DDCB",
+				"border-bottom":"1px solid #CDB380"
+			},
+			"focus": {
+				"background-color":"#ffffff"
+			}
+		}
+	},
+	"theme6":{
+		"_ragic_theme_name":"${ragic_theme_6}",
+		"header": {
+			"background-color":"#B4B4B4",
+			"color":"#111111",
+			"border-top":"1px solid #FFFFFF",
+			"border-bottom":"1px solid #FFFFFF",
+			"border-left":"1px solid #000000",
+			"border-right":"1px solid #000000"
+		},
+		"value": {
+			"background-color":"#D2CEBE",
+			"color":"#111111",
+			"border-top":"1px solid #FFFFFF",
+			"border-bottom":"1px solid #FFFFFF",
+			"border-left":"1px solid #000000",
+			"border-right":"1px solid #000000"
+		},
+		"focus": {
+			"background-color":"#ffffff"
+		},
+		"freetext": {
+			"background-color":"#811B33",
+			"color":"#ffffff"
+		},
+		"freetext_subtable_title": {
+			"background-color":"#323D4D",
+			"color":"#ffffff"
+		},
+		"freetext_title": {
+			"background-color":"#811B33",
+			"color":"#FFFFFF"
+		},
+		"subtable": {
+			"header": {
+				"background-color":"#D2CEBE",
+				"color":"#323D4D",
+				"border-top":"1px solid #FFFFFF",
+				"border-bottom":"1px solid #FFFFFF",
+				"border-left":"1px solid #000000",
+				"border-right":"1px solid #000000"
+			},
+			"value": {
+				"background-color":"F1E7CB",
+				"border-top":"1px solid #FFFFFF",
+				"border-bottom":"1px solid #FFFFFF",
+				"border-left":"1px solid #000000",
+				"border-right":"1px solid #000000"
+			},
+			"focus": {
+				"background-color":"#ffffff"
+			}
+		}
+	},
+	"theme7":{
+		"_ragic_theme_name":"${ragic_theme_7}",
+		"header": {
+			"background-color":"#81A8B8",
+			"color":"#000000",
+			"border-top":"1px solid #A4BCC2",
+			"border-bottom":"1px solid #A4BCC2",
+			"border-left":"1px solid #A4BCC2",
+			"border-right":"1px solid #A4BCC2"
+		},
+		"value": {
+			"background-color":"#C2CBCE",
+			"color":"#65727A",
+			"border-top":"1px solid #A4BCC2",
+			"border-bottom":"1px solid #A4BCC2",
+			"border-left":"1px solid #A4BCC2",
+			"border-right":"1px solid #A4BCC2"
+		},
+		"focus": {
+			"background-color":"#ffffff"
+		},
+		"freetext": {
+			"background-color":"#DBE6EC",
+			"color":"#65727A"
+		},
+		"freetext_subtable_title": {
+			"background-color":"#65727A",
+			"color":"#FFFFFF"
+		},
+		"freetext_title": {
+			"background-color":"#65727A",
+			"color":"#FFFFFF"
+		},
+		"subtable": {
+			"header": {
+				"background-color":"#81A8B8",
+				"color":"#000000",
+				"border-top":"1px solid #A4BCC2",
+				"border-bottom":"1px solid #A4BCC2"
+			},
+			"value": {
+				"background-color":"#C2CBCE",
+				"color":"#65727A",
+				"border-top":"1px solid #A4BCC2",
+				"border-bottom":"1px solid #A4BCC2"
+			},
+			"focus": {
+				"background-color":"#ffffff"
+			}
+		}
+	},
+	"theme8":{
+		"_ragic_theme_name":"${ragic_theme_8}",
+		"header": {
+			"background-color":"#CA2B00",
+			"color":"#000000"
+		},
+		"value": {
+			"color":"#CA2B00"
+		},
+		"focus": {
+			"background-color":"#fffee1"
+		},
+		"freetext": {
+			"background-color":"#ffcc66"
+		},
+		"freetext_subtable_title": {
+			"background-color":"#410022",
+			"color":"#FFFFFF"
+		},
+		"freetext_title": {
+			"background-color":"#13000C",
+			"color":"#FFFFFF"
+		},
+		"subtable": {
+			"header": {
+				"color":"#410022",
+				"border-top":"1px solid #FFFFFF",
+				"border-bottom":"1px solid #FFFFFF"
+			},
+			"value": {
+				"color":"#650025",
+				"border-top":"1px solid #FFFFFF",
+				"border-bottom":"1px solid #FFFFFF"
+			},
+			"focus": {
+				"background-color":"#fffee1"
+			}
+		}
+	},
+	"theme9":{
+		"_ragic_theme_name":"${ragic_theme_9}",
+		"header": {
+			"background-color":"#4B5B6E",
+			"color":"#CCCCCC"
+		},
+		"value": {
+			"color":"#4B5B6E",
+			"border-top":"1px solid #CCCCCC",
+			"border-bottom":"1px solid #CCCCCC"
+		},
+		"focus": {
+			"background-color":"#eefffe"
+		},
+		"freetext": {
+			"background-color":"#4B5B6E",
+			"color":"#FFFFFF"
+		},
+		"freetext_subtable_title": {
+			"background-color":"#343444",
+			"color":"#FFFFFF"
+		},
+		"freetext_title": {
+			"background-color":"#343444",
+			"color":"#FFFFFF"
+		},
+		"subtable": {
+			"header": {
+				"background-color":"#CCCCCC",
+				"color":"#111111",
+				"border-top":"1px solid #FFFFFF",
+				"border-bottom":"1px solid #FFFFFF"
+			},
+			"value": {
+				"background-color":"#F1F2DF",
+				"color":"#111111",
+				"border-top":"1px solid #FFFFFF",
+				"border-bottom":"1px solid #FFFFFF"
+			},
+			"focus": {
+				"background-color":"#ffffff"
+			}
+		}
+	},
+	"theme10":{
+		"_ragic_theme_name":"${ragic_theme_10}",
+		"header": {
+			"background-color":"#607848",
+			"color":"#F0F0D8"
+		},
+		"value": {
+			"background-color":"#F0F0D8",
+			"color":"#607848",
+			"border-top":"1px solid #F0F0D8",
+			"border-bottom":"1px solid #F0F0D8"
+		},
+		"focus": {
+			"background-color":"#ffffff"
+		},
+		"freetext": {
+			"background-color":"#C0D860",
+			"color":"#607848"
+		},
+		"freetext_subtable_title": {
+			"background-color":"#789048",
+			"color":"#F0F0D8"
+		},
+		"freetext_title": {
+			"background-color":"604848",
+			"color":"#F0F0D8"
+		},
+		"subtable": {
+			"header": {
+				"background-color":"#C0D860",
+				"color":"#604848",
+				"border-top":"1px solid #F0F0D8",
+				"border-bottom":"1px solid #F0F0D8"
+			},
+			"value": {
+				"background-color":"#607848",
+				"color":"#C0D860",
+				"border-top":"1px solid #F0F0D8",
+				"border-bottom":"1px solid #F0F0D8"
+			},
+			"focus": {
+				"background-color":"#ffffff",
+				"color":"#607848"
+			}
+		}
+	},
+	"theme11":{
+		"_ragic_theme_name":"${ragic_theme_11}",
+		"header": {
+			"background-color":"#000000",
+			"color":"#FFFFFF",
+			"border-top":"1px solid #FFFFFF",
+			"border-bottom":"1px solid #FFFFFF",
+			"border-left":"1px solid #FFFFFF",
+			"border-right":"1px solid #FFFFFF"
+		},
+		"value": {
+			"background-color":"#FFFFFF",
+			"color":"#000000",
+			"border-top":"1px solid #000000",
+			"border-bottom":"1px solid #000000",
+			"border-left":"1px solid #000000",
+			"border-right":"1px solid #000000"
+		},
+		"focus": {
+			"background-color":"#fffee1"
+		},
+		"freetext": {
+			"background-color":"#33ff33",
+			"color":"#000000"
+		},
+		"freetext_subtable_title": {
+			"background-color":"#ffff00",
+			"color":"#000000"
+		},
+		"freetext_title": {
+			"background-color":"#33ffff",
+			"color":"#000000"
+		},
+		"subtable": {
+			"header": {
+				"background-color":"#000000",
+				"color":"#FFFFFF",
+				"border-top":"1px solid #FFFFFF",
+				"border-bottom":"1px solid #FFFFFF",
+				"border-left":"1px solid #FFFFFF",
+				"border-right":"1px solid #FFFFFF"
+			},
+			"value": {
+				"background-color":"#FFFFFF",
+				"border-top":"1px solid #000000",
+				"border-bottom":"1px solid #000000",
+				"border-left":"1px solid #000000",
+				"border-right":"1px solid #000000"
+			},"focus": {
+				"background-color":"#fffee1"
+			}
+		}
+	},
+	"theme12":{
+		"_ragic_theme_name":"${ragic_theme_12}",
+		"header": {
+			"background-color":"#000000",
+			"color":"#FFFFFF",
+			"border-top":"1px solid #000000",
+			"border-bottom":"1px solid #000000",
+			"border-left":"1px solid #000000",
+			"border-right":"1px solid #000000"
+		},
+		"value": {
+			"background-color":"#202020",
+			"color":"#FFFFFF",
+			"border-top":"1px solid #000000",
+			"border-bottom":"1px solid #000000",
+			"border-left":"1px solid #000000",
+			"border-right":"1px solid #000000"
+		},
+		"focus": {
+			"background-color":"#CCCCCC",
+			"color":"000000"
+		},
+		"freetext": {
+			"background-color":"#000099",
+			"color":"#FFFFFF"
+		},
+		"freetext_subtable_title": {
+			"background-color":"#330066",
+			"color":"#FFFFFF"
+		},
+		"freetext_title": {
+			"background-color":"#330066",
+			"color":"#FFFFFF"
+		},
+		"subtable": {
+			"header": {
+				"background-color":"#000000",
+				"color":"#FFFFFF",
+				"border-top":"1px solid #000000",
+				"border-bottom":"1px solid #000000",
+				"border-left":"1px solid #000000",
+				"border-right":"1px solid #000000"
+			},
+			"value": {
+				"background-color":"#202020",
+				"color":"#FFFFFF",
+				"border-top":"1px solid #000000",
+				"border-bottom":"1px solid #000000",
+				"border-left":"1px solid #000000",
+				"border-right":"1px solid #000000"
+			},
+			"focus": {
+				"background-color":"#CCCCCC",
+				"color":"#000000"
+			}
+		}
+	},
+	"theme13":{
+		"_ragic_theme_name":"${ragic_theme_13}",
+		"header": {
+			"background-color":"#3D3D3D",
+			"color":"#FFFFFF",
+			"border-top":"1px solid #000000",
+			"border-bottom":"1px solid #000000",
+			"border-left":"1px solid #000000",
+			"border-right":"1px solid #000000"
+		},
+		"value": {
+			"background-color":"#FFFFFF",
+			"color":"#3D3D3D",
+			"border-top":"1px solid #000000",
+			"border-bottom":"1px solid #000000",
+			"border-left":"1px solid #000000",
+			"border-right":"1px solid #000000"
+		},
+		"focus": {
+			"background-color":"#fffee1"
+		},
+		"freetext": {
+			"background-color":"#D6C3BF"
+		},
+		"freetext_subtable_title": {
+			"background-color":"#000000",
+			"color":"#FFFFFF"
+		},
+		"freetext_title": {
+			"background-color":"#000000",
+			"color":"#FFFFFF"
+		},
+		"subtable": {
+			"header": {
+				"background-color":"#7F8486",
+				"color":"#FFFFFF"
+			},
+			"value": {
+				"background-color":"#EAEAEA",
+				"color":"#000000",
+				"border-bottom":"1px solid #7F8486"
+			},
+			"focus": {
+				"background-color":"#fffee1"
+			}
+		}
+	},	
+	"theme14":{
+		"_ragic_theme_name":"${ragic_theme_14}",
+		"header": {
+			"background-color":"#FF9966",
+			"color":"#FFFFFF",
+			"border-top":"1px solid #f1f1f1",
+			"border-bottom":"1px solid #f1f1f1"
+		},
+		"value": {
+			"background-color":"#FFFFFF",
+			"color":"#3D3D3D",
+			"border-top":"1px solid #f1f1f1",
+			"border-bottom":"1px solid #f1f1f1"
+		},
+		"focus": {
+				"background-color":"#fffee1"
+		},
+		"freetext": {
+			"background-color":"#FE7A7B",
+			"color":"#FFFFFF"
+		},
+		"freetext_subtable_title": {
+			"background-color":"#66CCCC",
+			"color":"#FFFFFF"
+		},
+		"freetext_title": {
+			"background-color":"#99D8B9",
+			"color":"#000000"
+		},
+		"subtable": {
+			"header": {
+				"background-color":"#FFCC66",
+				"color":"#000000",
+				"border-top":"1px solid #ffffff",
+				"border-bottom":"1px solid #ffffff"
+			},
+			"value": {
+				"background-color":"FFF3CC",
+				"color":"#000000",
+				"border-bottom":"1px solid #ffffff"
+			},
+			"focus": {
+				"background-color":"#ffffff"
+			}
+		}
+	},	
+	"theme15":{
+		"_ragic_theme_name":"${ragic_theme_15}",
+		"header": {
+			"background-color":"#6DD7FF",
+			"color":"#000000",
+			"border-top":"1px solid #dbdbdb",
+			"border-bottom":"1px solid #dbdbdb",
+			"border-left":"1px solid #dbdbdb",
+			"border-right":"1px solid #dbdbdb"
+		},
+		"value": {
+			"background-color":"#FFFFFF",
+			"color":"#000000",
+			"border-top":"1px solid #dbdbdb",
+			"border-bottom":"1px solid #dbdbdb",
+			"border-left":"1px solid #dbdbdb",
+			"border-right":"1px solid #dbdbdb"
+		},
+		"focus": {
+			"background-color":"#eefffe"
+		},
+		"freetext": {
+			"background-color":"#84D6E9",
+			"color":"#FFFFFF"
+		},
+		"freetext_subtable_title": {
+			"background-color":"#004FCC",
+			"color":"#FFFFFF"
+		},
+		"freetext_title": {
+			"background-color":"#21C6E5",
+			"color":"#FFFFFF"
+		},
+		"subtable": {
+			"header": {
+				"background-color":"#A7CCFF",
+				"color":"#000000",
+				"border-top":"1px solid #dbdbdb",
+				"border-bottom":"1px solid #dbdbdb",
+				"border-left":"1px solid #dbdbdb",
+				"border-right":"1px solid #dbdbdb"
+			},
+			"value": {
+				"background-color":"#FFFFFF",
+				"color":"#2570CC",
+				"border-bottom":"1px solid #dbdbdb",
+				"border-left":"1px solid #dbdbdb",
+				"border-right":"1px solid #dbdbdb"
+			},
+			"focus": {
+				"background-color":"#eefffe"
+			}
+		}
+	},	
+	"theme16":{
+		"_ragic_theme_name":"${ragic_theme_16}",
+		"header": {
+			"background-color":"#4986E7",
+			"color":"#FFFFFF",
+			"border-top":"1px solid #000000",
+			"border-bottom":"1px solid #000000",
+			"border-left":"1px solid #000000",
+			"border-right":"1px solid #000000"
+		},
+		"value": {
+			"background-color":"#FFFFFF",
+			"color":"#000000",
+			"border-top":"1px solid #000000",
+			"border-bottom":"1px solid #000000",
+			"border-left":"1px solid #000000",
+			"border-right":"1px solid #000000"
+		},
+		"focus": {
+			"background-color":"#fffee1"
+		},
+		"freetext": {
+			"background-color":"#00BBCC",
+			"color":"#FFFFFF"
+		},
+		"freetext_subtable_title": {
+			"background-color":"#CC0000",
+			"color":"#FFFFFF"
+		},
+		"freetext_title": {
+			"background-color":"#334ACC",
+			"color":"#FFFFFF"
+		},
+		"subtable": {
+			"header": {
+				"background-color":"#5645BB",
+				"color":"#FFFFFF",
+				"border-top":"1px solid #000000",
+				"border-bottom":"1px solid #000000",
+				"border-left":"1px solid #000000",
+				"border-right":"1px solid #000000"
+			},
+			"value": {
+				"background-color":"#FFFFFF",
+				"color":"#000000",
+				"border-bottom":"1px solid #000000",
+				"border-left":"1px solid #000000",
+				"border-right":"1px solid #000000"
+			},
+			"focus": {
+				"background-color":"#fffee1"
+			}
+		}
+	},	
+	"theme17":{
+		"_ragic_theme_name":"${ragic_theme_17}",
+		"header": {
+			"background-color":"#FED7E2",
+			"color":"#000000",
+			"border-top":"1px solid #ffffff",
+			"border-bottom":"1px solid #ffffff"
+		},
+		"value": {
+			"background-color":"#FFFFFF",
+			"color":"#000000",
+			"border-top":"1px solid #ffffff",
+			"border-bottom":"1px solid #ffffff"
+		},
+		"freetext": {
+			"background-color":"#CCB6FB",
+			"color":"#FFFFFF"
+		},
+		"freetext_subtable_title": {
+			"background-color":"#57C9AE",
+			"color":"#FFFFFF"
+		},
+		"focus": {
+			"background-color":"#fffee1"
+		},
+		"freetext_title": {
+			"background-color":"#FFACBB",
+			"color":"#FFFFFF"
+		},
+		"subtable": {
+			"header": {
+				"background-color":"#99F2E6",
+				"color":"#000000",
+				"border-top":"1px solid #ffffff",
+				"border-bottom":"1px solid #ffffff"
+			},
+			"value": {
+				"background-color":"E4FFFF",
+				"color":"#000000",
+				"border-bottom":"1px solid #ffffff"
+			},
+			"focus": {
+				"background-color":"#fffee1"
+			}
+		}
+	},	
+	"theme18":{
+		"_ragic_theme_name":"${ragic_theme_18}",
+		"header": {
+			"background-color":"#CCCCFF",
+			"color":"#000000",
+			"border-top":"1px solid #ffffff",
+			"border-bottom":"1px solid #ffffff"
+		},
+		"value": {
+			"background-color":"#FFFFFF",
+			"color":"#000000",
+			"border-top":"1px solid #ffffff",
+			"border-bottom":"1px solid #ffffff"
+		},
+		"focus": {
+			"background-color":"#eefffe"
+		},
+		"freetext": {
+			"background-color":"#B4E6FC"
+		},
+		"freetext_subtable_title": {
+			"background-color":"#AAB6FF",
+			"color":"#FFFFFF"
+		},
+		"freetext_title": {
+			"background-color":"#AA99FB",
+			"color":"#FFFFFF"
+		},
+		"subtable": {
+			"header": {
+				"background-color":"#CCCCFF",
+				"color":"#000000",
+				"border-top":"1px solid #ffffff",
+				"border-bottom":"1px solid #ffffff",
+				"border-left":"1px solid #ffffff",
+				"border-right":"1px solid #ffffff"
+			},
+			"value": {
+				"background-color":"F0F0FF",
+				"color":"#000000",
+				"border-top":"1px solid #ffffff",
+				"border-bottom":"1px solid #ffffff",
+				"border-left":"1px solid #ffffff",
+				"border-right":"1px solid #ffffff"
+			},
+			"focus": {
+				"background-color":"#eefffe"
+			}
+		}
+	},	
+	"theme19":{
+		"_ragic_theme_name":"${ragic_theme_19}",
+		"header": {
+			"background-color":"#5AC7B0",
+			"color":"#000000"
+		},
+		"value": {
+			"background-color":"#FFFFFF",
+			"color":"#000000",
+			"border-top":"1px solid #dbdbdb",
+			"border-bottom":"1px solid #dbdbdb"
+		},
+		"focus": {
+			"background-color":"#fffee1"
+		},
+		"freetext": {
+			"background-color":"#CC6666",
+			"color":"#FFFFFF"
+		},
+		"freetext_subtable_title": {
+			"background-color":"#FFCC99",
+			"color":"#000000"
+		},
+		"freetext_title": {
+			"background-color":"#00896C",
+			"color":"#FFFFFF"
+		},
+		"subtable": {
+			"header": {
+				"background-color":"#8ADEB0",
+				"color":"#000000",
+				"border-top":"1px solid #dbdbdb",
+				"border-bottom":"1px solid #dbdbdb"
+			},
+			"value": {
+				"background-color":"#F0FFE6",
+				"color":"#000000",
+				"border-bottom":"1px solid #dbdbdb"
+			},
+			"focus": {
+				"background-color":"#ffffff"
+			}
+		}
+	},	
+	"theme20":{
+		"_ragic_theme_name":"${ragic_theme_20}",
+		"header": {
+			"background-color":"#FB6666",
+			"color":"#FFFFFF",
+			"border-top":"1px solid #ffcc99",
+			"border-bottom":"1px solid #ffcc99",
+			"border-left":"1px solid #ffcc99",
+			"border-right":"1px solid #ffcc99"
+		},
+		"value": {
+			"background-color":"#FCD9BE",
+			"color":"#000000",
+			"border-top":"1px solid #ffcc99",
+			"border-bottom":"1px solid #ffcc99",
+			"border-left":"1px solid #ffcc99",
+			"border-right":"1px solid #ffcc99"
+		},
+		"focus": {
+			"background-color":"#FFFFFF"
+		},
+		"freetext": {
+			"background-color":"#FF6600",
+			"color":"#FFFFFF"
+		},
+		"freetext_subtable_title": {
+			"background-color":"#FF6600",
+			"color":"#FFFFFF"
+		},
+		"freetext_title": {
+			"background-color":"#CC0033",
+			"color":"#FFFFFF"
+		},
+		"subtable": {
+			"header": {
+				"background-color":"#CC543A",
+				"color":"#FFFFFF",
+				"border-top":"1px solid #eab88b",
+				"border-bottom":"1px solid #eab88b",
+				"border-left":"1px solid #eab88b",
+				"border-right":"1px solid #eab88b"
+			},
+			"value": {
+				"background-color":"FCD9BE",
+				"color":"#000000",
+				"border-top":"1px solid #eab88b",
+				"border-bottom":"1px solid #eab88b",
+				"border-left":"1px solid #eab88b",
+				"border-right":"1px solid #eab88b"
+			},
+			"focus": {
+				"background-color":"#FFFFFF"
+			}
+		}
+	},	
+	"theme21":{
+		"_ragic_theme_name":"${ragic_theme_21}",
+		"header": {
+			"background-color":"#3A2529",
+			"color":"#FFFFFF",
+			"border-top":"1px solid #f1f1f1",
+			"border-bottom":"1px solid #f1f1f1",
+			"border-left":"1px solid #f1f1f1",
+			"border-right":"1px solid #f1f1f1"
+		},
+		"value": {
+			"background-color":"#DBD1D2",
+			"color":"#000000",
+			"border-top":"1px solid #f1f1f1",
+			"border-bottom":"1px solid #f1f1f1",
+			"border-left":"1px solid #f1f1f1",
+			"border-right":"1px solid #f1f1f1"
+		},
+		"focus": {
+			"background-color":"#ffffff"
+		},
+		"freetext": {
+			"background-color":"#000000",
+			"color":"#FFFFFF"
+		},
+		"freetext_subtable_title": {
+			"background-color":"#555555",
+			"color":"#FFFFFF"
+		},
+		"freetext_title": {
+			"background-color":"#555555",
+			"color":"#FFFFFF"
+		},
+		"subtable": {
+			"header": {
+				"background-color":"#1B1835",
+				"color":"#FFFFFF",
+				"border-top":"1px solid #f1f1f1",
+				"border-bottom":"1px solid #f1f1f1",
+				"border-left":"1px solid #f1f1f1",
+				"border-right":"1px solid #f1f1f1"
+			},
+			"value": {
+				"background-color":"DBD1D2",
+				"color":"#000000",
+				"border-top":"1px solid #f1f1f1",
+				"border-bottom":"1px solid #f1f1f1",
+				"border-left":"1px solid #f1f1f1",
+				"border-right":"1px solid #f1f1f1"
+			},
+			"focus": {
+				"background-color":"#ffffff"
+			}
+		}
+	},	
+	"theme22":{
+		"_ragic_theme_name":"${ragic_theme_22}",
+		"header": {
+			"background-color":"#6C6F70",
+			"color":"#FFFFFF",
+			"border-top":"1px solid #dbdbdb",
+			"border-bottom":"1px solid #dbdbdb"
+		},
+		"value": {
+			"background-color":"#FFFFFF",
+			"color":"#000000",
+			"border-top":"1px solid #dbdbdb",
+			"border-bottom":"1px solid #dbdbdb"
+		},
+		"focus": {
+			"background-color":"#fff0f4"
+		},
+		"freetext": {
+			"background-color":"#996666",
+			"color":"#FFFFFF"
+		},
+		"freetext_subtable_title": {
+			"background-color":"#BCB9B8",
+			"color":"#000000"
+		},
+		"freetext_title": {
+			"background-color":"#B6A19A",
+			"color":"#FFFFFF"
+		},
+		"subtable": {
+			"header": {
+				"background-color":"#D6C3BF",
+				"color":"#000000",
+				"border-top":"1px solid #dbdbdb",
+				"border-bottom":"1px solid #dbdbdb",
+				"border-left":"1px solid #dbdbdb",
+				"border-right":"1px solid #dbdbdb"
+			},
+			"value": {
+				"background-color":"#FFFFFF",
+				"color":"#996666",
+				"border-top":"1px solid #dbdbdb",
+				"border-bottom":"1px solid #dbdbdb",
+				"border-left":"1px solid #dbdbdb",
+				"border-right":"1px solid #dbdbdb"
+			},
+			"focus": {
+				"background-color":"#fff0f4"
+			}
+		}
+	},	
+	"theme23":{
+		"_ragic_theme_name":"${ragic_theme_23}",
+		"header": {
+			"background-color":"#232370",
+			"color":"#FFFFFF",
+			"border-top":"1px solid #99ccff",
+			"border-bottom":"1px solid #99ccff"
+		},
+		"value": {
+			"background-color":"#FFFFFF",
+			"color":"#000000",
+			"border-top":"1px solid #99ccff",
+			"border-bottom":"1px solid #99ccff",
+			"border-right":"1px solid #99ccff"
+		},
+		"focus": {
+			"background-color":"#fffee1"
+		},
+		"freetext": {
+			"background-color":"#4F5F73",
+			"color":"#FFFFFF"
+		},
+		"freetext_subtable_title": {
+			"background-color":"#DFCFBA",
+			"color":"#000000"
+		},
+		"freetext_title": {
+			"background-color":"#27B1B7",
+			"color":"#FFFFFF"
+		},
+		"subtable": {
+			"header": {
+				"background-color":"#232370",
+				"color":"#FFFFFF",
+				"border-top":"1px solid #99ccff",
+				"border-bottom":"1px solid #99ccff",
+				"border-left":"1px solid #99ccff",
+				"border-right":"1px solid #99ccff"
+			},
+			"value": {
+				"background-color":"F6F6F6",
+				"color":"#232370",
+				"border-bottom":"1px solid #99ccff",
+				"border-left":"1px solid #99ccff",
+				"border-right":"1px solid #99ccff"
+			},
+			"focus": {
+				"background-color":"#fffee1"
+			}
+		}
+	},	
+	"theme24":{
+		"_ragic_theme_name":"${ragic_theme_24}",
+		"header": {
+			"background-color":"#C3001F",
+			"color":"#FFFFFF",
+			"border-top":"1px solid #ff9999",
+			"border-bottom":"1px solid #ff9999",
+			"border-left":"1px solid #ff9999"
+		},
+		"value": {
+			"background-color":"#FFFFFF",
+			"color":"#000000",
+			"border-top":"1px solid #ff9999",
+			"border-bottom":"1px solid #ff9999",
+			"border-right":"1px solid #ff9999"
+		},
+		"focus": {
+			"background-color":"#fffee1"
+		},
+		"freetext": {
+			"background-color":"#FFB700",
+			"color":"#FFFFFF"
+		},
+		"freetext_subtable_title": {
+			"background-color":"#990000",
+			"color":"#FFFFFF"
+		},
+		"freetext_title": {
+			"background-color":"#FF6666",
+			"color":"#FFFFFF"
+		},
+		"subtable": {
+			"header": {
+				"background-color":"#EC061D",
+				"color":"#FFFFFF",
+				"border-top":"1px solid #ff9999",
+				"border-bottom":"1px solid #ff9999"
+			},
+			"value": {
+				"background-color":"#FFFFFF",
+				"color":"#000000",
+				"border-top":"1px solid #ff9999",
+				"border-bottom":"1px solid #ff9999"
+			},
+			"focus": {
+				"background-color":"#fffee1"
+			}
+		}
+	}
+}

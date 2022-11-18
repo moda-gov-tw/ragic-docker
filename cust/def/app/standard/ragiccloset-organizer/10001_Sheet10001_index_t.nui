@@ -1,0 +1,29 @@
+N,Closet Organizer,
+FS,2
+DS,2
+W,,
+TF,2003704
+KF,2003708
+SF,2003704
+S,2003705,,T-Shirts,Hoodies,Shorts,Pants,Jeans,Skirts,Dresses,Jackets,Coats,Shoes,Accessories
+S,2003706,,Blue,Black
+S,2003707,,No Brand
+A,null=0&MANAGER=6&USER=3&EVERYONE=0,0,2,744424316
+A2,
+D,1,1,2003704,Serial,ag={2`reference`2003705}-{0`number`00000}
+L,2,1,2003705,Type,must=true
+M,3,1,2003706,Color,
+L,4,1,2003707,Brand,
+G,5,1,2003712,Picture,
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+MOBCONF,%7B%7D
+NUI_FILE_NAME,10001_Sheet10001_index_t.nui
+QS,5

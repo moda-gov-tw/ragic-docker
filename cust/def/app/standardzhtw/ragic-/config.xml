@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+  <name>預約系統 (供內部、外部、訪客使用者使用)</name>
+  <desc />
+  <publisher />
+  <createDate />
+  <updateDate />
+  <version />
+  <price />
+  <status />
+  <sourcePath />
+  <appId />
+  <forms seq="41">
+    <form sheetIndex="20001" type="NUI" seq="1">場地列表</form>
+    <form sheetIndex="20002" type="NUI" seq="2">個人預約細項</form>
+  </forms>
+</module>

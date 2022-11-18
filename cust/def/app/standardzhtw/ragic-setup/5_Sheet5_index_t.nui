@@ -1,0 +1,24 @@
+N,外部使用者,您可以加不限數量的外部使用者，完全免費！
+FS,0
+DS,2
+W,1=112&2=44&4=85,
+S,31,,NORMAL,SUSPENDED
+S,3,,Accounting,EVERYONE,HR,IT,Management,SYSAdmin,Sales,User,X-User
+A,MANAGER=0&USER=0&EVERYONE=0,0,2,1246014804
+A2,
+D,1,1,1,電子郵件信箱,email=2
+D,2,1,4,姓名,
+L,3,1,31,狀態,
+M,4,1,3,群組,optfilter=X-.+
+X,External Users,1,43|-1|1
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,5_Sheet5_index_t.nui
+QS,2

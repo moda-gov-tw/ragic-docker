@@ -1,0 +1,53 @@
+N,Journal Entries,
+FS,2
+DS,2
+W,3=21&4=31&6=21&7=21&undefined=0,
+TF,2002029
+KF,2002037
+SF,2002029
+ST,1,7,2002038,,,
+ST,1,15,2002046,,,
+S,2002028,standard/ragic-setup/1,
+S,2002030,,Receiving Voucher,Payment Voucher,Transfer Voucher
+S,2002032,standard/ragicaccounting/10009,
+S,2002041,standard/ragicaccounting/10008,
+S,2002042,standard/ragicaccounting/10010,
+A,NULL=0&MANAGER=6&USER=3&EVERYONE=0,0,3,948324277
+A2,
+D,1,2,2002027,Date,fmt_d=MM/dd/yyyy&cs=2
+L,4,2,2002028,Created By,cs=3&usrref=2&dv=$USERNAME
+D,1,3,2002029,Voucher No.,text=1&cs=6&must=true&noDup=true
+L,1,4,2002030,Voucher Type,cs=2
+D,4,4,2002031,Documents No.,fmt_n_ts=`&fmt_n_ds=.&fmt_n=#`####.##&cs=3&f=COUNT(H15)
+L,1,7,2002032,Account Code,s=2001986&stf=2001985&mvp=/ragicaccounting|10009_Sheet10009&mvpf=2001987|1|$2002372&lnls=true&must=true
+D,2,7,2002033,Account Title,vd=2001984&l=2002032&cs=2&must=true
+D,3,7,2002034,Summary,cs=2
+D,4,7,2002035,Debit,fmt_n_ts=`&fmt_n_ds=.&fmt_n=$#`####.##
+D,5,7,2002036,Credit,fmt_n_ts=`&fmt_n_ds=.&fmt_n=$#`####.##
+D,6,7,2002039,Second Grade,vd=2001983&l=2002032&hide=true
+D,6,11,2002382,Total Debit,fmt_n_ts=`&fmt_n_ds=.&fmt_n=$#`####.##&f=F7
+D,6,12,2002383,Total Credit,fmt_n_ts=`&fmt_n_ds=.&fmt_n=$#`####.##&f=G7
+D,8,12,2002384,Balance Check,f=IF(F11.RAW=F12.RAW`"Y"`"N")&va=Y&va_cust_msg=Total%26nbsp;debit%26nbsp;and%26nbsp;credit%26nbsp;amount%26nbsp;should%26nbsp;be%26nbsp;balanced.&hide=true
+D,1,15,2002040,Doc. No.,fmt_n_ts=`&fmt_n_ds=.&fmt_n=#`####.##&dv=$SEQ
+L,2,15,2002041,Invoice ID,s=2001932&stf=2001922&mvp=/ragicaccounting|10008_Sheet10008&cs=2
+L,3,15,2002042,Bill ID,s=2002025&stf=2001990&mvp=/ragicaccounting|10010_Sheet10010&cs=2
+U,4,15,2002043,File Upload,cs=2
+D,5,15,2002044,Voucher No.,f=A3&hide=true
+D,6,15,2002045,Check,f=IF(OR(AND(B15!=""`D15!="")`AND(B15!=""`F15!="")`AND(D15!=""`F15!=""))`"No"`"Yes")&va=Yes&va_cust_msg=*%26nbsp;Please%26nbsp;select%26nbsp;only%26nbsp;one%26nbsp;type%26nbsp;of%26nbsp;document%26nbsp;in%26nbsp;each%26nbsp;row.&hide=true
+D,1,20,2002372,Titles check,dv=Yes&hide=true
+F,1,1,,Voucher Info,cs=7&background=#883333&color=#ffffff&textAlign=center
+F,1,6,,Voucher Detail,cs=7&background=#883333&color=#FFFFFF&backgroundColor=#CC9933&textAlign=center
+F,1,14,,Document,cs=7&background=#883333&color=#ffffff&backgroundColor=#999900&textAlign=center
+F,5,19,,* Please select only one type of document in each row.,cs=3&color=#FF0000
+F,6,19,,,cs=3
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10011_Sheet10011_index.nui
+QS,1

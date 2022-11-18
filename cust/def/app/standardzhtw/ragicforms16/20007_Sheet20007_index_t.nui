@@ -1,0 +1,30 @@
+N,長期待辦事項清單,
+FS,2
+DS,2
+W,3=20&4=25&5=274,
+TF,3003546
+KF,3003552
+SF,3003546
+S,3003636,,No,Yes
+S,3003543,standardzhtw/ragicforms16/20006,
+A,NULL=0&MANAGER=6&USER=3&EVERYONE=0,0,2,2063949523
+A2,
+D,1,1,3003546,類型,styleborder-left=1px solid #000000&styleborder-bottom=1px solid #000000&styleborder-top=1px solid #000000&styleborder-right=1px solid #000000&styleVborder-left=1px solid #000000&styleVborder-bottom=1px solid #000000&styleVborder-top=1px solid #000000&styleVborder-right=1px solid #000000
+L,2,1,3003636,完成了嗎？,checkbox=1&dv=No&styleborder-left=1px solid #000000&styleborder-bottom=1px solid #000000&styleborder-top=1px solid #000000&styleborder-right=1px solid #000000&styleVborder-left=1px solid #000000&styleVborder-bottom=1px solid #000000&styleVborder-top=1px solid #000000&styleVborder-right=1px solid #000000
+L,3,1,3003543,籌備編號,stf=3003538&mvp=/ragicforms16|20006_Sheet20006&styleborder-left=1px solid #000000&styleborder-bottom=1px solid #000000&styleborder-top=1px solid #000000&styleborder-right=1px solid #000000&styleVborder-left=1px solid #000000&styleVborder-bottom=1px solid #000000&styleVborder-top=1px solid #000000&styleVborder-right=1px solid #000000
+D,4,1,3003547,待辦事項編號,ag=S-{0`number`#}&noDup=true&styleborder-left=1px solid #000000&styleborder-bottom=1px solid #000000&styleborder-top=1px solid #000000&styleborder-right=1px solid #000000&styleVborder-left=1px solid #000000&styleVborder-bottom=1px solid #000000&styleVborder-top=1px solid #000000&styleVborder-right=1px solid #000000
+D,5,1,3003548,待辦事項,styleborder-left=1px solid #000000&styleborder-bottom=1px solid #000000&styleborder-top=1px solid #000000&styleborder-right=1px solid #000000&styleVborder-left=1px solid #000000&styleVborder-bottom=1px solid #000000&styleVborder-top=1px solid #000000&styleVborder-right=1px solid #000000
+D,6,1,3003549,開始日期,fmt_d=yyyy/MM/dd&styleborder-left=1px solid #000000&styleborder-bottom=1px solid #000000&styleborder-top=1px solid #000000&styleborder-right=1px solid #000000&styleVborder-left=1px solid #000000&styleVborder-bottom=1px solid #000000&styleVborder-top=1px solid #000000&styleVborder-right=1px solid #000000
+D,7,1,3003550,結束日期,fmt_d=yyyy/MM/dd&styleborder-left=1px solid #000000&styleborder-bottom=1px solid #000000&styleborder-top=1px solid #000000&styleborder-right=1px solid #000000&styleVborder-left=1px solid #000000&styleVborder-bottom=1px solid #000000&styleVborder-top=1px solid #000000&styleVborder-right=1px solid #000000
+D,8,1,3003551,負責人,styleborder-left=1px solid #000000&styleborder-bottom=1px solid #000000&styleborder-top=1px solid #000000&styleborder-right=1px solid #000000&styleVborder-left=1px solid #000000&styleVborder-bottom=1px solid #000000&styleVborder-top=1px solid #000000&styleVborder-right=1px solid #000000
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,20007_Sheet20007_index_t.nui
+QS,0

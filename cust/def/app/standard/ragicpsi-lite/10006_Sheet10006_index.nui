@@ -1,0 +1,29 @@
+N,Purchase Items,
+FS,2
+DS,2
+W,1=150&2=200,
+TF,2002538
+KF,2002552
+SF,2002538
+S,2002524,standard/ragicpsi-lite/10005,
+S,2002537,standard/ragicaccounting/10003,
+S,2002542,standard/ragicaccounting/10004,
+S,2002544,,Draft,Confirmed,Cancelled,Complete
+A,MANAGER=6&USER=3&EVERYONE=0,0,3,1836185678
+A2,
+D,1,1,2002536,Item #,fmt_n=#`###&dv=$SEQ
+L,1,2,2002524,Purchase Order #,stf=2002518&mvp=/ragicpsi-lite|10005_Sheet10005
+L,1,3,2002537,Product No.,s=2001821&stf=2001810&mvp=/ragicpsi-lite|10002_Sheet10002&text=1&mvpf=2001816|1|$2002527
+D,1,4,2002538,Product Name,l=2002537&vd=2001811
+D,1,5,2002539,Unit Price,fmt_n=$#`####.##&l=2002537&vd=2001817
+D,1,6,2002540,Qty,fmt_n=#`###
+D,1,7,2002541,Subtotal,fmt_n=$#`###.##
+L,1,8,2002542,Vendor No.,hide=true&s=2001828&stf=2001822&mvp=/ragicpsi-lite|10001_Sheet10001&l=2002537&vd=2002479
+L,1,9,2002544,Status,hide=true
+RMD_MAX_SEQ,0
+ET,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10006_Sheet10006_index.nui
+QS,1

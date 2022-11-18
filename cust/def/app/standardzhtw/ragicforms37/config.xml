@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+  <name>課程管理（一對一預約）</name>
+  <desc />
+  <publisher />
+  <createDate />
+  <updateDate />
+  <version />
+  <price />
+  <status />
+  <sourcePath />
+  <appId />
+  <forms seq="47">
+    <form sheetIndex="20001" type="NUI" seq="1">上課地點</form>
+    <form sheetIndex="20002" type="NUI" seq="2">老師名單</form>
+    <form sheetIndex="20004" type="NUI" seq="4">付費方案表</form>
+    <form sheetIndex="20005" type="NUI" seq="5">方案訂購單</form>
+    <form sheetIndex="20006" type="NUI" seq="6">預約資訊</form>
+    <form sheetIndex="20007" type="NUI" seq="7">學員名單</form>
+    <form sheetIndex="20008" type="NUI" seq="8">可預約學員名單</form>
+    <form sheetIndex="20010" type="NUI" seq="9">預約紀錄（內部管理用）</form>
+  </forms>
+</module>

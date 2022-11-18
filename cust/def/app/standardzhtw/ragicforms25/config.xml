@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+  <name>借還書系統</name>
+  <desc />
+  <publisher />
+  <createDate />
+  <updateDate />
+  <version />
+  <price />
+  <status />
+  <sourcePath />
+  <appId />
+  <forms seq="34">
+    <form sheetIndex="20001" type="NUI" seq="2">書籍清單</form>
+    <form sheetIndex="20002" type="NUI" seq="3">藏書細目</form>
+    <form sheetIndex="20003" type="NUI" seq="4">借書單</form>
+    <form sheetIndex="20004" type="NUI" seq="6">借還紀錄</form>
+    <form sheetIndex="20005" type="NUI" seq="5">還書單</form>
+    <form sheetIndex="20006" type="NUI" seq="1">會員資料</form>
+  </forms>
+</module>

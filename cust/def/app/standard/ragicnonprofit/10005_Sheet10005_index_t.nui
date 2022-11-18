@@ -1,0 +1,28 @@
+N,Volunteers,
+FS,2
+DS,2
+W,2=49&4=83&5=43,
+TF,2002722
+KF,2002727
+SF,2002722
+S,2002729,,Student,Employed,Other
+S,2002734,,%26#62; 5 Hours,%26#62; 10 Hours,%26#62; 15 Hours,%26#62; 20 Hours
+A,NULL=0&MANAGER=6&USER=3&EVERYONE=0,0,2,1588242259
+A2,
+D,1,1,2002722,Volunteer ID,ag=V00{0`number`#}&noDup=true
+D,2,1,2002723,Name,noDup=true
+D,3,1,2002726,Phone Number,phonefmt=XXXXXXXXXX&phone=1
+D,4,1,2002725,Email,email=2&noDup=true
+L,5,1,2002729,Occupation,
+L,6,1,2002734,Average Weekly Hours,
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10005_Sheet10005_index_t.nui
+QS,0

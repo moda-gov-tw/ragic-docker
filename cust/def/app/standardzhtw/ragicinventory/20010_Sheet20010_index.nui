@@ -1,0 +1,101 @@
+N,調撥作業,
+FS,2
+DS,2
+W,1=-12&2=28&3=118&4=49&5=1&6=24&7=-38&8=11&9=28&undefined=0,
+TF,3001921
+KF,3001934
+SF,3001921
+ST,1,7,3001935,,,
+S,3001922,standardzhtw/ragic-setup/1,
+S,3001926,standardzhtw/ragicinventory/20008,
+S,3001929,standardzhtw/ragicinventory/20001,
+S,3001932,standardzhtw/ragicinventory/20001,
+S,3001936,standardzhtw/ragicforms7/20001,
+A,NULL=0&MANAGER=6&USER=3&EVERYONE=0,0,3,239455377
+A2,
+D,1,2,3001921,調撥編號,ag=ITR-{1`date`yyyyMMdd}-{0`number`000}&cs=3
+L,5,2,3001922,建檔人員,usrref=2&dv=$USER&cs=4
+D,1,3,3001923,資料建立日,fmt_d=yyyy/MM/dd&dv=$DATE&cs=3
+D,5,3,3001939,調撥日期,fmt_d=yyyy/MM/dd&f=IF(AND(A11.RAW!=''`A12.RAW!='')`A11`'')&cs=4&ro=true&noclone=true
+D,1,4,3001924,備註,cs=8
+D,1,7,3001925,項次,fmt_n=#`###&dv=$SEQ
+L,2,7,3001926,庫存編號,s=3001108&stf=3001106&mvp=/ragicinventory|20008_Sheet20008&must=true&mvpf=3001107|2|1
+D,3,7,3001927,商品名稱,vd=3001594&l=3001926&ro=true
+D,4,7,3001928,規格,vd=3001864&l=3001926&ro=true
+L,5,7,3001929,轉出倉庫代號,stf=3000916&s=3000923&mvp=/ragicinventory|20001_Sheet20001&vd=3001104&l=3001926&ro=true
+D,6,7,3001930,轉出倉庫名稱,vd=3001105&l=3001926&ro=true
+D,7,7,3001931,數量,fmt_n=#`###.##&must=true
+L,8,7,3001932,轉入倉庫代號,s=3000923&stf=3000916&mvp=/ragicinventory|20001_Sheet20001&must=true
+D,9,7,3001933,轉入倉庫名稱,vd=3000917&l=3001932&ro=true
+L,10,7,3001936,商品編號*,stf=3000593&mvp=/ragicinventory|20002_Sheet20002&vd=3000606&l=3001926&s=3000606&hide=true
+D,1,11,3001937,轉出日期時間,fmt_d=yyyy/MM/dd HH:mm&ro=true&hide=true
+D,1,12,3001938,轉入日期時間,fmt_d=yyyy/MM/dd HH:mm&ro=true&hide=true
+F,1,1,,調撥作業,backgroundColor=#53546c&color=#FFFFFF&fontWeight=bold&textAlign=center&cs=9
+F,1,6,,調撥內容,backgroundColor=#53546c&color=#FFFFFF&fontWeight=bold&textAlign=center&cs=9
+X_MAX_DESIGNER_ID,101
+K,{"type":"B","seq":"1","name":"轉出","action":"_RAGIC_AUTOGEN_ENTRY_UPDATER_73484({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"true","userGroups":["EVERYONE"],"checkIfUserCanEdit":false}
+K,{"type":"B","seq":"2","name":"復原 轉出","action":"_RAGIC_AUTOGEN_ENTRY_UPDATER_73484_REVERSE({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"true","userGroups":["EVERYONE"],"checkIfUserCanEdit":false}
+K,{"type":"B","seq":"3","name":"轉入","action":"_RAGIC_AUTOGEN_ENTRY_UPDATER_20029({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"true","userGroups":["EVERYONE"],"checkIfUserCanEdit":false}
+K,{"type":"B","seq":"4","name":"復原 轉入","action":"_RAGIC_AUTOGEN_ENTRY_UPDATER_20029_REVERSE({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"true","userGroups":["EVERYONE"],"checkIfUserCanEdit":false}
+K,{"type":"B","seq":"5","name":"執行調撥","action":"_RAGIC_AUTOGEN_MERGED_BUTTON_72401({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"false","userGroups":["EVERYONE"],"checkIfUserCanEdit":false}
+K,{"type":"B","seq":"6","name":"復原 調撥","action":"_RAGIC_AUTOGEN_MERGED_BUTTON_56494({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"false","userGroups":["EVERYONE"],"checkIfUserCanEdit":false}
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,20010_Sheet20010_index.nui
+QS,1
+SHEET_SCOPE_START
+function _RAGIC_AUTOGEN_ENTRY_UPDATER_73484(nodeId){
+  var result = db.entryUpdater(JSON.stringify(
+{"THIS_PATH":"/ragicinventory/20010","UPDATE_PATH":"/ragicinventory/20008","THIS_NODE_ID":nodeId,"MATCH":{"3000606":"3001936","3001104":"3001929","3001106":"3001926"},"ACTIONS":[{"THIS_NUMBER_FIELD":"3001931","UPDATE_ACTION":"SUBSTRACT","UPDATE_NUMBER_FIELD":"3001107"}],"MULTI_FIELDS":true,"LAST_UPDATE_FIELD":"3001937","RECALCULATE":true}
+  ), response);
+}//END_RAGIC_AUTOGEN_ENTRY_UPDATER_73484
+
+function _RAGIC_AUTOGEN_ENTRY_UPDATER_73484_REVERSE(nodeId){
+  var result = db.entryUpdater(JSON.stringify(
+{"THIS_PATH":"/ragicinventory/20010","UPDATE_PATH":"/ragicinventory/20008","THIS_NODE_ID":nodeId,"MATCH":{"3000606":"3001936","3001104":"3001929","3001106":"3001926"},"ACTIONS":[{"THIS_NUMBER_FIELD":"3001931","UPDATE_ACTION":"ADD","UPDATE_NUMBER_FIELD":"3001107"}],"MULTI_FIELDS":true,"LAST_UPDATE_FIELD":"3001937","RECALCULATE":true,"REVERSE":true}
+  ), response);
+}//END_RAGIC_AUTOGEN_ENTRY_UPDATER_73484
+
+
+
+
+
+
+
+function _RAGIC_AUTOGEN_ENTRY_UPDATER_20029(nodeId){
+  var result = db.entryUpdater(JSON.stringify(
+{"THIS_PATH":"/ragicinventory/20010","UPDATE_PATH":"/ragicinventory/20008","THIS_NODE_ID":nodeId,"MATCH":{"3000606":"3001936","3001104":"3001932"},"ACTIONS":[{"THIS_NUMBER_FIELD":"3001931","UPDATE_ACTION":"ADD","UPDATE_NUMBER_FIELD":"3001107"}],"MULTI_FIELDS":true,"LAST_UPDATE_FIELD":"3001938","RECALCULATE":true}
+  ), response);
+}//END_RAGIC_AUTOGEN_ENTRY_UPDATER_20029
+
+function _RAGIC_AUTOGEN_ENTRY_UPDATER_20029_REVERSE(nodeId){
+  var result = db.entryUpdater(JSON.stringify(
+{"THIS_PATH":"/ragicinventory/20010","UPDATE_PATH":"/ragicinventory/20008","THIS_NODE_ID":nodeId,"MATCH":{"3000606":"3001936","3001104":"3001932"},"ACTIONS":[{"THIS_NUMBER_FIELD":"3001931","UPDATE_ACTION":"SUBSTRACT","UPDATE_NUMBER_FIELD":"3001107"}],"MULTI_FIELDS":true,"LAST_UPDATE_FIELD":"3001938","RECALCULATE":true,"REVERSE":true}
+  ), response);
+}//END_RAGIC_AUTOGEN_ENTRY_UPDATER_20029
+
+
+
+
+
+
+function _RAGIC_AUTOGEN_MERGED_BUTTON_72401(nodeId){
+  db.executeMergedActionButtons(JSON.stringify(
+{"THIS_NODE_ID":nodeId,"THIS_PATH":"/ragicinventory","THIS_SHEETINDEX":20010,"ACTIONS":["_RAGIC_AUTOGEN_ENTRY_UPDATER_73484","_RAGIC_AUTOGEN_ENTRY_UPDATER_20029"]}
+  ), response);
+  response.setDisplayButtonNameAsMessage(true)
+}//END_RAGIC_AUTOGEN_MERGED_BUTTON_72401
+
+
+function _RAGIC_AUTOGEN_MERGED_BUTTON_56494(nodeId){
+  db.executeMergedActionButtons(JSON.stringify(
+{"THIS_NODE_ID":nodeId,"THIS_PATH":"/ragicinventory","THIS_SHEETINDEX":20010,"ACTIONS":["_RAGIC_AUTOGEN_ENTRY_UPDATER_20029_REVERSE","_RAGIC_AUTOGEN_ENTRY_UPDATER_73484_REVERSE"]}
+  ), response);
+  response.setDisplayButtonNameAsMessage(true)
+}//END_RAGIC_AUTOGEN_MERGED_BUTTON_56494

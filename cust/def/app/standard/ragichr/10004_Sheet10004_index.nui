@@ -1,0 +1,90 @@
+N,Employee Management,
+FS,2
+DS,2
+W,1=79&2=46&3=38&4=44&5=68&6=27&undefined=0,14=23
+TF,2000752
+KF,2000754
+SF,2000752
+ST,1,22,2000790,,,
+ST,1,28,2000797,,,
+ST,1,35,2000804,,,
+S,2000761,,Male,Female,Others
+S,2000762,,Single,Married
+S,2000763,,Primary Education,Secondary Education,Bachelor,Master,Doctoral
+S,2000764,,Confirmed,Leave without pay,Resigned,Probation,Contract Ended,Retired,Deceased
+S,2000765,standard/ragic-setup/1,
+S,2000767,,Production,Sales,Marketing,Human Resource,Research %26 Development,Finance,Legal Affairs,IT,Executive
+S,2000769,standard/ragicaccounting-integrate/10001,
+S,2000771,,Permanent,Contract,Part Time,Internship
+S,2000772,,Direct Application,Employee Referral,Recruitment Agency,Advertising
+S,2000800,,Primary Education,Secondary Education,Bachelor,Master,Doctoral
+S,2000805,,No,Yes
+A,MANAGER=6&USER=3&EVERYONE=0,0,3,1348750740
+A2,
+D,1,2,2000752,Entry ID,ag=E-{0`number`00000}&cs=5
+G,8,2,2000760,Image Upload,cs=2
+D,1,3,2000753,First Name,
+D,3,3,2000755,Last Name,
+D,5,3,2000756,Full Name,f=A3+" "+C3&must=true
+D,1,4,2000757,Personal ID,masked_mode=4&masked_viewableGroups=%5B%22SYSAdmin%22%5D&text=1
+D,3,4,2000758,Birth Date,fmt_d=yyyy/MM/dd
+D,5,4,2000759,Age,f=(TODAY() -C4)/365.25&fmt_n=#`###
+L,1,5,2000761,Gender,userOps=true
+L,3,5,2000762,Marital Status,userOps=true
+L,5,5,2000763,Highest Education Level,userOps=true
+L,1,7,2000764,Job Status,userOps=true
+D,3,7,2000766,Employee Number,
+L,5,7,2000765,User Account,usrref=2
+L,1,8,2000767,Department,userOps=true
+D,3,8,2000768,Title,
+L,5,8,2000769,Line Manager,stf=2000756&s=2000754&mvp=/ragichr|10004_Sheet10004
+D,1,9,2000770,Level,
+L,3,9,2000771,Job Type,userOps=true
+L,5,9,2000772,Recruited From,userOps=true
+D,1,10,2000773,Office Phone,phonefmt=XXX-XXX-XXXX&phone=1
+D,3,10,2000774,Extension,
+D,5,10,2000826,Mobile,phone=1&phonefmt=XXX-XXX-XXXX
+D,1,11,2000775,E-mail,email=2&cs=3
+D,1,13,2000776,Beginning Date,fmt_d=yyyy/MM/dd
+D,3,13,2000777,Leaving Date,fmt_d=yyyy/MM/dd
+D,5,13,2000778,Contract Expiration Date,fmt_d=yyyy/MM/dd
+D,1,14,2000779,Note,cs=5
+D,1,17,2000780,House Phone,phonefmt=XXX-XXX-XXXX&phone=1
+D,3,17,2000781,Mobile,phonefmt=XXX-XXX-XXXX&phone=1
+D,5,17,2000782,E-mail,email=2
+D,1,18,2000783,Address 1,addr=1&cs=5
+D,1,19,2000784,Address 2,addr=1&cs=5
+D,1,22,2000785,Full Name,
+D,2,22,2000786,Relationship,
+D,3,22,2000787,House Phone,phonefmt=XXX-XXX-XXXX&phone=1
+D,4,22,2000788,Office Phone,phonefmt=XXX-XXX-XXXX&phone=1
+D,5,22,2000789,Mobile,phonefmt=XXX-XXX-XXXX&phone=1&cs=2
+D,1,28,2000791,Company Name,
+D,2,28,2000792,Title,
+D,3,28,2000793,From,fmt_d=yyyy/MM/dd
+D,4,28,2000794,To,fmt_d=yyyy/MM/dd
+D,5,28,2000795,Description,cs=2
+D,5,32,2000796,Work Experience (Years),f=(D28-C28)/365.25&fmt_n=#`###.#
+D,1,35,2000799,School Name,
+L,2,35,2000800,Education Level,userOps=true
+L,3,35,2000805,Completed,checkbox=1
+D,4,35,2000801,Major,
+D,5,35,2000802,Enrollment Date,fmt_d=yyyy/MM/dd
+D,6,35,2000803,Graduation Date,fmt_d=yyyy/MM/dd
+F,1,1,,Employee Information,backgroundColor=#0191C8&cs=6&color=#FFFFFF&fontWeight=bold&textAlign=center
+F,8,1,,Add a photo,color=#FFFFFF&backgroundColor=#0191C8&cs=3&fontWeight=bold&textAlign=center
+F,1,16,,Personal Contact Information,color=#FFFFFF&backgroundColor=#74C2E1&cs=6&fontWeight=bold&textAlign=center
+F,1,21,,Emergency Contact Information,color=#FFFFFF&backgroundColor=#74C2E1&cs=6&fontWeight=bold&textAlign=center
+F,1,27,,Work Experience,color=#FFFFFF&backgroundColor=#74C2E1&cs=6&fontWeight=bold&textAlign=center
+F,1,34,,Educational Background,color=#FFFFFF&backgroundColor=#74C2E1&cs=6&fontWeight=bold&textAlign=center
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+IR,%7B%22rules%22%3A%5B%7B%22cons%22%3A%5B%7B%22domainId%22%3A2000771%2C%22value%22%3A%22Contract%22%2C%22operator%22%3A%22ffEquals%22%7D%5D%2C%22conLogic%22%3A%22AND%22%2C%22actions%22%3A%5B%7B%22domainId%22%3A2000778%2C%22action%22%3A%22show%22%2C%22actionValue%22%3A%22%22%7D%5D%2C%22actSubtableRoot%22%3A-1%7D%5D%7D
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10004_Sheet10004_index.nui
+QS,1

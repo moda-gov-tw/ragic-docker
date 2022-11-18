@@ -1,0 +1,32 @@
+N,Ingredients,
+FS,2
+DS,2
+W,2=42&3=42,
+TF,2003617
+KF,2003620
+SF,2003617
+ST,1,6,2003628,2003623,,
+S,2003619,,g,lb,ml,oz,pc,cup,box,tsp.,tbsp.
+S,2003627,standard/ragicmeal-planning/10002,
+A,null=0&MANAGER=6&USER=3&EVERYONE=0,0,3,1642026889
+A2,
+D,1,2,2003617,Ingredient No.,ag=I-{0`number`00000}
+L,3,2,2003619,Unit,userOps=true
+D,1,3,2003618,Name,cs=3
+L,1,6,2003627,Recipe No.,lnlsselected=true&stf=2003621&mvp=/ragicmeal-planning|10002_Sheet10002&noclone=true&ro=true
+D,2,6,2003654,Name,lnlsselect=1&l=2003627&ro=1&vd=2003622&noclone=true&cs=2
+D,3,6,2003625,Quantity,fmt_n=#`####.##&noclone=true&ro=true
+F,1,1,,Info,cs=4&background=#0055BB&color=#ffffff&backgroundColor=#6a86dd&textAlign=center
+F,1,5,,Used for...,cs=4&background=#0055BB&color=#ffffff&backgroundColor=#6a86dd&textAlign=center
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+MOBCONF,%7B%7D
+NUI_FILE_NAME,10001_Sheet10001_index.nui
+QS,1

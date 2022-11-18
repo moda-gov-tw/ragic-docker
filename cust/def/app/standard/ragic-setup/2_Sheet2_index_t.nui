@@ -1,0 +1,12 @@
+N,Groups,Listing all the groups in your account. Please do not remove or rename system default groups.
+FS,0
+DS,2
+W,1=51&2=276&undefined=0,
+A,MANAGER=0&EVERYONE=0&USER=0,0,2,1370983653
+A2,
+D,1,2,3,Group Name,
+D,2,2,9,Group Description,
+F,1,1,,Please do not rename the system default groups,cs=2&color=#FF6600&fontWeight=bold
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+QS,2

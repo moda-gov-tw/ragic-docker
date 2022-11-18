@@ -1,0 +1,59 @@
+N,每日飲食攝取紀錄,
+FS,2
+DS,2
+W,1=55&2=42&3=56&4=12&5=26&6=46&7=80&8=72&undefined=0,1=13&7=11&13=19
+TF,3003404
+KF,3003412
+SF,3003405
+ST,1,14,3003426,,,
+S,3003404,standardzhtw/ragicsohardtoloseweight/20001,
+S,3003421,,早餐,早午餐,午餐,下午茶,晚餐,宵夜
+S,3003423,standardzhtw/ragicsohardtoloseweight/20003,
+A,NULL=0&MANAGER=6&USER=3&EVERYONE=0,0,3,1409964888
+A2,
+L,1,2,3003404,姓名,s=3003381&stf=3003378&mvp=/ragicsohardtoloseweight|20001_Sheet20001&stylebackgroundColor=#CCCCCC&stylefontWeight=bold&styleVfontWeight=bold
+D,1,3,3003405,紀錄日期,fmt_d=yyyy/MM/dd&dv=$DATE&stylebackgroundColor=#CCCCCC&stylefontWeight=bold&styleVfontWeight=bold
+D,1,4,3003406,基礎代謝率 BMR,fmt_n=#`###.##### 大卡&vd=3003390&l=3003404&stylebackgroundColor=#CCCCCC&stylefontWeight=bold&styleVfontWeight=bold
+D,1,5,3003407,每日消耗熱量 TDEE,fmt_n=#`###.##### 大卡&vd=3003394&l=3003404&stylebackgroundColor=#CCCCCC&stylefontWeight=bold&styleVfontWeight=bold
+D,1,8,3003411,建議攝取熱量 (大卡),fmt_n=#`###.##### 大卡&vd=3003401&l=3003404&stylebackgroundColor=#6633FF&stylecolor=#FFFFFF&stylefontWeight=bold&styleVfontWeight=bold
+D,3,8,3003413,目前熱量 (大卡),fmt_n=#`###.##### 大卡&f=D14&stylebackgroundColor=#6633FF&stylecolor=#FFFFFF&stylefontWeight=bold&styleVfontWeight=bold
+D,5,8,3003417,熱量 (大卡),fmt_n=#`###.##### 大卡&f=A8-C8&stylebackgroundColor=#6633FF&stylecolor=#FFFFFF&stylefontWeight=bold&styleVfontWeight=bold
+D,1,9,3003408,蛋白質 (公克),fmt_n=#`###.##### 公克&vd=3003398&l=3003404&stylebackgroundColor=#7DD8CF&stylefontWeight=bold&stylecolor=#FFFFFF&styleVfontWeight=bold
+D,3,9,3003414,目前蛋白質 (公克),fmt_n=#`###.##### 公克&f=E14&stylebackgroundColor=#7DD8CF&stylefontWeight=bold&stylecolor=#FFFFFF&styleVfontWeight=bold
+D,5,9,3003418,蛋白質 (公克),fmt_n=#`###.##### 公克&f=A9-C9&stylebackgroundColor=#7DD8CF&stylefontWeight=bold&stylecolor=#FFFFFF&styleVfontWeight=bold
+D,1,10,3003409,脂肪 (公克),fmt_n=#`###.##### 公克&vd=3003399&l=3003404&stylebackgroundColor=#EF8476&stylecolor=#FFFFFF&stylefontWeight=bold&styleVfontWeight=bold
+D,3,10,3003415,目前脂肪 (公克),fmt_n=#`###.##### 公克&f=F14&stylebackgroundColor=#EF8476&stylecolor=#FFFFFF&stylefontWeight=bold&styleVfontWeight=bold
+D,5,10,3003419,脂肪 (公克),fmt_n=#`###.##### 公克&f=A10-C10&stylebackgroundColor=#EF8476&stylecolor=#FFFFFF&stylefontWeight=bold&styleVfontWeight=bold
+D,1,11,3003410,建議碳水化合物 (公克),fmt_n=#`###.##### 公克&vd=3003400&l=3003404&stylebackgroundColor=#FFCC33&stylefontWeight=bold&stylecolor=#FFFFFF&styleVfontWeight=bold
+D,3,11,3003416,目前碳水化合物 (公克),fmt_n=#`###.##### 公克&f=G14&stylebackgroundColor=#FFCC33&stylefontWeight=bold&stylecolor=#FFFFFF&styleVfontWeight=bold
+D,5,11,3003420,碳水化合物 (公克),fmt_n=#`###.##### 公克&f=A11-C11&stylebackgroundColor=#FFCC33&stylefontWeight=bold&stylecolor=#FFFFFF&styleVfontWeight=bold
+L,1,14,3003421,餐別,stylebackgroundColor=#CCCCCC&stylefontWeight=bold&styleVfontWeight=bold
+D,2,14,3003422,進食時間,fmt_d=HH:mm&stylebackgroundColor=#CCCCCC&stylefontWeight=bold&styleVfontWeight=bold
+L,3,14,3003423,食物名稱,s=3003433&stf=3003431&mvp=/ragicsohardtoloseweight|20003_Sheet20003&stylebackgroundColor=#CCCCCC&stylefontWeight=bold&styleVfontWeight=bold
+D,4,14,3003424,熱量 (大卡),fmt_n=#`###.##### 大卡&vd=3003434&l=3003423&stylebackgroundColor=#CCCCCC&stylefontWeight=bold&styleVfontWeight=bold
+D,5,14,3003425,蛋白質 (公克),fmt_n=#`###.##### 公克&vd=3003435&l=3003423&stylebackgroundColor=#CCCCCC&stylefontWeight=bold&styleVfontWeight=bold
+D,6,14,3003427,脂肪 (公克),fmt_n=#`###.##### 公克&vd=3003436&l=3003423&stylebackgroundColor=#CCCCCC&stylefontWeight=bold&styleVfontWeight=bold
+D,7,14,3003428,碳水化合物 (公克),fmt_n=#`###.##### 公克&vd=3003437&l=3003423&stylebackgroundColor=#CCCCCC&stylefontWeight=bold&styleVfontWeight=bold
+G,8,14,3003429,照片紀錄,stylebackgroundColor=#CCCCCC&stylefontWeight=bold&styleVfontWeight=bold
+F,1,1,,基本資料,cs=2&textAlign=center&backgroundColor=#D53333&color=#FFFFFF&fontWeight=bold
+F,2,1,,,cs=1
+F,3,2,,直接選擇您的姓名，就會自動帶入個人的身體數據囉！,cs=3&backgroundColor=#666666&fontWeight=bold&color=#FFFFFF
+F,1,7,,建議攝取量,cs=2&backgroundColor=#FF0000&color=#FFFFFF&fontWeight=bold&textAlign=center
+F,3,7,,目前攝取量,cs=2&backgroundColor=#D53333&color=#FFFFFF&fontWeight=bold&textAlign=center
+F,5,7,,還差多少,cs=2&backgroundColor=#FF6666&color=#FFFFFF&fontWeight=bold&textAlign=center
+F,7,8,,[formula]IF(C8&#62;A8*1.025&#44;'熱量太多了！'&#44;IF(C8&#60;A8*0.975&#44;'熱量太少了！'&#44;'剛剛好，請繼續保持!'))[/formula],cs=2&color=#FF6666&fontWeight=bold
+F,7,9,,[formula]IF(C9&#62;A9*1.025&#44;'熱量太多了！'&#44;IF(C9&#60;A9*0.975&#44;'熱量太少了！'&#44;'剛剛好，請繼續保持!'))[/formula],cs=2&color=#FF6666&fontWeight=bold
+F,7,10,,[formula]IF(C10&#62;A10*1.025&#44;'熱量太多了！'&#44;IF(C10&#60;A10*0.975&#44;'熱量太少了！'&#44;'剛剛好，請繼續保持!'))[/formula],cs=2&color=#FF6666&fontWeight=bold
+F,7,11,,[formula]IF(C11&#62;A11*1.025&#44;'熱量太多了！'&#44;IF(C11&#60;A11*0.975&#44;'熱量太少了！'&#44;'剛剛好，請繼續保持!'))[/formula],cs=2&color=#FF6666&fontWeight=bold
+F,1,13,,飲食紀錄,cs=8&backgroundColor=#D53333&fontWeight=bold&color=#FFFFFF&textAlign=center&fontSize=18
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,20002_Sheet20002_index.nui
+QS,1

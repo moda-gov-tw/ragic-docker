@@ -1,0 +1,28 @@
+N,Office Supplies - Stock,
+FS,2
+DS,2
+W,undefined=0,
+TF,2000329
+KF,2000333
+SF,2000329
+S,2000330,,Stationary,Office Equipment,Electronic Device
+A,MANAGER=6&USER=3&EVERYONE=0,0,3,198923210
+A2,
+D,1,2,2000329,Item #,ro=true&noDup=true&ag={0`number`00000}
+L,3,2,2000330,Categories,cs=2&userOps=true
+D,1,3,2000331,Item Name,must=true&cs=4&noDup=true
+D,1,4,2002608,Spec Description,cs=4
+G,1,5,2002609,Image,multipleImages=true&cs=4
+D,1,6,2000332,Stock,fmt_n=#`###.#####&cs=4
+F,1,1,,Office Supplies,background=#883333&color=#ffffff&cs=5&textAlign=center
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10008_Sheet10008_index.nui
+QS,1

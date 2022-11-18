@@ -1,0 +1,28 @@
+N,Volunteer Programs,
+FS,2
+DS,2
+W,,
+TF,2002625
+KF,2002628
+SF,2002625
+S,2002735,standard/ragicnonprofit/10005,
+S,2002713,,Not Started,Ongoing,Paused,Completed
+A,NULL=0&MANAGER=6&USER=3&EVERYONE=0,0,2,1624932846
+A2,
+D,1,1,2002625,ProgramID,ag=P00{0`number`#}&noDup=true&styletextAlign=center&styleVtextAlign=center
+D,2,1,2002626,Program Name,styletextAlign=center&styleVtextAlign=center
+L,3,1,2002735,Project Manager,s=2002727&stf=2002723&mvp=/ragicnonprofit|10005_Sheet10005&lnlsselected=true
+D,4,1,2002715,Location,text=1
+L,5,1,2002713,Program status,styletextAlign=center&styleVtextAlign=center
+D,6,1,2002796,Total Raised,fmt_n_ts=`&fmt_n_ds=.&fmt_n=$#`####.##&styletextAlign=left&styleVtextAlign=center
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10002_Sheet10002_index_t.nui
+QS,7

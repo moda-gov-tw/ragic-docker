@@ -1,0 +1,30 @@
+N,Inventory,
+FS,2
+DS,2
+W,1=4&2=154&3=184&4=6&5=8&6=-8&7=19&8=92&9=93,
+TF,2001811
+KF,2001821
+SF,2001811
+S,2001820,,Available,Expired
+S,2001816,,Yes,No
+S,2001814,,Yes,No
+A,NULL=0&MANAGER=6&USER=3&EVERYONE=0,0,2,1565735263
+A2,
+D,1,1,2001810,Inventory No.,ag={0`number`00000}&ro=true&noDup=true
+D,2,1,2001811,Name,
+D,3,1,2001813,Description,
+D,4,1,2001815,Buying price,fmt_n_ts=`&fmt_n_ds=.&fmt_n=$#`####.##
+D,5,1,2001817,Selling price,fmt_n_ts=`&fmt_n_ds=.&fmt_n=$#`####.##
+D,6,1,2002475,Total Qty,fmt_n=#`####.##&ro=true
+L,7,1,2001820,Item Availability,
+L,8,1,2001816,I sell this product or service?,
+L,9,1,2001814,I buy this product or service?,
+RMD_MAX_SEQ,0
+ET,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10002_Sheet10002_index_t.nui
+QS,3
+SHEET_SCOPE_START
+

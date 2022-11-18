@@ -1,0 +1,92 @@
+N,物料清單(BOM),
+FS,2
+DS,2
+W,1=38&2=39&3=108&4=74&5=65&6=45&undefined=0,&7=23
+TF,3002274
+KF,3002221
+SF,3002274
+ST,1,10,3002273,,,
+S,3002467,,No,Yes
+S,3002276,,有效,無效
+S,3002219,standardzhtw/ragicforms7/20001,
+S,3002232,
+S,3002269,standardzhtw/ragicforms7/20001,
+S,3002271,
+S,3002391,standardzhtw/ragic-setup/1,
+S,3002393,standardzhtw/ragic-setup/1,
+A,NULL=0&MANAGER=6&USER=3&EVERYONE=0,0,3,959184049
+A2,
+D,1,2,3002274,BOM編號,f=A4+'-'+A3&noDup=true&cs=2&must=true
+L,4,2,3002467,主要版本,checkbox=1&dv=No&cs=2&help=一個物料編號只能有一個主要的物料清單(BOM)版本&noclone=true
+D,7,2,3002218,系統編號,ag=BOM-{0`number`00000}&hide=true
+D,1,3,3002275,版本,fmt_n=#`###.#####&f=G3+1&cs=2&noclone=true
+L,4,3,3002276,狀態,dv=有效&cs=2&must=true
+D,7,3,3002278,目前最大版本,fmt_n=#`###.#####&vd=3002277&l=3002219&hide=true&noclone=true
+L,1,4,3002219,物料編號,s=3000606&stf=3000593&mvp=/ragicforms7|20001_Sheet20001&cs=2&must=true&mvpf=3002441|1|生產
+D,4,4,3002220,物料名稱,vd=3000595&l=3002219&cs=2&ro=true
+D,7,4,3002468,主要版本檢查,f=IF(D2.RAW='Yes'`A4+'的主要版本'`'')&noDup=true&hide=true&noclone=true
+D,1,5,3002233,規格,vd=3000924&l=3002219&cs=2&ro=true
+L,4,5,3002232,單位,vd=3001948&l=3002219&cs=2
+D,1,6,3002389,生產數量,fmt_n=#`###.#####&cs=2&must=true
+D,1,7,3002395,備註,cs=5
+D,1,10,3002268,項次,fmt_n=#`###&dv=$SEQ&styletextAlign=center&styleVtextAlign=center
+L,2,10,3002269,物料編號,s=3000606&stf=3000593&mvp=/ragicforms7|20001_Sheet20001&must=true
+D,3,10,3002270,物料名稱,vd=3000595&l=3002269&ro=true
+D,4,10,3002390,規格,vd=3000924&l=3002269&ro=true
+L,5,10,3002271,單位,vd=3001948&l=3002269&ro=true
+D,6,10,3002272,數量,fmt_n=#`###.#####&must=true
+L,1,16,3002391,建檔人員,usrref=2&dv=$USER&cs=2&ro=true
+D,4,16,3002392,建檔日期時間,fmt_d=yyyy/MM/dd HH:mm&dv=$DATETIME&cs=2&ro=true
+L,1,17,3002393,最後修改人員,usrref=2&dv=#USER&cs=2&ro=true
+D,4,17,3002394,最後修改日期時間,fmt_d=yyyy/MM/dd HH:mm&dv=#DATETIME&cs=2&ro=true
+F,1,1,,物料資訊,cs=6&backgroundColor=#09689f&color=#FFFFFF&fontWeight=bold&textAlign=center
+F,1,9,,物料組成清單,cs=6&backgroundColor=#09689f&color=#FFFFFF&fontWeight=bold&textAlign=center
+F,1,15,,建檔資訊,cs=6&backgroundColor=#09689f&color=#FFFFFF&fontWeight=bold&textAlign=center
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,20002_Sheet20002_index.nui
+QS,1
+PRE_WORKFLOW_START
+var assemblyNodeId, assemblyQuery, assembly, assemblyNum;
+var valid = true;
+assemblyNodeId = param.getNewNodeId(3002219);
+if (assemblyNodeId < 0) {
+  response.setStatus('INVALID');
+  response.setMessage('請填寫物料編號 (3002219)\r\n');
+  valid = false;
+}
+assemblyQuery = db.getAPIQuery('/ragicforms7/20001');
+if (assemblyQuery == null) {
+  response.setStatus('INVALID');
+  response.setMessage('請檢查表單 物料主檔(/ragicforms7/20001) 是否還存在\r\n');
+  valid = false;
+}
+
+if (valid) {
+  assembly = assemblyQuery.getAPIEntry(assemblyNodeId);
+  if (assembly == null) valid = false;
+}
+
+if (valid) {
+  assemblyNum = assembly.getFieldValue(3000593);
+
+  var componentsArray = param.getSubtableEntry(3002273).toArray();
+  for (var i = 0; i < componentsArray.length; i++) {
+    var component = componentsArray[i];
+    var componentNodeId = component.getNewNodeId(3002269);
+    var entry = assemblyQuery.getAPIEntry(componentNodeId);
+    if (entry == null) continue;
+    var componentId = entry.getFieldValue(3000593);
+    if (componentId == assemblyNum) {
+      response.setStatus('INVALID');
+      response.setMessage('子表格物料組成清單中的物料編號不可與這筆資料的物料編號重複(物料組成來源不能是自己)\r\n');
+    }
+  }
+}

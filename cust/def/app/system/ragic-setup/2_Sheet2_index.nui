@@ -1,0 +1,49 @@
+N,Groups,Create / update your account groups. Please do not remove or rename system default groups.
+FS,0
+DS,1
+W,1=150&2=201,7=68
+TF,3
+SF,3
+S,19,system/ragic-setup/1,
+S,17,
+S,24,system/ragic-setup/2,
+A,MANAGER=0&USER=0&EVERYONE=0,0,3,850864616
+A2,
+D,1,2,3,Group Name,noDup=true&must=true
+M,1,3,19,Group Administrator,usrref=2&help=Group administrators can create and update users for their user group` and also make design changes to the sheets under the tab folder specified in the group tabs field.
+D,1,4,18,Group Tabs,help=Tabs that the group administrator of this group can add sheets or change design to. A tab should be entered like /forms1 which is the way they appear on the URL` separated by commas when there are multiple tabs.
+M,1,5,17,Group Tags,help=Tags for filtering groups to find user groups more easily when choosing a user group from a list.&userOps=true
+D,1,7,9,Group Description,
+L,1,9,24,Parent Group,grpref=2&hide=true
+F,1,1,,Group Information,color=#FFFFFF&backgroundColor=#330099&cs=2
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,2_Sheet2_index.nui
+QS,1
+PRE_WORKFLOW_START
+var oldGroup=param.getOldValue(3);
+var newGroup=param.getNewValue(3);
+if(newGroup && (newGroup.indexOf('&')!==-1 || newGroup.indexOf(',')!==-1 || newGroup.indexOf('=')!==-1)){
+  response.setStatus('INVALID');
+  response.setMessage('& and , and = are not allowed in group names.');
+}
+if(oldGroup && newGroup && oldGroup!=newGroup){
+  if(oldGroup=='SYSAdmin' || oldGroup=='User' || oldGroup=='X-User' || oldGroup=='EVERYONE'){
+    response.setStatus('INVALID');
+    response.setMessage('You cannot change the name of this group.');
+  }
+  if(oldGroup.substr(0,2)=='X-' && (newGroup.length<3 || newGroup.substr(0,2)!='X-')){
+    response.setStatus('INVALID');
+    response.setMessage('You cannot rename an external group to an internal group.');
+  }
+  if(newGroup.substr(0,2)=='X-' && (oldGroup.length<3 || oldGroup.substr(0,2)!='X-')){
+    response.setStatus('INVALID');
+    response.setMessage('You cannot rename an internal group to an external group.');
+  }
+}

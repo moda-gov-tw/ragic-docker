@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+  <name>Ragic System Config</name>
+  <desc />
+  <publisher />
+  <createDate>2012/08/11</createDate>
+  <updateDate>2012/08/11</updateDate>
+  <version>1.0</version>
+  <price>0</price>
+  <delta>0</delta>
+  <status>ONLINE</status>
+  <sourcePath>/app/system/ragic-setup</sourcePath>
+  <appId>AP-00037</appId>
+  <forms seq="1">
+    <form sheetIndex="1" type="NUI" seq="1">User</form>
+    <form sheetIndex="2" type="NUI" seq="2">Groups</form>
+    <form sheetIndex="3" type="NUI" seq="3">Feature Access Settings</form>
+    <form sheetIndex="4" type="NUI" seq="4">Company Setting</form>
+    <form sheetIndex="5" type="NUI" seq="5">External User</form>
+    <form sheetIndex="6" type="NUI" seq="6">Database Access Request</form>
+    <form sheetIndex="7" type="NUI" seq="7">Global Constants</form>
+    <form sheetIndex="9" type="NUI" seq="8">Company Setting</form>
+  </forms>
+</module>

@@ -1,0 +1,45 @@
+<div id="f_name">Name:
+  <span id="at_name" style="font-weight:normal"></span>
+</div><br/>
+External Id:<span id="at_spid" style="font-weight:normal"></span><br/><br/>
+<div id="f_it" style="float:left">Input Type<br/>
+  <select onchange="selChange(this)" name="it" id="at_it">
+    <option value="D">Free Text</option>
+    <option value="L">Selection</option>
+    <option value="U">File Upload</option>
+    <option value="G">Image Upload</option>
+    <option value="M">Multiple Select</option>
+  </select>
+</div>
+<div id="f_dv" style="float:right">Default Value<br/>
+  <input type="text" onblur="textBlur(this)" onfocus="textFocus()" name="dv" id="at_dv"/><span style="visibility:hidden">x</span><!-- This is just a dummy for width align -->
+</div>
+<div id="f_ch" style="float:right">Choices<br/>
+</div>
+<div id="f_ro" style="clear:left">Read Only<br/>
+  <select onchange="selChange(this)" name="ro" id="at_ro">
+    <option value=""></option>
+    <option value="1">True</option>
+  </select>
+</div>
+<div id="f_ag">Auto Generate, format:<br/>
+  <select onchange="selChange(this)" name="ag" id="at_ag">
+    <option value=""></option>
+    <option value="{0`number`000}">036</option>
+    <option value="{0`number`0000}">0036</option>
+    <option value="{0`number`00000}">00036</option>
+  </select>
+</div>
+<div id="f_cs">Column Span<br/>
+  <select onchange="selChange(this)" name="cs" id="at_cs">
+    <option value=""></option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+  </select>
+</div>
+<div id="fSource">Value Source<br/><select onchange="selChange(this)" name="s" id="at_s" /></div>
+

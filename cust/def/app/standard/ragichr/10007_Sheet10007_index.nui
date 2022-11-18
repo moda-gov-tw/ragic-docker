@@ -1,0 +1,90 @@
+N,Applicant Resume,
+FS,2
+DS,2
+W,1=48&2=90&3=62&4=97&5=49&6=109&8=-97&9=170&10=56&undefined=0,4=86&17=26&
+TF,2001317
+KF,2001327
+SF,2001317
+ST,1,22,2001343,,,
+ST,1,28,2001350,,,
+ST,1,34,2001360,,,
+S,2001386,standard/ragic-setup/2,
+S,2001329,,Direct Application,Employee Referral,Recruitment Agency,Advertising
+S,2001387,standard/ragic-setup/1,
+S,2001330,standard/ragichr/10005,
+S,2001339,,Permanent,Contract,Part Time,Internship
+S,2001321,,Male,Female
+S,2001331,,Unemployed,Employed,Self-employed
+S,2001334,,Primary Education,Secondary Education,Bachelor,Master,Doctoral
+S,2001349,,Less than 10 employees,11-50 employees,51-100 employees,101-500 employees,501-1000 employees,More than1000 employees
+S,2001351,,Real Estate,Accounting,Agencies,Healthcare %26 Life Sciences,Consulting,Nonprofit,Education,Legal,Construction,Media,Government,Retail,EC,Consumer Goods,Manufacturing
+S,2001355,,Yes,No
+S,2001358,,Primary Education,Secondary Education,Bachelor,Master,Doctoral
+S,2001362,,Yes,No
+A,NULL=0&MANAGER=6&HR=6&USER=1&EVERYONE=1,1,3,308639598
+A2,
+D,5,3,2001385,Company,vd=2001294&l=2001330&hide=true
+G,1,4,2001316,Photo,
+D,3,4,2001328,Applicant No.,ag=CV{1`date`yyyy}-{0`number`000}
+L,5,4,2001386,Department,grpref=2&vd=2001295&l=2001330&hide=true
+D,1,5,2001317,First Name,
+L,3,5,2001329,Resume Source ,
+L,5,5,2001387,Department Contact,usrref=1&vd=2001296&l=2001330&hide=true
+D,1,6,2001318,Last Name,
+L,3,6,2001330,Position No.,s=2001297&stf=2001298&mvp=/ragichr|10008_Sheet10008
+D,5,6,2001567,Contact,vd=2001564&l=2001330&hide=true
+D,1,7,2001319,Full Name,f=A5+' '+A6&ro=true
+D,3,7,2001569,Position Applied,vd=2001301&l=2001330&ro=true
+D,5,7,2001568,Contact Information,vd=2001565&l=2001330&hide=true
+D,1,8,2001320,Personal ID,text=1
+L,3,8,2001339,Job Type,
+L,1,9,2001321,Gender,userOps=true
+L,3,9,2001331,Status,
+D,1,10,2001322,Date of Birth,fmt_d=yyyy/MM/dd
+D,3,10,2001332,Expected Salary,
+D,1,11,2001323,Age,fmt_n=0
+D,3,11,2001333,Available From,fmt_d=yyyy/MM/dd
+D,1,12,2001324,Mobile,phone=1&phonefmt=XXX-XXX-XXXX
+L,3,12,2001334,Highest Education Level,
+D,1,13,2001325,E-Mail,email=2
+D,3,13,2001335,Seniority,fmt_n=0.00&f=C28&ro=true
+D,1,14,2001326,Address,addr=1&cs=3
+D,1,16,2001336,Driver's License,cs=3
+D,1,17,2001337,Other Licenses and Skills,cs=3
+D,1,18,2001338,Bio,cs=3
+U,1,19,2001537,CV/Resume Attached,help=upload a CV/Resume file if you have one.
+U,3,19,2001538,Bio File Attached,help=upload a bio file if you have one.
+D,1,22,2001340,No.,ag={0`number`00000}
+U,2,22,2001341,File Attached,
+D,3,22,2001342,Note,cs=2
+D,1,28,2001344,From,fmt_d=yyyy/MM/dd
+D,2,28,2001345,To,fmt_d=yyyy/MM/dd
+D,3,28,2001346,Seniority,fmt_n=0.00&f=(B28-A28)/365.25
+D,4,28,2001347,Position Title,
+D,5,28,2001348,Company Name,
+L,6,28,2001349,Company Scale,
+L,7,28,2001351,Industry,
+D,8,28,2001352,Description,
+D,9,28,2001353,Summary,
+L,10,28,2001355,Management Position?,
+D,1,34,2001356,Enrollment Date,fmt_d=yyyy/MM/dd
+D,2,34,2001357,Graduation Date,fmt_d=yyyy/MM/dd
+L,3,34,2001358,Education Level,userOps=true
+D,4,34,2001359,School Name,
+D,5,34,2001361,Major,
+L,6,34,2001362,Completed,
+F,1,3,,Basic Information,background=#333333&color=#ffffff&cs=4&textAlign=center&backgroundColor=#000000
+F,1,21,,Works,background=#333333&color=#ffffff&textAlign=center&cs=4&backgroundColor=#333333
+F,1,27,, Work Experience,background=#333333&color=#ffffff&textAlign=center&cs=10
+F,1,33,,Educational Background,background=#333333&color=#ffffff&textAlign=center&cs=6
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10007_Sheet10007_index.nui
+QS,1

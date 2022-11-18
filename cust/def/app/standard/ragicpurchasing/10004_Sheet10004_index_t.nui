@@ -1,0 +1,36 @@
+N,Purchase Requisition,
+FS,2
+DS,2
+W,1=17&2=-20&3=30&4=31&5=-32&6=54&7=26&8=17&9=16,
+TF,2001085
+KF,2001089
+SF,2001085
+S,2001087,standard/ragic-setup/1,
+S,2001091,,High,Medium,Low
+S,2001090,standard/ragic-setup/1,
+S,2003610,standard/ragic-setup/1,
+A,NULL=0&MANAGER=6&USER=3&EVERYONE=0,0,2,166043243
+A2,
+D,1,1,2001085,PR #,ag=PR-{1`date`yyyyMMdd}-{0`number`000}&noDup=true
+D,2,1,2001086,Date,fmt_d=yyyy/MM/dd&dv=$DATE
+L,3,1,2001087,Created By,usrref=2&dv=$USER
+D,4,1,2001088,Department,
+L,5,1,2001091,Priority,dv=Medium
+D,6,1,2001092,Expected Arrival Date,fmt_d=yyyy/MM/dd
+L,7,1,2001090,Reviewing Officer,usrref=2
+D,8,1,2001093,Review Date,fmt_d=yyyy/MM/dd
+D,9,1,2003609,Approval Status,ro=true&f=APPROVAL.STATUS()&aaf=APPROVAL.STATUS()
+M,10,1,2003610,Next Signer,ro=true&usrref=2&f=APPROVAL.STEP().USERS()&aaf=APPROVAL.STEP().USERS()
+X_MAX_DESIGNER_ID,101
+ACTION_BUTTON_MAX_ID,0
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+MOBCONF,%7B%7D
+NUI_FILE_NAME,10004_Sheet10004_index_t.nui
+QS,0

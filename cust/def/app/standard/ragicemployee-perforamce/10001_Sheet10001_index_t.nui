@@ -1,0 +1,29 @@
+N,Employee Performance - Narrative,
+FS,2
+DS,2
+W,1=71&2=79&3=49&4=25&5=22&6=9&7=7&8=47,
+TF,2000615
+KF,2000619
+SF,2000615
+S,2000616,,Production,Sales,Marketing,Human Resource,Research %26 Development,Finance,Legal Affairs,IT,Executive
+S,2000618,standard/ragicaccounting-integrate/10001,
+S,2000624,,2017,2018,2019
+S,312,null,
+S,320,null,
+A,MANAGEMENT=6&MANAGER=6&HR=6&USER=1&EVERYONE=1,1,2,1667684465
+A2,USER=11&EVERYONE=11
+D,1,1,2000614,Employee Name,l=2000827&vd=2000756
+D,2,1,2000620,E-mail,email=2&l=2000827&vd=2000775
+D,3,1,2000615,Employee Number,l=2000827&vd=2000766
+L,4,1,2000616,Department,userOps=true&l=2000827&vd=2000767
+L,5,1,2000618,Supervisor,l=2000827&vd=2000769&mvp=/ragichr|10004_Sheet10004&s=2000754&stf=2000756
+L,6,1,2000624,Review Period,userOps=true
+L,7,1,312,Approval,ro=true
+L,8,1,320,Next Signer,ro=true
+RMD_MAX_SEQ,0
+ET,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10001_Sheet10001_index_t.nui
+QS,0

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+  <name>盃賽數據庫</name>
+  <desc />
+  <publisher />
+  <createDate />
+  <updateDate />
+  <version />
+  <price />
+  <status />
+  <sourcePath />
+  <appId />
+  <forms seq="24">
+    <form sheetIndex="20001" type="NUI" seq="2">隊伍名單</form>
+    <form sheetIndex="20002" type="NUI" seq="3">球員名單</form>
+    <form sheetIndex="20003" type="NUI" seq="4">比賽記錄表</form>
+    <form sheetIndex="20004" type="NUI" seq="1">盃賽列表</form>
+    <form sheetIndex="20005" type="NUI" seq="5">比賽數據</form>
+  </forms>
+</module>

@@ -1,0 +1,100 @@
+N,Invoices,
+FS,2
+DS,2
+W,1=83&2=93&3=43&4=45&5=58,12=19
+TF,2003281
+KF,2003289
+SF,2003281
+ST,1,9,2003313,,,
+S,2003283,
+S,2003404,standard/ragicjob-assignments/10001,
+S,2003419,,Scheduled,Invoiced,Paid
+S,2003301,,Cash,Credit Card,Bank Transfer,Electronic Check
+S,2003302,,Paid,Pending
+S,2003305,standard/ragic-setup/1,
+A,null=0&MANAGER=6&USER=3&EVERYONE=0,0,3,455441332
+A2,
+D,1,2,2003281,Invoice ID,ag=INV-{1`date`yyyyMM}-{0`number`000}&noDup=true&cs=2
+D,4,2,2003282,Quote ID,text=1&cs=2
+L,1,3,2003283,Client ID,cs=2
+L,4,3,2003404,Job ID,cs=2&s=2002977&stf=2002969&mvp=/ragicjob-assignments|10001_Sheet10001&must=true
+D,1,4,2003285,Name,cs=2
+D,4,4,2003284,Phone Number,phone=1&phonefmt=XXXXXXXXXX&cs=2
+D,1,5,2003307,Full Billing Address,addr=1&cs=2
+D,4,5,2003287,Email,email=2&cs=2
+L,1,6,2003419,Status,cs=2
+D,1,9,2003308,Item ID,ag={0`number`00000}
+D,2,9,2003309,Name,
+D,3,9,2003310,Unit Price,fmt_n_ts=`&fmt_n_ds=.&fmt_n=$#`####.##
+D,4,9,2003311,Qty,fmt_n=#`####.##
+D,5,9,2003312,Subtotal,fmt_n_ts=`&fmt_n_ds=.&fmt_n=$#`####.##&styletextAlign=center&styleVtextAlign=center
+D,6,9,2003405,Location,text=1
+D,1,14,2003314,Tax Category,fmt_n_ts=`&fmt_n_ds=.&text=1
+D,3,14,2003315,Subtotal,fmt_n_ts=`&fmt_n_ds=.&fmt_n=$#`####.##
+D,1,15,2003316,Tax Rate,fmt_n_ts=`&fmt_n_ds=.&fmt_n=0%
+D,3,15,2003317,Tax,fmt_n_ts=`&fmt_n_ds=.&fmt_n=$#`####.##
+D,3,16,2003318,Total,fmt_n_ts=`&fmt_n_ds=.&fmt_n=$#`####.##
+L,1,19,2003301,Payment Method,userOps=true&cs=2
+L,4,19,2003302,Payment Status,userOps=true&cs=2
+D,1,20,2003303,Payment Date,fmt_d=MM/dd/yyyy&cs=2&dv=$DATE
+D,4,20,2003304,Total Received,f=C16&cs=2&fmt_n_ts=`&fmt_n_ds=.&fmt_n=$#`####.##
+L,1,21,2003305,Processed By,usrref=2&dv=$USERNAME&cs=2
+D,4,21,2003306,Notes,cs=2
+D,1,24,2003386,'Update Inventory' executed time,fmt_d=yyyy/MM/dd HH:mm&hide=true
+F,1,1,,Invoice Information,cs=6&backgroundColor=#e0bba3&textAlign=center
+F,1,8,,Sales Order,cs=6&backgroundColor=#e0bba3&textAlign=center
+F,1,18,,Payment Details,cs=6&textAlign=center&backgroundColor=#86ad86
+X_MAX_DESIGNER_ID,101
+K,{"type":"B","seq":"1","name":"Update Inventory","action":"_RAGIC_AUTOGEN_ENTRY_UPDATER_38500({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"false","userGroups":["EVERYONE","SYSAdmin"],"checkIfUserCanEdit":false}
+K,{"type":"B","seq":"2","name":"Reverse Update Inventory","action":"_RAGIC_AUTOGEN_ENTRY_UPDATER_38500_REVERSE({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"false","userGroups":["EVERYONE"],"checkIfUserCanEdit":false}
+K,{"type":"B","seq":"3","name":"Create Next Inspection 1","action":"_RAGIC_AUTOGEN_CR_63547({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"true","userGroups":["EVERYONE","SYSAdmin"],"checkIfUserCanEdit":false}
+K,{"type":"B","seq":"4","name":"Invoice Status","action":"_RAGIC_AUTOGEN_FIELD_UPDATER_94048({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"true","userGroups":["EVERYONE","SYSAdmin"],"checkIfUserCanEdit":false}
+K,{"type":"B","seq":"5","name":"Create Next Inspection","action":"_RAGIC_AUTOGEN_MERGED_BUTTON_32564({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"false","userGroups":["EVERYONE"],"checkIfUserCanEdit":false}
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10008_Sheet10008_index.nui
+QS,1
+SCRIPT_START
+
+SHEET_SCOPE_START
+function _RAGIC_AUTOGEN_ENTRY_UPDATER_38500(nodeId){
+  // WARNING: Please DO NOT edit auto-generated script.
+  var result = db.entryUpdater(JSON.stringify(
+    {"THIS_PATH":"/ragicjob-assignments/10008","UPDATE_PATH":"/ragicjob-assignments/10006","THIS_NODE_ID":nodeId,"MATCH":{"2003237":"2003308"},"ACTIONS":[{"THIS_NUMBER_FIELD":"2003311","UPDATE_ACTION":"SUBSTRACT","UPDATE_NUMBER_FIELD":"2003238"}],"MULTI_FIELDS":true,"LAST_UPDATE_FIELD":"2003386","RECALCULATE":false,"CHECK_USER_GROUPS":false,"CHECK_MUST_FIELDS":false,"CHECK_VALIDATION_FIELDS":false,"FAILED_IF_NO_RECORD_UPDATED":false,"LOAD_DEFAULT_VALUES_ON_TARGET":false,"LOAD_DEFAULT_VALUES_ON_THIS_SHEET":false}
+  ), response);
+}//END_RAGIC_AUTOGEN_ENTRY_UPDATER_38500
+
+function _RAGIC_AUTOGEN_ENTRY_UPDATER_38500_REVERSE(nodeId){
+  // WARNING: Please DO NOT edit auto-generated script.
+  var result = db.entryUpdater(JSON.stringify(
+		{"THIS_PATH":"/ragicjob-assignments/10008","UPDATE_PATH":"/ragicjob-assignments/10006","THIS_NODE_ID":nodeId,"MATCH":{"2003237":"2003308"},"ACTIONS":[{"THIS_NUMBER_FIELD":"2003311","UPDATE_ACTION":"ADD","UPDATE_NUMBER_FIELD":"2003238"}],"MULTI_FIELDS":true,"LAST_UPDATE_FIELD":"2003386","RECALCULATE":false,"CHECK_USER_GROUPS":false,"CHECK_MUST_FIELDS":false,"CHECK_VALIDATION_FIELDS":false,"FAILED_IF_NO_RECORD_UPDATED":false,"LOAD_DEFAULT_VALUES_ON_TARGET":false,"LOAD_DEFAULT_VALUES_ON_THIS_SHEET":false,"REVERSE":true}
+  ), response);
+}//END_RAGIC_AUTOGEN_ENTRY_UPDATER_38500
+
+function _RAGIC_AUTOGEN_CR_63547(nodeId){
+  // WARNING: Please DO NOT edit auto-generated script.
+  var result = db.entryCopier(JSON.stringify(
+    {"THIS_PATH":"/ragicjob-assignments/10008","THIS_NODEID":nodeId,"NEW_PATH":"/ragicjob-assignments/10004","CHECK_MUST_FIELDS":false,"CHECK_VALIDATION_FIELDS":false,"CHECK_ALL_MUST_FIELDS_MAPPED":false,"SILENT":false,"RECAL_ALL_FORMULAS":true,"EXEC_WORKFLOW":true,"LOCK_SOURCE":false,"COPY":{"2003178":"2003404","2003407":"2003308","2003408":"2003309","2003414":"2003311","2003415":"2003405","2003417":"2003281","2003418":"2003302"},"APPLY_SUBTABLE_FILTERS":false,"APPLY_SUBTABLE_GROUPING":false}
+  ), response);
+  if(result) return result;
+}//END_RAGIC_AUTOGEN_CR_63547
+
+function _RAGIC_AUTOGEN_FIELD_UPDATER_94048(nodeId){
+  // WARNING: Please DO NOT edit auto-generated script.
+  var result = db.fieldUpdater(JSON.stringify(
+    {"THIS_PATH":"/ragicjob-assignments/10008","THIS_NODE_ID":nodeId,"RECALCULATE":false,"CHECK_VA_UPDATED_FIELDS":false,"CHECK_VA_ALL_FIELDS":false,"SUBTABLE_UPDATE_POLICY":"FORCE_CREATE","APPLY_SUBTABLE_FILTERS":false,"UPD_FIELDS":{"2003419":"Scheduled"}}
+  ), response);
+}//END_RAGIC_AUTOGEN_FIELD_UPDATER_94048
+
+function _RAGIC_AUTOGEN_MERGED_BUTTON_32564(nodeId){
+  // WARNING: Please DO NOT edit auto-generated script.
+  var result = db.executeMergedActionButtons(JSON.stringify(
+    {"THIS_NODE_ID":nodeId,"THIS_PATH":"/ragicjob-assignments","THIS_SHEETINDEX":10008,"ACTIONS":["_RAGIC_AUTOGEN_FIELD_UPDATER_94048","_RAGIC_AUTOGEN_CR_63547"]}
+  ), response);
+}//END_RAGIC_AUTOGEN_MERGED_BUTTON_32564

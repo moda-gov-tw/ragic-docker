@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+  <name>PSI (Lite)</name>
+  <desc />
+  <publisher />
+  <createDate />
+  <updateDate />
+  <version />
+  <price />
+  <status />
+  <sourcePath />
+  <appId />
+  <forms seq="19">
+    <form sheetIndex="10001" type="NUI" seq="1">Clients and Suppliers</form>
+    <form sheetIndex="10002" type="NUI" seq="2">Inventory</form>
+    <form sheetIndex="10003" type="NUI" seq="3">Sales Order</form>
+    <form sheetIndex="10004" type="NUI" seq="4">Sales Items</form>
+    <form sheetIndex="10005" type="NUI" seq="5">Purchase Order</form>
+    <form sheetIndex="10006" type="NUI" seq="6">Purchase Items</form>
+  </forms>
+</module>

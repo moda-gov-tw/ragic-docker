@@ -1,0 +1,4 @@
+/*issue[11234]: this css file will not use.*/
+#nui_outer tr, #nui_outer td, #nui_outer th {
+    font-size: 13px;
+}

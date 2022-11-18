@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+  <name>Sales Order Management</name>
+  <desc />
+  <publisher />
+  <createDate />
+  <updateDate />
+  <version />
+  <price />
+  <status />
+  <sourcePath />
+  <appId />
+  <forms seq="11">
+    <form sheetIndex="10003" type="NUI" seq="1">Accounts</form>
+    <form sheetIndex="10004" type="NUI" seq="2">Sales Order</form>
+    <form sheetIndex="10001" type="NUI" seq="3">Products (SO)</form>
+    <form sheetIndex="10002" type="NUI" seq="4">Pricelist</form>
+    <form sheetIndex="10005" type="NUI" seq="5">Delivery Note</form>
+  </forms>
+</module>

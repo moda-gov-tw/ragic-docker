@@ -1,0 +1,27 @@
+N,Leave of absence,
+FS,2
+DS,2
+W,1=14&2=53&3=27&4=-6&5=-21&6=-5&7=19&8=-4&9=71,
+TF,320
+KF,2000613
+SF,2000853
+S,2000599,,Vacation Leave,Sick Leave,Pregnancy-Disability and Child Care Leave,Civil and Work Related Leave,Educational Leave,Emergency/Disaster Leave,Family and Medical Leave,Leave to Provide Community Service,Military Leave,Time in lieu
+S,312,null,
+A,NULL=0&MANAGER=6&USER=3&EVERYONE=0,0,2,297137690
+A2,
+D,1,1,2000607,Employee No.,l=2001971&vd=2000766&noSyncName=true
+L,2,1,2000599,Leave Type,must=true
+D,3,1,2000600,From Date,fmt_d=yyyy/MM/dd&must=true
+D,4,1,2000602,From Hour,fmt_d=HH:mm
+D,5,1,2000601,To Date,fmt_d=yyyy/MM/dd&must=true
+D,6,1,2000603,To Hour,fmt_d=HH:mm
+D,7,1,2000604,Total Hours,fmt_n=#`###&must=true
+L,8,1,312,Approval,ro=true
+D,9,1,320,Approval Next Signer,ro=true
+RMD_MAX_SEQ,0
+ET,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10002_Sheet10002_index_t.nui
+QS,7

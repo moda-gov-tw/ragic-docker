@@ -1,0 +1,26 @@
+N,Donations,
+FS,2
+DS,2
+W,,
+TF,2002613
+KF,2002618
+SF,2002613
+S,2002789,,Donation,Fundraising Event
+A,NULL=0&MANAGER=6&USER=3&EVERYONE=0,0,2,192995775
+A2,
+D,1,1,2002613,Donation ID,ag={0`number`00000}&noDup=true&styletextAlign=center&styleVtextAlign=center
+D,2,1,2002615,Date,fmt_d=MM/dd/yyyy&styletextAlign=center&styleVtextAlign=center
+D,3,1,2002654,Amount,fmt_n_ts=`&fmt_n_ds=.&fmt_n=$#`####.##&styletextAlign=center&styleVtextAlign=center
+D,4,1,2002742,Program Name,vd=2002626&l=2002741
+L,5,1,2002789,Donation Source,userOps=true
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10001_Sheet10001_index_t.nui
+QS,0

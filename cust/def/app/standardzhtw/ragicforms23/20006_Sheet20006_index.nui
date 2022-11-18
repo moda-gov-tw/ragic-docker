@@ -1,0 +1,70 @@
+N,訪客防疫自我申告書,
+FS,2
+DS,2
+W,1=-93&2=87&3=174&4=69&5=79&6=70&7=51&8=-92,9=-2&10=33&11=-8&12=13&13=11&14=-8&15=-7&16=42&17=-7&18=-8&19=30&20=-15&21=-5&22=29&23=-4
+TF,3003940
+KF,3003953
+SF,3003940
+S,3003947,,X,Yes
+S,3003950,,X,Yes
+S,3003951,,X,Yes
+A,NULL=0&MANAGER=6&USER=3&EVERYONE=0,0,3,1474667632
+A2,
+D,2,4,3003940,訪客姓名 Visitor Name,cs=5&stylefontSize=14&styleVfontSize=14&styleborder-top=2px solid #000000&styleborder-bottom=1px solid #000000&styleborder-right=1px solid #000000&styleVborder-top=2px solid #000000&styleVborder-bottom=1px solid #000000
+D,2,5,3003941,公司 Company Name,cs=5&stylefontSize=14&styleVfontSize=14&styleborder-bottom=1px solid #000000&styleborder-right=1px solid #000000&styleVborder-bottom=1px solid #000000
+D,2,6,3003942,電話 Phone Number,phone=1&phonefmt=XX-XXXX-XXXX&cs=2&stylefontSize=14&styleVfontSize=14&styleVborder-bottom=1px solid #000000&styleborder-bottom=1px solid #000000&styleborder-right=1px solid #000000
+D,5,6,3003943,手機 Cell Phone,phone=1&phonefmt=XXXX-XXXXXX&cs=2&stylefontSize=14&styleVfontSize=14&styleborder-right=1px solid #000000&styleborder-left=1px solid #000000&styleborder-bottom=1px solid #000000&styleVborder-bottom=1px solid #000000
+D,2,7,3003944,受訪對象 Employee Name,stylefontSize=14&styleVfontSize=14&styleborder-bottom=2px solid #000000&styleborder-right=1px solid #000000&styleVborder-bottom=2px solid #000000
+D,4,7,3003945,分機 Extension,stylefontSize=14&styleVfontSize=14&styleborder-bottom=2px solid #000000&styleVborder-bottom=2px solid #000000&styleVborder-right=1px solid #000000&styleVborder-left=1px solid #000000&styleborder-left=1px solid #000000
+D,6,7,3003946,停留時間 Period of Stay,text=1&stylefontSize=14&styleVfontSize=14&styleborder-bottom=2px solid #000000&styleborder-right=1px solid #000000&styleVborder-bottom=2px solid #000000
+L,5,10,3003947,[color=white]Q1[/color],checkbox=1&cs=2&dv=X&stylefontSize=14&styleVfontSize=14&stylebackgroundColor=#FFFFFF
+D,2,13,3003948,國家/城市 Country/City,cs=2&stylefontSize=14&styleVfontSize=14
+D,5,13,3003949,旅遊期間 Travel Period,cs=2&stylefontSize=14&styleVfontSize=14
+L,5,16,3003950,[color=white]Q3[/color],checkbox=1&cs=2&dv=X&stylefontSize=14&styleVfontSize=14&stylecolor=#FFFFFF&stylebackgroundColor=#FFFFFF
+L,5,19,3003951,[color=white]Q4[/color],checkbox=1&cs=2&dv=X&stylefontSize=14&styleVfontSize=14&stylecolor=#FFFFFF&stylebackgroundColor=#FFFFFF
+D,2,22,3003952,簽名 Signature,sig=1&cs=5&stylefontSize=14&styleVfontSize=14
+F,1,1,,為落實防疫，請您確實填寫，並確認所有您在此提供的資料皆為真實且正確。<br>[color=red]倘若您所提供的任何訊息或聲明不正確或有誤，導致我司及其員工或其他訪客遭受損(傷)害者，我司將依法追究相關法律責任。[/color],cs=8&fontSize=18
+F,1,2,,To carry out epidemic prevention&#44; please kindly fill out the form and confirm that all the information you provide herein are true and accurate&#44; and that you have answered all the questions according to your best knowledge and ability.<br>[color=red]You also acknowledge that we have the right to take legal actions if any information or declaration you make are inaccurate or false to cause our company&#44; our employees or other visitors to suffer loss.[/color],cs=8&fontSize=18
+F,1,4,, ,cs=1&border-top=2px solid #000000&border-bottom=1px solid #000000&border-left=2px solid #000000
+F,8,4,, ,cs=1&border-right=2px solid #000000&border-top=2px solid #000000&border-bottom=1px solid #000000
+F,1,5,, ,cs=1&border-left=2px solid #000000&border-bottom=1px solid #000000
+F,8,5,, ,cs=1&border-right=2px solid #000000&border-bottom=1px solid #000000
+F,1,6,, ,cs=1&border-left=2px solid #000000&border-bottom=1px solid #000000
+F,8,6,, ,cs=1&border-right=2px solid #000000&border-bottom=1px solid #000000
+F,1,7,, ,cs=1&border-bottom=2px solid #000000&border-left=2px solid #000000
+F,8,7,, ,cs=1&border-right=2px solid #000000&border-bottom=2px solid #000000
+F,1,9,,   ,cs=8&border-top=3px solid #000000&border-left=3px solid #000000&border-right=3px solid #000000
+F,1,10,, ,cs=1&border-left=3px solid #000000
+F,2,10,,1. 訪客自填表日期前的14天之內，是否曾到過台灣境外？<br>   Have you been to overseas country outside Taiwan in the last 14 days?,cs=3&fontSize=14
+F,8,10,, ,cs=1&border-right=3px solid #000000
+F,1,11,,      ,cs=8&border-left=3px solid #000000&border-right=3px solid #000000&border-bottom=1px solid #000000
+F,1,12,, ,cs=1&border-left=3px solid #000000
+F,2,12,,2. 承上題，請填寫其國家.城市及停留期間？ Please indicate the following if your answer is Yes in question 1.,cs=7&fontSize=14&border-right=3px solid #000000
+F,1,13,, ,cs=1&border-left=3px solid #000000
+F,8,13,, ,cs=1&border-right=3px solid #000000
+F,1,14,,    ,cs=8&border-left=3px solid #000000&border-right=3px solid #000000&border-bottom=1px solid #000000
+F,1,15,,      ,cs=8&border-left=3px solid #000000&border-right=3px solid #000000
+F,1,16,, ,cs=1&border-left=3px solid #000000
+F,2,16,,3. 訪客目前是否有以下任一身體不適的症狀？<發燒、肌肉痠痛及呼吸道症狀(如：咳嗽或喘不過氣)><br>   Do you have any of flu like symptoms as fever&#44; sore muscles&#44; cough or breathless?,cs=3&fontSize=14
+F,8,16,, ,cs=1&border-right=3px solid #000000
+F,1,17,,    ,cs=8&border-left=3px solid #000000&border-right=3px solid #000000&border-bottom=1px solid #000000
+F,1,18,,     ,cs=8&border-left=3px solid #000000&border-right=3px solid #000000
+F,1,19,, ,cs=1&border-left=3px solid #000000
+F,2,19,,4. 訪客週遭同事、親友是否有上述類似的現象？<br>   Do your colleagues&#44; family or friends have the similar flu like symptoms as mentioned above?,cs=3&fontSize=14
+F,8,19,, ,cs=1&border-right=3px solid #000000
+F,1,20,,    ,cs=8&border-left=3px solid #000000&border-right=3px solid #000000&border-bottom=1px solid #000000
+F,1,21,, ,cs=8&border-left=3px solid #000000&border-right=3px solid #000000
+F,1,22,, ,cs=1&border-left=3px solid #000000
+F,8,22,, ,cs=1&border-right=3px solid #000000
+F,1,23,,     ,cs=8&border-left=3px solid #000000&border-bottom=3px solid #000000&border-right=3px solid #000000
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,20006_Sheet20006_index.nui
+QS,1

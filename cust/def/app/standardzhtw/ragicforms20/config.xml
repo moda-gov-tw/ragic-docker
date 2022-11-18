@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+  <name>求職管理</name>
+  <desc />
+  <publisher />
+  <createDate />
+  <updateDate />
+  <version />
+  <price />
+  <status />
+  <sourcePath />
+  <appId />
+  <forms seq="29">
+    <form sheetIndex="20001" type="NUI" seq="1">職缺列表</form>
+  </forms>
+</module>

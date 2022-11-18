@@ -1,0 +1,24 @@
+N,Team Status Report,
+FS,2
+DS,2
+W,1=-8&2=180&3=-26&4=-20&5=20&6=68&8=14,
+TF,2000066
+KF,2000082
+SF,2000066
+S,2000070,,High,Medium,Low
+S,2000072,,No,Yes
+S,2000071,standard/ragic-setup/1,
+S,2000069,,Test tag
+A,MANAGER=6&EVERYONE=0&USER=3,0,2,882564718
+A2,
+D,1,1,2000067,Task ID,ag={0`number`00000}
+D,2,1,2000066,Task Title,
+L,3,1,2000070,Priority,dv=Medium
+L,4,1,2000072,Complete?,dv=No&checkbox=1
+L,5,1,2000071,Assigned To,usrref=1
+M,6,1,2000069,Tags,userOps=true
+D,7,1,2000073,Due Date,fmt_d=yyyy/MM/dd
+D,8,1,2000074,Complete Date,fmt_d=yyyy/MM/dd
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+QS,0

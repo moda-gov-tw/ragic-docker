@@ -1,0 +1,117 @@
+N,點名單（上課紀錄）,
+FS,2
+DS,2
+W,2=15&4=77&5=-71&undefined=0,
+TF,3003254
+KF,3003256
+SF,3003254
+ST,1,14,3003267,,,
+ST,1,20,3003316,,,
+S,3003264,standardzhtw/ragicforms15/20005,
+S,3003271,,正常出席,無故缺席,請假缺席
+S,3003310,standardzhtw/ragicforms15/20007,
+S,3003311,standardzhtw/ragicforms15/20003,
+S,3003313,,補課出席,未出席
+S,3003322,,是,否
+A,NULL=0&MANAGER=6&USER=3&EVERYONE=0,0,3,1756176734
+A2,
+D,1,1,3003361,點名單編號,ag=D-{1`date`yyyyMMdd}-{0`number`000}&cs=2&noDup=true
+D,1,2,3003252,點名日期,fmt_d=yyyy/MM/dd&dv=$DATE
+D,3,2,3003253,紀錄人,
+D,1,4,3003254,開課編號,ro=true
+D,3,4,3003268,授課老師編號,
+D,1,5,3003255,課程名稱,ro=true
+D,3,5,3003269,授課老師姓名,
+D,6,6,3003274,應出席人數,fmt_n=0&f=COUNT(B14)+COUNT(B20)&ro=true
+D,1,7,3003257,星期幾,ro=true
+D,3,7,3003270,上課地點,
+D,6,7,3003275,實際出席人數,fmt_n=0&f=COUNTIF(D14`'正常出席'`D14)+COUNTIF(D20`'補課出席'`D20)&ro=true
+D,1,8,3003259,上課時間,fmt_d=HH:mm
+D,3,8,3003261,課程開始日期,fmt_d=yyyy/MM/dd&ro=true
+D,1,9,3003260,下課時間,fmt_d=HH:mm
+D,3,9,3003263,課程結束日期,fmt_d=yyyy/MM/dd&ro=true
+D,1,10,3003262,單堂時數,ro=true
+D,1,11,3003258,一期總堂數,ro=true
+L,1,14,3003264,課程訂購編號,ro=true&s=3003222&stf=3003220&mvp=/ragicforms15|20005_Sheet20005
+D,2,14,3003265,學員編號,ro=true
+D,3,14,3003266,學員姓名,ro=true
+L,4,14,3003271,當日出席狀態,
+D,5,14,3003272,選課扣減堂數,fmt_n=0&ro=true&dv=1&cs=2
+D,6,14,3003273,其他備註,cs=3
+L,1,20,3003310,加補課編號,s=3003305&stf=3003276&mvp=/ragicforms15|20007_Sheet20007&mvpf=3003306|1|$3003252%263003284|1|$3003254&mvpMulti=true&subNoDup=true
+L,2,20,3003311,學員編號,s=3003205&stf=3003196&mvp=/ragicforms15|20003_Sheet20003&vd=3003278&l=3003310&ro=true
+D,3,20,3003312,學員姓名,vd=3003280&l=3003310&ro=true
+L,4,20,3003313,當日出席狀態,
+L,5,20,3003322,補課完成？,f=IF(D20.RAW='補課出席'`'是'`'否')&ro=true&cs=2
+D,6,20,3003315,備註,cs=3&vd=3003309&l=3003310
+D,1,25,3003800,扣堂數執行時間,fmt_d=yyyy/MM/dd HH:mm&ro=true&cs=3
+D,1,27,3003799,RAGIC_AUTOGEN_1560605273342,fmt_d=yyyy/MM/dd HH:mm&ro=true&hide=true
+D,1,28,3003801,RAGIC_AUTOGEN_1560605508970,fmt_d=yyyy/MM/dd HH:mm&ro=true&hide=true
+F,1,3,,開課資訊,cs=4&background=#0055BB&color=#ffffff&textAlign=center&backgroundColor=#2E6EAA
+F,6,3,,出席狀態,cs=2&background=#0055BB&color=#ffffff&textAlign=center&backgroundColor=#099FBF
+F,1,13,,選課學生名單,cs=9&background=#0055BB&color=#ffffff&textAlign=center&backgroundColor=#099FBF
+F,1,19,,加補課學生名單,cs=9&background=#0055BB&color=#ffffff&backgroundColor=#9B899C&textAlign=center
+X_MAX_DESIGNER_ID,101
+K,{"type":"F","seq":"1","name":"查看請假單","action":"https://www.ragic.com/standardzhtw/ragicforms15/20008","confirmBeforeAction":"false","needApproval":"false","hideButton":"false","userGroups":["EVERYONE"]}
+K,{"type":"B","seq":"2","name":"選課生扣堂數","action":"_RAGIC_AUTOGEN_ENTRY_UPDATER_32930({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"true","userGroups":["EVERYONE"]}
+K,{"type":"B","seq":"3","name":"復原 選課生扣堂數","action":"_RAGIC_AUTOGEN_ENTRY_UPDATER_32930_REVERSE({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"true","userGroups":["EVERYONE"]}
+K,{"type":"B","seq":"4","name":"加補課生扣堂數","action":"_RAGIC_AUTOGEN_ENTRY_UPDATER_21139({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"true","userGroups":["EVERYONE"]}
+K,{"type":"B","seq":"5","name":"復原 加補課生扣堂數","action":"_RAGIC_AUTOGEN_ENTRY_UPDATER_21139_REVERSE({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"true","userGroups":["EVERYONE"]}
+K,{"type":"B","seq":"6","name":"扣堂數","action":"_RAGIC_AUTOGEN_MERGED_BUTTON_44731({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"false","userGroups":["EVERYONE"]}
+K,{"type":"B","seq":"7","name":"復原 扣堂數","action":"_RAGIC_AUTOGEN_MERGED_BUTTON_22761({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"false","userGroups":["EVERYONE"]}
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_QUERY_ITEMS=108|105|3003252|3003253|3003268|3003269|3003274|3003275|3003259|3003260|3003261|3003263|3003323
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,20006_Sheet20006_index.nui
+QS,1
+PRE_WORKFLOW_START
+
+SCRIPT_START
+
+SHEET_SCOPE_START
+function _RAGIC_AUTOGEN_ENTRY_UPDATER_32930(nodeId){
+  var result = db.entryUpdater(JSON.stringify(
+{"THIS_PATH":"/ragicforms15/20006","UPDATE_PATH":"/ragicforms15/20005","THIS_NODE_ID":nodeId,"MATCH":{"3003220":"3003264"},"ACTIONS":[{"THIS_NUMBER_FIELD":"3003272","UPDATE_ACTION":"SUBSTRACT","UPDATE_NUMBER_FIELD":"3003245"},{"THIS_NUMBER_FIELD":"3003252","UPDATE_ACTION":"SET","UPDATE_NUMBER_FIELD":"3003246"}],"MULTI_FIELDS":true,"LAST_UPDATE_FIELD":"3003800","RECALCULATE":false,"CHECK_USER_GROUPS":false,"CHECK_MUST_FIELDS":false,"CHECK_VALIDATION_FIELDS":false,"FAILED_IF_NO_RECORD_UPDATED":false,"LOAD_DEFAULT_VALUES_ON_TARGET":false,"LOAD_DEFAULT_VALUES_ON_THIS_SHEET":false}
+  ), response);
+}//END_RAGIC_AUTOGEN_ENTRY_UPDATER_32930
+
+function _RAGIC_AUTOGEN_ENTRY_UPDATER_32930_REVERSE(nodeId){
+  var result = db.entryUpdater(JSON.stringify(
+{"THIS_PATH":"/ragicforms15/20006","UPDATE_PATH":"/ragicforms15/20005","THIS_NODE_ID":nodeId,"MATCH":{"3003220":"3003264"},"ACTIONS":[{"THIS_NUMBER_FIELD":"3003272","UPDATE_ACTION":"ADD","UPDATE_NUMBER_FIELD":"3003245"},{"THIS_NUMBER_FIELD":"3003252","UPDATE_ACTION":"SET","UPDATE_NUMBER_FIELD":"3003246"}],"MULTI_FIELDS":true,"LAST_UPDATE_FIELD":"3003800","RECALCULATE":false,"CHECK_USER_GROUPS":false,"CHECK_MUST_FIELDS":false,"CHECK_VALIDATION_FIELDS":false,"FAILED_IF_NO_RECORD_UPDATED":false,"LOAD_DEFAULT_VALUES_ON_TARGET":false,"LOAD_DEFAULT_VALUES_ON_THIS_SHEET":false,"REVERSE":true}
+  ), response);
+}//END_RAGIC_AUTOGEN_ENTRY_UPDATER_32930
+
+
+
+
+function _RAGIC_AUTOGEN_ENTRY_UPDATER_21139(nodeId){
+  var result = db.entryUpdater(JSON.stringify(
+{"THIS_PATH":"/ragicforms15/20006","UPDATE_PATH":"/ragicforms15/20007","THIS_NODE_ID":nodeId,"MATCH":{"3003276":"3003310"},"ACTIONS":[{"THIS_NUMBER_FIELD":"3003322","UPDATE_ACTION":"SET","UPDATE_NUMBER_FIELD":"3003319"}],"MULTI_FIELDS":true,"LAST_UPDATE_FIELD":"3003801","RECALCULATE":false,"CHECK_USER_GROUPS":false,"CHECK_MUST_FIELDS":false,"CHECK_VALIDATION_FIELDS":false,"FAILED_IF_NO_RECORD_UPDATED":false,"LOAD_DEFAULT_VALUES_ON_TARGET":false,"LOAD_DEFAULT_VALUES_ON_THIS_SHEET":false}
+  ), response);
+}//END_RAGIC_AUTOGEN_ENTRY_UPDATER_21139
+
+function _RAGIC_AUTOGEN_ENTRY_UPDATER_21139_REVERSE(nodeId){
+  var result = db.entryUpdater(JSON.stringify(
+{"THIS_PATH":"/ragicforms15/20006","UPDATE_PATH":"/ragicforms15/20007","THIS_NODE_ID":nodeId,"MATCH":{"3003276":"3003310"},"ACTIONS":[{"THIS_NUMBER_FIELD":"3003322","UPDATE_ACTION":"SET","UPDATE_NUMBER_FIELD":"3003319"}],"MULTI_FIELDS":true,"LAST_UPDATE_FIELD":"3003801","RECALCULATE":false,"CHECK_USER_GROUPS":false,"CHECK_MUST_FIELDS":false,"CHECK_VALIDATION_FIELDS":false,"FAILED_IF_NO_RECORD_UPDATED":false,"LOAD_DEFAULT_VALUES_ON_TARGET":false,"LOAD_DEFAULT_VALUES_ON_THIS_SHEET":false,"REVERSE":true}
+  ), response);
+}//END_RAGIC_AUTOGEN_ENTRY_UPDATER_21139
+
+function _RAGIC_AUTOGEN_MERGED_BUTTON_44731(nodeId){
+  db.executeMergedActionButtons(JSON.stringify(
+{"THIS_NODE_ID":nodeId,"THIS_PATH":"/ragicforms15","THIS_SHEETINDEX":20006,"ACTIONS":["_RAGIC_AUTOGEN_ENTRY_UPDATER_32930","_RAGIC_AUTOGEN_ENTRY_UPDATER_21139"]}
+  ), response);
+  response.setDisplayButtonNameAsMessage(true)
+}//END_RAGIC_AUTOGEN_MERGED_BUTTON_44731
+
+function _RAGIC_AUTOGEN_MERGED_BUTTON_22761(nodeId){
+  db.executeMergedActionButtons(JSON.stringify(
+{"THIS_NODE_ID":nodeId,"THIS_PATH":"/ragicforms15","THIS_SHEETINDEX":20006,"ACTIONS":["_RAGIC_AUTOGEN_ENTRY_UPDATER_32930_REVERSE","_RAGIC_AUTOGEN_ENTRY_UPDATER_21139_REVERSE"]}
+  ), response);
+  response.setDisplayButtonNameAsMessage(true)
+}//END_RAGIC_AUTOGEN_MERGED_BUTTON_22761

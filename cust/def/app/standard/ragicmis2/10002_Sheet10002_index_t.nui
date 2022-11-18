@@ -1,0 +1,24 @@
+N,Hardware Asset Management ,
+FS,2
+DS,2
+W,1=70&2=76&3=68&4=112,
+TF,2001709
+KF,2001726
+SF,2001710
+S,2001727,,Desktops,Laptops / Notebooks,Tablets,Monitors,Others
+S,2001712,standard/ragicmis2/10001,
+A,NULL=0&MANAGER=6&IT=6&USER=2&EVERYONE=0,0,2,597379954
+A2,
+L,1,1,2001727,Device Type,userOps=true
+D,2,1,2001709,Item Model,l=2001426&vd=2001555
+D,3,1,2001710,Device Number,ag=H{0`number`00000}&ro=true
+L,4,1,2001712,Device User's E-Mail,text=1&s=2001708&stf=2001707&mvp=/ragicmis2|10001_Sheet10001
+RMD_MAX_SEQ,0
+ET,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10002_Sheet10002_index_t.nui
+QS,5
+SHEET_SCOPE_START
+

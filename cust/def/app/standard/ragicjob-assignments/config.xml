@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+  <name>HVAC Inspections Management</name>
+  <desc />
+  <publisher />
+  <createDate />
+  <updateDate />
+  <version />
+  <price />
+  <status />
+  <sourcePath />
+  <appId />
+  <forms seq="28">
+    <form sheetIndex="10001" type="NUI" seq="1">HVAC Jobs</form>
+    <form sheetIndex="10002" type="NUI" seq="2">Clients</form>
+    <form sheetIndex="10003" type="NUI" seq="3">Technicians</form>
+    <form sheetIndex="10004" type="NUI" seq="4">Inspection Assignments</form>
+    <form sheetIndex="10006" type="NUI" seq="5">Inventory</form>
+    <form sheetIndex="10007" type="NUI" seq="6">Quotes</form>
+    <form sheetIndex="10008" type="NUI" seq="7">Invoices</form>
+  </forms>
+</module>

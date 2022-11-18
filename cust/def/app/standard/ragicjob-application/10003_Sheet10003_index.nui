@@ -1,0 +1,21 @@
+N,Interview Question,
+FS,2
+DS,2
+W,,3=314
+TF,2002450
+KF,2002452
+SF,2002450
+S,2002449,standard/ragicjob-application/10001,
+A,NULL=0&MANAGER=6&USER=3&EVERYONE=0,0,3,1416676739
+A2,
+L,1,1,2002449,Application ID,s=2002428&stf=2002421&mvp=/ragicjob-application|10001_Sheet10001
+D,3,1,2002454,Company - Position,vd=2002453&l=2002449&cs=2
+D,1,2,2002450,Question,cs=4
+D,1,3,2002451,Answer,cs=4
+RMD_MAX_SEQ,0
+ET,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10003_Sheet10003_index.nui
+QS,1

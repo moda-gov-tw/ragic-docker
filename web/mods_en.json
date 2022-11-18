@@ -1,0 +1,268 @@
+{
+  "mods":[
+    {
+      "tab":"",
+      "path":"",
+      "forms":[
+        {
+          "name":"Empty",
+          "url":"",
+          "img":"Templates_Icons-Empty.png"
+        }
+      ]
+    },
+    {
+      "tab":"Order Management",
+      "path":"/order-management",
+      "forms":[
+        {
+          "name":"Quotation",
+          "url":"/order-management/1",
+          "img":"Templates_Icons-Quotation.png"
+        },
+        {
+          "name":"Sales Order",
+          "url":"/order-management/2",
+          "img":"Templates_Icons-Sales Order.png"
+        },
+        {
+          "name":"Purchase Order",
+          "url":"/order-management/3",
+          "img":"Templates_Icons-Purchase Order.png"
+        },
+        {
+          "name":"Merchandise",
+          "url":"/order-management/4",
+          "img":"Templates_Icons-Product.png"
+        },
+        {
+          "name":"Customer",
+          "url":"/order-management/5",
+          "img":"Templates_Icons-Customer.png"
+        },
+        {
+          "name":"Vendor",
+          "url":"/order-management/6",
+          "img":"Templates_Icons-Vendor.png"
+        },
+        {
+          "name":"Invoice",
+          "url":"/order-management/7",
+          "img":"Templates_Icons-Invoice.png"
+        },
+        {
+          "name":"Delivery Note",
+          "url":"/order-management/8",
+          "img":"Templates_Icons-Delivery-Note.png"
+        },
+        {
+          "name":"Price List",
+          "url":"/order-management/9",
+          "img":"Templates_Icons-PriceList.png"
+        }
+      ]
+    },
+    {
+      "tab": "Sales",
+      "path":"/sales",
+      "forms":[
+        {
+          "name":"Contact",
+          "url":"/sales/1",
+          "img":"Templates_Icons-Contact.png"
+        },
+        {
+          "name":"Opportunity",
+          "url":"/sales/2",
+          "img":"Templates_Icons-Opportunity.png"
+        },
+        {
+          "name":"Sales Lead",
+          "url":"/sales/3",
+          "img":"Templates_Icons-Sales Lead.png"
+        },
+        {
+          "name":"Contracts",
+          "url":"/sales/6",
+          "img":"Templates_Icons-Contract.png"
+        }
+      ]
+    },
+    {
+      "tab": "Project Management",
+      "path":"/project-management",
+      "forms":[
+        {
+          "name":"Project",
+          "url":"/project-management/1",
+          "img":"Templates_Icons-Project.png"
+        },
+        {
+          "name":"Meeting Minutes",
+          "url":"/project-management/2",
+          "img":"Templates_Icons-Meeting-Minutes.png"
+        }
+      ]
+    },
+    {
+      "tab": "Membership Management",
+      "path":"/membership-management",
+      "forms":[
+        {
+          "name":"Membership",
+          "url":"/membership-management/1",
+          "img":"Templates_Icons-Membership.png"
+        }
+      ]
+    },
+    {
+      "tab": "HR Management",
+      "path":"/hr-management",
+      "forms":[
+        {
+          "name":"Timesheet",
+          "url":"/hr-management/1",
+          "img":"Templates_Icons-Timesheet.png"
+        },
+        {
+          "name":"Employee",
+          "url":"/hr-management/2",
+          "img":"Templates_Icons-Employee.png"
+        },
+        {
+          "name":"Clock In (Out)",
+          "url":"/hr-management/3",
+          "img":"Templates_Icons_clock_in_out.png"
+        },
+        {
+          "name":"Job scorecard",
+          "url":"/hr-management/5",
+          "img":"Templates_Icons_job_scorecard.png"
+        }
+      ]
+    },
+    {
+      "tab": "Support",
+      "path":"/support",
+      "forms":[
+        {
+          "name":"Job",
+          "url":"/support/1",
+          "img":"Templates_Icons-Assignments.png"
+        }
+      ]
+    },
+    {
+      "tab": "Personal",
+      "path":"/personal",
+      "forms":[
+        {
+          "name":"Expense Tracking",
+          "url":"/personal/1",
+          "img":"Templates_Icons-Expenses.png"
+        },
+        {
+          "name":"Password Tracker",
+          "url":"/personal/2",
+          "img":"Templates_Icons-PasswordTracker.png"
+        }
+      ]
+    },
+    {
+      "tab": "Manufacture",
+      "path":"/manufacture",
+      "forms":[
+        {
+          "name":"Material Requisition",
+          "url":"/manufacture/1",
+          "img":"Templates_Icons-Material Requisition.png"
+        },
+        {
+          "name":"Stock/Inventory",
+          "url":"/manufacture/2",
+          "img":"Templates_Icons-Inventory.png"
+        }
+      ]
+    },
+    {
+      "tab": "Event Coordination",
+      "path":"/event-coordination",
+      "forms":[
+        {
+          "name":"Events",
+          "url":"/event-coordination/1",
+          "img":"Templates_Icons.-Events.png"
+        },
+        {
+          "name":"Registration Form",
+          "url":"/event-coordination/2",
+          "img":"Templates_Icons-Registration-Form.png"
+        }
+      ]
+    },
+    {
+      "tab": "Administration",
+      "path":"/administration",
+      "forms":[
+        {
+          "name":"Document Expiry Management",
+          "url":"/administration/1",
+          "img":"Templates_Icons-DocumentExpiry.png"
+        },
+        {
+          "name":"Phone Book",
+          "url":"/administration/2",
+          "img":"Templates_Icons-Phonebook.png"
+        }
+      ]
+    },
+    {
+      "tab": "Other",
+      "path":"/other",
+      "forms":[
+        {
+          "name":"Case Notes",
+          "url":"/other/1",
+          "img":"Templates_Icons-CaseNotes.png"
+        },
+        {
+          "name":"Visitor&#39;s Self-Declaration Form for Epidemic Prevention",
+          "url":"/other/2",
+          "img":"Templates_Icons-Visitor's Self-Declaration.png"
+        }
+      ]
+    },
+    {
+      "tab": "Life",
+      "path":"/life",
+      "forms":[
+        {
+          "name":"Trip Itinerary",
+          "url":"/life/1",
+          "img":"Templates_Icons-TripItinerary.png"
+        },
+        {
+          "name":"Book Collection List",
+          "url":"/life/2",
+          "img":"Templates_Icons-BookCollection.png"
+        },
+        {
+          "name":"Binge-watching",
+          "url":"/life/4",
+          "img":"Templates_Icons-Binge-watching.png"
+        }
+      ]
+    },
+    {
+      "tab": "Purchasing",
+      "path":"/purchasing",
+      "forms":[
+        {
+          "name":"Bill",
+          "url":"/purchasing/3",
+          "img":"Templates_Icons_bill.png"
+        }
+      ]
+    }
+  ]
+}

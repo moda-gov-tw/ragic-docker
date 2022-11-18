@@ -1,0 +1,234 @@
+N,薪資單,
+FS,2
+DS,2
+W,,
+TF,3005150
+KF,3005161
+SF,3005150
+ST,1,8,3005162,,,,
+ST,1,14,3005163,,,,
+ST,1,20,3005170,,,,
+A,null=0&MANAGER=6&USER=3&EVERYONE=0,0,3,1921208875
+A2,
+D,1,2,3005150,員工編號,text=1
+D,3,2,3005151,結算日,must=true&fmt_d=yyyy/MM/dd
+D,1,3,3005152,員工E-mail,email=2&must=true
+D,3,3,3005153,年月份,must=true&f=LEFT(C2`7)
+D,1,4,3005154,本薪,fmt_n=$#`###.##
+D,3,4,3005155,加班時薪,fmt_n=$#`###.##&must=true
+D,1,5,3005164,應發總額,fmt_n=#`###.#####&f=A4+C8-C14
+D,3,5,3005156,請假時薪,fmt_n=$#`###.##&must=true
+D,1,8,3005157,加項,text=1&cs=2
+D,2,8,3005158,費用,fmt_n=$#`###.##&cs=2
+D,1,14,3005159,減項,cs=2
+D,2,14,3005160,費用,fmt_n=$#`###.##&cs=2
+D,1,20,3005166,加班時期,
+D,2,20,3005167,時數,
+D,3,20,3005168,時數類別,text=1
+D,4,20,3005169,薪水,
+D,1,25,3005302,系統訊息,cs=3
+F,1,1,,薪資資訊,cs=4
+F,1,7,,加項資訊,cs=4&color=#FFFFFF
+F,1,13,,減項資訊,cs=4&background=#333333&color=#ffffff
+F,1,19,,加班細項,cs=4&background=#333333&color=#ffffff
+X_MAX_DESIGNER_ID,101
+K,{"type":"B","seq":"1","name":"產生加班費","action":"overtimeFee({id})","confirmBeforeAction":"false","needApproval":"false","hideButton":"false","checkIfUserCanEdit":false,"userGroups":["EVERYONE"],"id":"1","category":"custom"}
+K,{"type":"B","seq":"2","name":"產生請假扣薪","action":"salaryDeduction({id})","confirmBeforeAction":"false","needApproval":"false","hideButton":"false","checkIfUserCanEdit":false,"userGroups":["EVERYONE"],"id":"2","category":"custom"}
+K,{"type":"B","seq":"3","name":"計算代墊款","action":"generateReimburse({id})","confirmBeforeAction":"false","needApproval":"false","hideButton":"false","checkIfUserCanEdit":false,"userGroups":["EVERYONE"],"id":"3","category":"custom"}
+ACTION_BUTTON_MAX_ID,3
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=theme22
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+MOBCONF,%7B%7D
+NUI_FILE_NAME,20005_Sheet20005_index.nui
+QS,1
+SHEET_SCOPE_START
+/**
+
+ * This comment is auto generated on 2022/10/02 21:41:54, and it reflects the field definition at this given time.
+ * If you need the current field definitions for your database, please go to "Start" => "Account Setup" => "DB Maintenance" => "Download Data Dictionary"
+
+ * AP_Name:standardzhtw
+ * Key Field: 3005161
+
+ * 加項 subtable key: 3005162
+
+ * 減項 subtable key: 3005163
+
+ * Field Name      Field Id
+ * - - - - - - - - - - - --------
+ * 員工編號 : 3005150
+ * 結算日   : 3005151
+ * 員工E-mail : 3005152
+ * 年月份   : 3005153
+ * 本薪    : 3005154
+ * 加班時薪 : 3005155
+ * 應發總額 : 3005164
+ * 請假時薪 : 3005156
+ * 加項    : 3005157
+ * 費用    : 3005158
+ * 減項    : 3005159
+ * 費用    : 3005160
+*/
+
+
+
+function salaryDeduction(recordId) {
+
+	var thisSheet = db.getAPIQuery("/ragicforms39/20005");
+	var takeOfftimeSheet = db.getAPIQuery("/ragicforms39/20008");         
+	var thisEntry = thisSheet.getAPIEntry(recordId);   
+	var thisMonth = thisEntry.getFieldValue(3005153);    
+	var thisEmployeeEmail = thisEntry.getFieldValue(3005152);     
+      
+	takeOfftimeSheet.addFilter(3005201, '=', "未結算");    
+	takeOfftimeSheet.addFilter(3005202, '=', thisMonth);   
+	takeOfftimeSheet.addFilter(3005199, '=', thisEmployeeEmail);  
+ 
+	var results = takeOfftimeSheet.getAPIResultList();  
+	var hourlyRate = thisEntry.getFieldValue(3005156);    
+	var totalSalaryDeduc = 0; 
+   
+	for (var j = 0; j < results.length; j++) {
+  		totalSalaryDeduc += hourlyRate*Number(results[j].getFieldValue(3005187))*Number(results[j].getFieldValue(3005190));  
+  		results[j].setFieldValue(3005201, '已結算'); 
+  		results[j].save();};  
+    
+    if(totalSalaryDeduc == 0){
+    	thisEntry.setFieldValue(3005302, '該月無扣薪或是「是否已結」欄位未勾選成「未結算」');
+        response.setMessage('該月無扣薪或是「是否已結」欄位未勾選成「未結算」'); 
+    } else {
+	thisEntry.setSubtableFieldValue(3005160, -100, totalSalaryDeduc);
+	thisEntry.setSubtableFieldValue(3005159, -100, '請假扣薪');
+	thisEntry.recalculateAllFormulas(); 
+    thisEntry.setFieldValue(3005302, '已產生扣薪');
+    response.setMessage('已產生扣薪');   
+    }  
+	thisEntry.save();
+    
+	
+	response.setStatus('SUCCESS');  
+
+}
+
+function overtimeFee(recordId) {
+
+	var thisSheet = db.getAPIQuery("/ragicforms39/20005");
+	var workOvertimeSheet = db.getAPIQuery("/ragicforms39/20009");
+	var paramSheet = db.getAPIQuery("/ragicforms39/20004");  
+	var thisEntry = thisSheet.getAPIEntry(recordId);   
+	var param = paramSheet.getAPIResult();  
+	var thisEmployeeEmail = thisEntry.getFieldValue(3005152); 
+	var payrollEndDate = thisEntry.getFieldValue(3005151); 
+
+	workOvertimeSheet.addFilter(3005274, '=', thisEmployeeEmail);    
+	workOvertimeSheet.addFilter(3005209, '=', payrollEndDate);
+
+	var overtimeSlip = workOvertimeSheet.getAPIResult();
+	var overtimeSlipS = workOvertimeSheet.getAPIResultList();   
+  
+	if (overtimeSlip == null) { 
+        thisEntry.setFieldValue(3005302, '查無相關加班資料，為無加班或加班單/薪資單欄位填寫錯誤');
+  		response.setMessage('查無相關加班資料，為無加班或加班單/薪資單欄位填寫錯誤'); 
+  		response.setStatus('WARN');    
+	} 
+  
+	else if (overtimeSlipS.length > 1) {
+        thisEntry.setFieldValue(3005302, '錯誤，有關該月加班單超過一筆，請整合至一筆');
+  		response.setMessage('錯誤，有關該月加班單超過一筆，請整合至一筆'); 
+  		response.setStatus('WARN');     
+	}   
+  
+	else {   
+  		var overtimeSubtable = param.getSubtableSize(3005149);
+  		var subtableSize = overtimeSlip.getSubtableSize(3005222);   
+  		var multiplierList = [];   
+  
+  		for (var j = 0; j < overtimeSubtable; j++) {
+    		var overtimeCtgy = param.getSubtableFieldValue(3005149, j, 3005146);  
+    		var overtimeMtpr = param.getSubtableFieldValue(3005149, j, 3005147);       
+    		var innerArray = [overtimeCtgy,overtimeMtpr];
+    		multiplierList.push(innerArray); 
+  		}  
+  
+  		var hourlyRate = thisEntry.getFieldValue(3005155);
+  		var totalSalary = 0; 
+
+  		for (var i = 0; i < subtableSize; i++) {
+    		var startDate = overtimeSlip.getSubtableFieldValue(3005222, i, 3005211);
+    		var startTime = overtimeSlip.getSubtableFieldValue(3005222, i, 3005212);
+    		var endDate = overtimeSlip.getSubtableFieldValue(3005222, i, 3005213);
+    		var endTime = overtimeSlip.getSubtableFieldValue(3005222, i, 3005214);
+    		var duration = overtimeSlip.getSubtableFieldValue(3005222, i, 3005215);
+    		var multiplier = overtimeSlip.getSubtableFieldValue(3005222, i, 3005216);
+    		var shift = startDate + " " + startTime + " - " + endDate + " " + endTime;
+        	
+          	var overtimeSalaryTotal = 0;
+  			var shiftSalary = 0;
+    
+          	for (var k = 0; k < multiplierList.length; k++ ) {
+      			if ( multiplier == multiplierList[k][0] ) {
+      				var salary = Number(multiplierList[k][1])*Number(duration)*Number(hourlyRate); 
+      				shiftSalary = shiftSalary + salary;
+      			}
+    	    }  
+          
+    		if ( shiftSalary != 0) {
+      			thisEntry.setSubtableFieldValue(3005166,-100-i,shift);
+      			thisEntry.setSubtableFieldValue(3005167,-100-i,duration);
+      			thisEntry.setSubtableFieldValue(3005168,-100-i,multiplier);
+      			thisEntry.setSubtableFieldValue(3005169,-100-i,shiftSalary);
+    		}        
+        	totalSalary = totalSalary + shiftSalary;
+		}
+  
+		thisEntry.setSubtableFieldValue(3005158,-100,totalSalary);
+		thisEntry.setSubtableFieldValue(3005157,-100,'加班費');
+		thisEntry.recalculateAllFormulas();   
+        thisEntry.setFieldValue(3005302, '已經產生本月加班費用');
+		thisEntry.save();
+
+		response.setMessage('已經產生本月加班費用');
+		response.setStatus('SUCCESS');     
+	}  
+}
+
+
+
+function generateReimburse(recordId) {   
+
+	var employeePayrollSheet = db.getAPIQuery("/ragicforms39/20005");  
+	var expenseSheet = db.getAPIQuery("/ragicadministration/20005");   
+	var thisEntry = employeePayrollSheet.getAPIEntry(recordId);  
+	var thisEmployeeEmail = thisEntry.getFieldValue(3005152); 
+	var thisMonth = thisEntry.getFieldValue(3005153); 
+
+	expenseSheet.addFilter(3000338, '=', thisEmployeeEmail); 
+	expenseSheet.addFilter(3000356, '=', thisMonth); 
+	expenseSheet.addFilter(3000335, '=', 'Yes');      
+
+	var results = expenseSheet.getAPIResultList(); 
+	var thisMonthEmployPay = 0;  
+
+	for (var i = 0; i < results.length; i++) {
+		var entry = results[i];
+		thisMonthEmployPay = thisMonthEmployPay + Number(entry.getFieldValue(3000352));   
+	};
+
+	thisEntry.setSubtableFieldValue(3005158, -100, thisMonthEmployPay);    
+	thisEntry.setSubtableFieldValue(3005157, -100, '員工該月代墊款'); 
+	thisEntry.recalculateAllFormulas();  
+    thisEntry.setFieldValue(3005302, '已產生該月代墊款');
+	thisEntry.save(); 
+
+  	response.setMessage('已產生該月代墊款'); 
+	response.setStatus('SUCCESS');  
+}
+
+
+

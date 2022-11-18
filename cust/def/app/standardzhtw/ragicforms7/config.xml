@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+  <name>生產管理</name>
+  <desc />
+  <publisher />
+  <createDate />
+  <updateDate />
+  <version />
+  <price />
+  <status />
+  <sourcePath />
+  <appId />
+  <forms seq="14">
+    <form sheetIndex="20001" type="NUI" seq="1">物料主檔</form>
+    <form sheetIndex="20002" type="NUI" seq="2">物料清單(BOM)</form>
+    <form sheetIndex="20003" type="NUI" seq="4">工單</form>
+    <form sheetIndex="20004" type="NUI" seq="3">物料生產流程</form>
+    <form sheetIndex="20006" type="NUI" seq="6">工作站</form>
+    <form sheetIndex="20007" type="NUI" seq="5">製程碼</form>
+    <form sheetIndex="20008" type="NUI" seq="7">領料單</form>
+    <form sheetIndex="20009" type="NUI" seq="8">退料單</form>
+    <form sheetIndex="20010" type="NUI" seq="9">工單所需之物料細項</form>
+  </forms>
+</module>

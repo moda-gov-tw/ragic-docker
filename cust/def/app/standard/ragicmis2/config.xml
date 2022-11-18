@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+  <name>MIS</name>
+  <desc />
+  <publisher />
+  <createDate />
+  <updateDate />
+  <version />
+  <price />
+  <status />
+  <sourcePath />
+  <appId />
+  <forms seq="17">
+    <form sheetIndex="10001" type="NUI" seq="1">IT User Management </form>
+    <form sheetIndex="10002" type="NUI" seq="2">Hardware Asset Management </form>
+    <form sheetIndex="10003" type="NUI" seq="3">Software License Management</form>
+    <form sheetIndex="10006" type="NUI" seq="4">Software License Allocation</form>
+    <form sheetIndex="10007" type="NUI" seq="5">IT Request </form>
+    <form sheetIndex="10008" type="NUI" seq="6">IT Assignment</form>
+  </forms>
+</module>

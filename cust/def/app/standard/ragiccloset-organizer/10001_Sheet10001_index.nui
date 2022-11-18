@@ -1,0 +1,42 @@
+N,Closet Organizer,
+FS,2
+DS,2
+W,2=76&3=76,6=204
+TF,2003704
+KF,2003708
+SF,2003704
+ST,1,9,2003715,,,
+S,2003705,,T-Shirts,Hoodies,Shorts,Pants,Jeans,Skirts,Dresses,Jackets,Coats,Shoes,Accessories
+S,2003706,,Blue,Black
+S,2003707,,No Brand
+S,2003711,,In Closet,Sold,Donated
+S,2003713,standard/ragiccloset-organizer/10001,
+A,null=0&MANAGER=6&USER=3&EVERYONE=0,0,3,1861643452
+A2,
+D,1,2,2003704,Serial,ag={2`reference`2003705}-{0`number`00000}
+L,3,2,2003705,Type,userOps=true&must=true
+M,1,3,2003706,Color,userOps=true
+L,3,3,2003707,Brand,userOps=true
+D,1,4,2003709,Price,fmt_n_ts=`&fmt_n_ds=.&fmt_n=$#`####.##
+D,3,4,2003710,Year,
+L,1,5,2003711,Status,userOps=true&dv=In Closet&cs=3
+G,1,6,2003712,Picture,cs=3
+L,1,9,2003713,Work With...,s=2003708&stf=2003704&mvp=/ragiccloset-organizer|10001_Sheet10001&cs=2&mvpMulti=true
+G,2,9,2003714,Item Picture,cs=2&vd=2003712&l=2003713
+G,3,9,2003716,Outfit Look,multipleImages=true&cs=2
+D,4,9,2003717,Date,fmt_d=MM/dd/yyyy&dv=$DATE
+F,1,1,,Info,cs=4&background=#0055BB&color=#ffffff&backgroundColor=#66CCCC&textAlign=center
+F,1,8,,Outfit,cs=7&background=#0055BB&color=#ffffff&backgroundColor=#66cccc&textAlign=center
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+AGR,2003704|2003705
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+MOBCONF,%7B%7D
+NUI_FILE_NAME,10001_Sheet10001_index.nui
+QS,1

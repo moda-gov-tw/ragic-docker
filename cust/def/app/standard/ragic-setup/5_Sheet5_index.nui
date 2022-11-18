@@ -1,0 +1,74 @@
+N,External User,
+FS,0
+DS,2
+W,1=28&2=194&3=-72&4=13&5=188&undefined=0,10=62&13=96
+S,3,system/ragic-setup/2,
+S,31,null,
+S,43,null,
+A,MANAGER=0&EVERYONE=0&USER=0,0,3,903568931
+A2,
+D,1,2,1,E-mail,help=E-mail used for signing in.&email=2$&must=true&noDup=true
+G,4,2,618,Picture,
+D,1,3,4,Full Name,help=Full name of the user&must=true
+M,1,4,3,Ragic Groups,dv=X-User&optfilter=X-.+
+D,1,7,610,Company,
+L,4,7,31,Status,dv=NORMAL&help=Change to SUSPENDED when you no longer wish the user to access your database.&must=true
+D,1,8,609,Title,
+D,4,8,10,System Log,ro=1&help=System messages on whether new users are created successfully.
+D,1,9,613,Phone,phone=1
+L,4,9,43,Internal/External,ro=1
+D,1,10,617,Mailing address,addr=1
+D,1,13,619,Signature,sig=1
+F,1,1,,External User Setting,cs=5&color=#FFFFFF&backgroundColor=#003300
+F,1,6,,Contact Information,color=#FFFFFF&backgroundColor=#339900&cs=2
+F,4,6,,System Information,cs=2&color=#FFFFFF&backgroundColor=#339900
+F,1,12,,Signature,color=#FFFFFF&backgroundColor=#339900&cs=2
+K,{"type":"F","seq":"1","name":"Reset Password","action":"/sims/reg/userPwdReset.jsp?emailNodeId={id}","confirmBeforeAction":"false","needApproval":"false","hideButton":"false"}
+K,{"type":"F","seq":"2","name":"Entry Owner Transfer","action":"/sims/v5Module/dataOwnerTrans.jsp?id={id}&userType=X-USER","confirmBeforeAction":"false","needApproval":"false"}
+K,{"type":"F","seq":"3","name":"Change Email","action":"/sims/v5Module/changeEmail.jsp?id={id}&userType=X-USER","confirmBeforeAction":"false"}
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+QS,1
+PRE_WORKFLOW_START
+var internalDomain=db.getDBProperty('INTERNAL_DOMAIN');
+var newEmail=param.getNewValue(1);
+if(!internalDomain){
+  response.setStatus('INVALID');
+  response.setMessage('External user has not been enabled.');
+}
+else if(internalDomain && newEmail && newEmail.indexOf(internalDomain) !== -1){
+  response.setStatus('INVALID');
+  response.setMessage('You cannot add external users with your organization e-mail domain: '+internalDomain);
+}
+SCRIPT_START
+/*
+* Please do not edit, this is necessary to enable created users to log on to Ragic.
+*/
+var oldEmail=param.getOldValue(1);
+var newEmail=param.getNewValue(1);
+if(newEmail) newEmail=newEmail.trim();
+var status=param.getNewValue(31);
+var userNodeId=param.getOldNodeId(1);
+
+if(oldEmail && !oldEmail.toString().equals(newEmail.toString())){
+  db.updateNode(1,userNodeId,oldEmail.trim());
+  response.setStatus('WARN');
+  response.setMessage('You cannot edit user e-mail once it has been created. Please create a new one and suspend the old one.');
+}
+//suspending old user
+else if(oldEmail && status=='SUSPENDED'){
+  //cancel notification
+  user.changeNotificationSubscription(newEmail,true);
+}
+//make sure the user is registered in the main account database
+else {
+  //make sure email is trimmed
+  db.updateNode(1,userNodeId,newEmail);
+
+  //register to account db
+  user.registerUserToMainAccountDatabase(newEmail,false);
+
+  //reload the user in session
+  user.reload(newEmail);
+}

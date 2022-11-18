@@ -1,0 +1,21 @@
+N,Materials Requisition,
+FS,2
+DS,2
+W,1=14&2=88&3=-7&4=61&5=271&6=44,
+TF,2001621
+KF,2001634
+SF,2001621
+S,2001622,standard/ragic-setup/1,
+S,2001624,standard/ragicproduction-management/10008,
+A,MANAGER=6&EVERYONE=0&NULL=0&USER=3,0,2,282377842
+A2,
+D,1,1,2001621,Requisition #,ag=MRQ-{1`date`yyyyMMdd}-{0`number`000}
+L,2,1,2001622,Created By,usrref=2&dv=$USER
+D,3,1,2001623,Date,fmt_d=MM/dd/yyyy&dv=$DATE
+L,4,1,2001624,Related Work Order #,must=true&mvp=/ragicproduction-management|10008_Sheet10008&s=2001654&stf=2001640
+D,5,1,2001625,Remarks,
+D,6,1,2001639,Requisition Sent Time,fmt_d=yyyy/MM/dd HH:mm&ro=true&stylefontSize=12
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+QS,5

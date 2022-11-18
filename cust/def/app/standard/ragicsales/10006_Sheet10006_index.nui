@@ -1,0 +1,69 @@
+N,Quotes,
+FS,2
+DS,2
+W,1=4&2=21&3=131&4=79&5=-12&6=36&7=-12&8=76&undefined=0,18=124
+TF,2000225
+KF,2000246
+SF,2000226
+ST,1,8,2000247,,,
+S,2000225,standard/ragiclegal/10002,
+S,2000227,standard/ragicsales/10002,
+S,2000230,standard/ragic-setup/1,
+S,2000248,standard/ragicsales/10004,
+S,2000236,standard/ragicsales/10009,
+S,2000854,standard/ragicinventory-management/10002,
+S,2001959,
+S,2000856,,Sales Tax
+S,2000857,,0%
+A,MANAGER=6&USER=3&EVERYONE=0,0,3,8437263
+A2,
+L,1,2,2000225,Account Name,stf=2000123&s=2000153&mvp=/ragicsales|10001_Sheet10001&cs=2
+D,4,2,2000226,Quote Id,ag=QUOTE-{1`date`yyyyMMdd}-{0`number`000}&cs=4
+L,1,3,2000227,Contact Name,stf=2000147&mvpf=2000153|1|$2000225&s=2000154&mvp=/ragicsales|10002_Sheet10002&cs=2
+D,4,3,2000228,Quote Date,fmt_d=yyyy/MM/dd&cs=4&dv=$DATE
+D,1,4,2000229,Phone,cs=2&phone=1&phonefmt=XXX-XXX-XXXX&vd=2000125&l=2000225
+L,4,4,2000230,Prepared By,dv=$USER&usrref=1&cs=4
+D,1,5,2000231,Fax,cs=2&vd=2000868&l=2000225
+D,4,5,2000232,Phone,phone=1&phonefmt=XXX-XXX-XXXX&cs=4
+D,1,6,2000233,E-mail,email=2&vd=2000149&l=2000227&cs=2
+D,4,6,2000234,Expiration Date,fmt_d=yyyy/MM/dd&cs=4
+D,1,7,2001501,Account ID,vd=2000130&l=2000225&hide=true
+L,4,7,2000248,Related Opportunity,stf=2000189&s=2000210&hide=true&mvp=/ragicsales|10004_Sheet10004
+D,1,8,2000235,#,dv=$SEQ&fmt_n=#`###
+L,2,8,2000236,Product #,s=2000852&stf=2000842&mvp=/ragicsales|10009_Sheet10009&mvpf=2000845|3|$2000228%262000846|2|$2000228
+D,3,8,2000855,Product Name,vd=2000843&l=2000236
+D,4,8,2001293,Specification,vd=2001292&l=2000236
+D,5,8,2000237,Qty,fmt_n=#`###
+D,6,8,2000238,Unit Price,fmt_n=$#`###.##&vd=2000844&l=2000236
+D,7,8,2000239,Subtotal,f=E8*F8&fmt_n=$#`###.##
+D,8,8,2000858,Note,
+L,9,8,2000854,Product No.*,stf=2000211&mvp=/ragicsales|10005_Sheet10005&vd=2000224&l=2000236&s=2000224&hide=true
+L,10,8,2001959,Unit*,vd=2001958&l=2000236&hide=true
+D,6,12,2000241,Discount % Off,fmt_n=0.##%
+L,1,13,2000856,Tax Type,userOps=true&dv=Sales Tax
+D,6,13,2000240,Total,fmt_n=$#`###.##&f=G8*(1-F12)
+L,1,14,2000857,Tax Rate,dv=0%&userOps=true
+D,6,14,2000243,Tax,fmt_n=$#`###.##&f=F13*A14*F12
+D,6,15,2000244,Shipping / Handling,fmt_n=$#`###.##
+D,6,16,2000245,Grand Total,f=F13+F14+F15&fmt_n=$#`###.##
+D,1,18,2000859,Remarks,cs=7
+F,1,1,,Quote,backgroundColor=#666666&color=#FFFFFF&cs=8&fontWeight=bold&textAlign=center
+X_MAX_DESIGNER_ID,101
+K,{"type":"B","seq":"1","name":"Create SO","action":"_RAGIC_AUTOGEN_CR_70168({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"false","userGroups":["EVERYONE"],"checkIfUserCanEdit":false}
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10006_Sheet10006_index.nui
+QS,1
+SHEET_SCOPE_START
+function _RAGIC_AUTOGEN_CR_70168(nodeId){
+  var result = db.entryCopier(JSON.stringify(
+{"TEMPLATE_NAME":"Sales Order Management", "TEMPLATE_SHEET_NAME":"Sales Order", "THIS_PATH":"/ragicsales/10006","THIS_NODEID":nodeId,"NEW_PATH":"/ragicsales-order-management/10004","CHECK_MUST_FIELDS":false,"COPY":{"2000881":"2001501","2000883":"2000225","2000885":"2000232","2000888":"2000233","2000893":"2000235","2000894":"2000236","2000895":"2000855","2000896":"2000238","2000897":"2000237","2000898":"2000239","2000899":"2000240","2000900":"2000856","2000901":"2000241","2000902":"2000857","2000903":"2000243","2000904":"2000245","2000905":"2000859","2000908":"2000244","2000911":"2000854","2001381":"2001293"}}
+  ), response);
+  if(result) return result;
+}//END_RAGIC_AUTOGEN_CR_70168

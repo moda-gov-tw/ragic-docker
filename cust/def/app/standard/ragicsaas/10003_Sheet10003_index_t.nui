@@ -1,0 +1,26 @@
+N,Customers,
+FS,2
+DS,2
+W,,
+TF,2002575
+KF,2002580
+SF,2002575
+S,2002578,,Free Trial,Paid,Cancelled
+A,NULL=0&MANAGER=6&USER=3&EVERYONE=0,0,2,2074190801
+A2,
+D,1,1,2002575,Account Name,
+D,2,1,2002576,Registration Date,fmt_d=MM/dd/yyyy
+D,3,1,2002577,Register e-mail,email=2
+L,4,1,2002578,Account Status,
+D,5,1,2002579,Licensed Users,fmt_n=#`####.##
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10003_Sheet10003_index_t.nui
+QS,0

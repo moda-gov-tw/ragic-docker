@@ -1,0 +1,64 @@
+N,Database Access Request,Notify the account admin that you would like to access their Ragic account.<br>You will receive an notification e-mail once access is granted.
+FS,0
+DS,2
+W,1=28&2=194&3=-72&4=13&5=188&undefined=0,
+TF,622
+KF,628
+SF,622
+S,627,null,
+A,MANAGER=1&EVERYONE=1&USER=1,1,3,1737885972
+D,1,3,621,E-mail,help=E-mail used for signing in.&noDup=true&email=2$&must=true
+L,4,3,627,Status,ro=1&dv=New&stylebackgroundColor=#CCCCCC
+D,1,4,622,Full Name,help=Full name of the user&must=true
+D,1,5,623,Company,
+D,1,6,624,Title,
+D,1,7,625,Phone,phone=1
+F,1,2,,Contact Detail,cs=2&color=#000000&backgroundColor=#FFCC00&fontWeight=bold
+F,4,2,,Approval Status,cs=2&color=#000000&backgroundColor=#7BBF56&fontWeight=bold
+K,{"type":"B","seq":"1","name":"Approve","action":"approveExternalUserRequest({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"false","checkIfUserCanEdit":false,"userGroups":["SYSAdmin"]}
+K,{"type":"B","seq":"2","name":"Reject","action":"rejectExternalUserRequest({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"false","checkIfUserCanEdit":false,"userGroups":["SYSAdmin"]}
+PRE_WORKFLOW_START
+var internalDomain=db.getDBProperty('INTERNAL_DOMAIN');
+var newEmail=param.getNewValue(621);
+if(!internalDomain){
+  response.setStatus('INVALID');
+  response.setMessage('External user has not been enabled.');
+}
+else if(internalDomain && newEmail && newEmail.indexOf(internalDomain) !== -1){
+  response.setStatus('INVALID');
+  response.setMessage('You should be an internal user, not external user: '+internalDomain);
+}
+SHEET_SCOPE_START
+function approveExternalUserRequest(nodeId){
+  var json=db.entryCopier(JSON.stringify({
+      'THIS_PATH':'/ragic-setup/6',
+      'THIS_NODEID':nodeId,
+      'NEW_PATH':'/ragic-setup/5',
+      'EXEC_WORKFLOW':true,
+      'COPY':{
+        '1':'621',
+        '4':'622',
+        '610':'623',
+        '609':'624',
+        '613':'625',
+      }
+    }), response);
+
+  var query=db.getAPIQuery('/ragic-setup/6');
+  var sourceEntry=query.getAPIEntry(nodeId);
+  sourceEntry.setFieldValue(627,'Approved');
+  sourceEntry.save();
+
+}
+function rejectExternalUserRequest(nodeId){
+  var query=db.getAPIQuery('/ragic-setup/6');
+  var sourceEntry=query.getAPIEntry(nodeId);
+
+  if(sourceEntry.getFieldValue(627)=='Approved'){
+    response.setMessage('Approved users cannot be rejected. You will need to go to external users management form to delete this user.');
+    return;
+  }
+
+  sourceEntry.setFieldValue(627,'Rejected');
+  sourceEntry.save();
+}

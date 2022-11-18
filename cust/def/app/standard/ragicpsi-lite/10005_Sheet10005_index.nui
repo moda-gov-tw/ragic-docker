@@ -1,0 +1,75 @@
+N,Purchase Order,
+FS,2
+DS,2
+W,1=49&2=-30&3=22&4=44&5=57&6=-12&7=76&undefined=0,20=124
+TF,2002518
+KF,2002524
+SF,2002518
+ST,1,11,2002552,,,
+S,2002520,standard/ragicaccounting/10004,
+S,2002528,,Draft,Confirmed,Cancelled,Complete
+S,2002523,standard/ragic-setup/1,
+S,2002537,standard/ragicaccounting/10003,
+S,2002542,standard/ragicaccounting/10004,
+S,2002544,,Draft,Confirmed,Cancelled,Complete
+S,2002546,,Sales Tax
+S,2002548,,0%
+A,MANAGER=6&USER=3&EVERYONE=0,0,3,789602945
+A2,
+L,1,2,2002520,Vendor No.,cs=3&text=1&s=2001828&stf=2001822&mvp=/ragicpsi-lite|10001_Sheet10001&mvpf=2001827|1|Yes
+D,5,2,2002518,Purchase Order #,ag=SO-{1`date`yyyyMMdd}-{0`number`000}&cs=3&noDup=true
+D,1,3,2002526,Vendor Name,cs=3&vd=2001824&l=2002520
+D,5,3,2002519,Purchase Order Date,fmt_d=yyyy/MM/dd&cs=3&dv=$DATE
+D,1,4,2002521,Contact Name,cs=3&vd=2001841&l=2002520
+L,5,4,2002528,Status,cs=3&dv=Draft
+D,1,5,2002529,Phone,cs=3&phone=1&phonefmt=XXX-XXX-XXXX&vd=2001843&l=2002520
+L,5,5,2002523,Prepared By,dv=$USER&usrref=1&cs=3
+D,1,6,2002530,E-mail,cs=3&email=2&vd=2001844&l=2002520
+D,5,6,2002553,Phone,phone=1&vd=613&l=2002523&cs=3&phonefmt=XXXXXXXXXX
+D,1,7,2002554,Promised Date,fmt_d=MM/dd/yyyy&cs=3
+D,5,7,2002555,Required Date,fmt_d=MM/dd/yyyy&cs=3
+D,1,8,2002534,Vendor's Bill Address,cs=3&addr=1&vd=2001830&l=2002520
+D,5,8,2002535,Delivery Place,cs=3&addr=1
+D,1,11,2002536,Item #,dv=$SEQ&fmt_n=#`###
+L,2,11,2002537,Product No.,text=1&s=2001821&stf=2001810&mvp=/ragicpsi-lite|10002_Sheet10002&mvpf=2001816|1|$2002527&cs=2
+D,3,11,2002538,Product Name,cs=2&vd=2001811&l=2002537
+D,4,11,2002539,Unit Price,fmt_n=$#`####.##&vd=2001817&l=2002537
+D,5,11,2002540,Qty,fmt_n=#`###
+D,6,11,2002541,Subtotal,f=G11*F11&fmt_n=$#`###.##
+L,7,11,2002542,Vendor No.,s=2001828&stf=2001822&mvp=/ragicpsi-lite|10001_Sheet10001&vd=2002479&l=2002537&hide=true
+L,8,11,2002544,Status,f=E4&hide=true
+D,5,15,2002547,Total,fmt_n=$#`###.##&f=H11&cs=2
+L,1,16,2002546,Tax Type,userOps=true&dv=Sales Tax
+D,5,16,2002549,Tax,fmt_n=$#`###.##&f=E15*A17&cs=2
+L,1,17,2002548,Tax Rate,dv=0%&userOps=true
+D,5,17,2002550,Shipping / Handling,fmt_n=$#`###.##&cs=2
+D,5,18,2002522,Grand Total,f=E15+E16+E17&fmt_n=$#`###.##&cs=2
+D,1,20,2002551,Remarks,cs=6
+F,1,1,,Purchase Order,cs=8&textAlign=center&backgroundColor=#a34762&color=#FFFFFF&fontWeight=bold
+F,1,10,,Purchase Items,cs=8&textAlign=center&backgroundColor=#a34762&color=#FFFFFF&fontWeight=bold
+X_MAX_DESIGNER_ID,101
+K,{"type":"B","seq":"1","name":"Create Bill","action":"_RAGIC_AUTOGEN_CR_71542({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"false","userGroups":["EVERYONE"]}
+K,{"type":"B","seq":"2","name":"Status=Complete","action":"_RAGIC_AUTOGEN_FIELD_UPDATER_55874({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"false","userGroups":["EVERYONE"]}
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=true
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10005_Sheet10005_index.nui
+QS,1
+SHEET_SCOPE_START
+function _RAGIC_AUTOGEN_CR_71542(nodeId){
+  var result = db.entryCopier(JSON.stringify(
+{"THIS_PATH":"/ragicpsi-lite/10005","THIS_NODEID":nodeId,"NEW_PATH":"/ragicaccounting/10010","CHECK_MUST_FIELDS":false,"CHECK_VALIDATION_FIELDS":false,"CHECK_ALL_MUST_FIELDS_MAPPED":false,"SILENT":false,"RECAL_ALL_FORMULAS":true,"EXEC_WORKFLOW":true,"COPY":{"2001996":"2002520","2001997":"2002526","2001998":"2002521","2001999":"2002529","2002000":"2002530","2002002":"2002536","2002003":"2002537","2002004":"2002538","2002005":"2002539","2002006":"2002540","2002007":"2002541","2002010":"2002546","2002011":"2002547","2002012":"2002548","2002013":"2002549","2002014":"2002550","2002015":"2002522"}}
+  ), response);
+  if(result) return result;
+}//END_RAGIC_AUTOGEN_CR_71542
+
+function _RAGIC_AUTOGEN_FIELD_UPDATER_55874(nodeId){
+  var result = db.fieldUpdater(JSON.stringify(
+{"THIS_PATH":"/ragicpsi-lite/10005","THIS_NODE_ID":nodeId,"UPD_FIELDS":{"2002528":"Complete"},"SUBTABLE_UPDATE_POLICY":"FORCE_CREATE","RECALCULATE":true}
+  ), response);
+}//END_RAGIC_AUTOGEN_FIELD_UPDATER_55874

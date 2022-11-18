@@ -1,0 +1,28 @@
+N,便當飲料店家列表,
+FS,2
+DS,2
+W,1=-9&2=31&3=11&4=39&5=305&6=-2&undefined=0,2=15
+TF,3002336
+KF,3002349
+SF,3002336
+S,3002338,,台式,日式,義大利麵,飲料
+A,NULL=0&MANAGER=6&USER=3&EVERYONE=0,0,2,298464373
+A2,
+D,1,2,3002336,  店家編號,ag={0`number`#}&noDup=true&stylebackgroundColor=#FFDCE5&stylecolor=#666666&stylefontWeight=bold&styletextAlign=left&stylefontSize=14&styleVfontWeight=bold&styleVfontSize=14&styleVcolor=#666666
+D,2,2,3002337,  店家名稱,stylebackgroundColor=#FFDCE5&stylecolor=#666666&stylefontWeight=bold&styletextAlign=left&stylefontSize=14&styleVfontWeight=bold&styleVfontSize=14&styleVcolor=#666666
+L,3,2,3002338,  店家類型,userOps=true&stylebackgroundColor=#FFDCE5&stylecolor=#666666&stylefontWeight=bold&styletextAlign=left&stylefontSize=14&styleVfontWeight=bold&styleVfontSize=14&styleVcolor=#666666
+D,4,2,3002339,  電話,phone=1&phonefmt=XXX-XXX-XXXX&stylebackgroundColor=#FFDCE5&stylecolor=#666666&stylefontWeight=bold&styletextAlign=left&stylefontSize=14&styleVfontWeight=bold&styleVfontSize=14&styleVcolor=#666666
+D,5,2,3002340,  地址,addr=1&stylebackgroundColor=#FFDCE5&stylecolor=#666666&stylefontWeight=bold&styletextAlign=left&stylefontSize=14&styleVfontWeight=bold&styleVfontSize=14&styleVcolor=#666666
+D,6,2,3002367,  使用者評分,userOps=true&fmt_n=0&stylebackgroundColor=#FFDCE5&stylecolor=#666666&stylefontWeight=bold&styletextAlign=left&stylefontSize=14&styleVfontWeight=bold&styleVfontSize=14&styleVcolor=#666666
+F,1,1,,[img]https://www.ragic.com/sims/file.jsp?a=blogman&f=Bento+Banner+3.PNG[/img],cs=6&color=#FFFFFF&backgroundColor=#DF7380&textAlign=left&fontSize=14
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=true
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,20001_Sheet20001_index_t.nui
+QS,3

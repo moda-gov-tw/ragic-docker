@@ -1,0 +1,24 @@
+N,Job Postings,
+FS,2
+DS,2
+W,1=33&2=18&3=87&7=71,
+TF,2001298
+KF,2001297
+SF,2001298
+S,2001295,standard/ragic-setup/2,
+S,2001306,,Yes,No
+A,MANAGEMENT=2&MANAGER=6&EVERYONE=2&HR=6&ACCOUNTING=2&IT=2&NULL=0&X-USER=2&SALES=2&USER=2,2,2,864655071
+A2,
+D,1,1,2001298,Request No.,ag=N{0`number`00000}&ro=true
+L,2,1,2001295,Department,grpref=2&ro=true
+D,3,1,2001301,Position Title,must=true&ro=true
+D,4,1,2001299,No. of Staff Requested,fmt_n=0&ro=true
+L,5,1,2001306,Travel Requirements,ro=true
+D,6,1,2001311,Seniority,ro=true
+D,7,1,2001314,Education Level,ro=true
+D,8,1,2001303,On Board Date,fmt_d=yyyy/MM/dd&ro=true
+X,fixed,1,2001566|1|Recruiting
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+QS,3

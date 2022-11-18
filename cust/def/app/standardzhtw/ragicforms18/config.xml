@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+  <name>進銷存（簡易版）</name>
+  <desc />
+  <publisher />
+  <createDate />
+  <updateDate />
+  <version />
+  <price />
+  <status />
+  <sourcePath />
+  <appId />
+  <forms seq="19">
+    <form sheetIndex="20001" type="NUI" seq="1">客戶及廠商</form>
+    <form sheetIndex="20002" type="NUI" seq="2">商品庫存</form>
+    <form sheetIndex="20003" type="NUI" seq="3">銷售訂單</form>
+    <form sheetIndex="20004" type="NUI" seq="4">訂單細項</form>
+    <form sheetIndex="20005" type="NUI" seq="5">採購單</form>
+    <form sheetIndex="20006" type="NUI" seq="6">採購細項</form>
+  </forms>
+</module>

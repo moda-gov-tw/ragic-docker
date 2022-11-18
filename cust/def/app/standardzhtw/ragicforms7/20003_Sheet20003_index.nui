@@ -1,0 +1,389 @@
+N,工單,
+FS,2
+DS,2
+W,1=-2&2=1&3=123&4=84&6=5&7=-3&9=87&undefined=0,&9=-8&10=35
+TF,3002279
+KF,3002288
+SF,3002279
+ST,1,13,3002304,,,
+ST,1,19,3002325,,,
+ST,1,25,3002326,,,
+S,3002281,standardzhtw/ragicforms7/20001,
+S,3002396,standardzhtw/ragic-setup/1,
+S,3002470,,尚未開始,生產中,生產完成
+S,3002286,standardzhtw/ragicforms7/20002,
+S,3002300,standardzhtw/ragicforms7/20001,
+S,3002303,
+S,3002317,standardzhtw/ragicforms7/20007,
+S,3002399,standardzhtw/ragicforms7/20006,
+S,3002442,standardzhtw/ragic-setup/1,
+S,3002402,standardzhtw/ragicforms7/20006,
+A,NULL=0&MANAGER=6&USER=3&EVERYONE=0,0,3,1653840735
+A2,
+D,1,2,3002279,工單編號,ag=WO-{1`date`yyyyMMdd}-{0`number`000}&cs=3
+D,5,2,3002280,工單日期,fmt_d=yyyy/MM/dd&dv=$DATE&cs=4
+L,1,3,3002281,生產物料編號,s=3000606&stf=3000593&mvp=/ragicforms7|20001_Sheet20001&mvpf=3002441|1|生產&cs=3&must=true
+L,5,3,3002396,承辦人,usrref=1&cs=4&dv=$USER
+D,1,4,3002282,物料名稱,vd=3000595&l=3002281&cs=3&ro=true
+L,5,4,3002470,狀態,cs=4&dv=尚未開始&f=IF(E6.RAW!=''`'生產完成'`IF(E5.RAW!=''`'生產中'`'尚未開始'))
+D,1,5,3002443,規格,vd=3000924&l=3002281&cs=3&ro=true
+D,5,5,3002314,開工日期,fmt_d=yyyy/MM/dd&cs=4
+D,1,6,3002284,敘述,vd=3000603&l=3002281&cs=3&ro=true
+D,5,6,3002315,完工日期,fmt_d=yyyy/MM/dd&cs=4
+D,1,7,3002283,生產數量,fmt_n=#`###.#####&cs=3&must=true
+D,5,7,3002471,入庫日期時間,cs=4&fmt_d=yyyy/MM/dd HH:mm
+L,1,8,3002286,BOM表,s=3002221&stf=3002274&mvp=/ragicforms7|20002_Sheet20002&cs=3&mvpf=3002219|1|$3002281%263002276|1|有效&must=true&stylefontWeight=bold
+D,5,8,3002285,批號,ag=LOT-{0`number`00000}&cs=4
+D,1,10,3002444,備註,cs=8
+D,1,13,3002305,項次,fmt_n=#`###&dv=$SEQ&ro=true&styletextAlign=center&styleVtextAlign=center
+L,2,13,3002300,物料編號,s=3000606&stf=3000593&mvp=/ragicforms7|20001_Sheet20001&must=true
+D,3,13,3002301,物料名稱,vd=3000595&l=3002300&ro=true
+D,4,13,3002397,規格,ro=true
+L,5,13,3002303,單位,vd=3001948&l=3002300&ro=true
+D,6,13,3002306,預計用量,fmt_n=#`###.#####&must=true
+D,7,13,3002307,已領料量,fmt_n=#`###.#####&ro=true
+D,8,13,3002308,耗用量,fmt_n=#`###.#####
+D,9,13,3002398,備註,
+D,10,13,3002445,剩餘量,fmt_n=#`###.#####&f=G13-H13&hide=true
+D,11,13,3002544,系統編號,ag={0`number`00000}&hide=true
+D,1,19,3002316,序號,fmt_n=#`###&dv=$SEQ&ro=true
+L,2,19,3002317,製程碼,s=3002388&stf=3002386&mvp=/ragicforms7|20007_Sheet20007
+D,3,19,3002318,製程,cs=2&vd=3002387&l=3002317&ro=true
+L,4,19,3002399,工作站碼,s=3002313&stf=3002309&mvp=/ragicforms7|20006_Sheet20006
+D,5,19,3002400,工作站,vd=3002310&l=3002399&ro=true
+D,6,19,3002401,工作內容,cs=3
+D,1,25,3002319,交易編號,ag=T-{0`number`00000}&ro=true
+D,2,25,3002321,日期時間,fmt_d=yyyy/MM/dd HH:mm&dv=$DATETIME
+D,3,25,3002320,交易說明,
+L,4,25,3002442,人員,usrref=2&dv=$USER
+L,5,25,3002402,工作站碼,s=3002313&stf=3002309&mvp=/ragicforms7|20006_Sheet20006
+D,6,25,3002323,工作站,vd=3002310&l=3002402&ro=true
+D,7,25,3002324,數量,fmt_n=#`###.#####
+D,8,25,3002403,備註,cs=2
+F,1,1,,工單資訊,cs=9&backgroundColor=#2e62a6&color=#FFFFFF&fontWeight=bold&textAlign=center
+F,1,12,,展開之BOM表/物料清單,cs=9&backgroundColor=#2e62a6&color=#FFFFFF&fontWeight=bold&textAlign=center
+F,1,18,,生產流程,cs=9&backgroundColor=#2e62a6&color=#FFFFFF&fontWeight=bold&textAlign=center
+F,1,24,,交易資訊,cs=9&backgroundColor=#2e62a6&color=#FFFFFF&fontWeight=bold&textAlign=center
+X_MAX_DESIGNER_ID,101
+K,{"type":"B","seq":"1","name":"展開BOM表","action":"explodeBom({id})","confirmBeforeAction":"false","needApproval":"false","hideButton":"false","userGroups":["EVERYONE"],"category":"custom"}
+K,{"type":"B","seq":"2","name":"帶入生產流程","action":"fillInFlow({id})","confirmBeforeAction":"false","needApproval":"false","hideButton":"false","userGroups":["EVERYONE"],"category":"custom"}
+K,{"type":"B","seq":"3","name":"轉領料單","action":"_RAGIC_AUTOGEN_CR_42613({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"false","userGroups":["EVERYONE"],"category":"convert"}
+K,{"type":"B","seq":"4","name":"轉退料單","action":"_RAGIC_AUTOGEN_CR_25495({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"false","userGroups":["EVERYONE"],"category":"convert"}
+K,{"type":"B","seq":"5","name":"生產入庫","action":"createIncomingStock({id})","confirmBeforeAction":"false","needApproval":"false","hideButton":"false","userGroups":["EVERYONE"],"category":"custom"}
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+MOBCONF,%7B%7D
+NUI_FILE_NAME,20003_Sheet20003_index.nui
+QS,1
+SCRIPT_START
+
+SHEET_SCOPE_START
+// Installed sheet scope of 工單
+
+try {
+  this.eval("var Account = Java.type('com.ragic.s3.nui.Account'), " +
+    "getTimeZoneOffsetInHours = function(apname){return Account.getInstance(apname).getTimeZoneOffsetInHours();};")
+} catch (e) {
+  // for Java 7
+  try {
+    this.eval("var getTimeZoneOffsetInHours = function(apname){return com.ragic.s3.nui.Account.getInstance(apname).getTimeZoneOffsetInHours();};")
+  } catch (ignored) {}
+}
+
+//展開BOM表
+function explodeBom(nodeId) {
+  var workOrderQuery = db.getAPIQuery('/ragicforms7/20003');  //工單
+  var bomQuery = db.getAPIQuery('/ragicforms7/20002');  //物料清單(BOM)
+  var assemblyQuery = db.getAPIQuery('/ragicforms7/20001');  //物料主檔
+  var workOrder = workOrderQuery.getAPIEntry(nodeId);
+  var bomId = workOrder.getFieldValue(3002286);
+  var workOrderProduceQty = Number(workOrder.getFieldValue(3002283));  //生產數量
+  var componentArr = [];
+  var component = null;
+  var stop = [false];
+  var i = 0;
+  
+  bomQuery.addFilter(3002274, '=', bomId);
+  var bom = bomQuery.getAPIResult();
+  if (bom == null) return;
+  
+  //檢查"已領料量"是否有值，是的話阻擋執行
+  var materialsSubtableSize = workOrder.getSubtableSize(3002304);
+  for (i = 0; i < materialsSubtableSize; i++) {
+    var qtyReceived = workOrder.getSubtableFieldValue(3002304, i, 3002307);
+    if (qtyReceived && qtyReceived !== '0') {
+      response.setStatus('WARN');
+      response.setMessage('展開之 BOM 表/物料清單的子表格中已經有資料且已填寫「已領料數量」，因此無法重複執行按鈕。');
+      response.setMessage('  ');
+      response.setMessage('若要重複執行按鈕來重新帶入物料清單，請先確保「已領料數量」的值要是 0 或空值。');
+      return;
+    }
+  }
+
+  findLastMaterial(bom, componentArr, workOrderProduceQty, stop, 0);
+
+  if (stop[0]) return;
+  workOrder.deleteSubtableRowAll(3002304);
+  for (i = 0; i < componentArr.length; i++) {
+    component = componentArr[i];
+    workOrder.setSubtableFieldValue(3002300, -i-1, component["componentId"]);
+    workOrder.setSubtableFieldValue(3002301, -i-1, component["componentName"]);
+    workOrder.setSubtableFieldValue(3002397, -i-1, component["specification"]);
+    workOrder.setSubtableFieldValue(3002303, -i-1, component["unit"]);
+    workOrder.setSubtableFieldValue(3002306, -i-1, component["totalQty"]);
+  }
+  workOrder.loadDefaultValue(3002305, user);
+  workOrder.loadAllListenFields();
+  workOrder.setCreateHistory(true);
+  workOrder.save();
+
+
+  response.setStatus('WARN');
+  response.setMessage('BOM表展開完成');
+
+}
+
+function findLastMaterial(bom, componentArr, totalQty, stop, count) {
+  if (count >= 100) return;
+  var bomQuery = db.getAPIQuery('/ragicforms7/20002');  //物料清單(BOM)
+  var assemblyQuery;  //物料主檔
+  var assemblyNum = bom.getFieldValue(3002219);  //物料編號
+  var componentsSubtableSize = bom.getSubtableSize(3002273);  //物料組成清單
+  var bomProduceQty = Number(bom.getFieldValue(3002389));  //生產數量
+  var i;
+
+  for (i = 0; i < componentsSubtableSize; i++) {
+    var componentId = bom.getSubtableFieldValue(3002273, i, 3002269);  //物料編號
+    if (componentId == assemblyNum) {
+      response.setStatus('WARN');
+      response.setMessage('子表格物料組成清單中的物料編號 ' + componentId + ' 不可與這筆資料的物料編號重複(物料組成來源不能是自己)\r\n');
+      stop[0] = true;
+      return;
+    }
+  }
+
+  for (i = 0; i < componentsSubtableSize; i++) {
+    var componentId = bom.getSubtableFieldValue(3002273, i, 3002269);  //物料編號
+    var componentQty = Number(bom.getSubtableFieldValue(3002273, i, 3002272));  //物料組成數量
+    var componentTotalQty = componentQty / bomProduceQty * totalQty;
+    if (!componentId) continue;  //2018.10.08 addFilter的value如果是'' 會篩出所有的資料造成無窮迴圈
+    assemblyQuery = db.getAPIQuery('/ragicforms7/20001');
+    assemblyQuery.addFilter(3000593, '=', componentId);
+    var assembly = assemblyQuery.getAPIResult();
+    if (assembly == null) continue;
+
+    var source = assembly.getFieldValues(3002441);
+    var containsProduction = false;  //來源包含'生產'
+    for (var j = 0; j < source.length; j++) {
+      if (source[j] == '生產') {
+        containsProduction = true;
+        break;
+      }
+    }
+
+    var bomRefSubtableSize = assembly.getSubtableSize(3002221);
+    if (!containsProduction || bomRefSubtableSize == 0) {
+      var componentObj = {};
+      componentObj["componentId"] = bom.getSubtableFieldValue(3002273, i, 3002269);  //物料編號
+      componentObj["componentName"] = bom.getSubtableFieldValue(3002273, i, 3002270);  //物料名稱
+      componentObj["specification"] = bom.getSubtableFieldValue(3002273, i, 3002390);  //規格
+      componentObj["unit"] = bom.getSubtableFieldValue(3002273, i, 3002271);  //單位
+      componentObj["totalQty"] = componentTotalQty;  //物料組成數量/BOM生產數量
+      componentArr.push(componentObj);
+      //print('從bom '+bom.getFieldValue(3002274)+' 找到物料主檔 '+material.getFieldValue(3000593));
+      continue;
+    }
+    
+    var nextBom = null;
+    var nextBomRootNodeId = -1;
+    var validMainBomRow = [], validBomRow = [];
+    for (var j = 0; j < bomRefSubtableSize; j++) {
+      var mainVersion = assembly.getSubtableFieldValue(3002221, j, 3002467);
+      var status = assembly.getSubtableFieldValue(3002221, j, 3002276);
+      if (status == '有效' && mainVersion == 'Yes') validMainBomRow.push(j);
+      else if (status == '有效' && mainVersion != 'Yes') validBomRow.push(j);
+    }
+    // for (var j = 0; j < validMainBomRow.length; j++) {
+    //   print('有效&&主要 materialId:'+assembly.getFieldValue(3000593)+', validMainBomRow:'+validMainBomRow[j]);
+    // }
+    // for (var j = 0; j < validBomRow.length; j++) {
+    //   print('有效 materialId:'+assembly.getFieldValue(3000593)+', validMainBomRow:'+validBomRow[j]);
+    // }
+
+    var minVersion = 1000, version = 0, minVersionRow = -1, row = -1;
+    if (validMainBomRow.length == 1) {  //有效&主要
+      nextBomRootNodeId = assembly.getSubtableRootNodeId(3002221, validMainBomRow[0]);
+      nextBom = bomQuery.getAPIEntry(nextBomRootNodeId);
+      //print('下一個bom表id:'+nextBom.getFieldValue(3002274));
+    }
+    else if (validMainBomRow.length > 1) {
+      for (var j = 0; j < validMainBomRow.length; j++) {
+        row = validMainBomRow[j];
+        version = Number(assembly.getSubtableFieldValue(3002221, row, 3002275));
+        if (version < minVersion) {
+          minVersion = version;
+          minVersionRow = row;
+        }
+      }
+      if (minVersionRow >= 0) {
+        nextBomRootNodeId = assembly.getSubtableRootNodeId(3002221, minVersionRow);
+        nextBom = bomQuery.getAPIEntry(nextBomRootNodeId);
+      }
+    }
+    else if (validBomRow.length == 1) {
+      nextBomRootNodeId = assembly.getSubtableRootNodeId(3002221, validBomRow[0]);
+      nextBom = bomQuery.getAPIEntry(nextBomRootNodeId);
+    }
+    else if (validBomRow.length > 1) {
+      for (var j = 0; j < validBomRow.length; j++) {
+        row = validBomRow[j];
+        version = Number(assembly.getSubtableFieldValue(3002221, row, 3002275));
+        if (version < minVersion) {
+          minVersion = version;
+          minVersionRow = row;
+        }
+      }
+      if (minVersionRow >= 0) {
+        nextBomRootNodeId = assembly.getSubtableRootNodeId(3002221, minVersionRow);
+        nextBom = bomQuery.getAPIEntry(nextBomRootNodeId);
+      }
+    }
+    else {
+      stop[0] = true;
+      response.setMessage('物料編號: '+componentId+' 找不到可以使用的物料清單');
+      return;
+    }
+    //print('從bom '+bom.getFieldValue(3002274)+' 找到物料主檔 '+assembly.getFieldValue(3000593)+' 找到nextbom '+nextBom.getFieldValue(3002274));
+
+    findLastMaterial(nextBom, componentArr, componentTotalQty, stop, ++count);
+    if (stop[0]) return;
+  }
+}
+
+//帶入生產流程
+function fillInFlow(nodeId) {
+  var workOrderQuery = db.getAPIQuery('/ragicforms7/20003');  //工單
+  var productProcessQuery = db.getAPIQuery('/ragicforms7/20004');  //物料生產流程
+  var workOrder = workOrderQuery.getAPIEntry(nodeId);
+  var productNumber = workOrder.getFieldValue(3002281);  //生產物料編號
+  productProcessQuery.addFilter(3000593, '=', productNumber);
+  var productProcess = productProcessQuery.getAPIResult();
+  if (productProcess == null) {
+    response.setStatus('WARN');
+    response.setMessage('找不到生產物料編號:' + productNumber + '的物料生產流程\r\n');
+    return;
+  }
+
+  var processSubtableSize = productProcess.getSubtableSize(3002299);  //生產流程子表格
+  workOrder.deleteSubtableRowAll(3002325);
+  for (var i = 0; i < processSubtableSize; i++) {
+    workOrder.setSubtableFieldValue(3002316, -i-1, productProcess.getSubtableFieldValue(3002299, i, 3002296));  //序號
+    workOrder.setSubtableFieldValue(3002317, -i-1, productProcess.getSubtableFieldValue(3002299, i, 3002383));  //製程碼
+    workOrder.setSubtableFieldValue(3002318, -i-1, productProcess.getSubtableFieldValue(3002299, i, 3002384));  //製程
+    workOrder.setSubtableFieldValue(3002399, -i-1, productProcess.getSubtableFieldValue(3002299, i, 3002297));  //工作站碼
+    workOrder.setSubtableFieldValue(3002400, -i-1, productProcess.getSubtableFieldValue(3002299, i, 3002298));  //工作站
+    workOrder.setSubtableFieldValue(3002401, -i-1, productProcess.getSubtableFieldValue(3002299, i, 3002385));  //工作內容
+  }
+  workOrder.setCreateHistory(true);
+
+  var saveResponse = workOrder.save();
+  if (saveResponse.ifExec()) {
+    response.setStatus('WARN');
+    response.setMessage('已帶入生產流程\r\n');
+  }
+}
+
+//生產入庫
+function createIncomingStock(nodeId) {
+  var workOrderQuery = db.getAPIQuery('/ragicforms7/20003');  //工單
+  var stockInQuery = db.getAPIQuery('/ragicinventory/20005');  //入庫單
+  var workOrder = workOrderQuery.getAPIEntry(nodeId);
+  var status = workOrder.getFieldValue(3002470);
+  var inStockDate = workOrder.getFieldValue(3002471);  //轉入庫單日期時間
+
+  if (status != '生產完成' || inStockDate != '') {
+    response.setStatus('WARN');
+    response.setMessage('請確認狀態為生產完成且轉入庫單日期時間為空值(即為沒有入庫過)\r\n');
+    return;
+  }
+
+  var stockIn = stockInQuery.insertAPIEntry();
+  stockIn.setSubtableFieldValue(3001080, -1, workOrder.getFieldValue(3002281));  //生產物料編號
+  stockIn.setSubtableFieldValue(3001081, -1, workOrder.getFieldValue(3002282));  //物料名稱
+  stockIn.setSubtableFieldValue(3001866, -1, workOrder.getFieldValue(3002443));  //規格
+  stockIn.setSubtableFieldValue(3001085, -1, workOrder.getFieldValue(3002283));  //生產數量
+  stockIn.setSubtableFieldValue(3001086, -1, workOrder.getFieldValue(3002285));  //批號
+
+  stockIn.loadAllDefaultValues(user);
+  stockIn.setCreateHistory(true);
+  var saveResponse = stockIn.save();
+  if (!saveResponse.ifExec()) {
+    saveResponse.setStatus('WARN');
+    saveResponse.setMessage('入庫單儲存時發生錯誤，請重試\r\n');
+    return;
+  }
+  var stockInRootNodeId = saveResponse.getRootNodeId();
+
+  workOrder.setFieldValue(3002471, date2str(new Date(), 'yyyy/MM/dd hh:mm:ss'));
+  workOrder.recalculateAllFormulas();
+  workOrder.setCreateHistory(true);
+  saveResponse = workOrder.save();
+
+  if (saveResponse.ifExec()) {
+    response.setStatus('WARN');
+    response.setMessage('完成生產入庫\r\n');
+    response.setOpenURL('/' + db.getApname() + '/ragicinventory/20005/' + stockInRootNodeId);
+  }
+}
+
+function date2str(x, y) {
+
+  var offset = Account.getInstance(db.getApname()).getTimeZoneOffsetInHours();
+  x.setUTCHours(x.getUTCHours() + offset);
+  
+  var z = {
+    M: x.getUTCMonth() + 1,
+    d: x.getUTCDate(),
+    h: x.getUTCHours(),
+    m: x.getUTCMinutes(),
+    s: x.getUTCSeconds()
+  };
+  
+  y = y.replace(/(M+|d+|h+|m+|s+)/g, function(v) {
+    return ((v.length > 1 ? "0" : "") + eval('z.' + v.slice(-1))).slice(-2)
+  });
+
+  return y.replace(/(y+)/g, function(v) {
+    return x.getUTCFullYear().toString().slice(-v.length)
+  });
+}
+
+
+
+
+
+
+
+
+function _RAGIC_AUTOGEN_CR_42613(nodeId){
+  var result = db.entryCopier(JSON.stringify(
+{"THIS_PATH":"/ragicforms7/20003","THIS_NODEID":nodeId,"NEW_PATH":"/ragicforms7/20008","CHECK_MUST_FIELDS":true,"CHECK_VALIDATION_FIELDS":false,"CHECK_ALL_MUST_FIELDS_MAPPED":false,"COPY":{"3002407":"3002279","3002408":"3002300","3002409":"3002301","3002410":"3002397","3002414":"3002306"}}
+  ), response);
+  if(result) return result;
+}//END_RAGIC_AUTOGEN_CR_42613
+
+
+function _RAGIC_AUTOGEN_CR_25495(nodeId){
+  var result = db.entryCopier(JSON.stringify(
+{"THIS_PATH":"/ragicforms7/20003","THIS_NODEID":nodeId,"NEW_PATH":"/ragicforms7/20009","CHECK_MUST_FIELDS":true,"CHECK_VALIDATION_FIELDS":false,"CHECK_ALL_MUST_FIELDS_MAPPED":false,"COPY":{"3002424":"3002279","3002427":"3002300","3002428":"3002301","3002429":"3002397","3002433":"3002445"}}
+  ), response);
+  if(result) return result;
+}//END_RAGIC_AUTOGEN_CR_25495
+
+

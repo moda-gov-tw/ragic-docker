@@ -1,0 +1,128 @@
+N,績效考核－量化 (主管評鑑),
+FS,2
+DS,2
+W,1=21&2=100&3=31&4=125&undefined=0,10=54.60000038146973&11=53.60000038146973&12=6.1999969482421875&14=18.79998779296875&15=18&16=19&17=7.20001220703125&18=18.20001220703125&19=18.20001220703125&20=18.20001220703125&21=7.20001220703125&22=18.20001220703125&23=17.79998779296875&24=18.399993896484375&26=19.4000244140625&27=18.399993896484375&28=18.399993896484375&30=17.4000244140625&31=18.4000244140625&32=18.4000244140625&34=18.4000244140625&35=18.4000244140625&36=18.4000244140625&38=18.4000244140625&39=18.4000244140625&40=18.4000244140625&42=18.199951171875&43=17.4000244140625&44=18.4000244140625&46=17.199951171875&47=17.4000244140625&48=18.4000244140625&50=19.199951171875&51=19.4000244140625&52=19.4000244140625&54=17.800048828125&55=18.4000244140625&56=18.4000244140625&59=18.4000244140625&60=18.800048828125&61=17.800048828125&63=18.4000244140625&64=17.4000244140625&65=19.4000244140625&67=18.4000244140625&68=17.4000244140625&69=17.4000244140625&72=18.4000244140625&73=18.5999755859375&76=18.800048828125&77=17.800048828125&79=18.800048828125&80=18.800048828125&81=18.800048828125&85=18.60009765625&86=84.199951171875&88=18.39990234375&89=85.39990234375&91=18.39990234375&92=84.39990234375&95=19&96=84.39990234375&98=17.39990234375&99=84.199951171875&101=18&102=85&104=18&105=84
+TF,3000754
+KF,3000759
+SF,3000754
+S,3001421,standardzhtw/ragicforms8/20003,
+S,3000756,,生產部,業務部,行銷部,人資部,研發部,財務部,法務部,資訊部,經營階層
+S,3000757,standardzhtw/ragicforms8/20003,
+S,3001434,standardzhtw/ragic-setup/1,
+S,3000758,,2017,2018,2019
+S,3000765,,脫穎而出,表現良好,尚可接受,有待加強,差強人意,不適用
+S,3000772,,脫穎而出,表現良好,尚可接受,有待加強,差強人意,不適用
+S,3000774,,脫穎而出,表現良好,尚可接受,有待加強,差強人意,不適用
+S,3000776,,脫穎而出,表現良好,尚可接受,有待加強,差強人意,不適用
+S,3000778,,脫穎而出,表現良好,尚可接受,有待加強,差強人意,不適用
+S,3000780,,脫穎而出,表現良好,尚可接受,有待加強,差強人意,不適用
+S,3000782,,脫穎而出,表現良好,尚可接受,有待加強,差強人意,不適用
+S,3000784,,脫穎而出,表現良好,尚可接受,有待加強,差強人意,不適用
+S,3000786,,脫穎而出,表現良好,尚可接受,有待加強,差強人意,不適用
+S,3000788,,脫穎而出,表現良好,尚可接受,有待加強,差強人意,不適用
+S,3000790,,脫穎而出,表現良好,尚可接受,有待加強,差強人意,不適用
+S,3000792,,脫穎而出,表現良好,尚可接受,有待加強,差強人意,不適用
+S,3000794,,脫穎而出,表現良好,尚可接受,有待加強,差強人意,不適用
+S,3000796,,脫穎而出,表現良好,尚可接受,有待加強,差強人意,不適用
+S,3000798,,脫穎而出,表現良好,尚可接受,有待加強,差強人意,不適用
+S,3000800,,脫穎而出,表現良好,尚可接受,有待加強,差強人意,不適用
+S,3000802,,脫穎而出,表現良好,尚可接受,有待加強,差強人意,不適用
+A,MANAGEMENT=6&MANAGER=6&HR=6&USER=1&EVERYONE=1,1,3,1204077851
+A2,USER=11&EVERYONE=11
+L,1,2,3001421,員工編號,s=3000942&stf=3000934&mvp=/ragicforms4|20004_Sheet20004
+D,3,2,3001422,員工姓名,vd=3000933&l=3001421&ro=true
+D,1,3,3000754,工號,vd=3000935&l=3001421&ro=true
+D,3,3,3000760,聯絡電話,phonefmt=XXX-XXX-XXXX&phone=1&vd=3000936&l=3001421&ro=true
+L,1,4,3000756,部門,vd=3000937&l=3001421&ro=true
+D,3,4,3000761,分機,vd=3000938&l=3001421&ro=true
+D,1,5,3000762,職稱,vd=3000939&l=3001421&ro=true
+D,3,5,3001433,手機,phone=1&phonefmt=XXX-XXX-XXXX&vd=3001424&l=3001421&ro=true
+L,1,6,3000757,直屬主管,stf=3000933&s=3000942&mvp=/ragicforms4|20004_Sheet20004&vd=3000948&l=3001421&ro=true
+D,3,6,3000755,E-mail,email=2&vd=3000940&l=3001421&ro=true&em=true
+L,1,7,3001434,員工帳號,usrref=1&vd=3001018&l=3001421&ro=true
+L,3,7,3000758,考核年度,userOps=true
+D,1,10,3000764,目前執掌,help=註明跟去年職掌明顯不同處&cs=3
+D,1,11,3000771,目標評估,help=請附上去年訂立的績效目標，並衡量此員工針對目標的表現。&cs=3
+L,1,15,3000765,評等,cs=3
+D,1,16,3000766,簡述,cs=3
+L,1,19,3000772,評等,cs=3
+D,1,20,3000773,簡述,cs=3
+L,1,23,3000774,評等,cs=3
+D,1,24,3000775,簡述,cs=3
+L,1,27,3000776,評等,cs=3
+D,1,28,3000777,簡述,cs=3
+L,1,31,3000778,評等,cs=3
+D,1,32,3000779,簡述,cs=3
+L,1,35,3000780,評等,cs=3
+D,1,36,3000781,簡述,cs=3
+L,1,39,3000782,評等,cs=3
+D,1,40,3000783,簡述,cs=3
+L,1,43,3000784,評等,cs=3
+D,1,44,3000785,簡述,cs=3
+L,1,47,3000786,評等,cs=3
+D,1,48,3000787,簡述,cs=3
+L,1,51,3000788,評等,cs=3
+D,1,52,3000789,簡述,cs=3
+L,1,55,3000790,評等,cs=3
+D,1,56,3000791,簡述,cs=3
+L,1,60,3000792,評等,cs=3
+D,1,61,3000793,簡述,cs=3
+L,1,64,3000794,評等,cs=3
+D,1,65,3000795,簡述,cs=3
+L,1,68,3000796,評等,cs=3
+D,1,69,3000797,簡述,cs=3
+L,1,72,3000798,評等,cs=3
+D,1,73,3000799,簡述,cs=3
+L,1,76,3000800,評等,cs=3
+D,1,77,3000801,簡述,cs=3
+L,1,80,3000802,評等,cs=3
+D,1,81,3000803,簡述,cs=3
+D,1,86,3000804,評價,text=1&cs=3
+D,1,89,3000805,評價,cs=3
+D,1,92,3000806,評價,cs=3
+D,1,96,3000807,評價,cs=3
+D,1,99,3000808,評價,cs=3
+D,1,102,3000809,評價,cs=3
+D,1,105,3000810,評價,cs=3
+F,1,1,,員工基本資訊,background=#333333&color=#ffffff&backgroundColor=#52BDF2&fontWeight=bold&textAlign=center&cs=4
+F,1,9,,工作描述,background=#333333&color=#ffffff&backgroundColor=#75D4F2&fontWeight=bold&textAlign=center&cs=4
+F,1,13,,職能評估,background=#333333&color=#ffffff&backgroundColor=#75D4F2&fontWeight=bold&textAlign=center&cs=4
+F,1,14,,1.	執行指派工作所需要的專業及能力,backgroundColor=#F5F5F5&cs=4&color=#333333&fontSize=14&fontWeight=bold
+F,1,18,,2.	具備完成工作所需要知識及技能,cs=4&fontSize=14&backgroundColor=#F5F5F5&color=#333333&fontWeight=bold
+F,1,22,,3.	規劃及安排工作優先順序的能力,cs=4&fontSize=14&backgroundColor=#F5F5F5&color=#333333&fontWeight=bold
+F,1,26,,4.	能夠承擔工作責任，並且在時間內完成,backgroundColor=#F5F5F5&cs=4&color=#333333&fontSize=14&fontWeight=bold
+F,1,30,,5.	能夠改進工作方法及程序以提升效率,backgroundColor=#F5F5F5&cs=4&color=#333333&fontSize=14&fontWeight=bold
+F,1,34,,6.	能夠有效地與上司、同事及客戶溝通,backgroundColor=#F5F5F5&cs=4&color=#333333&fontSize=14&fontWeight=bold
+F,1,38,,7.	能夠獨立完成工作,backgroundColor=#F5F5F5&cs=4&color=#333333&fontSize=14&fontWeight=bold
+F,1,42,,8.	作為團隊成員時，能夠融洽地與上司及同事合作,backgroundColor=#F5F5F5&cs=4&color=#333333&fontSize=14&fontWeight=bold
+F,1,46,,9.	願意承擔額外責任,backgroundColor=#F5F5F5&cs=4&color=#333333&fontSize=14&fontWeight=bold
+F,1,50,,10.	考量出缺勤及準時完成工作，此員工值得信賴的程度,backgroundColor=#F5F5F5&cs=4&color=#333333&fontSize=14&fontWeight=bold
+F,1,54,,11.　能夠藉由分析事實及數據展現良好的判斷及問題解決能力,backgroundColor=#F5F5F5&cs=4&color=#333333&fontSize=14&fontWeight=bold
+F,1,58,,主管職能評估,background=#333333&color=#ffffff&backgroundColor=#75D4F2&fontWeight=bold&textAlign=center&cs=4
+F,1,59,,12.　對待下屬能夠一視同仁,backgroundColor=#F5F5F5&cs=4&color=#333333&fontSize=14&fontWeight=bold
+F,1,63,,13.	能夠明確地告訴下屬對其工作的期待，並定期給予回饋及評價,backgroundColor=#F5F5F5&cs=4&color=#333333&fontSize=14&fontWeight=bold
+F,1,67,,14.	能夠協助員工發展潛能及專業技能,backgroundColor=#F5F5F5&cs=4&color=#333333&fontSize=14&fontWeight=bold
+F,1,71,,15.	能夠根據員工的能力及潛力，適時地授權,backgroundColor=#F5F5F5&cs=4&color=#333333&fontSize=14&fontWeight=bold
+F,1,75,,16.	能夠適時地指正員工,backgroundColor=#F5F5F5&cs=4&color=#333333&fontSize=14&fontWeight=bold
+F,1,79,,17.	能夠採取明確的措施提升員工的多元性及建立包容的工作環境,backgroundColor=#F5F5F5&cs=4&color=#333333&fontSize=14&fontWeight=bold
+F,1,84,,評估總結,background=#333333&color=#ffffff&backgroundColor=#75D4F2&fontWeight=bold&textAlign=center&cs=4
+F,1,85,,1.	列出此員工所有表現良好的層面,backgroundColor=#F5F5F5&cs=4&color=#333333&fontSize=14&fontWeight=bold
+F,1,88,,2.	列出此員工所有可以加強的層面,backgroundColor=#F5F5F5&cs=4&color=#333333&fontSize=14&fontWeight=bold
+F,1,91,,3.	此員工在哪些部分已經準備好肩負更多責任？他會需要哪些額外的資源及訓練？,backgroundColor=#F5F5F5&cs=4&color=#333333&fontSize=14&fontWeight=bold
+F,1,94,,目標設定及發展規劃,background=#333333&color=#ffffff&backgroundColor=#75D4F2&fontWeight=bold&textAlign=center&cs=4
+F,1,95,,4.	列出此員工明年的績效目標,backgroundColor=#F5F5F5&cs=4&color=#333333&fontSize=14&fontWeight=bold
+F,1,98,,5.	這些目標如何與部門目標相互結合？,backgroundColor=#F5F5F5&cs=4&color=#333333&fontSize=14&fontWeight=bold
+F,1,101,,6.	列出此員工明年個人發展的目標,backgroundColor=#F5F5F5&cs=4&color=#333333&fontSize=14&fontWeight=bold
+F,1,104,,7.	明年你會提供什麼資源及協助此員工完成個人目標？,backgroundColor=#F5F5F5&cs=4&color=#333333&fontSize=14&fontWeight=bold
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+WF,M,011,直屬主管|S|DS,人力資源部|G|HR
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,20003_Sheet20003_index.nui
+QS,1

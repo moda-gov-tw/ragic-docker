@@ -1,0 +1,48 @@
+N,Registrant Information,
+FS,2
+DS,2
+W,1=31&2=114&3=56&4=10&5=88&undefined=0,
+TF,2000489
+KF,2000491
+SF,2000489
+ST,1,16,2000479,2000480,,
+S,2000490,,Mr.,Ms.,Mrs.
+S,2000494,,Agriculture,Biotechnology,Chemical Engineering,Telecommunication,Consuling,Education,Electronics,Energy,Engineering,Entertainment,Food and Drinks,Government,Medical,Tourism,Financial Service,Manufacturing,Media,Non-profit,Retail,Technology,Others
+S,2000475,standard/ragicnew-tab/10002,
+A,MANAGER=6&USER=3&EVERYONE=1,1,3,161789158
+A2,
+D,1,3,2000489,Registrant ID,ro=true&ag=R-{0`number`00000}&cs=2
+D,5,3,2000493,Company,cs=2
+L,1,4,2000490,Prefix,userOps=true&cs=2
+L,5,4,2000494,Work Field,userOps=true&cs=2
+D,1,5,2000577,First Name,cs=2
+D,5,5,2000495,Job Title,userOps=true&text=1&cs=2
+D,1,6,2000578,Last Name,cs=2
+D,1,7,2000492,Full Name,f=A5+" "+A6&must=true&cs=2
+D,1,10,2000496,Date of Birth,fmt_d=yyyy/MM/dd&cs=2
+D,5,10,2000499,E-mail,email=2&em=true&must=true&cs=2
+D,1,11,2000497,ID Number,cs=2&noDup=true
+D,5,11,2000500,Phone,phonefmt=XXX-XXX-XXXX&phone=1&cs=2
+G,1,12,2000498,Photo,cs=2
+D,5,12,2000501,Mobile,phonefmt=XXX-XXX-XXXX&phone=1&must=true&cs=2
+D,5,13,2000502,Address,addr=1&cs=2
+L,1,16,2000475,Event ID,stf=2000463&ro=true&s=2000465&mvp=/ragicnew-tab|10002_Sheet10002
+D,2,16,2000477,Event Name,ro=true&vd=2000464&l=2000475&cs=2
+D,3,16,2000481,Date of Registration,ro=true&fmt_d=yyyy/MM/dd&cs=2
+F,1,1,,Please enter your e-mail and register an event through the notification mail sent by system,cs=5
+F,1,2,,Registrant Information,background=#333333&color=#ffffff&fontWeight=bold&backgroundColor=#6A60A9&cs=7&textAlign=center
+F,1,9,,Identification,background=#333333&color=#ffffff&fontWeight=bold&backgroundColor=#6A60A9&cs=3&textAlign=center
+F,5,9,,Contact,background=#333333&color=#ffffff&fontWeight=bold&backgroundColor=#6A60A9&cs=3&textAlign=center
+F,1,15,,Past Event History,background=#333333&color=#ffffff&backgroundColor=#FBD14B&fontWeight=bold&cs=5&textAlign=center
+K,{"type":"F","seq":"1","name":"Register an event","action":"/standard/ragicnew-tab/10003?saveClose%26new=2000489|{id}","confirmBeforeAction":"false","needApproval":"false","userGroups":["EVERYONE"],"hideButton":"false"}
+RMD_MAX_SEQ,0
+ET,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10004_Sheet10004_index.nui
+QS,1
+SCRIPT_START
+
+SHEET_SCOPE_START
+

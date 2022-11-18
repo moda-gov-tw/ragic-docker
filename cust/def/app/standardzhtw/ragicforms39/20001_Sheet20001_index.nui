@@ -1,0 +1,197 @@
+N,薪資結構,
+FS,2
+DS,2
+W,,
+TF,3005124
+KF,3005136
+SF,3005124
+ST,1,8,3005137,,,,
+ST,1,15,3005138,,,,
+A,null=0&MANAGER=6&USER=3&EVERYONE=0,0,3,1488824566
+A2,
+D,1,2,3005124,員工編號,text=1
+D,3,2,3005125,請假時薪,fmt_n=$#`###.##
+D,1,3,3005126,員工姓名,
+D,3,3,3005127,加班時薪,fmt_n=$#`###.##
+D,1,4,3005128,員工E-mail,
+D,3,4,3005129,眷屬數量,fmt_n=0&va=^[0-3]$&help=健保規定加保數量上限為3，如加保人數為6人請一樣填寫3。&va_cust_msg=眷屬數量請勿填寫超過3，如超過3請填寫3
+D,1,5,3005130,本薪,fmt_n=$#`###.##
+D,1,8,3005131,固定加項,cs=2
+D,2,8,3005132,金額,fmt_n=$#`###.##&cs=2
+D,1,12,3005133,本薪與固定加項,fmt_n=$#`###.##&f=A5+C8
+D,1,15,3005134,固定減項,cs=2
+D,2,15,3005135,金額,fmt_n=$#`###.##&cs=2
+D,1,20,3005300,系統訊息1,cs=3
+D,1,21,3005301,系統訊息2,cs=3
+F,1,1,,基本資料,cs=4&textAlign=center
+F,1,7,,加項資料,cs=4&textAlign=center
+F,1,14,,減項資料,cs=4&textAlign=center
+X_MAX_DESIGNER_ID,101
+K,{"type":"B","seq":"3","name":"產生勞健保","action":"insuranceCalc({id})","confirmBeforeAction":"false","needApproval":"false","hideButton":"false","checkIfUserCanEdit":false,"userGroups":["EVERYONE"],"id":"3","category":"custom"}
+K,{"type":"B","seq":"4","name":"產生薪資單","action":"_RAGIC_AUTOGEN_CR_18998({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"false","checkIfUserCanEdit":false,"userGroups":["EVERYONE"],"id":"4","category":"convert"}
+ACTION_BUTTON_MAX_ID,4
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=theme22
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+MOBCONF,%7B%7D
+NUI_FILE_NAME,20001_Sheet20001_index.nui
+QS,1
+SCRIPT_START
+
+SHEET_SCOPE_START
+/**
+
+ * This comment is auto generated on 2022/09/30 16:51:24, and it reflects the field definition at this given time.
+ * If you need the current field definitions for your database, please go to "Start" => "Account Setup" => "DB Maintenance" => "Download Data Dictionary"
+
+ * AP_Name:standardzhtw
+ * Key Field: 3005136
+
+ * 固定加項 subtable key: 3005137
+
+ * 固定減項 subtable key: 3005138
+
+ * Field Name               Field Id
+ * - - - - - - - - - - - --------
+ * 員工編號      : 3005124
+ * 請假時薪      : 3005125
+ * 員工姓名      : 3005126
+ * 加班時薪      : 3005127
+ * 員工E-mail      : 3005128
+ * 眷屬數量      : 3005129
+ * 本薪         : 3005130
+ * 固定加項      : 3005131
+ * 金額         : 3005132
+ * 本薪與固定加項 : 3005133
+ * 固定減項      : 3005134
+ * 金額         : 3005135
+
+ */
+
+function healthInsuCalc(recordId) {   
+
+	var thisSheet = db.getAPIQuery("/ragicforms39/20001");  
+	var healthInsuSheet = db.getAPIQuery("/ragicforms39/20002");   
+	var thisEntry = thisSheet.getAPIEntry(recordId);  
+	var thisEmployeeSalary = Number(thisEntry.getFieldValue(3005133));  
+	var thisEmployeeFamilyNumbers = Number(thisEntry.getFieldValue(3005129)); 
+  
+	healthInsuSheet.addFilter(3005139, '<=', thisEmployeeSalary); 
+	healthInsuSheet.setOrder(3005139, 2);  
+  
+	var results = healthInsuSheet.getAPIResultList(); 
+  
+	if (thisEmployeeSalary < 0) {
+		response.setMessage('本薪填寫錯誤，請修正'); 
+		response.setStatus('SUCCESS');
+        thisEntry.setFieldValue(3005300,'本薪填寫錯誤，請修正');
+        thisEntry.save();
+    }    
+	else {
+		if (results.length == 0) {
+   			response.setMessage('無對應健保，請檢查健保級距對照表或修正本薪'); //括號中單引號中的文字可以自行修改，可以改成 '執行完成' 之類的。
+   			response.setStatus('SUCCESS');
+            thisEntry.setFieldValue(3005300,'無對應健保，請檢查健保級距對照表或修正本薪');
+            thisEntry.save();
+        } 
+  		else {  
+			var result = healthInsuSheet.getAPIResult(); 
+			var insuranceFee = (thisEmployeeFamilyNumbers+1)*Number(result.getFieldValue(3005140));    //or 39
+			var SubRows = thisEntry.getSubtableSize(3005138);  
+			var haveInsu = 0;  
+			for (var j = 0; j < SubRows; j++ ) {
+    			var minusType = thisEntry.getSubtableFieldValue(3005138,j,3005134); 
+    			if (minusType == '健保費') {
+        			var subIndex = thisEntry.getSubtableRootNodeId(3005138,j); 
+        			thisEntry.setSubtableFieldValue(3005135,subIndex,insuranceFee); 
+        			haveInsu++;}
+			}    
+			if (haveInsu == 0) {
+    			thisEntry.setSubtableFieldValue(3005135,-100,insuranceFee); 
+    			thisEntry.setSubtableFieldValue(3005134,-100,"健保費");}  
+			thisEntry.recalculateAllFormulas();  
+            thisEntry.setFieldValue(3005300,'已產生健保費');
+			thisEntry.save(); 
+  		}
+	}  
+	//response.setMessage('已產生健保費'); 
+	//response.setStatus('SUCCESS');    
+}
+
+
+
+
+
+function workInsuCalc(recordId) {   
+
+	var thisSheet = db.getAPIQuery("/ragicforms39/20001");  
+	var workInsuSheet = db.getAPIQuery("/ragicforms39/20003");  
+	var thisEntry = thisSheet.getAPIEntry(recordId);  
+	var thisEmployeeSalary = Number(thisEntry.getFieldValue(3005133));
+	var thisMonthEmployPay = '';  
+  
+	workInsuSheet.addFilter(3005142, '<=', thisEmployeeSalary); 
+	workInsuSheet.setOrder(3005142, 2);  
+	var results = workInsuSheet.getAPIResultList(); 
+    
+	if (thisEmployeeSalary < 0) {
+   		response.setMessage('本薪填寫錯誤，請修正'); 
+   		response.setStatus('SUCCESS');
+        thisEntry.setFieldValue(3005301,'本薪填寫錯誤，請修正');
+        thisEntry.save();
+    }    
+
+	else {
+  		if (results.length == 0) {
+   			response.setMessage('無對應勞保，請檢查勞保級距對照表或修正本薪'); 
+   			response.setStatus('SUCCESS');
+            thisEntry.setFieldValue(3005301,'無對應勞保，請檢查勞保級距對照表或修正本薪');
+            thisEntry.save();
+        } 
+        else {  
+			var result = workInsuSheet.getAPIResult(); 
+			var insuranceFee = Number(result.getFieldValue(3005143));    
+			var SubRows = thisEntry.getSubtableSize(3005138);  
+			var haveInsu = 0;  
+          
+			for (var j = 0; j < SubRows; j++ ) {
+    			var minusType = thisEntry.getSubtableFieldValue(3005138,j,3005134); 
+    			if (minusType == '勞保費') {
+        			var subIndex = thisEntry.getSubtableRootNodeId(3005138,j); 
+        			thisEntry.setSubtableFieldValue(3005135,subIndex,insuranceFee); 
+        			haveInsu++;}
+			}  
+  
+			if (haveInsu == 0)  {
+    			thisEntry.setSubtableFieldValue(3005135,-100,insuranceFee); 
+    			thisEntry.setSubtableFieldValue(3005134,-100,"勞保費");}
+  
+  			thisEntry.recalculateAllFormulas();  
+            thisEntry.setFieldValue(3005301,'已產生勞保費');
+   			thisEntry.save(); 
+  		}
+  	}  
+	//response.setMessage('已產生勞保費'); //括號中單引號中的文字可以自行修改，可以改成 '執行完成' 之類的。
+	//response.setStatus('SUCCESS');  
+  
+}
+
+
+function insuranceCalc(recordId) {
+	workInsuCalc(recordId);
+	healthInsuCalc(recordId);
+}
+
+function _RAGIC_AUTOGEN_CR_18998(nodeId){
+  // WARNING: Please DO NOT edit auto-generated script.
+  var result = db.entryCopier(JSON.stringify(
+{"THIS_PATH":"/ragicforms39/20001","THIS_NODEID":nodeId,"NEW_PATH":"/ragicforms39/20005","CHECK_MUST_FIELDS":false,"CHECK_VALIDATION_FIELDS":false,"CHECK_ALL_MUST_FIELDS_MAPPED":false,"SILENT":false,"RECAL_ALL_FORMULAS":true,"EXEC_WORKFLOW":true,"LOCK_SOURCE":false,"COPY":{"3005150":"3005124","3005152":"3005128","3005154":"3005130","3005155":"3005127","3005156":"3005125","3005157":"3005131","3005158":"3005132","3005159":"3005134","3005160":"3005135"},"APPLY_SUBTABLE_FILTERS":false,"APPLY_SUBTABLE_GROUPING":false}
+  ), response);
+  if(result) return result;
+}//END_RAGIC_AUTOGEN_CR_18998
+

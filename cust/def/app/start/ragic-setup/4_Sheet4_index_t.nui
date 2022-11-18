@@ -1,0 +1,7 @@
+N,Company Setting|zh-TW=公司設定,Your organization profile on Ragic&#44; only the latest "Active" config will be applied.|zh-TW=公司基本資料設定，只有最新的"Active"設定才會套用。
+W,1=94&2=136,
+S,200019,,Active,Disabled
+A,MANAGER=0&EVERYONE=0&USER=0,0,2,32391830
+D,1,1,200018,Config Name|zh-TW=設定檔名稱,
+L,2,1,200019,Config Status|zh-TW=設定檔狀態,dv=Active
+DELTA,0

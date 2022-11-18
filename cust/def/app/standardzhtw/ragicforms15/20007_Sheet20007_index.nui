@@ -1,0 +1,79 @@
+N,加補課申請單,
+FS,2
+DS,2
+W,1=38&2=61&3=48&4=132&5=77&6=29&7=55&undefined=0,14=69
+TF,3003276
+KF,3003305
+SF,3003276
+S,3003278,standardzhtw/ragicforms15/20003,
+S,3003307,,星期一,星期二,星期三,星期四,星期五,星期六,星期日
+S,3003308,,直接加課,請假單轉補課單
+S,3003355,standardzhtw/ragicforms15/20008,
+S,3003362,standardzhtw/ragicforms15/20002,
+S,3003319,,是,否
+S,3003284,standardzhtw/ragicforms15/20002,
+S,3003285,standardzhtw/ragicforms15/20001,
+S,3003291,,星期一,星期二,星期三,星期四,星期五,星期六,星期日
+A,NULL=0&MANAGER=6&USER=3&X-USER=1&EVERYONE=0,0,3,351873719
+A2,
+D,1,1,3003276,補課編號,ag=A-{0`number`00000}&noDup=true
+D,1,2,3003277,申請日期,fmt_d=yyyy/MM/dd&dv=$DATE
+L,1,5,3003278,學員編號,s=3003205&stf=3003196&mvp=/ragicforms15|20003_Sheet20003&must=true
+D,3,5,3003279,電話,phone=1&phonefmt=XXXX-XXXXXX&vd=3003199&l=3003278&ro=true
+D,1,6,3003280,學員姓名,vd=3003197&l=3003278&ro=true
+D,3,6,3003281,E-Mail,email=2&vd=3003201&l=3003278&ro=true
+D,1,7,3003283,其他聯絡管道,vd=3003203&l=3003278&ro=true&cs=3
+D,1,10,3003306,加補課日期,fmt_d=yyyy/MM/dd&must=true&stylefontWeight=bold&styleVfontWeight=bold
+L,3,10,3003307,加補課日是星期幾？,stylefontWeight=bold&styleVfontWeight=bold
+L,1,11,3003308,加補課來源,must=true&userOps=true&stylefontWeight=bold
+D,3,11,3003357,更新請假單,ro=true&hide=true&dv=是
+L,1,12,3003355,請假單編號,s=3003351&stf=3003326&mvp=/ragicforms15|20008_Sheet20008&mvpf=3003328|1|$3003278%263003338|1|否&must=true
+L,3,12,3003362,請假單開課編號,s=3003185&stf=3003208&mvp=/ragicforms15|20002_Sheet20002&vd=3003340&l=3003355&ro=true
+D,1,13,3003364,「課號衝突」判斷欄,dv=N&f=IF(C12.RAW=''`'N'`IF(C12.RAW=A18`'y'`'N'))&cs=3&va=^[^a-z]*$&va_cust_msg=課號衝突！若加補課來源為「請假單」，要補的課程和該張請假單的請假課程不可以是同一堂（同一個課號），請清除「判斷值」欄位內容並修改請假單來源或補課課程資訊。
+D,1,14,3003309,備註說明,cs=3
+L,1,15,3003319,補課完成？,dv=否&ro=true
+L,1,18,3003284,開課編號,s=3003185&stf=3003208&mvp=/ragicforms15|20002_Sheet20002&mvpf=3003186|1|$3003307%263003193|3|$3003306%263003194|2|$3003306
+L,3,18,3003285,授課老師編號,s=3003179&stf=3003168&mvp=/ragicforms15|20001_Sheet20001&vd=3003226&l=3003284
+D,1,19,3003287,課程名稱,vd=3003183&l=3003284&ro=true
+D,3,19,3003288,授課老師姓名,vd=3003227&l=3003284
+L,1,21,3003291,星期幾,vd=3003186&l=3003284&ro=true
+D,3,21,3003292,開始日期,fmt_d=yyyy/MM/dd&vd=3003193&l=3003284&ro=true
+D,1,22,3003293,開始時間,fmt_d=HH:mm&vd=3003189&l=3003284&ro=true
+D,3,22,3003294,結束日期,fmt_d=yyyy/MM/dd&vd=3003194&l=3003284&ro=true
+D,1,23,3003296,結束時間,fmt_d=HH:mm&vd=3003190&l=3003284&ro=true
+D,1,24,3003298,單堂時數,fmt_n=0.00&vd=3003187&l=3003284&ro=true
+D,1,25,3003300,上課地點,vd=3003192&l=3003284&cs=3&ro=true
+D,1,27,3003365,更新請假單狀態時間,fmt_d=yyyy/MM/dd HH:mm&ro=true&cs=2
+F,1,4,,申請學員資料,cs=4&background=#0055BB&color=#ffffff&textAlign=center&backgroundColor=#9B899C
+F,1,9,,補課資訊,cs=4&background=#0055BB&color=#ffffff&textAlign=center&backgroundColor=#79627B
+F,1,17,,課程資訊,cs=4&background=#0055BB&color=#ffffff&textAlign=center&backgroundColor=#48284A
+X_MAX_DESIGNER_ID,101
+K,{"type":"B","seq":"1","name":"更新請假單狀態","action":"_RAGIC_AUTOGEN_ENTRY_UPDATER_47961({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"false","userGroups":["EVERYONE"],"checkIfUserCanEdit":false}
+K,{"type":"B","seq":"2","name":"復原請假單狀態","action":"_RAGIC_AUTOGEN_ENTRY_UPDATER_47961_REVERSE({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"false","userGroups":["EVERYONE"],"checkIfUserCanEdit":false}
+RMD_MAX_SEQ,0
+IR,%7B%22rules%22%3A%5B%7B%22cons%22%3A%5B%7B%22domainId%22%3A3003308%2C%22value%22%3A%22%E8%AB%8B%E5%81%87%E5%96%AE%E8%BD%89%E8%A3%9C%E8%AA%B2%E5%96%AE%22%2C%22operator%22%3A%22ffEquals%22%7D%5D%2C%22conLogic%22%3A%22OR%22%2C%22actions%22%3A%5B%7B%22domainId%22%3A3003355%2C%22action%22%3A%22show%22%2C%22actionValue%22%3A%22%22%7D%2C%7B%22domainId%22%3A3003364%2C%22action%22%3A%22show%22%2C%22actionValue%22%3A%22%22%7D%2C%7B%22domainId%22%3A3003362%2C%22action%22%3A%22show%22%2C%22actionValue%22%3A%22%22%7D%5D%2C%22actSubtableRoot%22%3A-1%7D%5D%7D
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,20007_Sheet20007_index.nui
+QS,1
+PRE_WORKFLOW_START
+
+SCRIPT_START
+
+SHEET_SCOPE_START
+function _RAGIC_AUTOGEN_ENTRY_UPDATER_47961(nodeId){
+  var result = db.entryUpdater(JSON.stringify(
+{"THIS_PATH":"/ragicforms15/20007","UPDATE_PATH":"/ragicforms15/20008","THIS_NODE_ID":nodeId,"MATCH":{"3003326":"3003355"},"ACTIONS":[{"THIS_NUMBER_FIELD":"3003357","UPDATE_ACTION":"SET","UPDATE_NUMBER_FIELD":"3003338"}],"MULTI_FIELDS":true,"LAST_UPDATE_FIELD":"3003365","RECALCULATE":false,"CHECK_USER_GROUPS":false,"CHECK_MUST_FIELDS":false,"CHECK_VALIDATION_FIELDS":false,"FAILED_IF_NO_RECORD_UPDATED":false}
+  ), response);
+}//END_RAGIC_AUTOGEN_ENTRY_UPDATER_47961
+
+function _RAGIC_AUTOGEN_ENTRY_UPDATER_47961_REVERSE(nodeId){
+  var result = db.entryUpdater(JSON.stringify(
+{"THIS_PATH":"/ragicforms15/20007","UPDATE_PATH":"/ragicforms15/20008","THIS_NODE_ID":nodeId,"MATCH":{"3003326":"3003355"},"ACTIONS":[{"THIS_NUMBER_FIELD":"3003357","UPDATE_ACTION":"SET","UPDATE_NUMBER_FIELD":"3003338"}],"MULTI_FIELDS":true,"LAST_UPDATE_FIELD":"3003365","RECALCULATE":false,"CHECK_USER_GROUPS":false,"CHECK_MUST_FIELDS":false,"CHECK_VALIDATION_FIELDS":false,"FAILED_IF_NO_RECORD_UPDATED":false,"REVERSE":true}
+  ), response);
+}//END_RAGIC_AUTOGEN_ENTRY_UPDATER_47961

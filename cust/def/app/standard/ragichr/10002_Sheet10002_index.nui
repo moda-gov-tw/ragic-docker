@@ -1,0 +1,46 @@
+N,Leave of absence,
+FS,2
+DS,2
+W,1=70&2=70&3=64&4=82&undefined=0,
+TF,320
+KF,2000613
+SF,2000853
+S,2000599,,Vacation Leave,Sick Leave,Pregnancy-Disability and Child Care Leave,Civil and Work Related Leave,Educational Leave,Emergency/Disaster Leave,Family and Medical Leave,Leave to Provide Community Service,Military Leave,Time in lieu
+S,2001971,standard/ragicaccounting-integrate/10001,
+S,2001972,,Permanent,Contract,Part Time,Internship
+S,2000609,,Production,Sales,Marketing,Human Resource,Research %26 Development,Finance,Legal Affairs,IT,Executive
+A,NULL=0&MANAGER=6&USER=3&EVERYONE=0,0,3,283026631
+A2,
+L,1,2,2000599,Leave Type,must=true&cs=3
+D,1,3,2000853,Desciption,cs=3
+D,1,4,2000600,From Date,fmt_d=yyyy/MM/dd&must=true
+D,3,4,2000601,To Date,fmt_d=yyyy/MM/dd&must=true
+D,1,5,2000602,From Hour,fmt_d=HH:mm
+D,3,5,2000603,To Hour,fmt_d=HH:mm
+D,1,6,2000604,Total Hours,fmt_n=#`###&must=true&f=IF(AND(A4.RAW!=""`C4.RAW!=""`A5.RAW=""`C5.RAW="")`NETWORKDAYS(A4`C4)*8` IF(A4.RAW!=C4.RAW`(NETWORKDAYS(A4`C4)-1)*8+A9+C9`A9+C9))
+D,3,6,2002077,Total Days & Hours,fmt_n_ts=`&fmt_n_ds=.&text=1&f=ROUNDDOWN(A6/8`0)+" Day(s) "+MOD(A6`8)+" Hour(s)"
+D,1,7,2002078,Lunch Break Start Time,fmt_d=HH:mm&dv=12:00
+D,3,7,2002079,Lunch Break End Time,fmt_d=HH:mm&dv=13:00
+D,1,9,2002080,subtotal before lunch,fmt_n_ts=`&fmt_n_ds=.&fmt_n=$#`####.##&f=IF((MIN(C5`A7)-A5)/60<0`0`(MIN(C5`A7)-A5)/60)&hide=true
+D,3,9,2002081,subtotal after lunch,fmt_n_ts=`&fmt_n_ds=.&fmt_n=$#`####.##&f=IF((C5-MAX(A5`C7))/60<0`0`(C5-MAX(A5`C7))/60)&hide=true
+L,1,11,2001971,Entry ID,s=2000754&stf=2000752&mvp=/ragichr|10004_Sheet10004
+L,3,11,2001972,Job Type,vd=2000771&l=2001971
+D,1,12,2001973,Full Name,vd=2000756&l=2001971
+D,3,12,2000606,E-mail,email=2&vd=2000775&l=2001971
+D,1,13,2000607,Employee Number,vd=2000766&l=2001971&noSyncName=true
+D,3,13,2000608,Phone,phonefmt=XXX-XXX-XXXX&phone=1&vd=2000773&l=2001971
+L,1,14,2000609,Department,vd=2000767&l=2001971
+D,3,14,2000610,Extension,vd=2000774&l=2001971
+D,1,15,2000611,Title,vd=2000768&l=2001971
+D,3,15,2000612,Mobile,phone=1&phonefmt=XXX-XXX-XXXX&vd=2000826&l=2001971
+F,1,1,,Leave Detail,backgroundColor=#003333&color=#FFFFFF&fontWeight=bold&textAlign=center&cs=4
+F,1,8,,"Total hours" and "Total Days & Hours" calculation has been set to exclude lunch break and weekend,cs=4&color=#FF0000&textAlign=center
+F,1,10,,Employee Information,backgroundColor=#3d5f5f&color=#FFFFFF&fontWeight=bold&textAlign=center&cs=4
+RMD_MAX_SEQ,0
+ET,%5B%5D
+WF,M,011,Supervisor|A|all
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10002_Sheet10002_index.nui
+QS,1

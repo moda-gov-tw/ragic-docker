@@ -1,0 +1,66 @@
+N,Staff Requisition Form,
+FS,2
+DS,2
+W,1=52&2=39&3=26&4=111&5=65&6=30&undefined=0,11=87
+TF,2001298
+KF,2001297
+SF,2001298
+ST,1,24,2001327,2001330,,
+S,2001566,,Recruiting,Position Closed
+S,2001295,standard/ragic-setup/2,
+S,2001296,standard/ragic-setup/1,
+S,2001305,,Permanent,Contract,Part Time,Internship
+S,2001354,,Yes,No
+S,2001306,,Yes,No
+S,2001473,,No,Yes
+S,2001372,,No,Yes
+S,2001364,standard/ragic-setup/1,
+S,2001375,,Offer candidate,Reserve candidate,Unsuccessful candidate
+S,2001376,,Yes,No
+A,NULL=0&MANAGER=6&HR=6&USER=1&EVERYONE=0,0,3,1690486546
+A2,
+L,1,2,2001566,Recruiting Status,
+D,1,3,2001294,Company Name,must=true
+L,3,3,2001295,Department,grpref=2&must=true
+L,5,3,2001296,Department Contact,usrref=1
+D,1,5,2001298,Request No.,ag=N-{0`number`00000}&cs=2
+D,4,5,2001301,Position Title,must=true&noDup=true&cs=2
+D,1,6,2001302,Date Requested,fmt_d=yyyy/MM/dd&dv=$DATE&ro=true&cs=2
+D,4,6,2001303,On Board Date,fmt_d=yyyy/MM/dd&cs=2
+D,1,7,2001299,No. of Staff Requested,fmt_n=0&cs=2
+D,4,7,2001300,Actual Headcount of Position Requested ,fmt_n=0&f=COUNTIF(I24`'Yes'`I24)&ro=true&cs=2
+D,1,8,2001564,Contact (for applicants),cs=2
+D,4,8,2001565,Contact Information (for applicants),cs=2
+D,1,11,2001304,Main Responsibilities,cs=5
+L,1,12,2001305,Job Type,cs=2
+D,4,12,2001309,Salary,cs=2
+L,1,13,2001354,Management Position? ,cs=2
+L,4,13,2001306,Travel Requirements,cs=2
+D,1,14,2001307,Location,cs=5
+D,1,17,2001311,Seniority,cs=2
+D,4,17,2001314,Education Level,cs=2
+D,1,18,2001315,Major,cs=5
+D,1,19,2001312,Language Level,cs=5
+D,1,20,2001313,Skills,cs=5
+D,1,24,2001328,Applicant No.,ro=true
+D,2,24,2001319,Full Name,ro=true
+L,3,24,2001473,Invite to Interview?,checkbox=1&dv=No&ro=true
+L,4,24,2001372,Interview Invitation Accepted,checkbox=1&dv=No&ro=true
+D,5,24,2001368,Interview Date,fmt_d=yyyy/MM/dd&ro=true
+L,6,24,2001364,Interviewer,usrref=1&ro=true
+D,7,24,2001373,Evaluation,ro=true
+L,8,24,2001375,Output,ro=true
+L,9,24,2001376,Accept Job Offer,ro=true&styleVbackgroundColor=#FFFFFF&stylebackgroundColor=#9999FF
+F,1,1,,After the HR department fills in “Department” and “Department Contact”&#44; the department contact may fill out the rest of the form (excluding Interview Record).,cs=8&color=#333333&fontWeight=bold
+F,1,4,,Basic Information,background=#333333&color=#ffffff&cs=6&textAlign=center
+F,1,10,,Job Description,background=#333333&color=#ffffff&cs=6&textAlign=center
+F,1,16,,Qualifications Required,background=#333333&color=#ffffff&cs=6&textAlign=center
+F,1,22,,The information below is automatically generated and is read-only in this form. If you would like to edit it&#44; please go to the “Applicant Management” sheet.,cs=7&color=#990000&fontWeight=bold
+F,1,23,,Interview Record,background=#883333&color=#ffffff&textAlign=center&cs=9
+RMD_MAX_SEQ,0
+ET,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10005_Sheet10005_index.nui
+QS,1

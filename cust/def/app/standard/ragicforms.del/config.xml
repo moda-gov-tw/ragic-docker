@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+  <name>訂單管理</name>
+  <desc />
+  <publisher />
+  <createDate />
+  <updateDate />
+  <version />
+  <price />
+  <status />
+  <sourcePath />
+  <appId />
+  <forms seq="24">
+    <form sheetIndex="10001" type="NUI" seq="1">銷售訂單</form>
+    <form sheetIndex="10002" type="NUI" seq="2">出貨單</form>
+    <form sheetIndex="10003" type="NUI" seq="3">郵遞區號</form>
+    <form sheetIndex="10004" type="NUI" seq="4">客戶</form>
+    <form sheetIndex="10005" type="NUI" seq="5">銷售商品</form>
+    <form sheetIndex="10006" type="NUI" seq="6">商品單價管理</form>
+  </forms>
+</module>
+

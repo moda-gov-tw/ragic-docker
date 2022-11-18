@@ -1,0 +1,156 @@
+#calPanel{
+overflow-x:auto;
+background-color:white;
+position:absolute;
+width:100%;
+top:0;left:0;
+}
+#carbarTableLeft{
+width:180px;
+background-color:#AABBDD;
+padding-left:8px;
+}
+#calbartopTable{
+width:100%;
+background-color:#AABBDD;
+height:25px;
+}
+#calbartopTable td{
+vertical-align:middle;
+}
+#current{
+text-align:left;
+margin-left:30px;
+font-size:12px;
+font-weight:bold;
+width:200px;
+}
+.calButton{
+color:black;
+background:#efefef;
+border:1px solid #CCCCCC;
+cursor:pointer;
+font-size:12px;
+padding:1px 5px;
+}
+#calTable{
+table-layout:fixed;
+width:100%;
+height:100%;
+background-color:#CCDDEE;
+}
+#mainCal{
+position:relative;
+height:100%;
+width:100%;
+}
+#weekLegend{
+table-layout:fixed;
+width:100%;
+background:#ccddee;
+font-size:11px;
+position:absolute;
+top:0;
+}
+#weekLegend td{
+text-align:center;
+}
+#monthRowAll{
+position:absolute;
+top:13px;bottom:0;
+width:100%;
+_height:100%;
+}
+.monthRow{
+position:absolute;
+height:20%;
+width:100%;
+}
+.monthRowTable,.monthRowTable2{
+table-layout:fixed;
+width:100%;
+}
+.monthRowTable{
+position:absolute;
+height:100%;
+border-bottom:1px solid #efefef;
+}
+.monthRowTable2{
+position:relative;
+font-size:11px;
+}
+.dayLegend{
+background:#f8f8f8;
+text-align:right;
+}
+#monthRowAll td{
+font-size:11px;
+border-right:1px solid #efefef;
+vertical-align:top;
+}
+.todayStubCell{
+background:#F8EFFF;
+}
+.stubCell{
+background:white;
+}
+.todayCell{
+background:#EEDDFF;
+}
+.eventCell0,.eventCell1,.eventCell2{
+color:white;
+width:85%;
+font-size:12px;
+padding:1px 3px;
+margin:1px 2px;
+cursor:pointer;
+}
+.eventCell0{background:#336699;padding:1px 3px;}
+.eventCell1{background:#993366;padding:1px 3px;}
+.eventCell2{background:#669933;padding:1px 3px;}
+
+#smallCal{
+margin:12px 0 0 0;
+padding:0 5px 7px 10px;
+}
+#smallCal td{
+font-size:12px;
+padding:3px 2px;
+text-align:center;
+cursor:pointer;
+}
+#smallMonthTable{
+width:160px;
+background:white;
+table-layout:fixed;
+}
+#smallCalTitle{
+font-weight:bold;
+color:#336699;
+}
+.bgSmallCell{
+background:#efefef;
+}
+.todaySmallCell{
+background:#EEDDFF;
+}
+.eventSmallCell{
+font-weight:bold;
+}
+
+#legendCal{
+margin:12px 0 0 0;
+padding:0 5px 7px 10px;
+}
+
+.moreEventCell{
+cursor:pointer;
+text-align:center;
+}
+.moreEventsDiv{
+position:absolute;
+background:white;
+border:1px solid #888888;
+width:200px;
+z-index:99;
+}

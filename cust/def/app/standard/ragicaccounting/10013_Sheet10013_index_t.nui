@@ -1,0 +1,28 @@
+N,Document Details,
+FS,2
+DS,2
+W,2=101&3=101&4=101&5=121,
+TF,2002037
+KF,2002046
+SF,2002044
+S,2002037,standard/ragicaccounting/10011,
+S,2002041,standard/ragicaccounting/10008,
+S,2002042,standard/ragicaccounting/10010,
+A,NULL=0&MANAGER=6&USER=3&EVERYONE=0,0,2,1845142563
+A2,
+D,1,1,2002040,Doc. No.,fmt_n_ts=`&fmt_n_ds=.&fmt_n=#`####.##&dv=$SEQ&ro=true
+L,2,1,2002037,Voucher No.,stf=2002029&mvp=/ragicaccounting|10011_Sheet10011&ro=true
+L,3,1,2002041,Invoice ID,s=2001932&stf=2001922&mvp=/ragicaccounting|10008_Sheet10008&ro=true
+L,4,1,2002042,Bill ID,s=2002025&stf=2001990&mvp=/ragicaccounting|10010_Sheet10010&ro=true
+U,5,1,2002043,File Upload,ro=true
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10013_Sheet10013_index_t.nui
+QS,3

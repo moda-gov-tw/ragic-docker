@@ -1,0 +1,25 @@
+N,Groups,Listing all the groups in your account. Please do not remove or rename system default groups.
+FS,0
+DS,2
+W,1=51&2=276&3=104&4=272,
+TF,3
+SF,3
+S,19,system/ragic-setup/1,
+S,17,
+A,MANAGER=0&USER=0&EVERYONE=0,0,2,896691993
+A2,
+D,1,2,3,Group Name,
+D,2,2,9,Description,
+M,3,2,19,Administrator,usrref=2
+M,4,2,17,Tags,
+F,1,1,,Please do not rename the system default groups,cs=2&color=#FF6600&fontWeight=bold
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,2_Sheet2_index_t.nui
+QS,2

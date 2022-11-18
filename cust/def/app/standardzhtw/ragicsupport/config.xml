@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+  <name>客服</name>
+  <desc />
+  <publisher />
+  <createDate />
+  <updateDate />
+  <version />
+  <price />
+  <status />
+  <sourcePath />
+  <appId />
+  <forms seq="8">
+    <form sheetIndex="20002" type="NUI" seq="1">客服信件</form>
+    <form sheetIndex="20003" type="NUI" seq="2">客服知識庫 </form>
+  </forms>
+</module>

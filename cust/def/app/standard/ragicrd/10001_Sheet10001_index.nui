@@ -1,0 +1,24 @@
+N,RD Knowledge Base,
+FS,2
+DS,2
+W,1=27&2=143&3=49&4=89&5=61&undefined=0,5=9&6=34&8=401
+TF,2000725
+KF,2000731
+SF,2000725
+S,2000830,standard/ragic-setup/1,
+S,2000874,,FAQ,Company Rules,Customer Service
+S,2001282,,Production,Sales,Marketing,Human Resource,Research %26 Development,Finance,Legal Affairs,IT,Executive
+S,2000727,,travel,reimbursement
+A,MANAGER=6&EVERYONE=0&USER=3,0,3,909183586
+A2,
+D,1,1,2000909,Article ID,ag={0`number`00000}
+D,1,2,2000725,Title,cs=4
+L,1,4,2000830,Author,usrref=2&dv=$USER
+D,3,4,2000876,Last Updated Date,fmt_d=yyyy/MM/dd&dv=#DATE&ro=true
+L,1,5,2000874,Type,help=You can add types as needed&userOps=true
+L,3,5,2001282,Related Department,userOps=true
+M,1,6,2000727,Tags,cs=4&userOps=true
+D,1,8,2000730,Content,cs=4
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+QS,1

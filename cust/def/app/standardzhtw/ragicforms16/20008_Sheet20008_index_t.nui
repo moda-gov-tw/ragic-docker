@@ -1,0 +1,27 @@
+N,婚宴當日流程,
+FS,2
+DS,2
+W,3=2&5=351&6=232&undefined=0,
+TF,3003558
+KF,3003570
+SF,3003558
+S,3003554,,男方,女方,雙方
+A,NULL=0&MANAGER=6&USER=3&EVERYONE=0,0,2,1817753987
+A2,
+L,1,1,3003554,男方或女方,styleVborder-left=1px solid #000000&styleVborder-bottom=1px solid #000000&styleVborder-top=1px solid #000000&styleVborder-right=1px solid #000000&styleborder-left=1px solid #000000&styleborder-bottom=1px solid #000000&styleborder-top=1px solid #000000&styleborder-right=1px solid #000000&noSyncName=true
+D,2,1,3003555,耗時幾分鐘？,fmt_n=0&styleVborder-left=1px solid #000000&styleVborder-bottom=1px solid #000000&styleVborder-top=1px solid #000000&styleVborder-right=1px solid #000000&styleborder-left=1px solid #000000&styleborder-bottom=1px solid #000000&styleborder-top=1px solid #000000&styleborder-right=1px solid #000000
+D,3,1,3003556,開始時間,fmt_d=HH:mm&styleVborder-left=1px solid #000000&styleVborder-bottom=1px solid #000000&styleVborder-top=1px solid #000000&styleVborder-right=1px solid #000000&styleborder-left=1px solid #000000&styleborder-bottom=1px solid #000000&styleborder-top=1px solid #000000&styleborder-right=1px solid #000000
+D,4,1,3003557,結束時間,fmt_d=HH:mm&styleVborder-left=1px solid #000000&styleVborder-bottom=1px solid #000000&styleVborder-top=1px solid #000000&styleVborder-right=1px solid #000000&styleborder-left=1px solid #000000&styleborder-bottom=1px solid #000000&styleborder-top=1px solid #000000&styleborder-right=1px solid #000000
+D,5,1,3003558,行程大綱,styleVborder-left=1px solid #000000&styleVborder-bottom=1px solid #000000&styleVborder-top=1px solid #000000&styleVborder-right=1px solid #000000&styleborder-left=1px solid #000000&styleborder-bottom=1px solid #000000&styleborder-top=1px solid #000000&styleborder-right=1px solid #000000
+D,6,1,3003560,需準備物品,styleVborder-left=1px solid #000000&styleVborder-bottom=1px solid #000000&styleVborder-top=1px solid #000000&styleVborder-right=1px solid #000000&styleborder-left=1px solid #000000&styleborder-bottom=1px solid #000000&styleborder-top=1px solid #000000&styleborder-right=1px solid #000000
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,20008_Sheet20008_index_t.nui
+QS,3

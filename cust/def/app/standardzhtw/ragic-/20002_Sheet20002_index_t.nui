@@ -1,0 +1,26 @@
+N,個人預約細項,開放給內部 / 外部 / 訪客使用者使用
+FS,2
+DS,2
+W,3=97&4=97,
+TF,3004268
+KF,3004273
+SF,3004268
+S,3004269,standardzhtw/ragic-/20001,
+A,null=0&MANAGER=6&USER=3&X-USER=1&EVERYONE=1,1,2,1012027748
+A2,
+D,1,1,3004268,預約人,email=2&ro=true&stylefontWeight=bold&styletextAlign=left&styleVfontWeight=bold&styleVtextAlign=left
+L,2,1,3004269,預約場地,stf=3004263&mvp=/ragic-|20001_Sheet20001&s=3004267&ro=true&stylefontWeight=bold&styletextAlign=left&styleVfontWeight=bold&styleVtextAlign=left
+D,3,1,3004270,開始時間,fmt_d=yyyy/MM/dd HH:mm:ss&ro=true&stylefontWeight=bold&styletextAlign=left&styleVfontWeight=bold&styleVtextAlign=left
+D,4,1,3004271,結束時間,fmt_d=yyyy/MM/dd HH:mm:ss&ro=true&stylefontWeight=bold&styletextAlign=left&styleVfontWeight=bold&styleVtextAlign=left
+D,5,1,3004272,備註,ro=true&stylefontWeight=bold&styletextAlign=left&styleVfontWeight=bold&styleVtextAlign=left
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=theme19
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,20002_Sheet20002_index_t.nui
+QS,0

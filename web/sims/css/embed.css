@@ -1,0 +1,68 @@
+#v6Recent,#quickLinks,#v6TabHR,#v5Header,#v5TopTab,#v5SidebarSep,#dockBarRight,#v5BorderTop,#v5BorderMiddle,#v5BorderBottom,#product_version {
+    display:none;
+}
+
+#nui_outer .sidecell, #nui_outer .sidecellleft,#nui_outer table{
+    border:0;
+}
+
+#ragicEmbedSearchButton {
+    display: inline-block;
+    position: relative;
+    font-size: 14px;
+    right: 3px;
+    bottom: 1px;
+    cursor: pointer;
+    color: #333333;
+    margin: 6px 0 0 0;
+}
+
+#ragicEmbedSearchButton:hover {
+    font-size:16px;
+}
+
+.embedSearchBodyShow #embedSearchBoxDiv #ragicEmbedSearchButton {
+    font-size:16px;
+    bottom: 2px;
+}
+
+.searchDropSelector div {
+    white-space: pre-line;
+}
+
+#embedSearchBody {
+    display:  inline-block;
+    float:  right;
+    margin: 0 70px 0 0;
+    padding:  0;
+    height:  24px;
+}
+
+.embedSearchBodyShow {
+    background:  #ffffff;
+    box-shadow:  0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
+    border: 1px solid #333333;
+}
+
+.embedSearchBodyShow #embedSearchBoxDiv #ragicEmbedSearchBox {
+    display:inline-block;
+    position: relative;
+    bottom: 2px;
+}
+
+#embedSearchBoxDiv {
+    border-radius: 2px;
+    display:  inline-block;
+}
+
+#ragicEmbedSearchBox {
+    outline:  none;
+    background-color: inherit;
+    border:  none;
+    display: none;
+}
+
+#embedPrinterFriendlyDiv {
+    display: inline-block;
+    float: right;
+}

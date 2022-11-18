@@ -1,0 +1,28 @@
+N,Pricing,
+FS,2
+DS,2
+W,2=108,12=165
+TF,2002566
+KF,2002569
+SF,2002566
+S,2002573,,Active,Inactive
+S,2002570,,Per User Per Month
+A,NULL=0&MANAGER=6&USER=3&EVERYONE=0,0,3,1319586287
+A2,
+D,1,1,2002566,Module ID,
+L,4,1,2002573,Status,dv=Active
+D,1,2,2002567,Module Name,
+L,1,3,2002570,Pricing Type,dv=Per User Per Month
+D,1,4,2002571,Price,fmt_n_ts=`&fmt_n_ds=.&fmt_n=$#`####.##
+D,1,5,2002572,Currency,
+D,1,12,2002568,Sheets Included,cs=3
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10002_Sheet10002_index.nui
+QS,1

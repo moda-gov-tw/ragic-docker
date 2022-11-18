@@ -1,0 +1,68 @@
+N,Users|zh-TW=使用者,Create / update your account users.
+FS,0
+DS,2
+W,2=194&undefined=0,17=130
+S,3,system/ragic-setup/2,
+S,31,null,
+S,43,,Internal,External
+A,MANAGER=0&EVERYONE=0&USER=0,0,3,1501117268
+D,1,1,1,E-mail,
+D,1,3,4,User Name,
+M,1,5,3,Groups,
+L,1,8,31,Status,dv=NORMAL
+L,1,10,43,User Type,dv=Internal&ro=1
+D,1,12,10,System Log,
+F,3,1,,The e-mail used to log in. Cannot be changed once user is created.|zh-TW=登入用的E-mail，一旦設定之後無法修改。,fontSize=12&color=#aa0000
+F,3,3,,Full name of the user|zh-TW=使用者全名,fontSize=12&color=#999999
+F,3,5,,Access right to forms and features is determined by which groups the user is in.|zh-TW=各表單的存取權限將根據使用者群組作設定。,fontSize=12&color=#999999
+F,3,6,,Add user to "SYSAdmin" to grant user right to use design mode.|zh-TW=將使用者加入"SYSAdmin"群組以賦予設計表單的權限。,fontSize=12&color=#999999
+F,3,8,,Update status to suspend when users leave your company.|zh-TW=使用者離職後可將使用者狀態設定為"Suspend",fontSize=12&color=#999999
+K,F,1,Reset Password,/sims/reg/userPwdReset.jsp?emailNodeId={id}
+PRE_WORKFLOW_START
+/*
+* Please do not edit, this is necessary to manage users in Ragic application.
+*/
+if(param.getOldValue(3) && param.getOldValue(3).equals("SYSAdmin") && !param.getNewValues(3).contains("SYSAdmin")){
+  var sysFlag = false;
+  var sysNum = 0;
+  var q = db.getQuery();
+  
+  q.go(1);
+  while(q.next()){
+    if(q.dip(3) && q.dip(3).equals("SYSAdmin")){
+      sysNum++;
+      if(sysNum > 1){
+        sysFlag = true;
+        break;
+      }
+    }
+    
+  }
+  if(!sysFlag){
+    response.setStatus('INVALID');
+    response.setMessage('There should be at least one "SYSAdmin" in this application');
+  }
+}  
+
+
+
+SCRIPT_START
+/*
+* Please do not edit, this is necessary to enable created users to log on to Ragic.
+*/
+var oldEmail=param.getOldValue(1);
+var newEmail=param.getNewValue(1);
+
+if(!oldEmail){
+  user.registerUserToMainAccountDatabase(newEmail);
+}
+else if(!oldEmail.toString().equals(newEmail.toString())){
+  db.updateNode(1,param.getOldNodeId(1),oldEmail);
+  response.setStatus('WARN');
+  response.setMessage('You cannot edit user e-mail once it has been created.');
+}
+
+
+
+
+

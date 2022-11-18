@@ -1,0 +1,21 @@
+N,Subscription/Membership Tracker,
+FS,2
+DS,2
+W,1=37&2=202&3=77&4=77,
+TF,2002455
+KF,2002465
+SF,2002455
+S,2002461,,Subscribed,Canceled,Free Trial,Free Plan
+A,NULL=0&MANAGER=6&USER=3&EVERYONE=0,0,2,521511154
+A2,
+L,1,1,2002461,Status,userOps=true
+D,2,1,2002455,Service Name,
+D,3,1,2002460,Amount,fmt_n=#`####.##
+D,4,1,2002462,Next Payment Date,fmt_d=MM/dd/yyyy
+RMD_MAX_SEQ,0
+ET,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10001_Sheet10001_index_t.nui
+QS,7

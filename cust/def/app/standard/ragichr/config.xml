@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+  <name>HR</name>
+  <desc />
+  <publisher />
+  <createDate />
+  <updateDate />
+  <version />
+  <price />
+  <status />
+  <sourcePath />
+  <appId />
+  <forms seq="9">
+    <form sheetIndex="10001" type="NUI" seq="3">Overtime Claim</form>
+    <form sheetIndex="10002" type="NUI" seq="4">Leave of absence</form>
+    <form sheetIndex="10003" type="NUI" seq="2">Timesheet</form>
+    <form sheetIndex="10004" type="NUI" seq="1">Employee Management</form>
+    <form sheetIndex="10005" type="NUI" seq="5">Staff Requisition Form</form>
+    <form sheetIndex="10007" type="NUI" seq="7">Applicant Resume</form>
+    <form sheetIndex="10008" type="NUI" seq="6">Job Postings</form>
+    <form sheetIndex="10009" type="NUI" seq="8">Applicant Interview Record</form>
+    <form sheetIndex="10013" type="NUI" seq="9">Employee Attendance</form>
+  </forms>
+</module>

@@ -1,0 +1,29 @@
+N,食物營養成分表,不想要預先建立的食物資訊的話，可以點選上方的工具並刪除所有篩選
+FS,2
+DS,2
+W,2=71&3=40&5=7&7=30&8=101,
+TF,3003430
+KF,3003433
+SF,3003430
+S,3003432,,營養補充品(乳清),五穀根莖類(澱粉),油脂類,蔬果類,蛋豆魚肉類,奶類,飲料,綜合(便當、套餐等),零食,醬料
+A,NULL=0&MANAGER=6&USER=3&EVERYONE=0,0,2,436102569
+A2,
+D,1,1,3003430,食物編號,ag=FOOD-{0`number`00000}&ro=true&stylebackgroundColor=#D53333&stylecolor=#FFFFFF&stylefontWeight=bold&styleVfontWeight=bold
+D,2,1,3003431,食物名稱,stylebackgroundColor=#D53333&stylecolor=#FFFFFF&stylefontWeight=bold&styleVfontWeight=bold
+L,3,1,3003432,類別,userOps=true&stylebackgroundColor=#D53333&stylecolor=#FFFFFF&stylefontWeight=bold&styleVfontWeight=bold
+D,4,1,3003434,熱量 (大卡),fmt_n=#`###.##### 大卡&stylebackgroundColor=#D53333&stylecolor=#FFFFFF&stylefontWeight=bold&styleVfontWeight=bold
+D,5,1,3003435,蛋白質 (公克),fmt_n=#`###.##### 公克&stylebackgroundColor=#D53333&stylecolor=#FFFFFF&stylefontWeight=bold&styleVfontWeight=bold
+D,6,1,3003436,脂肪 (公克),fmt_n=#`###.##### 公克&stylebackgroundColor=#D53333&stylecolor=#FFFFFF&stylefontWeight=bold&styleVfontWeight=bold
+D,7,1,3003437,碳水化合物 (公克),fmt_n=#`###.##### 公克&stylebackgroundColor=#D53333&stylecolor=#FFFFFF&stylefontWeight=bold&styleVfontWeight=bold
+D,8,1,3003438,條碼編號,text=1&stylebackgroundColor=#D53333&stylecolor=#FFFFFF&stylefontWeight=bold&styleVfontWeight=bold
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,20003_Sheet20003_index_t.nui
+QS,0

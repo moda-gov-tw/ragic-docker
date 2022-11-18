@@ -1,0 +1,65 @@
+N,賓客規劃（預擬邀請名單）,
+FS,2
+DS,2
+W,1=36&2=92&3=40&4=358&undefined=0,7=10
+TF,3003478
+KF,3003486
+SF,3003478
+S,3003480,,新娘親戚,新娘友人,新娘同事,新娘同學,新郎親戚,新郎友人,新郎同事,新郎同學
+S,3003481,,No,Yes
+S,3003532,,No,Yes
+S,3003533,,一對一,邀請填寫婚宴表單
+S,3003534,,No,Yes
+S,3003535,,No,Yes
+A,NULL=0&MANAGER=6&USER=3&EVERYONE=0,0,3,1035133135
+A2,
+D,1,1,3003478,編號,ag={0`number`#}&noDup=true&styletextAlign=left
+D,1,2,3003479,賓客姓名,styletextAlign=left
+L,1,3,3003480,和新人的關係,userOps=true&help=可以直接新增選項。&noSyncName=true&styletextAlign=left
+L,1,4,3003481,是否決定邀請？,checkbox=1&dv=No&noSyncName=true&styletextAlign=left
+D,3,4,3003485,備註,styletextAlign=left
+L,1,6,3003532,邀請完成？,checkbox=1&dv=No&styletextAlign=left
+L,1,7,3003533,邀請方式,styletextAlign=left
+L,1,9,3003534,是否需要拋轉？,checkbox=1&dv=No&f=IF(A7.RAW='一對一'`'Yes'`'No')&styletextAlign=left
+L,1,10,3003535,是否已拋轉？,checkbox=1&dv=No&ro=true&styletextAlign=left
+F,1,5,,邀約進度管理,cs=4&backgroundColor=#d1b8cd&color=#FFFFFF&textAlign=center
+F,3,6,,紀錄是否已對此賓客「提出邀請」以避免遺漏。「邀請結果」另紀錄在「賓客總表」中。,cs=2&color=#7c627c
+F,3,7,,↓↓↓「邀請方式」會影響接下來「是否需要拋轉」（複製資料）的判斷↓↓↓,cs=2&color=#7c627c
+F,3,9,,如果是直接提供表單填寫網址給對方，對方填寫後資料就會自動出現在「賓客總表」，因此就不用把他的資料重複拋轉過去。但如果是其他一對一確認的狀況，例如口頭或電話一對一確認，或一對一傳送已預填名字的邀請表單給對方，那就需要將賓客資料拋轉到「賓客總表」中，以便下一階段的進度追蹤。,cs=2&color=#7c627c&fontWeight=bold
+F,3,10,,不需要填寫，該筆資料拋轉後系統會自動打勾以利辨識,cs=2&color=#7c627c
+X_MAX_DESIGNER_ID,101
+K,{"type":"B","seq":"1","name":"資料拋轉","action":"_RAGIC_AUTOGEN_CR_43037({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"true","userGroups":["EVERYONE"]}
+K,{"type":"B","seq":"2","name":"註記已拋轉","action":"_RAGIC_AUTOGEN_FIELD_UPDATER_38791({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"true","userGroups":["EVERYONE"]}
+K,{"type":"B","seq":"3","name":"將資料拋轉到賓客總表","action":"_RAGIC_AUTOGEN_MERGED_BUTTON_89546({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"false","userGroups":["EVERYONE"]}
+RMD_MAX_SEQ,0
+IR,%7B%22rules%22%3A%5B%7B%22cons%22%3A%5B%7B%22domainId%22%3A3003481%2C%22value%22%3A%22No%22%2C%22operator%22%3A%22ffEquals%22%7D%5D%2C%22conLogic%22%3A%22AND%22%2C%22actions%22%3A%5B%7B%22domainId%22%3A3003532%2C%22action%22%3A%22hide%22%2C%22actionValue%22%3A%22%22%7D%2C%7B%22domainId%22%3A3003533%2C%22action%22%3A%22hide%22%2C%22actionValue%22%3A%22%22%7D%2C%7B%22domainId%22%3A3003534%2C%22action%22%3A%22hide%22%2C%22actionValue%22%3A%22%22%7D%2C%7B%22domainId%22%3A3003535%2C%22action%22%3A%22hide%22%2C%22actionValue%22%3A%22%22%7D%2C%7B%22domainId%22%3A-1%2C%22action%22%3A%22hideFreeData%22%2C%22actionValue%22%3A%221%2C5%22%7D%2C%7B%22domainId%22%3A-1%2C%22action%22%3A%22hideFreeData%22%2C%22actionValue%22%3A%223%2C6%22%7D%2C%7B%22domainId%22%3A-1%2C%22action%22%3A%22hideFreeData%22%2C%22actionValue%22%3A%223%2C7%22%7D%2C%7B%22domainId%22%3A-1%2C%22action%22%3A%22hideFreeData%22%2C%22actionValue%22%3A%223%2C9%22%7D%2C%7B%22domainId%22%3A-1%2C%22action%22%3A%22hideFreeData%22%2C%22actionValue%22%3A%223%2C10%22%7D%5D%2C%22actSubtableRoot%22%3A-1%7D%5D%7D
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,20001_Sheet20001_index.nui
+QS,1
+SHEET_SCOPE_START
+function _RAGIC_AUTOGEN_CR_43037(nodeId){
+  var result = db.entryCopier(JSON.stringify(
+{"THIS_PATH":"/ragicforms16/20001","THIS_NODEID":nodeId,"NEW_PATH":"/ragicforms16/20002","CHECK_MUST_FIELDS":false,"CHECK_VALIDATION_FIELDS":false,"CHECK_ALL_MUST_FIELDS_MAPPED":false,"SILENT":false,"RECAL_ALL_FORMULAS":true,"EXEC_WORKFLOW":true,"COPY":{"3003488":"3003479","3003489":"3003480"}}
+  ), response);
+  if(result) return result;
+}//END_RAGIC_AUTOGEN_CR_43037
+
+function _RAGIC_AUTOGEN_FIELD_UPDATER_38791(nodeId){
+  var result = db.fieldUpdater(JSON.stringify(
+{"THIS_PATH":"/ragicforms16/20001","THIS_NODE_ID":nodeId,"UPD_FIELDS":{"3003535":"Yes"}}
+  ), response);
+}//END_RAGIC_AUTOGEN_FIELD_UPDATER_38791
+
+function _RAGIC_AUTOGEN_MERGED_BUTTON_89546(nodeId){
+  db.executeMergedActionButtons(JSON.stringify(
+{"THIS_NODE_ID":nodeId,"THIS_PATH":"/ragicforms16","THIS_SHEETINDEX":20001,"ACTIONS":["_RAGIC_AUTOGEN_CR_43037","_RAGIC_AUTOGEN_FIELD_UPDATER_38791"]}
+  ), response);
+  response.setDisplayButtonNameAsMessage(true)
+}//END_RAGIC_AUTOGEN_MERGED_BUTTON_89546
+

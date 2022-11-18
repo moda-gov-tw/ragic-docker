@@ -1,0 +1,28 @@
+N,Account Titles,
+FS,2
+DS,2
+W,2=18&3=74&4=173&5=271,
+TF,2001983
+KF,2001986
+SF,2001984
+S,2001987,,No,Yes
+S,2001982,,1-Assets,2-Liabilities,3-Equity,4-Operating Revenue,5-Operating Costs,6-Operating Expenses,7-Non-operating Revenue And Expenses,8-Income Tax Expense Or Benefit
+S,2001983,,11-Current Assets,13-Funds And Long-term Investments,14-Fixed Assets,16-Depletable Assets,17-Intangible Assets,21-Current Liabilities,23-Long-term Liabilities,28-Other Liabilities,31-Capital,32-Additional Paid-in Capital,33-Retained Earnings,34-Equity Adjustments,36-Minority Interest,41-Sales Revenue,46-Service Revenue,47-Agency Revenue,48-Other Operating Revenue,51-Cost Of Goods Sold,56-Service Costs,57-Agency Costs,58-Other Operating Costs,61-Selling Expenses,62-General %26 Administrative Expenses,63-Research And Development Expenses,71-Non-operating Revenue,75-Non-operating Expenses,81-Income before tax,82-Income Tax Expense,86-Net Income
+A,NULL=0&MANAGER=6&USER=3&EVERYONE=0,0,2,1841523499
+A2,
+L,1,1,2001987,Enabled?,checkbox=1&dv=Yes
+D,2,1,2001985,Code,
+L,3,1,2001982,First Grade,help=Please do not use options other than pre-defined selections.
+L,4,1,2001983,Second Grade,help=Please do not use options other than pre-defined selections.
+D,5,1,2001984,Third Grade,
+X,Enable Titles,102,2001987|1|Yes,1,%7B%22emails%22%3A%5B%5D%7D,%7B%7D
+X_MAX_DESIGNER_ID,102
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10009_Sheet10009_index_t.nui
+QS,0

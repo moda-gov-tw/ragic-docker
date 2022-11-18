@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+  <name>研發</name>
+  <desc />
+  <publisher />
+  <createDate />
+  <updateDate />
+  <version />
+  <price />
+  <status />
+  <sourcePath />
+  <appId />
+  <forms seq="15">
+    <form sheetIndex="20001" type="NUI" seq="1">研發知識庫</form>
+    <form sheetIndex="20002" type="NUI" seq="2">研發文件管理 - Dropbox</form>
+    <form sheetIndex="20003" type="NUI" seq="3">文件新增及修訂需求單 - Dropbox</form>
+    <form sheetIndex="20004" type="NUI" seq="6">問題追蹤單</form>
+    <form sheetIndex="20005" type="NUI" seq="4">研發文件管理</form>
+    <form sheetIndex="20006" type="NUI" seq="5">文件新增及修訂需求單</form>
+  </forms>
+</module>

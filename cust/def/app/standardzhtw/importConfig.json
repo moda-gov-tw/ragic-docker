@@ -1,0 +1,72 @@
+{
+    "/ragicforms23/20001": {"4579": {
+        "fileType": "EXCEL",
+        "realName": "學生每月體溫測量資料匯入",
+        "fromListing": true,
+        "path": "/ragicforms23",
+        "sheet": "20001_Sheet20001",
+        "sheetNum": 0,
+        "reverse": false,
+        "hasHeader": true,
+        "fileNameExtension": "xlsx",
+        "configName": "學生每月體溫測量匯入新增",
+        "domainColumnMap": {
+            "3003879": 0,
+            "3003850": 1,
+            "3003852": 2,
+            "3003854": 3,
+            "3003865": 4,
+            "3003851": 5
+        },
+        "columnNames": {
+            "0": "學生E-mail",
+            "1": "年級",
+            "2": "班級",
+            "3": "座號",
+            "4": "年份",
+            "5": "月份"
+        },
+        "policy": 1,
+        "optionActions": [
+            3,
+            2,
+            1,
+            4,
+            5,
+            8
+        ]
+    }},
+    "/ragicforms23/20003": {"4342": {
+        "fileType": "EXCEL",
+        "realName": "班級導師資訊",
+        "fromListing": true,
+        "path": "/ragicforms23",
+        "sheet": "20003_Sheet20003",
+        "sheetNum": 0,
+        "reverse": false,
+        "hasHeader": true,
+        "fileNameExtension": "xlsx",
+        "configName": "級導師資料匯入新增",
+        "domainColumnMap": {
+            "3003872": 0,
+            "3003869": 1,
+            "3003870": 2,
+            "3003871": 3
+        },
+        "columnNames": {
+            "0": "導師E-mail",
+            "1": "年級",
+            "2": "班級",
+            "3": "導師姓名"
+        },
+        "policy": 1,
+        "optionActions": [
+            3,
+            2,
+            1,
+            4,
+            5,
+            8
+        ]
+    }}
+}

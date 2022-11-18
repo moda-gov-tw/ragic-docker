@@ -1,0 +1,25 @@
+N,Staff Requisition Form,
+FS,2
+DS,2
+W,1=33&2=27&3=59&4=113&5=76&6=182,
+TF,2001298
+KF,2001297
+SF,2001298
+S,2001295,standard/ragic-setup/2,
+S,2001296,standard/ragic-setup/1,
+A,NULL=0&MANAGER=6&HR=6&USER=1&EVERYONE=0,0,2,1926988019
+A2,
+D,1,1,2001298,Request No.,ag=N-{0`number`00000}
+L,2,1,2001295,Department,grpref=2&must=true
+L,3,1,2001296,Department Contact,usrref=1
+D,4,1,2001301,Position Title,must=true&noDup=true
+D,5,1,2001299,No. of Staff Requested,fmt_n=0
+D,6,1,2001300,Actual Headcount of Position Requested ,fmt_n=0
+X,Recruiting,102,2001566|1|Recruiting,1,%7B%22emails%22%3A%5B%5D%7D,%7B%7D
+RMD_MAX_SEQ,0
+ET,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10005_Sheet10005_index_t.nui
+QS,4

@@ -1,0 +1,29 @@
+N,Voucher Detail,
+FS,2
+DS,2
+W,2=121&3=241&4=81&5=81,
+TF,2002359
+KF,2002370
+SF,2002359
+S,2002358,standard/ragicaccounting-integrate/10002,
+S,2002357,standard/ragicaccounting-integrate/10009,
+A,NULL=0&MANAGER=6&USER=3&EVERYONE=0,0,2,1260643564
+A2,
+L,1,1,2002358,Account Code,text=1&s=2002088&stf=2002085&mvp=/ragicaccounting-integrate|10002_Sheet10002&mvpf=2002086|1|$2002373&ro=true
+L,2,1,2002357,Voucher No.,stf=2002353&mvp=/ragicaccounting-integrate|10009_Sheet10009&ro=true
+D,3,1,2002359,Account Title,vd=2002084&l=2002358&ro=true
+D,4,1,2002361,Debit,fmt_n_ts=`&fmt_n_ds=.&fmt_n=$#`####.##&ro=true
+D,5,1,2002362,Credit,fmt_n_ts=`&fmt_n_ds=.&fmt_n=$#`####.##&ro=true
+D,6,1,2002363,Second Grade,vd=2002083&l=2002358&hide=true
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+MOBCONF,%7B%7D
+NUI_FILE_NAME,10010_Sheet10010_index_t.nui
+QS,0

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+  <name>績效評估</name>
+  <desc />
+  <publisher />
+  <createDate />
+  <updateDate />
+  <version />
+  <price />
+  <status />
+  <sourcePath />
+  <appId />
+  <forms seq="10">
+    <form sheetIndex="20001" type="NUI" seq="1">績效考核－質化</form>
+    <form sheetIndex="20002" type="NUI" seq="2">自我評鑑</form>
+    <form sheetIndex="20003" type="NUI" seq="3">績效考核－量化 (主管評鑑)</form>
+    <form sheetIndex="20004" type="NUI" seq="4">績效考核－量化 (非主管評鑑)</form>
+  </forms>
+</module>

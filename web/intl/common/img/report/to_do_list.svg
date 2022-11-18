@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="101" height="85" viewBox="0 0 101 85">
+  <g id="icon_彩色" data-name="icon 彩色" transform="translate(0.5 0.5)">
+    <rect id="Rectangle_28" data-name="Rectangle 28" width="100" height="84" fill="#fff" stroke="#707070" stroke-width="1"/>
+    <rect id="Rectangle_29" data-name="Rectangle 29" width="58" height="66" transform="translate(9 8)" fill="#c33" opacity="0.5"/>
+    <path id="Path_43" data-name="Path 43" d="M92.65,77V8.52A1.52,1.52,0,0,0,91.13,7H8.87A1.52,1.52,0,0,0,7.35,8.52V77C7.53,77,93.58,76.87,92.65,77ZM69.82,10H89.6V28.3H69.82Zm0,21.31H89.6V51.13H69.82Zm0,22.82H89.6V74H69.82ZM10.39,10H66.78V28.3H10.39Zm0,21.31H66.78V51.13H10.39Zm0,22.82H66.78V74H10.39Zm66-29.36a1.52,1.52,0,0,0,2.16,0l9.13-9.13-2.16-2.15-8,8.06L73.94,18.1l-2.15,2.15Zm9.13,34.37-8,8.06-3.49-3.49L71.79,65.9l4.56,4.57a1.55,1.55,0,0,0,2.16,0l9.13-9.13Z" fill="#c33"/>
+    <path id="Path_44" data-name="Path 44" d="M17.35,17.65H38.54V20.7H17.35Z" fill="#fff"/>
+    <path id="Path_45" data-name="Path 45" d="M17.35,65.91H59.73v-3H17.35Z" fill="#fff"/>
+    <path id="Path_46" data-name="Path 46" d="M17.35,40H58.73v3H17.35Z" fill="#fff"/>
+  </g>
+</svg>

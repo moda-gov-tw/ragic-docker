@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- Internal Use Only -->
+<sims-licenses>
+    <license-group format="1.0" product="SIMS" release="6.0.0">
+        <license
+            component="Server"
+            expiration="unlimited"
+            ip="any"
+            licensee="Ragic On-permise default license"
+            serial="279"
+            type="DISTR"
+            units="1"
+        />
+    </license-group>
+</sims-licenses>

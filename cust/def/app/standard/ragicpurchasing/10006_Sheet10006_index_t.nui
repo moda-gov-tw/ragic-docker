@@ -1,0 +1,26 @@
+N,Purchase items,
+FS,2
+DS,2
+W,1=41&2=54&3=163&4=-2&5=-28&6=-7&7=27&8=46,
+TF,2001129
+KF,2001138
+SF,2001129
+S,2001111,standard/ragicpurchasing/10005,
+S,2001128,standard/ragicpurchasing/10003,
+A,NULL=0&MANAGER=6&USER=3&EVERYONE=0,0,2,1757118937
+A2,
+L,1,1,2001111,Purchase Order #,stf=2001105&mvp=/ragicpurchasing|10005_Sheet10005&ro=true
+L,2,1,2001128,Product Purchasing #,s=2001084&stf=2001074&mvp=/ragicpurchasing|10003_Sheet10003&ro=true
+D,3,1,2001129,Product Name,vd=2001078&l=2001128&ro=true
+D,4,1,2001130,Unit Price,fmt_n=$#`###.#####&vd=2001083&l=2001128&ro=true
+D,5,1,2001131,Qty,fmt_n=#`###&ro=true
+D,6,1,2001132,Amount,fmt_n=$#`###.#####&ro=true
+D,7,1,2001133,Received Qty,fmt_n=#`###&ro=true
+D,8,1,2001134,Unreceived Qty,fmt_n=#`###&ro=true
+RMD_MAX_SEQ,0
+ET,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10006_Sheet10006_index_t.nui
+QS,3

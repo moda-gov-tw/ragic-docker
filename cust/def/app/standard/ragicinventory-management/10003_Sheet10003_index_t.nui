@@ -1,0 +1,29 @@
+N,Location Balance,
+FS,2
+DS,2
+W,1=15&2=13&3=57&4=5&5=154&6=-36&7=30&8=115,
+TF,2000982
+KF,2000988
+SF,2000982
+S,2000980,standard/ragicinventory-management/10001,
+S,2000224,standard/ragicinventory-management/10002,
+S,2001389,,Other
+A,MANAGER=6&USER=3&EVERYONE=0,0,2,1379349673
+A2,
+D,1,1,2000982,Inventory No.,noDup=true&must=true&stylefontWeight=bold&styleVfontWeight=bold
+L,2,1,2000980,Location Code,s=2000969&stf=2000959&mvp=/ragicinventory-management|10001_Sheet10001&must=true
+D,3,1,2000981,Location Name,vd=2000961&l=2000980&ro=true
+L,4,1,2000224,Product No.,stf=2000211&mvp=/ragicinventory-management|10002_Sheet10002&must=true
+D,5,1,2001007,Product Name,vd=2000213&l=2000224&ro=true
+D,6,1,2000983,Qty,fmt_n=#`###&styleVfontWeight=bold&stylefontWeight=bold
+L,7,1,2001389,Type,vd=2000215&l=2000224&ro=true
+D,8,1,2001388,Specification,vd=2000840&l=2000224&ro=true
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10003_Sheet10003_index_t.nui
+QS,5

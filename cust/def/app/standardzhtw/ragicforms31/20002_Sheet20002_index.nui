@@ -1,0 +1,35 @@
+N,場地列表,
+FS,2
+DS,2
+W,1=90&2=160&3=160&4=160&5=160,8=24
+TF,3004244
+KF,3004248
+SF,3004244
+ST,1,9,3004259,3004255,,
+S,3004254,standardzhtw/ragic-setup/1,
+A,null=0&MANAGER=6&USER=3&EVERYONE=0,0,3,1857574662
+A2,
+D,1,1,3004260,場地編號,ag={0`number`00000}&stylefontWeight=bold&styletextAlign=left&styleVtextAlign=left&styleVfontWeight=bold
+G,3,1,3004243,場地圖片,multipleImages=true&fixImageMax=true&stylefontWeight=bold&styletextAlign=left&styleVfontWeight=bold&styleVtextAlign=left
+D,1,2,3004244,場地名稱,noDup=true&stylefontWeight=bold&styleVfontWeight=bold&styletextAlign=left&styleVtextAlign=left
+D,1,4,3004245,可容納人數,fmt_n=#`###&stylefontWeight=bold&styleVfontWeight=bold&styleVtextAlign=left&styletextAlign=left
+D,1,5,3004246,地址,addr=1&stylefontWeight=bold&styleVfontWeight=bold&styleVtextAlign=left&styletextAlign=left
+D,1,6,3004247,備註,stylefontWeight=bold&styleVfontWeight=bold&styletextAlign=left&styleVtextAlign=left
+L,1,9,3004254,預約人,usrref=2&dv=$USERNAME&noclone=true&ro=true&stylefontWeight=bold&styletextAlign=left&styleVfontWeight=bold&styleVtextAlign=left&styleVcolor=#333333
+D,2,9,3004256,開始時間,fmt_d=yyyy/MM/dd HH:mm:ss&noclone=true&ro=true&stylefontWeight=bold&styletextAlign=left&styleVfontWeight=bold&styleVtextAlign=left&styleVcolor=#333333
+D,3,9,3004257,結束時間,fmt_d=yyyy/MM/dd HH:mm:ss&noclone=true&ro=true&stylefontWeight=bold&styletextAlign=left&styleVfontWeight=bold&styleVtextAlign=left&styleVcolor=#333333
+D,4,9,3004321,總時數,ro=true&f=(C9-B9)*24&fmt_n=#`###.##&stylefontWeight=bold&styletextAlign=left&styleVfontWeight=bold&styleVtextAlign=left&styleVcolor=#333333
+D,5,9,3004258,備註,noclone=true&ro=true&stylefontWeight=bold&styletextAlign=left&styleVfontWeight=bold&styleVtextAlign=left&styleVcolor=#333333
+F,1,8,,預約明細,cs=5&background=#883333&color=#ffffff&textAlign=center&fontWeight=bold&fontSize=18
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+IR,%7B%22rules%22%3A%5B%7B%22cons%22%3A%5B%7B%22domainId%22%3A3004257%2C%22value%22%3A%22%24PAST%22%2C%22isSubtable%22%3Atrue%2C%22operator%22%3A%22Special%22%7D%5D%2C%22conLogic%22%3A%22OR%22%2C%22actions%22%3A%5B%7B%22domainId%22%3A3004259%2C%22action%22%3A%22valueColor%22%2C%22actionValue%22%3A%22%23C0C0C0%22%2C%22isSubtable%22%3Atrue%7D%5D%2C%22actSubtableRoot%22%3A3004259%7D%5D%7D
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=theme18
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,20002_Sheet20002_index.nui
+QS,1

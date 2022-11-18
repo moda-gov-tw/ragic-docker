@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+  <name>教育訓練管理</name>
+  <desc />
+  <publisher />
+  <createDate />
+  <updateDate />
+  <version />
+  <price />
+  <status />
+  <sourcePath />
+  <appId />
+  <forms seq="38">
+    <form sheetIndex="20002" type="NUI" seq="2">員工教育訓練進度</form>
+    <form sheetIndex="20003" type="NUI" seq="1">課程列表</form>
+    <form sheetIndex="20004" type="NUI" seq="3">教育訓練管理</form>
+    <form sheetIndex="20005" type="NUI" seq="4">課程簽到表</form>
+  </forms>
+</module>

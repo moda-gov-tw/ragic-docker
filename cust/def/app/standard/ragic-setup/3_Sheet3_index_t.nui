@@ -1,0 +1,12 @@
+N,Feature Access Settings,Access right configuration for Ragic features&#44; only the latest "Active" config will be applied.
+FS,2
+DS,2
+W,1=122&2=87,
+S,200002,,Active,Disabled
+A,MANAGER=0&EVERYONE=0&USER=0,0,2,674511114
+A2,
+D,1,1,200001,Config Name,
+L,2,1,200002,Config Status,
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+QS,2

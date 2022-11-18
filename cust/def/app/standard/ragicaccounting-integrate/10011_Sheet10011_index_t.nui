@@ -1,0 +1,26 @@
+N,Document Detail,
+FS,2
+DS,2
+W,1=-4&2=101&3=66&4=66&5=66&6=66&7=101,
+TF,2002357
+KF,2002371
+SF,2002368
+S,2002357,standard/ragicaccounting-integrate/10009,
+S,2002374,standard/ragicaccounting-integrate/10003,
+S,2002375,standard/ragicaccounting-integrate/10006,
+S,2002376,standard/ragicaccounting-integrate/10007,
+S,2002377,standard/ragicaccounting-integrate/10008,
+A,MANAGER=6&EVERYONE=0&NULL=0&USER=3,0,2,359525030
+A2,
+D,1,1,2002364,Doc. No.,fmt_n_ts=`&fmt_n_ds=.&fmt_n=#`####.##&dv=$SEQ&ro=true
+L,2,1,2002357,Voucher No.,stf=2002353&mvp=/ragicaccounting-integrate|10009_Sheet10009&ro=true
+L,3,1,2002374,Product Invoice,s=2002128&stf=2002090&mvp=/ragicaccounting-integrate|10003_Sheet10003&ro=true
+L,4,1,2002375,Other Invoice,s=2002229&stf=2002223&mvp=/ragicaccounting-integrate|10006_Sheet10006&ro=true
+L,5,1,2002376,Material Bill,s=2002297&stf=2002260&mvp=/ragicaccounting-integrate|10007_Sheet10007&ro=true
+L,6,1,2002377,Other Bill,s=2002349&stf=2002315&mvp=/ragicaccounting-integrate|10008_Sheet10008&ro=true
+U,7,1,2002367,File Upload,ro=true
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10011_Sheet10011_index_t.nui
+QS,3

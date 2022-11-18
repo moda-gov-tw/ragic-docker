@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+  <name>Travel Planning</name>
+  <desc />
+  <publisher />
+  <createDate />
+  <updateDate />
+  <version />
+  <price />
+  <status />
+  <sourcePath />
+  <appId />
+  <forms seq="33">
+    <form sheetIndex="10001" type="NUI" seq="1">Travel Planning</form>
+  </forms>
+</module>

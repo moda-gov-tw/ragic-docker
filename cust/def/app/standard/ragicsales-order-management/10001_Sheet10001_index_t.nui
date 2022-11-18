@@ -1,0 +1,24 @@
+N,Products (SO),Only the entries that category are "Sales products" will be shown on this sheet.<br />Please remember to check the box "Fill in default values" at Import Policy step if you are creating entries by importing.<br />
+FS,2
+DS,2
+W,1=9&2=154&3=30&4=100&5=-19&6=246&undefined=0,
+TF,2000211
+KF,2000224
+SF,2000211
+S,2000215,,Other
+A,MANAGER=6&USER=3&EVERYONE=0,0,2,2008312519
+A2,
+D,1,1,2000211,Product No.,ag=P-{0`number`00000}
+D,2,1,2000213,Product Name,
+L,3,1,2000215,Type,
+D,4,1,2000840,Specification,
+D,5,1,2000219,Total Qty,fmt_n=#`###.##&ro=true&noSyncName=true
+D,6,1,2000221,Description,
+X,fixed,1,2001516|1|Sales%20products
+RMD_MAX_SEQ,0
+ET,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=true
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10001_Sheet10001_index_t.nui
+QS,4

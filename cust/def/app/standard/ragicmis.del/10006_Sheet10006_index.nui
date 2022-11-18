@@ -1,0 +1,46 @@
+N,IT Request,
+FS,2
+DS,2
+W,1=81&2=125&3=99&undefined=0,&18=58
+TF,2001457
+KF,2001459
+SF,2001457
+S,2001460,standard/ragicmis/10001,
+S,2001461,standard/ragic-setup/1,
+S,2001494,,IT Installations,Report IT incidents
+S,2001558,standard/ragicmis/10008,
+S,2001559,standard/ragicmis/10002,
+S,2001560,standard/ragicmis/10003,
+S,2001561,standard/ragicmis/10005,
+S,2001500,standard/ragic-setup/1,
+S,2001503,,New,In progress,Closed
+A,MANAGER=6&EVERYONE=0&NULL=0&USER=3,0,3,1649399027
+A2,
+D,1,1,2001457,Entry No.,ag={0`number`00000}&ro=true
+D,3,1,2001458,Date,fmt_d=yyyy/MM/dd&dv=$DATE&ro=true
+L,1,3,2001460,E-Mail,s=2001419&stf=2001424&mvp=/ragicmis|10001_Sheet10001
+L,1,4,2001461,Requester,usrref=2&vd=2001417&l=2001460
+D,3,4,2001465,Employee Number,vd=2001418&l=2001460
+D,1,5,2001462,Department,vd=2001421&l=2001460
+D,3,5,2001466,Phone,phone=1&vd=2001420&l=2001460
+D,1,6,2001463,Title,vd=2001423&l=2001460
+D,3,6,2001468,Extension,vd=2001425&l=2001460
+D,1,7,2001464,Agent,
+D,3,7,2001467,Agent E-Mail,
+L,1,10,2001494,Request Type,
+L,1,11,2001558,Related Device,s=2001556&stf=2001555&mvp=/ragicmis|10008_Sheet10008
+L,3,11,2001559,Device Number,s=2001432&stf=2001428&mvp=/ragicmis|10002_Sheet10002
+L,1,12,2001560,Related Software,s=2001439&stf=2001437&mvp=/ragicmis|10003_Sheet10003
+L,3,12,2001561,Software Assignment Number,s=2001456&stf=2001452&mvp=/ragicmis|10005_Sheet10005
+D,1,13,2001499,Description,cs=3
+L,1,16,2001500,Assign to (IT Department),usrref=1&ro=true
+D,3,16,2001502,Close Date,fmt_d=yyyy/MM/dd&ro=true
+L,1,17,2001503,Status,ro=true
+D,1,18,2001504,Note,cs=3&ro=true
+F,1,2,,Requester Information,background=#0055BB&color=#ffffff&textAlign=center&cs=4
+F,1,9,,Description,background=#0055BB&color=#ffffff&textAlign=center&cs=4
+F,1,15,,Tracking Record,background=#0055BB&color=#ffffff&textAlign=center&cs=4
+IR,%7B%22rules%22%3A%5B%7B%22cons%22%3A%5B%7B%22domainId%22%3A2001494%2C%22value%22%3A%22Report%20IT%20incidents%22%2C%22operator%22%3A%22ffEquals%22%7D%5D%2C%22conLogic%22%3A%22AND%22%2C%22actions%22%3A%5B%7B%22domainId%22%3A2001558%2C%22action%22%3A%22show%22%2C%22actionValue%22%3A%22%22%7D%2C%7B%22domainId%22%3A2001559%2C%22action%22%3A%22show%22%2C%22actionValue%22%3A%22%22%7D%2C%7B%22domainId%22%3A2001560%2C%22action%22%3A%22show%22%2C%22actionValue%22%3A%22%22%7D%2C%7B%22domainId%22%3A2001561%2C%22action%22%3A%22show%22%2C%22actionValue%22%3A%22%22%7D%5D%2C%22actSubtableRoot%22%3A-1%7D%5D%7D
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+QS,1

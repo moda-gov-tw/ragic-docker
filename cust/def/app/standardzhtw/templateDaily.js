@@ -1,0 +1,13 @@
+dailyFormulaRecalculate("/ragicforms8/20004");
+dailyFormulaRecalculate("/ragicforms8/20010");
+dailyFormulaRecalculate("/ragicforms8/20006");
+dailyFormulaRecalculate("/ragicforms8/20008");
+dailyFormulaRecalculate("/ragicforms12/20007");
+dailyFormulaRecalculate("/ragicforms12/20008");
+dailyFormulaRecalculate("/ragicforms15/20003");
+dailyFormulaRecalculate("/ragicforms15/20001");
+dailyFormulaRecalculate("/ragicforms15/20010");
+dailyFormulaRecalculate("/ragicforms23/20001");
+db.recalculateAll("/ragicforms25/20002");
+db.deleteOldRecords("/ragicforms28/20001",28);
+dailyFormulaRecalculate("/ragicforms23/20010");

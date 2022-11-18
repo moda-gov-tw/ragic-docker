@@ -1,0 +1,23 @@
+N,Applications,
+FS,2
+DS,2
+W,2=22&3=142&4=122&5=82,
+TF,2002421
+KF,2002428
+SF,2002421
+S,2002426,,In Process,Applied,Interviewed,Rejected,Offer Get!
+A,NULL=0&MANAGER=6&USER=3&EVERYONE=0,0,2,2131710914
+A2,
+D,1,1,2002421,Application ID,ag={1`date`yyyyMM}-{0`number`000}
+D,2,1,2002422,Create Date,fmt_d=MM/dd/yyyy&dv=$DATE
+D,3,1,2002423,Company Name,
+D,4,1,2002424,Position,
+L,5,1,2002426,Status,dv=In Process&userOps=true
+D,6,1,2002427,Deadline,fmt_d=MM/dd/yyyy
+RMD_MAX_SEQ,0
+ET,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10001_Sheet10001_index_t.nui
+QS,3

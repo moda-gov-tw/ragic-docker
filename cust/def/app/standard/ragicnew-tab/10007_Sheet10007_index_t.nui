@@ -1,0 +1,17 @@
+N,Event Income,
+FS,2
+DS,2
+W,1=93&2=87&3=101&4=128,
+TF,2000548
+KF,2000544
+SF,2000548
+S,2000547,standard/ragicnew-tab/10002,
+A,MANAGER=6&EVERYONE=0&USER=3,0,2,751214329
+A2,
+L,1,1,2000547,Event ID,stf=2000463&s=2000465&mvp=/ragicnew-tab|10002_Sheet10002
+D,2,1,2000548,Event Name,ro=true&vd=2000464&l=2000547
+D,3,1,2000552,Venue Name,ro=true&vd=2000470&l=2000547
+D,4,1,2000546,Income Grand Total,ro=true&fmt_n=$#`###.#####
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+QS,7

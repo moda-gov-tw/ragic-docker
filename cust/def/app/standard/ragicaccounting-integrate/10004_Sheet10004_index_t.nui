@@ -1,0 +1,19 @@
+N,Asset Management (Accounting),
+FS,2
+DS,2
+W,1=91&2=81&3=171&4=111,
+TF,2002166
+KF,2002170
+SF,2002166
+S,2002167,,Computer,Monitor,Other Computer Equipment,Other Equipment,Printer,Tablet,Television,Video Equipment
+A,MANAGER=6&EVERYONE=0&USER=3,0,2,990632188
+A2,
+D,1,1,2002166,Asset ID,ag={0`number`00000}
+L,2,1,2002167,Asset Type,
+D,3,1,2002168,Asset Name,
+D,4,1,2002169,Book Value,fmt_n=$#`###.#####
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10004_Sheet10004_index_t.nui
+QS,1

@@ -1,0 +1,37 @@
+<html>
+
+    <body>
+        
+        <p id="text">test</p>
+        <button id="btn">Click me</button>
+        <form method="POST" action="http://localhost:8888/fulfillment" target="_blank" >
+            <input id="registration-token" type="hidden" name="x-amzn-marketplace-token" value="MG0nTOdk+YoANHlSl+d3FxGs8kf3ouUmlTHyosavUggLoL6MvBilfMxgwwuJEhrBEGYePXBMXKGtuhsMij8U/xkQr6Y+muCUub1tk4lgxoMnDu2ZnoE30e4RNxMaYRwMexbKH9j7+H1gU4Epzn/RIgwbReQc2vdV1CKMLKzthVGFhOSrw+omiQ==">
+            <input type="submit" value="form submit"/>
+        </form>
+
+        <script>
+            let data = {
+                "x-amzn-marketplace-token": "aws_dummy_token"
+            };
+
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("text").innerHTML = this.responseText;
+                }
+            };
+
+            document.getElementById("btn").onclick = function (event){
+                click(event);
+            }
+
+            function click (event){
+                xhttp.open("POST", "http://localhost:8888/fulfillment", true);
+                xhttp.setRequestHeader("Content-type", "application/json");
+                xhttp.send(JSON.stringify(data));
+            }
+        </script>
+    </body>
+
+
+</html>

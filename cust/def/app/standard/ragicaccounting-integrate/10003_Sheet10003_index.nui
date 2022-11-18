@@ -1,0 +1,82 @@
+N,Product Invoice,
+FS,2
+DS,2
+W,1=24&2=36&3=181&4=90&5=8&6=38&7=13&8=121&undefined=0,&&18=46
+TF,2002090
+KF,2002128
+SF,2002090
+ST,1,8,2002129,,,,
+ST,1,27,2002371,2002374,,,
+S,2002132,standard/ragiclegal/10002,
+S,2002134,standard/ragicsales-order-management/10005,
+S,2002135,,Net 30,Net 60,Net 90,Net 120,COD,CAD
+S,2002106,standard/ragicsales/10009,
+S,2002112,standard/ragicinventory-management/10002,
+S,2002113,
+S,2002115,,Sales Tax
+S,2002117,,0%
+S,2002138,standard/ragic-setup/1,
+S,2002139,,No,Yes
+S,2002140,,Cash,Check,Wire Transfer
+S,2002357,standard/ragicaccounting-integrate/10009,
+A,MANAGER=6&USER=3&EVERYONE=0,0,3,494106648
+A2,
+D,1,2,2002090,Invoice #,ag=INV-{1`date`yyyyMMdd}-{0`number`000}&noDup=true&cs=2
+D,4,2,2002130,Invoiced Date,fmt_d=MM/dd/yyyy&dv=$DATE
+D,6,2,2002131,Due Date,fmt_d=MM/dd/yyyy
+L,1,3,2002132,Customer ID,cs=2&text=1&s=2000153&stf=2000130&mvp=/ragicsales-order-management|10003_Sheet10003
+D,4,3,2002133,Customer Name,cs=3&vd=2000123&l=2002132
+L,1,4,2002134,Ref. Delivery Note,s=2000926&stf=2000954&mvp=/ragicsales-order-management|10005_Sheet10005&cs=2
+L,4,4,2002135,Payment Term,vd=2000862&l=2002132&cs=3
+D,1,5,2002136,Billing Address,cs=6&addr=1&vd=2000145&l=2002132
+D,6,6,2002557,Overdue by Days,fmt_n=#`####.##&f=ROUND(A32-F2`0)
+D,1,8,2002105,Item,fmt_n=#`###&dv=$SEQ
+L,2,8,2002106,Product #,s=2000852&stf=2000842&mvp=/ragicsales-order-management|10002_Sheet10002&must=true
+D,3,8,2002107,Product Name,vd=2000843&l=2002106&cs=2
+D,4,8,2002109,Unit Price,fmt_n=$#`###.#####&vd=2000844&l=2002106
+D,5,8,2002110,Qty,fmt_n=#`###
+D,6,8,2002111,Subtotal,f=E8*F8&fmt_n=$#`###.#####
+D,7,8,2002108,Specification,vd=2001292&l=2002106&hide=true
+L,8,8,2002112,Product No*,stf=2000211&mvp=/ragicsales|10005_Sheet10005&vd=2000224&l=2002106&s=2000224&hide=true&must=true&stylecolor=#CC0000&stylefontWeight=bold&stylebackgroundColor=#CC0000&styleVbackgroundColor=#FF6666
+L,9,8,2002113,Unit*,vd=2001958&l=2002106&hide=true
+D,6,12,2002114,Discount %,fmt_n=0.##%&dv=1&ro=true
+L,1,13,2002115,Tax Category,
+D,6,13,2002116,Total,fmt_n=$#`###.##&f=G8*F12
+L,1,14,2002117,Tax Rate,
+D,6,14,2002118,Tax,fmt_n=$#`###.##&f=F13*A14
+D,6,15,2002120,Shipping / Handling,fmt_n=$#`###.##
+D,6,16,2002121,Grand Total,f=F13+F14+F15&fmt_n=$#`###.##
+D,1,18,2002122,Remarks,cs=6
+D,1,21,2002137,Received Date,fmt_d=MM/dd/yyyy&cs=2
+L,4,21,2002138,Received By,usrref=2&cs=3
+L,1,22,2002139,Payment Status,checkbox=1&dv=No&cs=2
+L,4,22,2002140,Payment Type,cs=3
+D,1,23,2002141,Amount Received,fmt_n_ts=`&fmt_n_ds=.&fmt_n=$#`####.##&cs=2
+D,4,23,2002142,Transaction Fee,fmt_n_ts=`&fmt_n_ds=.&fmt_n=$#`####.##&cs=3
+D,1,24,2002143,Check Number,cs=2
+D,1,25,2002378,Ref. Voucher,f=UNIQUE(B27)&cs=2&ro=true
+D,1,27,2002364,Doc. No.,fmt_n_ts=`&fmt_n_ds=.&fmt_n=#`####.##&dv=$SEQ&ro=true&hide=true
+L,2,27,2002357,Voucher No.,stf=2002353&mvp=/ragicaccounting-integrate|10009_Sheet10009&ro=true&hide=true
+D,1,32,2002144,TODAYTZ(),fmt_d=MM/dd/yyyy&f=TODAYTZ()&hide=true
+D,1,33,2002145,Overdue?,f=IF(A21.RAW!=""`""`IF(F2<A32`"Overdue"`""))&hide=true
+F,1,1,,Invoice Info,cs=7&color=#FFFFFF&textAlign=center&backgroundColor=#513951&fontWeight=bold
+F,1,7,,Sales Information,backgroundColor=#513951&color=#FFFFFF&fontWeight=bold&cs=7&textAlign=center
+F,1,20,,Payment Log,backgroundColor=#513951&color=#FFFFFF&fontWeight=bold&cs=7&textAlign=center
+X_MAX_DESIGNER_ID,101
+ACTION_BUTTON_MAX_ID,0
+RMD_MAX_SEQ,0
+IR,%7B%22rules%22%3A%5B%7B%22cons%22%3A%5B%7B%22domainId%22%3A2002145%2C%22value%22%3A%22Overdue%22%2C%22operator%22%3A%22ffEquals%22%7D%5D%2C%22conLogic%22%3A%22AND%22%2C%22actions%22%3A%5B%7B%22domainId%22%3A2002557%2C%22action%22%3A%22show%22%2C%22actionValue%22%3A%22%22%7D%5D%2C%22actSubtableRoot%22%3A-1%2C%22id%22%3A%22_rule_0%22%7D%2C%7B%22cons%22%3A%5B%7B%22domainId%22%3A2002140%2C%22value%22%3A%22Wire%20Transfer%22%2C%22operator%22%3A%22ffEquals%22%7D%5D%2C%22conLogic%22%3A%22AND%22%2C%22actions%22%3A%5B%7B%22domainId%22%3A2002142%2C%22action%22%3A%22show%22%2C%22actionValue%22%3A%22%22%7D%5D%2C%22actSubtableRoot%22%3A-1%2C%22id%22%3A%22_rule_1%22%7D%2C%7B%22cons%22%3A%5B%7B%22domainId%22%3A2002140%2C%22value%22%3A%22Check%22%2C%22operator%22%3A%22ffEquals%22%7D%5D%2C%22conLogic%22%3A%22AND%22%2C%22actions%22%3A%5B%7B%22domainId%22%3A2002143%2C%22action%22%3A%22show%22%2C%22actionValue%22%3A%22%22%7D%5D%2C%22actSubtableRoot%22%3A-1%2C%22id%22%3A%22_rule_2%22%7D%5D%7D
+ET,%5B%7B%22id%22%3A0%2C%22name%22%3Anull%2C%22subject%22%3A%22%257B%257BUSER_NAME%257D%257D%2520has%2520sent%2520you%2520%255B%257B%257BTITLE_FIELD%257D%257D%255D%253A%2520%257B%257BTITLE_VALUE%257D%257D%22%2C%22content%22%3A%22Hi%2520%257B%257B2000921%257D%257D%252C%2520%253Cbr%252F%253E%253Cbr%252F%253EThank%2520you%2520for%2520your%2520order%252C%2520your%2520order%2520has%2520been%2520despatched%2520from%2520our%2520warehouse.%2520Detailed%2520information%2520are%2520stated%2520below%253A%253Cbr%252F%253E%253Cbr%252F%253EDelivery%2520Note%2520%2523%253A%2520%257B%257B2000954%257D%257D%253Cbr%252F%253ESales%2520Order%2520%2523%253A%2520%257B%257B2000916%257D%257D%253Cbr%252F%253ESales%2520Order%2520Date%253A%2520%257B%257B2000917%257D%257D%253Cbr%252F%253EOrder%2520Category%253A%2520%257B%257B2000918%257D%257D%253Cbr%252F%253ECustomer%2520Name%253A%2520%257B%257B2000921%257D%257D%253Cbr%252F%253EPhone%253A%2520%257B%257B2000928%257D%257D%253Cbr%252F%253EMobile%253A%2520%257B%257B2001113%257D%257D%253Cbr%252F%253EE-mail%253A%2520%257B%257B2000931%257D%257D%253Cbr%252F%253EAccount%2520Owner%253A%2520%257B%257B2000955%257D%257D%253Cbr%252F%253EShip%2520Via%253A%2520%257B%257B2000923%257D%257D%253Cbr%252F%253ERecipient%253A%2520%257B%257B2000933%257D%257D%253Cbr%252F%253EActual%2520Delivery%2520Date%253A%2520%257B%257B2000956%257D%257D%253Cbr%252F%253EShipping%2520Address%253A%2520%257B%257B2000934%257D%257D%253Cbr%252F%253ETotal%253A%2520%257B%257B2000942%257D%257D%253Cbr%252F%253ETax%2520Category%253A%2520%257B%257B2000943%257D%257D%253Cbr%252F%253ETax%253A%2520%257B%257B2000944%257D%257D%253Cbr%252F%253ETax%2520Rate%253A%2520%257B%257B2000945%257D%257D%253Cbr%252F%253EDiscount%2520%2525%253A%2520%257B%257B2000946%257D%257D%253Cbr%252F%253EShipping%2520%252F%2520Handling%253A%2520%257B%257B2000947%257D%257D%253Cbr%252F%253EAmount%2520Due%253A%2520%257B%257B2000922%257D%257D%253Cbr%252F%253ERemarks%253A%2520%257B%257B2000948%257D%257D%253Cbr%252F%253EStatus%253A%2520%257B%257B2000957%257D%257D%253Cbr%252F%253ESO%2520Updated%2520Time%253A%2520%257B%257B2000958%257D%257D%253Cbr%252F%253ELast%2520Modified%2520Time%253A%2520%257B%257B2000952%257D%257D%253Cbr%252F%253E%253Cbr%252F%253E%253Cb%253EPlease%2520do%2520not%2520reply%2520to%2520this%2520email%252C%2520this%2520is%2520an%2520automated%2520message.%253C%252Fb%253E%253C%252Fdiv%253E%22%2C%22attributes%22%3A%7B%22type%22%3A%22actionButton%22%2C%22key%22%3A5%7D%2C%22att%22%3A%5B%5D%2C%22receiverList%22%3A%22%257B%257B2000931%257D%257D%22%7D%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+MOBCONF,%7B%7D
+NUI_FILE_NAME,10003_Sheet10003_index.nui
+QS,1
+SCRIPT_START
+
+SHEET_SCOPE_START
+

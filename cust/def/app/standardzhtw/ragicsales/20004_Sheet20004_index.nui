@@ -1,0 +1,61 @@
+N,銷售機會,
+FS,2
+DS,2
+W,1=17&2=126&3=-50&4=18&5=129&undefined=0,2=13&13=13&14=56&16=50
+TF,3000565
+KF,3000578
+SF,3000565
+S,3000567,standardzhtw/ragicsales/20001,
+S,3000588,standardzhtw/ragicsales/20002,
+S,3000566,standardzhtw/ragic-setup/1,
+S,3000569,,新業務,既有業務
+S,3000576,,廣告,員工推薦,外部推薦,合作夥伴,公共關係,研討會 - 內部,研討會 - 合作夥伴,參展,網絡,口碑,其他
+S,3000571,
+S,3000573,,No,Yes
+S,3000585,,No,Yes
+S,3000570,,聯繫中,需求確認,議價中,提案中,辨識決策人員,感觀分析,成功結案,失敗結案
+S,3000574,,No,Yes
+A,MANAGER=6&USER=3&EVERYONE=0,0,3,1542729752
+A2,
+D,1,2,3000565,銷售機會名稱,styleVfontWeight=bold&styleVfontSize=18&must=true&cs=4
+L,1,3,3000567,客戶名稱,stf=3000479&s=3000496&mvp=/ragicsales|20001_Sheet20001&must=true
+D,4,3,3000587,銷售機會編號,ag=O-{0`number`00000}
+L,1,4,3000588,客戶聯絡人,stf=3000491&mvpf=3000496|1|$3000567&s=3000497&mvp=/ragicsales|20002_Sheet20002
+L,4,4,3000566,機會負責人,dv=$USER&must=true&usrref=1
+D,1,5,3000589,聯絡人電話,phonefmt=XX-XXXX-XXXX&phone=1&vd=3000494&l=3000588
+L,4,5,3000569,類型,
+D,1,6,3000590,聯絡人Email,email=2&vd=3000493&l=3000588
+L,4,6,3000576,銷售機會來源,
+D,1,7,3000629,傳真,hide=true&vd=3000523&l=3000588
+L,1,8,3000571,來自行銷活動,userOps=true
+D,4,8,3000572,成交機率,fmt_n=0%
+L,1,9,3000573,預算確認,dv=No&checkbox=1
+D,4,9,3000591,金額,fmt_n=$#`###
+L,1,10,3000585,需求確認,dv=No&checkbox=1
+L,4,10,3000570,階段,styleVfontWeight=bold&must=true
+L,1,11,3000574,ROI分析,dv=No&checkbox=1
+D,4,11,3000568,成交日,f=UPDATEIF(D10.RAW="成功結案"`TODAY())&fmt_d=yyyy/MM/dd
+D,1,13,3000575,下一步行動,cs=3
+D,1,14,3000577,描述,cs=4
+D,1,16,3000586,失敗結案原因,cs=4
+F,1,1,,銷售機會,backgroundColor=#c64343&color=#FFFFFF&fontWeight=bold&cs=5&textAlign=center
+X_MAX_DESIGNER_ID,101
+K,{"type":"B","seq":"1","name":"建立報價","action":"_RAGIC_AUTOGEN_CR_40458({id});","confirmBeforeAction":"false","needApproval":"false","userGroups":["EVERYONE"]}
+RMD_MAX_SEQ,0
+IR,%7B%22rules%22%3A%5B%7B%22cons%22%3A%5B%7B%22domainId%22%3A3000570%2C%22value%22%3A%22%E5%A4%B1%E6%95%97%E7%B5%90%E6%A1%88%22%2C%22operator%22%3A%22ffEquals%22%7D%5D%2C%22conLogic%22%3A%22AND%22%2C%22actions%22%3A%5B%7B%22domainId%22%3A-1%2C%22action%22%3A%22show%22%2C%22actionValue%22%3A%22%22%7D%2C%7B%22domainId%22%3A3000586%2C%22action%22%3A%22show%22%2C%22actionValue%22%3A%22%22%7D%5D%2C%22actSubtableRoot%22%3A-1%7D%5D%7D
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,20004_Sheet20004_index.nui
+QS,1
+SHEET_SCOPE_START
+function _RAGIC_AUTOGEN_CR_40458(nodeId){
+  var result = db.entryCopier(JSON.stringify(
+{"THIS_PATH":"/ragicsales/20004","THIS_NODEID":nodeId,"NEW_PATH":"/ragicsales/20006","CHECK_MUST_FIELDS":false,"COPY":{"3000607":"3000567","3000609":"3000588","3000611":"3000589","3000613":"3000629","3000614":"3000590"}}
+  ), response);
+  if(result) return result;
+}//END_RAGIC_AUTOGEN_CR_40458

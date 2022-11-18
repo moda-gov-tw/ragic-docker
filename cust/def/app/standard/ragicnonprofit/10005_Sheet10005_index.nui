@@ -1,0 +1,58 @@
+N,Volunteers,
+FS,2
+DS,2
+W,1=47&2=40&3=25&4=72&5=156,1=11&2=15&3=11&4=12&8=11
+TF,2002722
+KF,2002727
+SF,2002722
+ST,1,14,2002628,2002735,,
+ST,1,20,2002754,2002777,,
+S,2002746,standard/ragicnonprofit/10002,
+S,2002734,,%26#62; 5 Hours,%26#62; 10 Hours,%26#62; 15 Hours,%26#62; 20 Hours
+S,2002729,,Student,Employed,Other
+S,2002728,,Active,Inactive
+S,2002744,,Mon,Tues,Wed,Thurs,Fri,Sat,Sun
+S,2002776,,Mother,Father,Sibling,Spouse,Friend
+S,2002713,,Not Started,Ongoing,Paused,Completed
+A,NULL=0&MANAGER=6&USER=3&EVERYONE=0,0,3,1138198829
+A2,
+D,1,2,2002722,Volunteer ID,ag=V00{0`number`#}&noDup=true&cs=2
+L,4,2,2002746,Volunteer Program ID,s=2002628&stf=2002625&mvp=/ragicnonprofit|10002_Sheet10002
+D,1,3,2002723,Name,cs=2&noDup=true
+D,4,3,2002745,Volunteer Program,vd=2002626&l=2002746
+D,1,4,2002725,Email,email=2&cs=2&noDup=true
+L,4,4,2002734,Average Weekly Hours,
+D,1,5,2002726,Phone Number,phone=1&phonefmt=XXXXXXXXXX&cs=2
+D,4,5,2002731,Start Date,fmt_d=MM/dd/yyyy
+L,1,6,2002729,Occupation,cs=2
+L,4,6,2002728,Status,
+M,1,7,2002744,Volunteer Schedule,userOps=true&cs=4
+D,1,10,2002773,Name,cs=2
+D,4,10,2002774,Email Address,email=2
+D,1,11,2002775,Phone Number,phone=1&phonefmt=XXXXXXXXXX&cs=2
+L,4,11,2002776,Relationship,userOps=true
+D,1,14,2002625,ProgramID,ag=P00{0`number`#}&noclone=true
+D,2,14,2002626,Program Name,noclone=true
+L,3,14,2002713,Program status,noclone=true
+D,4,14,2002715,Location,text=1&noclone=true
+D,5,14,2002627,Description,noclone=true
+D,1,20,2002747,Event ID,ag=F{0`number`000}&noclone=true
+D,2,20,2002749,Event Name,noclone=true
+D,3,20,2002750,Date,fmt_d=MM/dd/yyyy&noclone=true
+D,4,20,2002748,Venue,addr=1&noclone=true
+D,5,20,2002753,Fundraising Cause,noclone=true
+F,1,1,,Volunteer Information,cs=5&textAlign=center&backgroundColor=#b1e6d5&fontWeight=bold
+F,1,9,,Emergency Contact Information,cs=5&textAlign=center&backgroundColor=#b1e6d5&fontWeight=bold
+F,1,13,,Volunteering History - Volunteer Programs,cs=5&textAlign=center&backgroundColor=#b1e6d5&fontWeight=bold
+F,1,19,,Volunteering History - Fundraising Events,cs=5&textAlign=center&backgroundColor=#b1e6d5&fontWeight=bold
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10005_Sheet10005_index.nui
+QS,1

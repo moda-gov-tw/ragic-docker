@@ -1,0 +1,659 @@
+/*
+* NUI System Setting
+*/
+#nui_outer table{
+border-collapse:separate;
+table-layout:fixed;
+z-index:1;
+background:#fafafa;
+/*
+Enable hardware acceleration
+https://stackoverflow.com/questions/45154788/sluggish-scroll-behaviour-of-largeish-html-table-in-google-chrome?rq=1
+*/
+    /* [Issue #9477] */
+-webkit-transform: translate3d(0, 0, 0);
+transform: translate3d(0, 0, 0);
+}
+#nui_outer tr,#nui_outer td,#nui_outer th,.stickyHeader td{
+/*width:100px;*/
+/*height:24px;*/
+font-size:13px;
+/*font-family:'Helvetica Neue',Arial,sans-serif !important;*/
+vertical-align:middle;
+border:0 solid #fff;
+/*white-space:nowrap;*/
+overflow:hidden;  /*[BugId:9298]*/
+overflow-x:hidden;
+cursor:default;
+box-sizing: border-box;
+/* Adding line-height results in [BugId:08231] */
+/*line-height:20px;*/
+}
+#nui_outer td.sticky:not(.read-only_cell):not(.header):not(.nuiFreeCell) {
+background-color: #fafafa;
+}
+#nui_outer .sideCell, #nui_outer .sideCellLeft{
+color:#888;
+border:1px solid #fafafa;
+background-color: #fafafa;
+text-align:center;
+font-size:12px;
+overflow:hidden;
+}
+
+#nui_outer .sideCellOn{
+color:#888;
+text-align:center;
+overflow:hidden;
+}
+#nui_outer .builderCell{
+background-color:#CDF;
+border:1px solid #666;
+padding-left:3px;
+}
+#nui_outer .builderEmpty{
+background-color:#f6f6f6;
+border:1px solid #f1f1f1;
+color:rgb(51, 51, 51);
+padding:0 0 0 6px;
+}
+#nui_outer .builderEmptyListing{
+background-color:#EFE0E2;
+border:1px solid #EFEFEF;
+}
+#nui_outer .dataEmpty{
+background-color:white;
+}
+#nui_outer .builderFocus{
+background-color:#D1DFEF;
+color:black;
+border-bottom: 1px solid rgb(225, 225, 225);
+padding:0 0 0 6px;
+}
+#nui_outer .builderFocusRight,#nui_outer .builderFocusRightSingle, #nui_outer .builderFieldWhite, #nui_outer .builderFieldWhiteSingle{
+background-color:#ffffff;
+color:#cccccc;
+padding:0 0 0 6px;
+white-space:nowrap;
+border-bottom: 1px solid rgb(225, 225, 225);
+}
+#nui_outer .builderFocusRightSingle, #nui_outer .builderFieldWhite, #nui_outer .builderFieldWhiteSingle{
+/*cursor:e-resize;*/
+}
+#nui{
+width:100%;
+    /*-webkit-transition: all 0.3s;*/
+    /*-moz-transition: all 0.3s;*/
+    /*-ms-transition: all 0.3s;*/
+    /*-o-transition: all 0.3s;*/
+    /*transition: all 0.3s;*/
+}
+#nui_outer{
+    position:relative;
+float:left;
+width:100%;
+height:100%;
+overflow-x:hidden;
+overflow-y:hidden;
+    /*-webkit-transition: all 0.3s;*/
+    /*-moz-transition: all 0.3s;*/
+    /*-ms-transition: all 0.3s;*/
+    /*-o-transition: all 0.3s;*/
+    /*transition: all 0.3s;*/
+}
+/*
+* Copy for MVP
+*/
+#mvp_outer table{
+width:100%;
+border:0;
+border-collapse:collapse;
+table-layout:fixed;
+z-index:1;
+margin: 22px 0 0 0;
+/*background-image:url(http://www.thecartoonpictures.com/data/media/229/Snoopy_Dog-cartoon.jpg);
+background-position:0 -250;*/
+}
+#mvp_outer tr,#mvp_outer td,#mvp_outer th{
+width:100px;
+height:16px;
+font-size:12px;
+font-family:'Helvetica Neue',Arial,sans-serif;
+padding:0;
+vertical-align:middle;
+border:0 solid #fff;
+/* No wrap removed from [BugId:05765]
+/*white-space:nowrap;*/
+overflow-x:visible;
+cursor:default;
+}
+#mvp_outer .sideCell, #mvp_outer .sideCellLeft{
+color:#888;
+border:0;
+text-align:center;
+}
+#mvp_outer .sideCellOn{
+color:#888;
+text-align:center;
+}
+#mvp_outer .builderCell{
+background-color:#CDF;
+border:0;
+padding-left:3px;
+}
+#mvp_outer .builderEmpty{
+background-color:#f6f6f6;
+border:1px solid #EFEFEF;
+}
+#mvp_outer .builderEmptyListing{
+background-color:#EFE0E2;
+border:1px solid #EFEFEF;
+}
+#mvp_outer .dataEmpty{
+background-color:white;
+}
+#mvp_outer .builderFocus{
+background-color:#D1DFEF;
+color:black;
+padding-left:3px;
+}
+#mvp_outer .builderFocusRight,#mvp_outer .builderFocusRightSingle{
+background-color:white;
+padding-left:3px;
+}
+#mvp_outer .builderFocusRightSingle{
+/*cursor:e-resize;*/
+}
+#mvp{
+width:100%;
+}
+#mvp_outer{
+float:left;
+width:100%;
+height:100%;
+overflow-x:scroll;/* Added so that IE would scroll */
+overflow-y:hidden;
+}
+
+
+.fieldAdder {
+    z-index: 62; /* [Issue #9477] *//* slightly higher than sideCellLeft (61) */
+}
+
+
+
+
+.nui{
+float:left;
+overflow-x:scroll;
+overflow-y:scroll;
+background:#fafafa;
+    -moz-transition: transform 120ms ease-out;
+    -webkit-transition: transform 120ms  ease-out;
+    -o-transition: transform 120ms ease-out;
+    -ms-transition: transform 120ms;
+    transition: transform 120ms ease-out;
+    will-change: transform;
+}
+#multiMatchResultContainer {
+position: absolute;
+overflow:hidden;
+background-color:#fafafa;
+z-index:30;
+outline:0;
+border:2px solid #000;
+}
+.multiMatchContainer{
+background-color: #EEE;
+padding: 5px 12px 5px 12px;
+white-space: nowrap;
+font-size:13px;
+overflow:hidden;
+outline:0;
+border:0;
+}
+.hinMulti{
+height: 100%;
+width:100%;
+resize: none;
+}
+.selectedMultiOption, .uploadedMultiFile{
+max-width: 80%;
+font-size: inherit;
+display: inline-block;
+vertical-align: top;
+border-radius: 11px;
+margin: 1px 0 0 3px; /* CAREFUL DO NOT EXTEND THE CELL */
+padding: 2px 8px; /* NOT TOO FAT */
+background-color: #efefef;
+}
+.singleClose{
+    display: inline-flex !important;
+    width: 5px;
+    height: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    font-size: 12px;
+    transition: all 0.2s;
+    font-weight: 900 !important;
+    color: darkgrey;
+    margin-left: 2px;
+}
+.singleClose:hover{
+    color: #272727;
+    background-color: #eae9e5;
+}
+.uploadedMultiFile{
+    display: inline-flex;
+    align-items: flex-start;
+}
+.selectedMultiOption:hover, .uploadedMultiFile:hover, .mediaWrap:hover{
+    background-color: #e2e2e2;
+}
+.selectedMultiOption.chosen{
+border: 1px solid #4d90fe;
+}
+.selectedMultiOption .closeIcon:hover, .uploadedMultiFile .closeIcon:hover{
+    color:#2b2b2b;
+    text-shadow: none;
+}
+.selectedMultiOption .closeIcon, .uploadedMultiFile .closeIcon{
+    margin: 3px 2px 0 6px;
+    cursor:pointer;
+    vertical-align: top;
+    color:#ccc;
+    text-shadow: 1px 1px 0 #ffffff;
+}
+.selectedMultiOptionSpan {
+    cursor: default;
+    display: inline-block;
+    white-space: nowrap;
+}
+.notTyping{
+display: none;
+}
+#msCalSpan {
+position:absolute;
+top:-10000px;
+left:-10000px;
+margin:0 0 0 2px;
+padding:0 0 0 2px;
+font-size:13px;
+outline:0;
+}
+#hin{
+position:absolute;
+top:-10000px;
+left:-10000px;
+height:100px;
+width:100px;
+font-size:13px;
+/*border:2px solid #000;*/
+overflow:auto;
+background-color:#fafafa;
+z-index:30;
+outline:0;
+border:0;
+margin:0 0 0 2px;
+padding: 5px 0 0 4px;
+resize: none;
+line-height:150%;
+}
+@media screen and (max-width: 500px) {
+textarea,input {
+font-size: 16px !important;
+}
+}
+#typer{
+position:absolute;
+}
+#focus{
+position:absolute;
+border:2px solid #000;
+font-size:12px;
+margin:0;
+padding:0;
+z-index:50;
+top:-100px;
+}
+#focus.focusPointNone{
+pointer-events: none;
+}
+.msTypingTextarea {
+outline: none;
+display: inline-block;
+resize: none;
+max-width: 100%;
+height: 24px;
+border: 0;
+background-color: transparent;
+}
+#focusDot{
+position:absolute;
+border:1px solid white;
+background-Color:black;
+height:4px;
+width:4px;
+font-size:1px;
+cursor:crosshair;
+z-index:50;
+top:-100px;
+}
+#bbcodeImageEdit{
+    position:absolute;
+    font-size: 13px;
+    z-index:50;
+    top:-100px;
+    cursor: pointer;
+    display: none;
+}
+#bbcodeImageEdit i {
+    cursor: pointer;
+}
+#bbcodeImageEdit div {
+    border: 2px solid black;
+    background-Color:white;
+    color: #494949;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    margin-bottom: -2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#bbcodeImageEdit div:first-child {
+    border-top-right-radius: 5px;
+}
+#bbcodeImageEdit div:last-child {
+    border-bottom-right-radius: 5px;
+}
+#bbcodeImageEdit div:hover {
+    color: white;
+    background-color: #494949;
+}
+
+
+#outer{
+height:100%;
+width:100%;
+}
+
+/*
+* Input Processors
+*/
+.outerSelector {
+    position: absolute;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    z-index: 120;
+    overflow-x: hidden;
+}
+
+.selector {
+    background-color: #EEE;
+    padding: 1px;
+    cursor: default;
+    font-size: 12px;
+    z-index: 99;
+}
+
+.selItemOn {
+    background-color: #BBB;
+    padding: 5px 12px 5px 12px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.selItemOff {
+    background-color: #EEE;
+    padding: 5px 12px 5px 12px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+
+
+.multiSel input[type='checkbox'] {
+    display: none;
+}
+
+.multiSel {
+    padding: 5px 12px 5px 12px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.multiSel.chosen {
+    background-color: #BBB;
+}
+
+.multiSel:hover {
+    background-color: #BBB;
+}
+
+i.groupsInfoIcon {
+    position: relative;
+    top: 4px;
+    left: 2.5px;
+}
+
+.multiSel.groupInfo {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    transition-property : max-height, padding;
+    transition-duration : 0.5s, 0.5s;
+}
+
+.showGroupInfo .multiSel.groupsTitle:after {
+    content: '\f0d8';
+}
+.multiSel.groupsTitle:after {
+    font-family: 'Font Awesome\ 5 Pro';
+    font-weight: 300;
+    content:"\f0d7";
+    font-size: 14px;
+    margin:0 0 0 4px;
+    position:relative;
+    top:2px;
+    /*cursor:pointer;*/
+}
+
+.multiSel input[type='checkbox'] + span:before {
+    font-family: 'Font Awesome\ 5 Pro';
+    font-weight: 100;
+    content: "\f0c8";
+    font-size: 14px;
+    margin: 0 5px 0 0;
+    position: relative;
+    color: #3f3f3f;
+    top: 3px;
+    background: linear-gradient(transparent 10%,white 10% 90%,transparent 100%);
+}
+
+.multiSel input[type='checkbox']:checked + span:before {
+    font-family: 'Font Awesome\ 5 Pro';
+    font-weight: 700;
+    content: "\f14a";
+    font-size: 14px;
+    margin: 0 5px 0 0;
+    position: relative;
+    color: #136dff;
+    top: 3px;
+}
+
+.multiSel.groupInfo.partInclude input[type=checkbox] {
+    display:none;
+}
+
+.multiSel.groupInfo.partInclude input[type='checkbox'] + span:before {
+    font-family: 'Font Awesome\ 5 Pro';
+    font-weight: 700;
+    content: "\f146";
+    font-size: 14px;
+    margin: 0 5px 0 0;
+    position: relative;
+    color: #136dff;
+    top: 3px;
+}
+
+.showGroupInfo .multiSel.groupInfo {
+    max-height: 100px;
+    padding: 5px 12px 5px 12px;
+}
+
+.selbut{
+/*float:right;*/
+position:absolute;
+top:0;right:0;
+background:url(/sims/img/icons.png) no-repeat -855px 0;
+cursor:default;
+width:15px;
+height:24px;
+line-height:24px;
+text-align:center;
+z-index:25;
+}
+.selbutOn{
+position:absolute;
+top:0;right:0;
+background:#ddd url(/sims/img/icons.png) no-repeat -855px 0;
+cursor:default;
+width:15px;
+height:24px;
+line-height:24px;
+font-size:12px;
+text-align:center;
+z-index:25;
+}
+.cellText{
+/*float:left;*/
+min-height:20px;
+/*line-height:20px;*/
+}
+.cellText:hover{
+text-decoration: underline;
+}
+/*.cellSuggest a{color:white !important;}*/
+.cellSuggest{
+float:left;
+/*color:white !important;*/
+/*background-color:#36c;*/
+min-height:20px;
+/*line-height:20px;*/
+margin:0;
+}
+#wheelDrop input {
+    width: 100%;
+    height: 4px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#wheelDrop p {
+    margin: 12px 0;
+    text-align: center;
+    color: #333;
+}
+
+.pointNone {
+pointer-events: none;
+}
+.formPageStar{
+    font-size:20px;
+    color:#efefef;
+    margin:0 0 0 8px;
+    cursor:pointer;
+}
+.formPageStar:hover {
+    color:#333 !important;
+}
+.formPageStarChecked{
+    font-size:20px;
+    color:#F4B400 !important;
+    margin:0 0 0 8px;
+    cursor:pointer;
+}
+#starWrapper{
+    display:inline-block;
+}
+.listingPageStar{
+    /*position: absolute;*/
+    float:left;
+    font-size:16px;
+    color:#efefef;
+    margin:1px;
+    cursor:pointer;
+    z-index: 63;
+}
+.listingPageStar:hover {
+    color:#333 !important;
+}
+.listingPageStarChecked{
+    /*position: absolute;*/
+    float:left;
+    font-size:16px;
+    color:#F4B400 !important;
+    margin:1px;
+    cursor:pointer;
+    z-index: 63;
+}
+.listingPageCheckbox {
+    /*position: absolute;*/
+    float:left;
+    font-size:18px;
+    color:#efefef;
+    margin:0 2px;
+    cursor:pointer;
+    z-index: 63;
+}
+.listingPageCheckbox:hover {
+    color:#333 !important;
+}
+.listingPageCheckboxChecked{
+    /*position: absolute;*/
+    float:left;
+    font-size:18px;
+    color:#AAA;
+    margin:0 2px;
+    cursor:pointer;
+    z-index: 63;
+}
+
+.file-features {
+    display: inline-flex !important;
+    width: 5px;
+    height: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 100%;
+    transition: all 0.2s;
+    margin-top: 3px;
+    font-weight: 900 !important;
+}
+#downloadMultiFiles {
+    color: #f9414e;
+}
+
+.file-features:hover {
+    background-color: white;
+    font-weight: 900;
+    /*font-size: 14px;*/
+}
+
+#personal_preferences #userpref_fontSizeRateLabel {
+    text-align: center;
+    font-weight: bold;
+}
+
+#personal_preferences #userpref_fontSizeRate {
+    height: 4px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}

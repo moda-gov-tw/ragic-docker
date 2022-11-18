@@ -1,0 +1,18 @@
+[
+    {
+        "paramMap": {},
+        "timeZone": "Asia/Taipei",
+        "key": "standardzhtw_rmd",
+        "apName": "standardzhtw",
+        "executionHour": "1",
+        "job": "rmd"
+    },
+    {
+        "paramMap": {},
+        "timeZone": "Asia/Taipei",
+        "key": "standardzhtw_wf",
+        "apName": "standardzhtw",
+        "executionHour": "1",
+        "job": "wf"
+    }
+]

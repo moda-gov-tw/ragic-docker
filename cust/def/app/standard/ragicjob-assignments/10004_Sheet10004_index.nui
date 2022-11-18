@@ -1,0 +1,130 @@
+N,Inspection Assignments,
+FS,2
+DS,2
+W,1=90&2=88&3=-9&4=113&5=57&6=56,5=11&6=19&7=19.333333253860474&9=30&19=12.333335876464844&21=15&22=36&23=19&24=15&26=19.333343505859375&29=18.333343505859375&30=11.333343505859375&35=11.666656494140625
+TF,2003118
+KF,2003136
+SF,2003118
+ST,1,25,2003257,,,
+ST,1,12,2003413,,,
+S,2003178,standard/ragicjob-assignments/10001,
+S,2003385,standard/ragicjob-assignments/10002,
+S,2003138,,Stack Inspection,Concealed Duct Inspection,Final Inspection
+S,2003228,standard/ragicjob-assignments/10003,
+S,2003133,,Not Started,Scheduled,Completed,Paused,Canceled by Customer,Canceled by Us
+S,2003252,,Action Required,Completed
+S,2003244,,Maintenance,Repair,Installation
+S,2003253,,No,Yes
+S,2003259,standard/ragicjob-assignments/10006,
+A,null=0&MANAGER=6&USER=3&EVERYONE=0,0,3,647020162
+A2,
+D,1,2,2003118,Inspection ID,ag=INS-{1`date`yyyyMM}-{0`number`000}&cs=2&noDup=true
+D,4,2,2003119,Inspection Date,text=1&fmt_d=MM/dd/yyyy&cs=2&must=true
+L,1,3,2003178,Job ID,cs=2&text=1&s=2002977&stf=2002969&mvp=/ragicjob-assignments|10001_Sheet10001
+L,4,3,2003385,Client ID,s=2003074&stf=2003058&mvp=/ragicjob-assignments|10002_Sheet10002&vd=2003018&l=2003178&ro=true&cs=2
+L,1,4,2003138,Inspection Type,cs=2&vd=2002981&l=2003178
+D,4,4,2003175,Client Name,vd=2003020&l=2003178&ro=true&cs=2
+L,1,5,2003228,Technician ID,cs=2&s=2003094&stf=2003089&mvp=/ragicjob-assignments|10003_Sheet10003
+D,4,5,2003176,Client Email,email=2&vd=2003021&l=2003178&ro=true&cs=2
+D,1,6,2003162,Technician Assigned,cs=2&vd=2003091&l=2003228
+D,4,6,2003177,Phone Number,phone=1&phonefmt=XXXXXXXXXX&vd=2003019&l=2003178&ro=true&cs=2
+D,1,7,2003260,Technician Email,email=2&vd=2003090&l=2003228&cs=2
+D,4,7,2003139,Full Job Address,addr=1&vd=2003197&l=2003178&ro=true&cs=2
+D,1,8,2003261,Technician Phone,phone=1&phonefmt=XXXXXXXXXX&vd=2003092&l=2003228&cs=2
+L,4,8,2003133,Inspection Status,userOps=true&dv=Scheduled&f=IF(A21.RAW=''`'Scheduled'`'Completed')&cs=2
+D,1,9,2003140,Pre-Inspection Notes,vd=2003200&l=2003178&cs=5&ro=true
+D,1,11,2003417,Invoice ID,cs=2&text=1&dv=N/A&ro=true
+D,4,11,2003418,Payment Status,cs=2&text=1&dv=N/A&ro=true
+D,1,12,2003407,Purchased Item,ag={0`number`00000}&ro=true
+D,2,12,2003408,Name,cs=2&ro=true
+D,3,12,2003414,Qty,fmt_n=#`####.##&ro=true&styletextAlign=center&styleVtextAlign=center
+D,4,12,2003415,Location,text=1&cs=2&ro=true
+D,1,18,2003208,Start Time,fmt_d=HH:mm&cs=2
+L,4,18,2003252,Follow-up Needed?,userOps=true&cs=2
+D,1,19,2003247,End Time,fmt_d=HH:mm&cs=2
+U,4,19,2003254,Attachment 1,multipleFiles=true&cs=2
+D,1,20,2003248,Total Hours,fmt_n=#`####.##&f=(A19-A18)/60&cs=2
+U,4,20,2003390,Attachment 2,multipleFiles=true&cs=2
+L,1,21,2003244,Service Performed,userOps=true&cs=2
+L,4,21,2003253,Equipment Needed?,cs=2
+D,1,22,2003231,Remarks,cs=5
+L,1,25,2003259,Item ID,s=2003241&stf=2003237&mvp=/ragicjob-assignments|10006_Sheet10006&lnls=true
+D,2,25,2003255,Name,vd=2003239&l=2003259
+D,3,25,2003320,Unit Price,fmt_n=$#`####.##&vd=2003242&l=2003259
+D,4,25,2003256,Qty,fmt_n=0&styletextAlign=center&styleVtextAlign=center
+D,5,25,2003258,Notes,cs=2
+D,1,30,2003262,'Update Job Status' executed time,fmt_d=yyyy/MM/dd HH:mm&hide=true
+F,1,1,,Pre-Inspection Details,cs=6&backgroundColor=#e0b6b6&textAlign=center
+F,1,10,,Purchased Equipment for Repair,cs=6&backgroundColor=#e0b6b6&textAlign=center
+F,1,17,,Post-Inspection Notes,cs=6&backgroundColor=#9fbebe&textAlign=center
+F,1,24,,Equipment Needed (Next Inspection),cs=6&backgroundColor=#9fbebe&textAlign=center
+X_MAX_DESIGNER_ID,101
+K,{"type":"B","seq":"1","name":"Update Job Status","action":"_RAGIC_AUTOGEN_ENTRY_UPDATER_19589({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"true","userGroups":["EVERYONE","SYSAdmin"],"checkIfUserCanEdit":false}
+K,{"type":"B","seq":"2","name":"Notify Technician","action":"_RAGIC_AUTOGEN_SEND_CUSTOM_MAIL_47735({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"false","userGroups":["EVERYONE"],"checkIfUserCanEdit":false}
+K,{"type":"B","seq":"3","name":"Create Quote","action":"_RAGIC_AUTOGEN_CR_57611({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"false","userGroups":["EVERYONE","SYSAdmin"],"checkIfUserCanEdit":false}
+RMD_MAX_SEQ,0
+ET,%5B%7B%22id%22%3A0%2C%22name%22%3Anull%2C%22subject%22%3A%22%257B%257BUSER_NAME%257D%257D%2520has%2520assigned%2520you%2520%255B%257B%257BTITLE_FIELD%257D%257D%255D%253A%2520%257B%257BTITLE_VALUE%257D%257D%22%2C%22content%22%3A%22%253Cdiv%2520style%253D%2527color%253Agrey%2527%253EHi%2520%2520%257B%257B2003162%257D%257D%252C%253Cbr%252F%253E%2520%253Cbr%252F%253ESee%2520below%2520the%2520inspection%2520details%253A%2520%253Cbr%252F%253E%253Cbr%252F%253EInspection%2520ID%253A%2520%257B%257B2003118%257D%257D%253Cbr%252F%253EInspection%2520Date%253A%2520%257B%257B2003119%257D%257D%253Cbr%252F%253EJob%2520ID%253A%2520%257B%257B2003178%257D%257D%253Cbr%252F%253ECustomer%2520Name%253A%2520%257B%257B2003175%257D%257D%253Cbr%252F%253EInspection%2520Type%253A%2520%257B%257B2003138%257D%257D%253Cbr%252F%253ECustomer%2520Email%253A%2520%257B%257B2003176%257D%257D%253Cbr%252F%253EPhone%2520Number%253A%2520%257B%257B2003177%257D%257D%253Cbr%252F%253EFull%2520Job%2520Address%253A%2520%257B%257B2003139%257D%257D%253Cbr%252F%253E%253Cbr%252F%253ETechnician%2520Details%253A%253Cbr%252F%253ETechnician%2520Assigned%253A%2520%257B%257B2003162%257D%257D%253Cbr%252F%253ETechnician%2520Email%253A%2520%257B%257B2003260%257D%257D%253Cbr%252F%253EPre-Inspection%2520Notes%253A%2520%257B%257B2003140%257D%257D%253Cbr%252F%253E%253Cbr%252F%253E%253Cb%253E%253C%252Fb%253E%253C%252Fdiv%253E%22%2C%22attributes%22%3A%7B%22type%22%3A%22actionButton%22%2C%22key%22%3A2%7D%2C%22att%22%3A%5B%5D%2C%22receiverList%22%3A%22%257B%257B2003260%257D%257D%22%2C%22ccList%22%3A%22%22%2C%22bccList%22%3A%22%22%2C%22replyTo%22%3A%22%257B%257BDEFAULT_REPLY_TO%257D%257D%22%2C%22attLink%22%3Afalse%2C%22attExcel%22%3Afalse%2C%22attPdf%22%3Afalse%2C%22attMM%22%3A%22%255B%255D%22%2C%22attField%22%3A%22%255B%255D%22%2C%22attFile%22%3A%22%255B%255D%22%2C%22attMagicLinkReadOnly%22%3Afalse%2C%22attMagicLinkEditable%22%3Afalse%7D%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10004_Sheet10004_index.nui
+QS,1
+SCRIPT_START
+_RAGIC_AUTOGEN_ENTRY_UPDATER_19589(param.getNewNodeId(2003136));
+SHEET_SCOPE_START
+function _RAGIC_AUTOGEN_SEND_CUSTOM_MAIL_47735(nodeId){
+  // WARNING: Please DO NOT edit auto-generated script.
+  var result = db.sendCustomEmail(JSON.stringify(
+{"THIS_PATH":"/ragicjob-assignments/10004","THIS_NODE_ID":nodeId,"type":"actionButton","key":2}
+  ), response);
+}//END_RAGIC_AUTOGEN_SEND_CUSTOM_MAIL_47735
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function _RAGIC_AUTOGEN_CR_57611(nodeId){
+  // WARNING: Please DO NOT edit auto-generated script.
+  var result = db.entryCopier(JSON.stringify(
+    {"THIS_PATH":"/ragicjob-assignments/10004","THIS_NODEID":nodeId,"NEW_PATH":"/ragicjob-assignments/10007","CHECK_MUST_FIELDS":false,"CHECK_VALIDATION_FIELDS":false,"CHECK_ALL_MUST_FIELDS_MAPPED":false,"SILENT":false,"RECAL_ALL_FORMULAS":true,"EXEC_WORKFLOW":true,"LOCK_SOURCE":false,"COPY":{"2003263":"2003178","2003274":"2003259","2003275":"2003255","2003276":"2003320","2003277":"2003256"},"APPLY_SUBTABLE_FILTERS":false,"APPLY_SUBTABLE_GROUPING":false}
+  ), response);
+  if(result) return result;
+}//END_RAGIC_AUTOGEN_CR_57611
+
+
+
+
+
+
+
+
+
+function _RAGIC_AUTOGEN_ENTRY_UPDATER_19589(nodeId){
+  // WARNING: Please DO NOT edit auto-generated script.
+  var result = db.entryUpdater(JSON.stringify(
+    {"THIS_PATH":"/ragicjob-assignments/10004","UPDATE_PATH":"/ragicjob-assignments/10001","THIS_NODE_ID":nodeId,"MATCH":{"2002969":"2003178"},"ACTIONS":[{"THIS_NUMBER_FIELD":"2003252","UPDATE_ACTION":"SET","UPDATE_NUMBER_FIELD":"2002972"},{"THIS_NUMBER_FIELD":"2003231","UPDATE_ACTION":"SET","UPDATE_NUMBER_FIELD":"2003200"},{"THIS_NUMBER_FIELD":"2003119","UPDATE_ACTION":"SET","UPDATE_NUMBER_FIELD":"2003389"}],"MULTI_FIELDS":true,"LAST_UPDATE_FIELD":"2003262","RECALCULATE":false,"CHECK_USER_GROUPS":false,"CHECK_MUST_FIELDS":false,"CHECK_VALIDATION_FIELDS":false,"FAILED_IF_NO_RECORD_UPDATED":false,"LOAD_DEFAULT_VALUES_ON_TARGET":false,"LOAD_DEFAULT_VALUES_ON_THIS_SHEET":false}
+  ), response);
+}//END_RAGIC_AUTOGEN_ENTRY_UPDATER_19589

@@ -1,0 +1,28 @@
+N,抽籤名單（輔助表單，直接填表時用）,
+FS,2
+DS,2
+W,2=100&3=36&4=117,
+TF,3003743
+KF,3003745
+SF,3003743
+S,3003740,standardzhtw/ragicforms19/20001,
+A,NULL=0&MANAGER=6&USER=3&EVERYONE=1,1,2,1135510865
+A2,
+L,1,4,3003740,活動編號,stf=3003738&mvp=/ragicforms19|20001_Sheet20001&must=true
+D,2,4,3003743,參加者編號,ag={0`number`#}&noDup=true
+D,3,4,3003744,參加者姓名,
+D,4,4,3003759,聯絡資訊,
+F,1,1,,*現在「匯入資料」時不需要使用輔助表單，直接在「抽籤小幫手」主表單匯入即可喔！,cs=4
+F,1,2,,如果你要讓抽獎者直接在這張表單填資料，方法：(1) 先在「抽籤小幫手」主表單建立一筆活動資訊 ,cs=5&fontWeight=bold
+F,1,3,,(2) 請填表者在這裡填寫資料時，要選擇對應的「活動編號」(3) 回到「抽籤小幫手」點「清空中籤資料」再點「開始抽籤」，即可得到結果,cs=5&fontWeight=bold
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,20002_Sheet20002_index_t.nui
+QS,0

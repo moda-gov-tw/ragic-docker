@@ -1,0 +1,22 @@
+N,Support Knowledge Base ,
+FS,2
+DS,2
+W,1=27&2=143&3=49&4=89&5=61&undefined=0,6=43&8=401
+TF,2001284
+KF,2001291
+SF,2001284
+S,2001285,standard/ragic-setup/1,
+S,2001287,,FAQ,Important Concepts
+S,2001289,,access right,sheet
+A,MANAGER=6&EVERYONE=0&USER=3,0,3,718865233
+A2,
+D,1,1,2001283,Article Id,ag={0`number`00000}
+D,1,2,2001284,Title,cs=4
+L,1,4,2001285,Author,usrref=2&dv=$USER
+D,3,4,2001286,Last Updated Date,fmt_d=yyyy/MM/dd&dv=#DATE&ro=true
+L,1,5,2001287,Type,help=You can add types as needed&userOps=true
+M,1,6,2001289,Keyword / Tag,cs=4&userOps=true
+D,1,8,2001290,Content,cs=4
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+QS,1

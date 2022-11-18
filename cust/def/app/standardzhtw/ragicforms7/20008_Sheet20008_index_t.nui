@@ -1,0 +1,28 @@
+N,領料單,
+FS,2
+DS,2
+W,1=35&4=45&5=270&6=39,
+TF,3002404
+KF,3002416
+SF,3002404
+S,3002405,standardzhtw/ragic-setup/1,
+S,3002407,standardzhtw/ragicforms7/20003,
+A,NULL=0&MANAGER=6&USER=3&EVERYONE=0,0,2,464590630
+A2,
+D,1,1,3002404,領料單號,ag=MRQ-{1`date`yyyyMMdd}-{0`number`000}
+L,2,1,3002405,領料人員,usrref=2&dv=$USER
+D,3,1,3002406,日期,fmt_d=yyyy/MM/dd&dv=$DATE
+L,4,1,3002407,相關工單編號,mvp=/ragicforms7|20003_Sheet20003&s=3002288&stf=3002279&must=true
+D,5,1,3002418,備註,
+D,6,1,3002439,領料日期時間,fmt_d=yyyy/MM/dd HH:mm&ro=true
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,20008_Sheet20008_index_t.nui
+QS,5

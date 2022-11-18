@@ -1,0 +1,27 @@
+N,Applicant Resume,Click <font color="red">"+ New"</font> to fill in your resume.
+FS,2
+DS,2
+W,1=53&2=59&3=111&4=13&5=13,
+TF,2001317
+KF,2001327
+SF,2001317
+S,2001330,standard/ragichr/10005,
+S,2001331,,Unemployed,Employed,Self-employed
+A,NULL=0&MANAGER=6&HR=6&USER=1&EVERYONE=1,1,2,1279974577
+A2,
+D,1,1,2001328,Applicant No.,ag=CV{1`date`yyyy}-{0`number`000}
+D,2,1,2001319,Full Name,
+L,3,1,2001330,Position No.,mvp=/ragichr|10008_Sheet10008&s=2001297&stf=2001298
+L,4,1,2001331,Status,
+D,5,1,2001333,Available From,fmt_d=yyyy/MM/dd
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10007_Sheet10007_index_t.nui
+QS,3

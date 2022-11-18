@@ -1,0 +1,328 @@
+{"reports": [
+  {
+    "name": "場地租借狀況",
+    "type": "ragic/pivot",
+    "param": {
+      "filter": [
+        3002485,
+        3002483
+      ],
+      "dataSource": "/ragicforms10/20010",
+      "col": "3002485",
+      "fact": "3002492",
+      "row": "3002493",
+      "hideTitle": "false",
+      "colAgg": "D"
+    },
+    "templateId": "00073-1",
+    "id": 1
+  },
+  {
+    "name": "管理費繳費記錄表",
+    "type": "ragic/pivot",
+    "param": {
+      "filter": [3002574],
+      "dataSource": "/ragicforms10/20011",
+      "row": "3002572",
+      "col": "3002574",
+      "fact": "3002576"
+    },
+    "templateId": "00073-2",
+    "id": 2
+  },
+  {
+    "name": "資產負債表",
+    "type": "fixed/balance",
+    "param": {
+      "filter": [],
+      "dataSource": "/ragicforms8/20015",
+      "dataSource2": "/ragicforms8/20017",
+      "balanceSheetParams": "{}",
+      "lang": "zhtw"
+    },
+    "templateId": "00077-1",
+    "id": 3
+  },
+  {
+    "name": "逾期應付發票",
+    "type": "fixed/payable",
+    "param": {
+      "filter": [],
+      "dataSource": "/ragicforms8/20006",
+      "dataSource2": "/ragicforms8/20008",
+      "lang": "zhtw"
+    },
+    "templateId": "00077-2",
+    "id": 4
+  },
+  {
+    "name": "逾期應收發票",
+    "type": "fixed/receivable",
+    "param": {
+      "filter": [],
+      "dataSource": "/ragicforms8/20004",
+      "dataSource2": "/ragicforms8/20010",
+      "lang": "zhtw"
+    },
+    "templateId": "00077-3",
+    "id": 5
+  },
+  {
+    "name": "損益表",
+    "type": "fixed/profitnloss",
+    "param": {
+      "filter": [],
+      "dataSource": "/ragicforms8/20015",
+      "dataSource2": "/ragicforms8/20017",
+      "lang": "zhtw"
+    },
+    "templateId": "00077-4",
+    "id": 6
+  },
+  {
+    "name": "現金流量表",
+    "type": "fixed/cashflow",
+    "param": {
+      "filter": [],
+      "dataSource": "/ragicforms8/20015",
+      "dataSource2": "/ragicforms8/20017",
+      "lang": "zhtw"
+    },
+    "templateId": "00077-5",
+    "id": 7
+  },
+  {
+    "name": "資產負債表 (簡易版)",
+    "type": "fixed/balanceSimple",
+    "param": {
+      "filter": [],
+      "dataSource": "/ragicforms12/20015",
+      "dataSource2": "/ragicforms12/20012",
+      "lang": "zhtw"
+    },
+    "templateId": "00076-1",
+    "id": 8
+  },
+  {
+    "name": "損益表 (簡易版)",
+    "type": "fixed/profitnlossSimple",
+    "param": {
+      "filter": [],
+      "dataSource": "/ragicforms12/20015",
+      "dataSource2": "/ragicforms12/20012",
+      "lang": "zhtw"
+    },
+    "templateId": "00076-2",
+    "id": 9
+  },
+  {
+    "name": "現金流量表 (簡易版)",
+    "type": "fixed/cashflowSimple",
+    "param": {
+      "filter": [],
+      "dataSource": "/ragicforms12/20015",
+      "dataSource2": "/ragicforms12/20012",
+      "lang": "zhtw"
+    },
+    "templateId": "00076-3",
+    "id": 10
+  },
+  {
+    "name": "使用者報表",
+    "type": "ragic/userStatus",
+    "param": {
+      "filter": [],
+      "dataSource": "/ragic-setup/1"
+    },
+    "id": 11
+  },
+  {
+    "name": "待簽核報表",
+    "type": "fixed/approval",
+    "param": {
+      "filter": [],
+      "noDataSource": true
+    },
+    "id": 13
+  },
+  {
+    "name": "訂單分析",
+    "type": "ragic/dashboard",
+    "param": {
+      "filter": [
+        3000813,
+        3000812,
+        3000814,
+        3000815,
+        3000816
+      ],
+      "changed": [],
+      "dataSource": "/ragicsales-order-management/20001",
+      "remove": [
+        "3000829",
+        "3000829avg",
+        "3000848",
+        "3000838",
+        "3000846",
+        "3000847"
+      ],
+      "fact": "-1",
+      "styleParams": "{\"name_reportFontFamily\":\"\",\"name_reportFontSize\":\"24\",\"name_align\":\"left\",\"unifyFontFamily\":\"false\",\"des_reportFontFamily\":\"\",\"des_reportFontSize\":\"16\",\"des_align\":\"left\",\"ds_reportFontFamily\":\"\",\"ds_reportFontSize\":\"12\",\"ds_align\":\"flex-start\",\"cnt_reportFontFamily\":\"\",\"cnt_reportFontSize\":\"1\",\"boundaryType\":\"in\",\"boundaryWidth\":\"0.5,0,0.5,1\",\"outBoundaryWidth\":\"0.5,0.7,0.5,0.7\",\"boundaryMargins\":\"0.5,0,0.5,1\",\"outBoundaryMargins\":\"0.5,0.7,0.5,0.7\",\"showResetDefaultMarginBtn\":\"false\",\"showResetDefaultOutMarginBtn\":\"false\",\"isShowTitle\":\"true\",\"isShowDataSource\":\"true\",\"isShowBorder\":\"true\",\"isShowA4Block\":\"false\",\"isOneLabelOnePage\":\"false\"}"
+    },
+    "id": 14
+  },
+  {
+    "name": "銷售細項分析",
+    "type": "ragic/dashboard",
+    "param": {
+      "filter": [
+        3000813,
+        3000841,
+        3000815,
+        3000830,
+        3000848
+      ],
+      "changed": [],
+      "dataSource": "/ragicsales-order-management/20008",
+      "fact": "3000833",
+      "remove": [
+        "3000829",
+        "3000829avg",
+        "3000841"
+      ],
+      "styleParams": "{\"name_reportFontFamily\":\"\",\"name_reportFontSize\":\"24\",\"name_align\":\"left\",\"unifyFontFamily\":\"false\",\"des_reportFontFamily\":\"\",\"des_reportFontSize\":\"16\",\"des_align\":\"left\",\"ds_reportFontFamily\":\"\",\"ds_reportFontSize\":\"12\",\"ds_align\":\"flex-start\",\"cnt_reportFontFamily\":\"\",\"cnt_reportFontSize\":\"1\",\"boundaryType\":\"in\",\"boundaryWidth\":\"0.5,0,0.5,1\",\"outBoundaryWidth\":\"0.5,0.7,0.5,0.7\",\"boundaryMargins\":\"0.5,0,0.5,1\",\"outBoundaryMargins\":\"0.5,0.7,0.5,0.7\",\"showResetDefaultMarginBtn\":\"false\",\"showResetDefaultOutMarginBtn\":\"false\",\"isShowTitle\":\"true\",\"isShowDataSource\":\"true\",\"isShowBorder\":\"true\",\"isShowA4Block\":\"false\",\"isOneLabelOnePage\":\"false\"}"
+    },
+    "id": 15
+  },
+  {
+    "name": "預約系統 (限內部/外部使用者使用)",
+    "type": "ragic/reservation",
+    "param": {
+      "filter": [],
+      "changed": [],
+      "dataSource": "/ragicforms31/20007",
+      "reservationReportParams": {
+        "reserved_target": "3004255",
+        "reserved_startTime": "3004256",
+        "reserved_endTime": "3004257",
+        "reserved_who": "3004254",
+        "reserved_remarks": "3004258",
+        "increments": "30",
+        "incrementsUnit": "MINUTES",
+        "availableType": 0,
+        "availableDays": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "basicAvailableTimes": [[
+          {
+            "hour": 1,
+            "minute": 0
+          },
+          {
+            "hour": 10,
+            "minute": 0
+          }
+        ]],
+        "customAvailableTimes": "{\"0\":{\"isAvailable\":false,\"value\":[[{\"hour\":1,\"minute\":0},{\"hour\":10,\"minute\":0}]]},\"1\":{\"isAvailable\":true,\"value\":[[{\"hour\":1,\"minute\":0},{\"hour\":10,\"minute\":0}]]},\"2\":{\"isAvailable\":true,\"value\":[[{\"hour\":1,\"minute\":0},{\"hour\":10,\"minute\":0}]]},\"3\":{\"isAvailable\":true,\"value\":[[{\"hour\":1,\"minute\":0},{\"hour\":10,\"minute\":0}]]},\"4\":{\"isAvailable\":true,\"value\":[[{\"hour\":1,\"minute\":0},{\"hour\":10,\"minute\":0}]]},\"5\":{\"isAvailable\":true,\"value\":[[{\"hour\":1,\"minute\":0},{\"hour\":10,\"minute\":0}]]},\"6\":{\"isAvailable\":false,\"value\":[[{\"hour\":1,\"minute\":0},{\"hour\":10,\"minute\":0}]]}}",
+        "specificTimeDates": []
+      },
+      "styleParams": "{\"name_reportFontFamily\":\"\",\"name_reportFontSize\":\"24\",\"name_align\":\"left\",\"unifyFontFamily\":\"false\",\"des_reportFontFamily\":\"\",\"des_reportFontSize\":\"16\",\"des_align\":\"left\",\"ds_reportFontFamily\":\"\",\"ds_reportFontSize\":\"12\",\"ds_align\":\"flex-start\",\"cnt_reportFontFamily\":\"\",\"cnt_reportFontSize\":\"1\",\"boundaryType\":\"in\",\"boundaryWidth\":\"0.5,0,0.5,1\",\"outBoundaryWidth\":\"0.5,0.7,0.5,0.7\",\"boundaryMargins\":\"0.5,0,0.5,1\",\"outBoundaryMargins\":\"0.5,0.7,0.5,0.7\",\"showResetDefaultMarginBtn\":\"false\",\"showResetDefaultOutMarginBtn\":\"false\",\"isShowTitle\":\"true\",\"isShowDataSource\":\"true\",\"isShowBorder\":\"true\",\"isShowA4Block\":\"false\",\"isOneLabelOnePage\":\"false\"}",
+      "desc": "提供內部使用者預約物品、會議室的一個系統"
+    },
+    "id": 16
+  },
+  {
+    "name": "預約系統 (供內部、外部、訪客使用者使用)",
+    "type": "ragic/reservation",
+    "param": {
+      "filter": [],
+      "changed": [],
+      "dataSource": "/ragic-/20002",
+      "styleParams": "{\"name_reportFontFamily\":\"\",\"name_reportFontSize\":\"24\",\"name_align\":\"left\",\"unifyFontFamily\":\"false\",\"des_reportFontFamily\":\"\",\"des_reportFontSize\":\"16\",\"des_align\":\"left\",\"ds_reportFontFamily\":\"\",\"ds_reportFontSize\":\"12\",\"ds_align\":\"flex-start\",\"cnt_reportFontFamily\":\"\",\"cnt_reportFontSize\":\"1\",\"boundaryType\":\"in\",\"boundaryWidth\":\"0.5,0,0.5,1\",\"outBoundaryWidth\":\"0.5,0.7,0.5,0.7\",\"boundaryMargins\":\"0.5,0,0.5,1\",\"outBoundaryMargins\":\"0.5,0.7,0.5,0.7\",\"showResetDefaultMarginBtn\":\"false\",\"showResetDefaultOutMarginBtn\":\"false\",\"isShowTitle\":\"true\",\"isShowDataSource\":\"true\",\"isShowBorder\":\"true\",\"isShowA4Block\":\"false\",\"isOneLabelOnePage\":\"false\"}",
+      "desc": "讓內部、訪客使用者可以預約物品、會議室的一個系統",
+      "reservationReportParams": {
+        "reserved_target": "3004269",
+        "reserved_startTime": "3004270",
+        "reserved_endTime": "3004271",
+        "reserved_who": "3004268",
+        "reserved_remarks": "3004272",
+        "increments": "30",
+        "incrementsUnit": "MINUTES",
+        "availableType": 0,
+        "availableDays": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "basicAvailableTimes": [[
+          {
+            "hour": 1,
+            "minute": 0
+          },
+          {
+            "hour": 10,
+            "minute": 0
+          }
+        ]],
+        "customAvailableTimes": "{\"0\":{\"isAvailable\":false,\"value\":[[{\"hour\":1,\"minute\":0},{\"hour\":10,\"minute\":0}]]},\"1\":{\"isAvailable\":true,\"value\":[[{\"hour\":1,\"minute\":0},{\"hour\":10,\"minute\":0}]]},\"2\":{\"isAvailable\":true,\"value\":[[{\"hour\":1,\"minute\":0},{\"hour\":10,\"minute\":0}]]},\"3\":{\"isAvailable\":true,\"value\":[[{\"hour\":1,\"minute\":0},{\"hour\":10,\"minute\":0}]]},\"4\":{\"isAvailable\":true,\"value\":[[{\"hour\":1,\"minute\":0},{\"hour\":10,\"minute\":0}]]},\"5\":{\"isAvailable\":true,\"value\":[[{\"hour\":1,\"minute\":0},{\"hour\":10,\"minute\":0}]]},\"6\":{\"isAvailable\":false,\"value\":[[{\"hour\":1,\"minute\":0},{\"hour\":10,\"minute\":0}]]}}",
+        "specificTimeDates": []
+      }
+    },
+    "id": 17
+  },
+  {
+    "name": "血壓紀錄",
+    "type": "ragic/trend",
+    "param": {
+      "filter": [3004427],
+      "changed": [],
+      "dataSource": "/ragicforms23/20011",
+      "calculatingWay": "total",
+      "fact": "3004420",
+      "factCount": "1",
+      "fact0": "3004421",
+      "date": "3004418",
+      "styleParams": "{\"name_reportFontFamily\":\"\",\"name_reportFontSize\":\"24\",\"name_align\":\"left\",\"unifyFontFamily\":\"false\",\"des_reportFontFamily\":\"\",\"des_reportFontSize\":\"16\",\"des_align\":\"left\",\"ds_reportFontFamily\":\"\",\"ds_reportFontSize\":\"12\",\"ds_align\":\"flex-start\",\"cnt_reportFontFamily\":\"\",\"cnt_reportFontSize\":\"1\",\"boundaryType\":\"in\",\"boundaryWidth\":\"0.5,0,0.5,1\",\"outBoundaryWidth\":\"0.5,0.7,0.5,0.7\",\"boundaryMargins\":\"0.5,0,0.5,1\",\"outBoundaryMargins\":\"0.5,0.7,0.5,0.7\",\"showResetDefaultMarginBtn\":\"false\",\"showResetDefaultOutMarginBtn\":\"false\",\"isShowTitle\":\"true\",\"isShowDataSource\":\"true\",\"isShowBorder\":\"true\",\"isShowA4Block\":\"false\",\"isOneLabelOnePage\":\"false\"}",
+      "desc": "每日舒張壓、收縮壓紀錄"
+    },
+    "id": 18
+  },
+  {
+    "name": "血糖紀錄",
+    "type": "ragic/trend",
+    "param": {
+      "filter": [3004444],
+      "changed": [],
+      "dataSource": "/ragicforms23/20012",
+      "col": "3004433",
+      "calculatingWay": "total",
+      "fact": "3004435",
+      "date": "3004432",
+      "styleParams": "{\"name_reportFontFamily\":\"\",\"name_reportFontSize\":\"24\",\"name_align\":\"left\",\"unifyFontFamily\":\"false\",\"des_reportFontFamily\":\"\",\"des_reportFontSize\":\"16\",\"des_align\":\"left\",\"ds_reportFontFamily\":\"\",\"ds_reportFontSize\":\"12\",\"ds_align\":\"flex-start\",\"cnt_reportFontFamily\":\"\",\"cnt_reportFontSize\":\"1\",\"boundaryType\":\"in\",\"boundaryWidth\":\"0.5,0,0.5,1\",\"outBoundaryWidth\":\"0.5,0.7,0.5,0.7\",\"boundaryMargins\":\"0.5,0,0.5,1\",\"outBoundaryMargins\":\"0.5,0.7,0.5,0.7\",\"showResetDefaultMarginBtn\":\"false\",\"showResetDefaultOutMarginBtn\":\"false\",\"isShowTitle\":\"true\",\"isShowDataSource\":\"true\",\"isShowBorder\":\"true\",\"isShowA4Block\":\"false\",\"isOneLabelOnePage\":\"false\"}"
+    },
+    "id": 19
+  },
+  {
+    "name": "體溫量測紀錄",
+    "type": "ragic/trend",
+    "param": {
+      "filter": [3004465],
+      "changed": [],
+      "dataSource": "/ragicforms23/20013",
+      "calculatingWay": "total",
+      "fact": "3004454",
+      "factCount": "2",
+      "fact0": "3004470",
+      "fact1": "3004469",
+      "date": "3004449",
+      "styleParams": "{\"name_reportFontFamily\":\"\",\"name_reportFontSize\":\"24\",\"name_align\":\"left\",\"unifyFontFamily\":\"false\",\"des_reportFontFamily\":\"\",\"des_reportFontSize\":\"16\",\"des_align\":\"left\",\"ds_reportFontFamily\":\"\",\"ds_reportFontSize\":\"12\",\"ds_align\":\"flex-start\",\"cnt_reportFontFamily\":\"\",\"cnt_reportFontSize\":\"1\",\"boundaryType\":\"in\",\"boundaryWidth\":\"0.5,0,0.5,1\",\"outBoundaryWidth\":\"0.5,0.7,0.5,0.7\",\"boundaryMargins\":\"0.5,0,0.5,1\",\"outBoundaryMargins\":\"0.5,0.7,0.5,0.7\",\"showResetDefaultMarginBtn\":\"false\",\"showResetDefaultOutMarginBtn\":\"false\",\"isShowTitle\":\"true\",\"isShowDataSource\":\"true\",\"isShowBorder\":\"true\",\"isShowA4Block\":\"false\",\"isOneLabelOnePage\":\"false\"}"
+    },
+    "id": 20
+  }
+]}

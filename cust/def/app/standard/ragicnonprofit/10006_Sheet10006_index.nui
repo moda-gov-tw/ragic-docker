@@ -1,0 +1,75 @@
+N,Fundraising Events,
+FS,2
+DS,2
+W,1=79&3=16&4=58&5=61,4=11&5=17&7=33
+TF,2002747
+KF,2002754
+SF,2002747
+ST,1,14,2002760,,,
+ST,1,20,2002786,,,
+ST,1,26,2002618,2002790,,
+ST,1,32,2002812,,,
+S,2002770,standard/ragicnonprofit/10002,
+S,2002777,standard/ragicnonprofit/10005,
+S,2002782,standard/ragicnonprofit/10005,
+S,2002660,,One-Time,Regular,Anonymous
+A,NULL=0&MANAGER=6&USER=3&EVERYONE=0,0,3,1750171511
+A2,
+D,1,2,2002747,Event ID,ag=F{0`number`000}&cs=2&noDup=true
+D,4,2,2002750,Date,fmt_d=MM/dd/yyyy&cs=2
+D,1,3,2002749,Event Name,cs=2
+D,4,3,2002752,Start Time,fmt_d=HH:mm&cs=2
+D,1,4,2002748,Venue,cs=2&addr=1
+D,4,4,2002768,End Time,fmt_d=HH:mm&cs=2
+L,1,5,2002770,In benefit of,cs=2&s=2002628&stf=2002625&mvp=/ragicnonprofit|10002_Sheet10002&lnls=true
+D,4,5,2002771,Program Name,vd=2002626&l=2002770&cs=2
+D,1,6,2002751,Event Budget,fmt_n_ts=`&fmt_n_ds=.&fmt_n=$#`####.##&cs=2
+D,4,6,2002767,Fundraising Goal,fmt_n_ts=`&fmt_n_ds=.&fmt_n=$#`####.##&cs=2
+D,1,7,2002753,Fundraising Cause,cs=5
+L,1,10,2002777,Volunteer ID,cs=2&s=2002727&stf=2002722&mvp=/ragicnonprofit|10005_Sheet10005&lnls=true
+D,4,10,2002778,Email,cs=2&email=2&vd=2002725&l=2002777
+D,1,11,2002781,Volunteer Name,vd=2002723&l=2002777&cs=2
+D,4,11,2002779,Phone Number,cs=2&phone=1&phonefmt=XXXXXXXXXX&vd=2002726&l=2002777
+D,1,14,2002755,Activity,
+D,2,14,2002756,Start Time,fmt_d=HH:mm
+D,3,14,2002757,End Time,fmt_d=HH:mm
+D,4,14,2002769,Coordinator,text=1
+D,5,14,2002759,Notes,cs=2
+L,1,20,2002782,Volunteer ID,s=2002727&mvp=/ragicnonprofit|10005_Sheet10005&stf=2002722&lnls=true
+D,2,20,2002783,Volunteer Name,vd=2002723&l=2002782
+D,3,20,2002784,Phone Number,phone=1&phonefmt=XXXXXXXXXX&vd=2002726&l=2002782
+D,4,20,2002785,Email,email=2&vd=2002725&l=2002782
+D,5,20,2002787,Notes,cs=2
+D,1,26,2002613,Donation ID,ag={0`number`00000}&noclone=true&styletextAlign=center&styleVtextAlign=center
+D,2,26,2002615,Date,fmt_d=MM/dd/yyyy&noclone=true&styletextAlign=center&styleVtextAlign=center
+D,3,26,2002654,Amount,fmt_n_ts=`&fmt_n_ds=.&fmt_n=$#`####.##&noclone=true&styletextAlign=center&styleVtextAlign=center
+L,4,26,2002660,Sponsor Type,vd=2002636&l=2002659&noclone=true
+D,5,26,2002798,Notes,cs=2
+D,1,32,2002806,Activity,
+D,2,32,2002807,Start Time,fmt_d=HH:mm
+D,3,32,2002808,End Time,fmt_d=HH:mm
+D,4,32,2002809,Amount,fmt_n_ts=`&fmt_n_ds=.&fmt_n=$#`####.##
+D,5,32,2002810,Notes,cs=2
+D,4,38,2002816,Event Budget/Expenses,fmt_n_ts=`&fmt_n_ds=.&fmt_n=$#`####.##
+D,4,39,2002813,Collected through Main Event,fmt_n_ts=`&fmt_n_ds=.&fmt_n=$#`####.##
+D,4,40,2002814,Donations,fmt_n_ts=`&fmt_n_ds=.&fmt_n=$#`####.##&f=C26
+D,4,41,2002815,Other activities,fmt_n_ts=`&fmt_n_ds=.&fmt_n=$#`####.##&f=D32
+D,4,42,2002811,Total Raised,fmt_n_ts=`&fmt_n_ds=.&fmt_n=$#`####.##&f=D39+D40+D41-D38&stylefontWeight=bold
+F,1,1,,Event Information,cs=6&textAlign=center&backgroundColor=#f9d2d2&fontWeight=bold
+F,1,9,,Organizer's Information,cs=6&textAlign=center&backgroundColor=#f9d2d2&fontWeight=bold
+F,1,13,,Event Itinerary,cs=6&textAlign=center&backgroundColor=#f9d2d2&fontWeight=bold
+F,1,19,,Volunteers,cs=6&textAlign=center&backgroundColor=#f9d2d2&fontWeight=bold
+F,1,25,,Donations Received,cs=6&textAlign=center&backgroundColor=#f9d2d2&fontWeight=bold
+F,1,31,,Other Activities,cs=6&textAlign=center&backgroundColor=#f9d2d2&fontWeight=bold
+F,4,37,, Event Income Summary,cs=2&textAlign=center&backgroundColor=#f9d2d2&fontWeight=bold
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10006_Sheet10006_index.nui
+QS,1

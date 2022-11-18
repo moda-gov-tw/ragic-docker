@@ -1,0 +1,27 @@
+N,入庫單,
+FS,2
+DS,2
+W,1=49&2=46&4=0&5=39&6=297,
+TF,3001075
+KF,3001089
+SF,3001075
+S,3001077,standardzhtw/ragic-setup/1,
+A,NULL=0&MANAGER=6&USER=3&EVERYONE=0,0,2,685071644
+A2,
+D,1,1,3001075,入庫單號,noDup=true&ag=IN-{1`date`yyyyMMdd}-{0`number`000}
+D,2,1,3001076,驗收編號,noDup=true
+L,3,1,3001077,建檔人員,dv=$USER&usrref=2
+D,4,1,3001078,日期,dv=$DATE&fmt_d=yyyy/MM/dd
+D,5,1,3001159,入庫存日期時間,ro=true&fmt_d=yyyy/MM/dd HH:mm
+D,6,1,3001079,單據備註,
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,20005_Sheet20005_index_t.nui
+QS,5

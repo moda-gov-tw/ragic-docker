@@ -1,0 +1,57 @@
+N,訓練菜單紀錄,
+FS,2
+DS,2
+W,1=23&2=0&3=-29&4=1&5=-29&6=0&7=-30&9=-28&11=-26.79998779296875&13=-28.79998779296875&15=-28.79998779296875&16=0&17=-29.79998779296875&undefined=0,7=24
+TF,3003439
+KF,3003443
+SF,3003439
+ST,1,9,3003449,,,
+S,3003439,standardzhtw/ragicsohardtoloseweight/20001,
+S,3003442,,胸,背,肩,肱二頭,肱三頭,臀腿,腹/核心,有氧
+A,NULL=0&MANAGER=6&USER=3&EVERYONE=0,0,3,2093863759
+A2,
+L,1,2,3003439,姓名,s=3003381&stf=3003378&mvp=/ragicsohardtoloseweight|20001_Sheet20001&cs=3&stylebackgroundColor=#CCCCCC&stylefontWeight=bold&styleVfontWeight=bold
+D,1,3,3003440,紀錄日期,fmt_d=yyyy/MM/dd&dv=$DATE&cs=3&stylebackgroundColor=#CCCCCC&stylefontWeight=bold&styleVfontWeight=bold
+D,1,4,3003441,訓練時數,fmt_n=#`###.##### 分鐘&cs=3&stylebackgroundColor=#CCCCCC&stylefontWeight=bold&styleVfontWeight=bold
+M,1,5,3003442,訓練部位,userOps=true&cs=3&stylebackgroundColor=#CCCCCC&stylefontWeight=bold&styleVfontWeight=bold
+D,1,9,3003444,運動/器材項目,stylebackgroundColor=#CCCCCC&stylefontWeight=bold&styleVfontWeight=bold&styletextAlign=center&styleVtextAlign=center
+D,2,9,3003445,重複次數 Reps,fmt_n=#`###.##### 下&stylebackgroundColor=#CCCCCC&stylefontWeight=bold&styleVfontWeight=bold&styletextAlign=center&styleVtextAlign=center
+D,3,9,3003446,重量,fmt_n=#`###.##### 公斤&stylebackgroundColor=#CCCCCC&stylefontWeight=bold&styleVfontWeight=bold&styletextAlign=center&styleVtextAlign=center
+D,4,9,3003447,重複次數 Reps,fmt_n=#`###.##### 下&stylebackgroundColor=#CCCCCC&stylefontWeight=bold&styleVfontWeight=bold&styletextAlign=center&styleVtextAlign=center
+D,5,9,3003448,重量,fmt_n=#`###.##### 公斤&stylebackgroundColor=#CCCCCC&stylefontWeight=bold&styleVfontWeight=bold&styletextAlign=center&styleVtextAlign=center
+D,6,9,3003450,重複次數 Reps,fmt_n=#`###.##### 下&stylebackgroundColor=#CCCCCC&stylefontWeight=bold&styleVfontWeight=bold&styletextAlign=center&styleVtextAlign=center
+D,7,9,3003451,重量,fmt_n=#`###.##### 公斤&stylebackgroundColor=#CCCCCC&stylefontWeight=bold&styleVfontWeight=bold&styletextAlign=center&styleVtextAlign=center
+D,8,9,3003452,重複次數 Reps,fmt_n=#`###.##### 下&stylebackgroundColor=#CCCCCC&stylefontWeight=bold&styleVfontWeight=bold&styletextAlign=center&styleVtextAlign=center
+D,9,9,3003453,重量,fmt_n=#`###.##### 公斤&stylebackgroundColor=#CCCCCC&stylefontWeight=bold&styleVfontWeight=bold&styletextAlign=center&styleVtextAlign=center
+D,10,9,3003454,重複次數 Reps,fmt_n=#`###.##### 下&stylebackgroundColor=#CCCCCC&stylefontWeight=bold&styleVfontWeight=bold&styletextAlign=center&styleVtextAlign=center
+D,11,9,3003455,重量,fmt_n=#`###.##### 公斤&stylebackgroundColor=#CCCCCC&stylefontWeight=bold&styleVfontWeight=bold&styletextAlign=center&styleVtextAlign=center
+D,12,9,3003456,重複次數 Reps,fmt_n=#`###.##### 下&stylebackgroundColor=#CCCCCC&stylefontWeight=bold&styleVfontWeight=bold&styletextAlign=center&styleVtextAlign=center
+D,13,9,3003457,重量,fmt_n=#`###.##### 公斤&stylebackgroundColor=#CCCCCC&stylefontWeight=bold&styleVfontWeight=bold&styletextAlign=center&styleVtextAlign=center
+D,14,9,3003458,重複次數 Reps,fmt_n=#`###.##### 下&stylebackgroundColor=#CCCCCC&stylefontWeight=bold&styleVfontWeight=bold&styletextAlign=center&styleVtextAlign=center
+D,15,9,3003459,重量,fmt_n=#`###.##### 公斤&stylebackgroundColor=#CCCCCC&stylefontWeight=bold&styleVfontWeight=bold&styletextAlign=center&styleVtextAlign=center
+D,16,9,3003460,重複次數 Reps,fmt_n=#`###.##### 下&stylebackgroundColor=#CCCCCC&stylefontWeight=bold&styleVfontWeight=bold&styletextAlign=center&styleVtextAlign=center
+D,17,9,3003461,重量,fmt_n=#`###.##### 公斤&stylebackgroundColor=#CCCCCC&stylefontWeight=bold&styleVfontWeight=bold&styletextAlign=center&styleVtextAlign=center
+F,1,1,,個人資料,cs=4&background=#333333&color=#ffffff&textAlign=center&backgroundColor=#D53333&fontWeight=bold
+F,5,2,,直接選擇您的姓名，就能管理您每次的訓練紀錄囉！沒有的話就請新增一筆自己的資料。,cs=7&background=#333333&color=#ffffff&backgroundColor=#666666&fontWeight=bold
+F,5,5,,如果選項不合用，也可以自行新增選項喔！,cs=4&background=#333333&color=#ffffff&backgroundColor=#666666&fontWeight=bold
+F,1,7,,訓練紀錄,cs=17&background=#333333&color=#ffffff&textAlign=center&backgroundColor=#D53333&fontWeight=bold&fontSize=18
+F,1,8,,項目,cs=1&backgroundColor=#333333&color=#FFFFFF&fontWeight=bold&textAlign=center
+F,2,8,,第一組,cs=2&background=#333333&color=#ffffff&backgroundColor=#333333&fontWeight=bold&textAlign=center
+F,4,8,,第二組,cs=2&background=#333333&color=#ffffff&backgroundColor=#333333&fontWeight=bold&textAlign=center
+F,6,8,,第三組,cs=2&background=#333333&color=#ffffff&backgroundColor=#333333&fontWeight=bold&textAlign=center
+F,8,8,,第四組,cs=2&background=#333333&color=#ffffff&backgroundColor=#333333&fontWeight=bold&textAlign=center
+F,10,8,,第五組,cs=2&background=#333333&color=#ffffff&backgroundColor=#333333&fontWeight=bold&textAlign=center
+F,12,8,,第六組,cs=2&background=#333333&color=#ffffff&backgroundColor=#333333&fontWeight=bold&textAlign=center
+F,14,8,,第七組,cs=2&background=#333333&color=#ffffff&backgroundColor=#333333&fontWeight=bold&textAlign=center
+F,16,8,,第八組,cs=2&background=#333333&color=#ffffff&backgroundColor=#333333&fontWeight=bold&textAlign=center
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,20004_Sheet20004_index.nui
+QS,1

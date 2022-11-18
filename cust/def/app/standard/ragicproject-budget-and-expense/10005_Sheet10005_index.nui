@@ -1,0 +1,60 @@
+N,Billing Statement (Accountant Only),
+FS,2
+DS,2
+W,1=41&2=73&3=42&4=111&5=31&6=-21.79998779296875&7=93.20001220703125&8=37.400001525878906&9=52.4000244140625&10=101.4000244140625&undefined=0,
+TF,2000416
+KF,2000418
+SF,2000416
+ST,1,14,2000448,,,
+ST,7,8,2000444,,,
+S,2000394,standard/ragicproject-budget-and-expense/10003,
+S,2000433,,Paid,Not yet paid
+S,2000435,
+S,2000426,,Cash,Remit,Check
+S,2000420,,Pre-order,Purchased,Abatement
+S,2000419,standard/ragic-setup/1,
+S,2000427,,30,45,60
+A,MANAGER=6&HR=6&USER=0&EVERYONE=0,0,3,544595811
+A2,
+D,1,2,2000416,No.,ro=true&ag=C-{0`number`00000}
+L,3,2,2000394,Budget ID,stf=2000391&ro=true&mvp=/ragicproject-budget-and-expense|10003_Sheet10003
+L,7,2,2000433,Status,
+D,9,2,2000439,Cumulative Total,f=C11&ro=true&fmt_n=$#`###.#####
+D,1,3,2000504,Receipt Date,ro=true&fmt_d=yyyy/MM/dd
+L,7,3,2000435,Receipt Status,
+D,9,3,2000440,Reimbursement Total,f=E14&ro=true&fmt_n=$#`###.#####
+D,1,4,2000425,Payment Date,ro=true&fmt_d=yyyy/MM/dd
+L,3,4,2000426,Payment Terms,ro=true
+D,7,4,2000436,Charge-off Date,fmt_d=yyyy/MM/dd
+D,9,4,2000441,Shortage of Reimbursement,f=I2-I3&ro=true&fmt_n=$#`###.#####
+D,1,5,2000417,Request Date,ro=true&dv=$DATE&fmt_d=yyyy/MM/dd
+D,3,5,2000428,Charge-off Date,fmt_d=yyyy/MM/dd
+D,7,5,2000437,Voucher Date,fmt_d=yyyy/MM/dd
+L,1,6,2000420,Type of Request,ro=true
+D,7,6,2000438,Voucher Number,
+L,1,7,2000419,Applicant,ro=true&dv=$USER&usrref=2
+D,3,7,2000429,Receiver,ro=true
+D,1,8,2000421,Purpose,ro=true
+L,3,8,2000427,Days after Date,ro=true
+G,7,8,2000442,Photo,cs=2
+D,8,8,2000443,Note,cs=2
+D,1,9,2000430,Drawee Bank,ro=true
+D,3,9,2000431,Account Number,ro=true
+D,1,10,2000423,Price,ro=true&fmt_n=$#`###.#####
+D,3,10,2000422,Quantity,ro=true&fmt_n=#`###.#####
+D,3,11,2000424,Amount,f=A10*C10+A11&ro=true&fmt_n=$#`###.#####
+D,1,14,2000445,Reimbursement Item,
+D,2,14,2000446,Receipt Date,fmt_d=yyyy/MM/dd
+D,3,14,2000447,Note,
+G,4,14,2000449,Receipt Image,
+D,5,14,2000450,Amount,fmt_n=$#`###.#####
+F,1,1,,Billing Information,background=#333333&color=#ffffff&fontWeight=bold&textAlign=center&cs=4&backgroundColor=#FF82A9
+F,7,1,,Accountant Only,backgroundColor=#13C4A3&textAlign=center&fontWeight=bold&color=#FFFFFF&cs=4
+F,1,13,,Reimbursements ,background=#333333&color=#ffffff&cs=5&textAlign=center&fontWeight=bold&backgroundColor=#FF6666
+RMD_MAX_SEQ,0
+ET,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10005_Sheet10005_index.nui
+QS,1

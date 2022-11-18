@@ -1,0 +1,11 @@
+#v5SidebarTD,#v5Header,#v5TopTab,#v5SidebarSep,#v5NUIHeader,#dockBarRight,#dockWinRight,#v5BorderTop,#v5BorderMiddle,#v5BorderBottom,#reportConfig,#stpDivWrapper {
+  display:none;
+}
+#nui_outer .sidecell, #nui_outer .sidecellleft,#nui_outer table{
+  border:0;
+}
+element.style{
+  -webkit-box-shadow:0;
+}
+.selbuton,.selbut,.printHide{display:none;}
+tr,td,th {page-break-inside: avoid;}

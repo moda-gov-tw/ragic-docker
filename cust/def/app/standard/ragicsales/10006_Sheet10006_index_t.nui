@@ -1,0 +1,29 @@
+N,Quotes,
+FS,2
+DS,2
+W,1=73&2=-10&3=134&4=57&5=-4&6=97&undefined=0,
+TF,2000225
+KF,2000246
+SF,2000226
+S,2000225,standard/ragiclegal/10002,
+S,2000227,standard/ragicsales/10002,
+S,2000230,standard/ragic-setup/1,
+A,MANAGER=6&USER=3&EVERYONE=0,0,2,344453032
+A2,
+D,1,1,2000226,Quote Id,ag=QUOTE-{1`date`yyyyMMdd}-{0`number`000}
+D,2,1,2000228,Quote Date,fmt_d=yyyy/MM/dd&dv=$DATE
+L,3,1,2000225,Account Name,stf=2000123&s=2000153&mvp=/ragicsales|10001_Sheet10001
+L,4,1,2000227,Contact Name,stf=2000147&mvpf=2000153|1|$2000225&s=2000154&mvp=/ragicsales|10002_Sheet10002
+D,5,1,2000245,Grand Total,fmt_n=$#`###.##
+L,6,1,2000230,Prepared By,dv=$USER&usrref=1
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10006_Sheet10006_index_t.nui
+QS,3

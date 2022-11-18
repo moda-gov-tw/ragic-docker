@@ -1,0 +1,128 @@
+N,進貨單,
+FS,2
+DS,2
+W,1=-3&2=30&3=163&4=5&5=9&6=-31&7=-1&8=2&9=-11&10=38&undefined=0,22=-2&23=50
+TF,3001332
+KF,3001369
+SF,3001332
+ST,1,14,3001370,,,,
+S,3001334,standardzhtw/ragic-setup/1,
+S,3001336,standardzhtw/ragicpurchasing/20003,
+S,3001338,standardzhtw/ragicforms6/20005,
+S,3001351,standardzhtw/ragicpurchasing/20005,
+S,3001358,standardzhtw/ragicforms7/20001,
+S,3003044,
+S,3001360,,營業稅
+S,3001362,,5%
+S,3001365,standardzhtw/ragic-setup/1,
+S,3001367,standardzhtw/ragic-setup/1,
+S,3001870,,No,Yes
+A,MANAGER=6&USER=3&EVERYONE=0,0,3,1719187604
+A2,
+D,1,2,3001332,進貨單號,ag=POR-{1`date`yyyyMMdd}-{0`number`000}&cs=3&noDup=true
+D,5,2,3001373,進貨日期時間,fmt_d=yyyy/MM/dd HH:mm&cs=5&ro=true
+L,1,3,3001334,進貨人員,dv=$USER&usrref=2&cs=3
+D,5,3,3001371,發票號碼,cs=5
+L,1,4,3001336,來自採購單號,stf=3001258&text=1&s=3001285&mvp=/ragicpurchasing|20003_Sheet20003&cs=3&ro=true
+D,5,4,3001372,發票日期,fmt_d=yyyy/MM/dd&cs=5
+L,1,7,3001338,廠商編號,stf=3001177&s=3001199&mvp=/ragicpurchasing|20001_Sheet20001&cs=3&ro=true
+D,5,7,3001339,統一編號,vd=3001182&l=3001338&cs=5&ro=true
+D,1,8,3001340,廠商名稱,vd=3001178&l=3001338&cs=3&ro=true
+D,5,8,3001341,電話,cs=5&phonefmt=XX-XXXX-XXXX&phone=1&vd=3001184&l=3001338&ro=true
+D,1,9,3001342,聯絡人,vd=3001179&l=3001338&cs=3&ro=true
+D,5,9,3001343,傳真,phone=1&phonefmt=XX-XXXX-XXXX&vd=3001186&l=3001338&cs=5&ro=true
+D,1,10,3001344,E-mail,email=2&vd=3001185&l=3001338&cs=3&ro=true
+D,1,11,3001346,地址,vd=3001188&addr=1&l=3001338&cs=9&ro=true
+D,1,14,3001350,項次,dv=$SEQ&ro=true&fmt_n=#`###
+L,2,14,3001351,商品採購編號,stf=3001311&ro=true&mvpf=3001317|1|$3001338&s=3001321&mvp=/ragicpurchasing|20005_Sheet20005
+D,3,14,3001352,商品名稱,ro=true&vd=3001315&l=3001351
+D,4,14,3001869,規格,cs=2&vd=3001316&l=3001351&ro=true
+D,5,14,3001353,單價,ro=true&fmt_n=$#`###.##&vd=3001320&l=3001351
+D,6,14,3001354,尚未進貨數量,ro=true&fmt_n=#`###.##&stylefontSize=12
+D,7,14,3001356,本次進貨數量,fmt_n=#`###.##&must=true&stylefontSize=12&stylefontWeight=bold
+D,8,14,3001355,本次進貨金額,fmt_n=$#`###.##&f=F14*H14&stylefontSize=12
+D,9,14,3001357,備註,text=1
+L,10,14,3001358,商品編號*,stf=3000593&ro=true&s=3000606&hide=true&vd=3001313&l=3001351&mvp=/ragicpurchasing|20004_Sheet20004
+L,11,14,3003044,單位*,vd=3003041&l=3001351&hide=true
+D,8,18,3001359,小計,fmt_n=$#`###.##&f=I14
+L,1,19,3001360,課稅別,userOps=true&dv=營業稅
+D,8,19,3001361,稅額,f=I14*A20&fmt_n=$#`###.##
+L,1,20,3001362,稅率,userOps=true&dv=5%
+D,8,20,3002205,運費,fmt_n=$#`###.##
+D,8,21,3001363,合計金額,f=ROUND(H18+H19+H20)&fmt_n=$#`###.##
+D,1,23,3001364,備註,cs=9
+L,1,26,3001365,建檔人員,dv=$USER&ro=true&usrref=2&cs=3
+D,5,26,3001366,建檔日期時間,dv=$DATETIME&ro=true&fmt_d=yyyy/MM/dd HH:mm&cs=5
+L,1,27,3001367,最後修改人員,dv=#USER&ro=true&usrref=2&cs=3
+D,5,27,3001368,最後修改日期時間,dv=$DATETIME&ro=true&fmt_d=yyyy/MM/dd HH:mm&cs=5&stylefontSize=12
+L,1,29,3001870,已轉驗收?,checkbox=1&dv=No&stylefontWeight=bold
+F,1,1,,進貨單資訊,backgroundColor=#4a6452&color=#FFFFFF&fontWeight=bold&cs=10&textAlign=center
+F,1,6,,廠商,backgroundColor=#4a6452&color=#FFFFFF&fontWeight=bold&cs=10&textAlign=center
+F,1,13,,進貨細項,backgroundColor=#4a6452&color=#FFFFFF&fontWeight=bold&cs=10&textAlign=center
+F,1,25,,建檔資訊,backgroundColor=#4a6452&color=#FFFFFF&fontWeight=bold&cs=10&textAlign=center
+X_MAX_DESIGNER_ID,101
+K,{"type":"B","seq":"1","name":"確認進貨","action":"_RAGIC_AUTOGEN_ENTRY_UPDATER_90894({id});","confirmBeforeAction":"false","needApproval":"false","userGroups":["EVERYONE"],"hideButton":"false","checkIfUserCanEdit":false,"category":"updateOther","id":"1"}
+K,{"type":"B","seq":"2","name":"復原 確認進貨","action":"_RAGIC_AUTOGEN_ENTRY_UPDATER_90894_REVERSE({id});","confirmBeforeAction":"false","needApproval":"false","userGroups":["EVERYONE"],"hideButton":"false","checkIfUserCanEdit":false,"category":"updateOther","id":"2"}
+K,{"type":"B","seq":"3","name":"轉驗收單","action":"_RAGIC_AUTOGEN_CR_27682({id});","confirmBeforeAction":"false","needApproval":"false","userGroups":["EVERYONE"],"hideButton":"true","checkIfUserCanEdit":false,"category":"convert","id":"3"}
+K,{"type":"B","seq":"4","name":"已轉驗收: Yes","action":"_RAGIC_AUTOGEN_FIELD_UPDATER_80543({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"true","userGroups":["EVERYONE"],"checkIfUserCanEdit":false,"category":"updateThis","id":"4"}
+K,{"type":"B","seq":"5","name":"轉驗收單","action":"_RAGIC_AUTOGEN_MERGED_BUTTON_36177({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"false","userGroups":["EVERYONE"],"checkIfUserCanEdit":false,"category":"merge","id":"5"}
+K,{"type":"B","seq":"6","name":"建立物料應付發票","action":"_RAGIC_AUTOGEN_CR_18812({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"false","userGroups":["EVERYONE"],"checkIfUserCanEdit":false,"category":"convert","id":"6"}
+ACTION_BUTTON_MAX_ID,6
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+MOBCONF,%7B%7D
+NUI_FILE_NAME,20007_Sheet20007_index.nui
+QS,1
+SHEET_SCOPE_START
+function _RAGIC_AUTOGEN_ENTRY_UPDATER_90894(nodeId){
+  var result = db.entryUpdater(JSON.stringify(
+{"THIS_PATH":"/ragicpurchasing/20007","UPDATE_PATH":"/ragicpurchasing/20006","THIS_NODE_ID":nodeId,"MATCH":{"3001276":"3001351","3001285":"3001336","3001322":"3001358"},"THIS_NUMBER_FIELD":"3001356","UPDATE_NUMBER_FIELD":"3001324","UPDATE_ACTION":"ADD","LAST_UPDATE_FIELD":"3001373","RECALCULATE":true}
+  ), response);
+}//END_RAGIC_AUTOGEN_ENTRY_UPDATER_90894
+
+function _RAGIC_AUTOGEN_ENTRY_UPDATER_90894_REVERSE(nodeId){
+  var result = db.entryUpdater(JSON.stringify(
+{"THIS_PATH":"/ragicpurchasing/20007","UPDATE_PATH":"/ragicpurchasing/20006","THIS_NODE_ID":nodeId,"MATCH":{"3001276":"3001351","3001285":"3001336","3001322":"3001358"},"THIS_NUMBER_FIELD":"3001356","UPDATE_NUMBER_FIELD":"3001324","UPDATE_ACTION":"SUBSTRACT","LAST_UPDATE_FIELD":"3001373","RECALCULATE":true,"REVERSE":true}
+  ), response);
+}//END_RAGIC_AUTOGEN_ENTRY_UPDATER_90894
+
+
+
+
+
+function _RAGIC_AUTOGEN_CR_27682(nodeId){
+  var result = db.entryCopier(JSON.stringify(
+{"THIS_PATH":"/ragicpurchasing/20007","THIS_NODEID":nodeId,"NEW_PATH":"/ragicpurchasing/20008","CHECK_MUST_FIELDS":false,"COPY":{"3001377":"3001332","3001378":"3001373","3001379":"3001334","3001383":"3001338","3001385":"3001340","3001386":"3001341","3001387":"3001342","3001389":"3001344","3001390":"3001346","3001391":"3001350","3001392":"3001351","3001393":"3001352","3001395":"3001354","3001396":"3001356","3001399":"3001358","3001416":"3001336","3001710":"3001343"}}
+  ), response);
+  if(result) return result;
+}//END_RAGIC_AUTOGEN_CR_27682
+
+function _RAGIC_AUTOGEN_FIELD_UPDATER_80543(nodeId){
+  var result = db.fieldUpdater(JSON.stringify(
+{"THIS_PATH":"/ragicpurchasing/20007","THIS_NODE_ID":nodeId,"UPD_FIELDS":{"3001870":"Yes"}}
+  ));
+}//END_RAGIC_AUTOGEN_FIELD_UPDATER_80543
+
+
+
+
+function _RAGIC_AUTOGEN_CR_18812(nodeId){
+  var result = db.entryCopier(JSON.stringify(
+{"TEMPLATE_NAME":"財會系統（整合進銷存）", "TEMPLATE_SHEET_NAME":"物料應付發票", "THIS_PATH":"/ragicpurchasing/20007","THIS_NODEID":nodeId,"NEW_PATH":"/ragicforms8/20006","CHECK_MUST_FIELDS":false,"CHECK_VALIDATION_FIELDS":false,"CHECK_ALL_MUST_FIELDS_MAPPED":false,"SILENT":false,"COPY":{"3002033":"3001332","3002036":"3001371","3002038":"3001372","3002039":"3001338","3002041":"3001340","3002047":"3001350","3002048":"3001351","3002049":"3001352","3002050":"3001869","3002051":"3001353","3002053":"3001356","3002054":"3001355","3002057":"3001359","3002058":"3001360","3002059":"3001361","3002060":"3001362","3002061":"3001363","3002112":"3001358","3003206":"3002205"}}
+  ), response);
+  if(result) return result;
+}//END_RAGIC_AUTOGEN_CR_18812
+
+
+function _RAGIC_AUTOGEN_MERGED_BUTTON_36177(nodeId){
+  db.executeMergedActionButtons(JSON.stringify(
+{"THIS_NODE_ID":nodeId,"THIS_PATH":"/ragicpurchasing","THIS_SHEETINDEX":20007,"ACTIONS":["_RAGIC_AUTOGEN_CR_27682","_RAGIC_AUTOGEN_FIELD_UPDATER_80543"]}
+  ), response);
+  response.setDisplayButtonNameAsMessage(true)
+}//END_RAGIC_AUTOGEN_MERGED_BUTTON_36177

@@ -1,0 +1,130 @@
+{"reports": [
+  {
+    "name": "場地租借狀況",
+    "type": "ragic/pivot",
+    "param": {
+      "filter": [
+        3002485,
+        3002483
+      ],
+      "dataSource": "/ragicforms10/20010",
+      "col": "3002485",
+      "fact": "3002492",
+      "row": "3002493",
+      "hideTitle": "false",
+      "colAgg": "D"
+    },
+    "templateId": "00073-1",
+    "id": 1
+  },
+  {
+    "name": "管理費繳費記錄表",
+    "type": "ragic/pivot",
+    "param": {
+      "filter": [3002574],
+      "dataSource": "/ragicforms10/20011",
+      "row": "3002572",
+      "col": "3002574",
+      "fact": "3002576"
+    },
+    "templateId": "00073-2",
+    "id": 2
+  },
+  {
+    "name": "資產負債表",
+    "type": "fixed/balance",
+    "param": {
+      "filter": [],
+      "dataSource": "/ragicforms8/20015",
+      "dataSource2": "/ragicforms8/20017",
+      "balanceSheetParams": "{}",
+      "lang": "zhtw"
+    },
+    "templateId": "00077-1",
+    "id": 3
+  },
+  {
+    "name": "逾期應付發票",
+    "type": "fixed/payable",
+    "param": {
+      "filter": [],
+      "dataSource": "/ragicforms8/20006",
+      "dataSource2": "/ragicforms8/20008",
+      "lang": "zhtw"
+    },
+    "templateId": "00077-2",
+    "id": 4
+  },
+  {
+    "name": "逾期應收發票",
+    "type": "fixed/receivable",
+    "param": {
+      "filter": [],
+      "dataSource": "/ragicforms8/20004",
+      "dataSource2": "/ragicforms8/20010",
+      "lang": "zhtw"
+    },
+    "templateId": "00077-3",
+    "id": 5
+  },
+  {
+    "name": "損益表",
+    "type": "fixed/profitnloss",
+    "param": {
+      "filter": [],
+      "dataSource": "/ragicforms8/20015",
+      "dataSource2": "/ragicforms8/20017",
+      "lang": "zhtw"
+    },
+    "templateId": "00077-4",
+    "id": 6
+  },
+  {
+    "name": "現金流量表",
+    "type": "fixed/cashflow",
+    "param": {
+      "filter": [],
+      "dataSource": "/ragicforms8/20015",
+      "dataSource2": "/ragicforms8/20017",
+      "lang": "zhtw"
+    },
+    "templateId": "00077-5",
+    "id": 7
+  },
+  {
+    "name": "資產負債表 (簡易版)",
+    "type": "fixed/balanceSimple",
+    "param": {
+      "filter": [],
+      "dataSource": "/ragicforms12/20015",
+      "dataSource2": "/ragicforms12/20012",
+      "lang": "zhtw"
+    },
+    "templateId": "00076-1",
+    "id": 8
+  },
+  {
+    "name": "損益表 (簡易版)",
+    "type": "fixed/profitnlossSimple",
+    "param": {
+      "filter": [],
+      "dataSource": "/ragicforms12/20015",
+      "dataSource2": "/ragicforms12/20012",
+      "lang": "zhtw"
+    },
+    "templateId": "00076-2",
+    "id": 9
+  },
+  {
+    "name": "現金流量表 (簡易版)",
+    "type": "fixed/cashflowSimple",
+    "param": {
+      "filter": [],
+      "dataSource": "/ragicforms12/20015",
+      "dataSource2": "/ragicforms12/20012",
+      "lang": "zhtw"
+    },
+    "templateId": "00076-3",
+    "id": 10
+  }
+]}

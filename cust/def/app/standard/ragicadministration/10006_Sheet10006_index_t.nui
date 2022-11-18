@@ -1,0 +1,28 @@
+N,Maintenance Request,
+FS,2
+DS,2
+W,1=-11&2=16&3=27&5=137&6=45&7=-12&8=13,
+TF,2000290
+KF,2000303
+SF,2000290
+S,2000292,standard/ragic-setup/1,
+S,2000299,standard/ragic-setup/1,
+S,2000301,,Progressing,Completed,Pending
+A,MANAGER=6&USER=3&EVERYONE=0,0,2,2087110038
+A2,
+D,1,1,2000290,Request ID,ro=true&ag={0`number`00000}
+D,2,1,2000291,Request Date,dv=$DATE&ro=true&fmt_d=yyyy/MM/dd
+L,3,1,2000292,Requester,dv=$USER&ro=true&usrref=2
+D,4,1,2000293,Department,ro=true&vd=611&l=2000292
+D,5,1,2000295,Equipment Name,ro=true&vd=2000032&l=2000294
+L,6,1,2000299,Responsible,usrref=1
+L,7,1,2000301,Status,
+D,8,1,2000300,Completed On,fmt_d=yyyy/MM/dd
+X,Incomplete Request,102,2000301|1|Progressing&2000301|1|Pending,1,%7B%22emails%22%3A%5B%5D%7D,%7B%7D
+RMD_MAX_SEQ,0
+ET,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10006_Sheet10006_index_t.nui
+QS,3

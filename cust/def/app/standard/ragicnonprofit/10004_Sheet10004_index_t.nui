@@ -1,0 +1,28 @@
+N,Corporate Sponsors,
+FS,2
+DS,2
+W,3=93&5=71,
+TF,2002684
+KF,2002687
+SF,2002684
+S,2002686,,Agriculture,Construction,E-commerce,Education,Financial Services,Mechanical and Electrical Engineering,Media and Journalism,Medical and Health Services,Other,Pharmaceutical,Public Services,Retail %26 Consumer Industry,Tourism%26#44; Hotels%26#44; Catering,Transportation
+S,2002711,,One-Time,Regular
+A,NULL=0&MANAGER=6&USER=3&EVERYONE=0,0,2,1050308285
+A2,
+D,1,1,2002684,Company ID,ag=CPS00{0`number`#}
+D,2,1,2002685,Company Name,
+D,3,1,2002688,Email Address,email=2
+D,4,1,2002689,Phone Number,phone=1&phonefmt=XXXXXXXXXX
+L,5,1,2002686,Industry,
+L,6,1,2002711,Sponsor Type,
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10004_Sheet10004_index_t.nui
+QS,7

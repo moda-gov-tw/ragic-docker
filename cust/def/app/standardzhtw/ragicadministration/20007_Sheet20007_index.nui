@@ -1,0 +1,34 @@
+N,設備列表,
+FS,2
+DS,2
+W,1=82&2=107&3=101&4=102&5=102&undefined=0,
+TF,3000403
+KF,3000406
+SF,3000403
+ST,1,6,3000431,3000415,,
+S,3004079,,在庫,出借中
+S,3000405,,電腦,機櫃,電腦相關線纜,其他電腦週邊設備,軟體,顯示螢幕,音響,事務設備,辦公電器
+A,MANAGER=6&USER=3&EVERYONE=0,0,3,1368012991
+A2,
+D,1,2,3000403,設備編號,ag={0`number`00000}&noDup=true
+L,3,2,3004079,設備狀態,dv=在庫
+D,1,3,3000404,設備名稱,
+L,3,3,3000405,設備種類,userOps=true
+D,1,6,3004089,姓名,vd=3000933&l=3004087&ro=true
+D,2,6,3004081,租借起始時間,fmt_d=yyyy/MM/dd HH:mm&ro=true
+D,3,6,3004082,預計歸還時間,fmt_d=yyyy/MM/dd HH:mm&ro=true
+D,4,6,3004085,實際歸還時間,fmt_d=yyyy/MM/dd HH:mm&ro=true
+D,5,6,3000430,備註,ro=true
+F,1,1,,設備資訊,background=#0055BB&color=#ffffff&cs=4&textAlign=center&backgroundColor=#65A4F4
+F,1,5,,出借紀錄,background=#0055BB&color=#ffffff&cs=5&textAlign=center&backgroundColor=#65A4F4
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,20007_Sheet20007_index.nui
+QS,1

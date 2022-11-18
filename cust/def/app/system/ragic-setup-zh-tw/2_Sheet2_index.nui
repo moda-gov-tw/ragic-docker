@@ -1,0 +1,49 @@
+N,群組,建立/修改帳號的群組，請勿刪除或是更名系統預設的群組。
+FS,0
+DS,1
+W,1=150&2=201,7=68
+TF,3
+SF,3
+S,19,system/ragic-setup/1,
+S,17,
+S,24,system/ragic-setup/2,
+A,MANAGER=0&USER=0&EVERYONE=0,0,3,323488507
+A2,
+D,1,2,3,群組名稱,noDup=true&must=true
+M,1,3,19,群組管理員,usrref=2&help=群組管理員能夠替自己的群組新增、修改、停用使用者，並且針對群組頁籤底下的表單進行修改設計。
+D,1,4,18,群組頁籤,help=指定多個頁籤，裡面表單本群組管理員都能夠修改設計。頁籤指定格式像是網址中格式，例如 /forms1 。如果有多個頁籤要指定，請以逗號分開。
+M,1,5,17,群組標籤,help=用來提供使用者方便篩選選擇群組的標籤分類&userOps=true
+D,1,7,9,群組描述,
+L,1,9,24,母群組,grpref=2&hide=true
+F,1,1,,群組資訊,color=#FFFFFF&backgroundColor=#330099&cs=2
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,2_Sheet2_index.nui
+QS,1
+PRE_WORKFLOW_START
+var oldGroup=param.getOldValue(3);
+var newGroup=param.getNewValue(3);
+if(newGroup && (newGroup.indexOf('&')!==-1 || newGroup.indexOf(',')!==-1 || newGroup.indexOf('=')!==-1)){
+  response.setStatus('INVALID');
+  response.setMessage('群組名稱不能有 & 或 , 或 =');
+}
+if(oldGroup && newGroup && oldGroup!=newGroup){
+  if(oldGroup=='SYSAdmin' || oldGroup=='User' || oldGroup=='X-User' || oldGroup=='EVERYONE'){
+    response.setStatus('INVALID');
+    response.setMessage('系統預設群組不能換名字。');
+  }
+  if(oldGroup.substr(0,2)=='X-' && (newGroup.length<3 || newGroup.substr(0,2)!='X-')){
+    response.setStatus('INVALID');
+    response.setMessage('不能把外部群組更名為內部群組。');
+  }
+  if(newGroup.substr(0,2)=='X-' && (oldGroup.length<3 || oldGroup.substr(0,2)!='X-')){
+    response.setStatus('INVALID');
+    response.setMessage('不能把內部群組更名為外部群組。');
+  }
+}

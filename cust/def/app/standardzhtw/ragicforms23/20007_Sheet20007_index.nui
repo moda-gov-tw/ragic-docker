@@ -1,0 +1,56 @@
+N,防疫出國旅遊史調查,因應嚴重特殊傳染性肺炎(武漢肺炎)防疫措施，做好防疫準備，確保全體人員健康，請全體人員協助完成出國旅遊史(接觸史)調查表。
+FS,2
+DS,2
+W,1=271&2=276,
+TF,3003955
+KF,3003973
+SF,3003955
+S,3003974,standardzhtw/ragicforms8/20003,
+S,3003957,,生產部,業務部,行銷部,人資部,研發部,財務部,法務部,資訊部,經營階層
+S,3003958,,男(M),女(F)
+S,3003959,,是(請繼續填答Q2),否(請跳答Q6)
+S,3003964,,是,否
+S,3003965,,有,沒有
+S,3003966,,是,否
+S,3003967,,無,發燒,肌肉痠痛,咳嗽,打噴嚏、流鼻水,其他：
+S,3003969,,無症狀,是(請於【其他項目】填寫就醫日期),否(未就醫),其他：
+S,3003971,,無症狀/未就診,其他：
+A,NULL=0&MANAGER=6&USER=3&EVERYONE=0,0,3,1824280875
+A2,
+D,1,2,3003954,編號#,ag={0`number`00000}&stylefontSize=14&stylefontWeight=bold&styleVfontSize=14&styleVtextAlign=left
+L,1,3,3003974,工號,s=3000942&stf=3000935&mvp=/ragicadministration|20012_Sheet20012&stylefontWeight=bold
+D,1,4,3003955,姓名,vd=3000933&l=3003974&stylefontSize=14&stylefontWeight=bold&styleVfontSize=14&styleVtextAlign=left
+D,1,5,3003956,身分/職稱,stylefontSize=14&stylefontWeight=bold&styleVfontSize=14&styleVtextAlign=left
+L,1,6,3003957,所屬單位,vd=3000937&l=3003974&stylefontSize=14&stylefontWeight=bold&styleVfontSize=14&styleVtextAlign=left
+L,1,7,3003958,性別,stylefontSize=14&stylefontWeight=bold&styleVfontSize=14&styleVtextAlign=left
+L,1,10,3003959,Q1. 請問近兩個月內您是否有出國、旅遊或其他活動？,stylefontSize=14&stylefontWeight=bold&styletextAlign=left&styleVtextAlign=left&styleVfontSize=14
+D,1,11,3003960,Q2. 請勾選您的旅遊地點(含轉機!!!),stylefontSize=14&stylefontWeight=bold&styletextAlign=left&styleVtextAlign=left&styleVfontSize=14
+D,1,12,3003961,Q3.請填寫您回國的入境日期日期,fmt_d=yyyy/MM/dd&stylefontSize=14&stylefontWeight=bold&styletextAlign=left&styleVtextAlign=left&styleVfontSize=14
+D,1,13,3003962,Q4. 健康自主管理*開始日期* 依政府規定須於入境*隔日*開始自我居家健康管理14天,fmt_d=yyyy/MM/dd&stylefontSize=14&stylefontWeight=bold&styletextAlign=left&styleVtextAlign=left&styleVfontSize=14
+D,1,14,3003963,Q5.健康自主管理*結束日期* 依政府規定須於入境*隔日*開始自我居家健康管理14天,fmt_d=yyyy/MM/dd&stylefontSize=14&stylefontWeight=bold&styletextAlign=left&styleVtextAlign=left&styleVfontSize=14
+L,1,15,3003964,Q6. 請問近兩個月內是否有接觸自中港澳來台的親友？,stylefontSize=14&stylefontWeight=bold&styletextAlign=left&styleVtextAlign=left&styleVfontSize=14
+L,1,16,3003965,Q7. 請問近兩個月內有無曾接觸嚴重特殊傳染性肺炎(武漢肺炎)病患？,stylefontSize=14&stylefontWeight=bold&styletextAlign=left&styleVtextAlign=left&styleVfontSize=14
+L,1,17,3003966,Q8. 請問您是否出現類似感冒症狀？,stylefontSize=14&stylefontWeight=bold&styletextAlign=left&styleVtextAlign=left&styleVfontSize=14
+M,1,18,3003967,Q9. 請問您目前是否有不舒服的症狀(可複選)？,stylefontSize=14&stylefontWeight=bold&styletextAlign=left&styleVtextAlign=left&styleVfontSize=14
+D,1,19,3003968,Q9.其他,stylefontSize=14&stylefontWeight=bold&styletextAlign=left&styleVtextAlign=left&styleVfontSize=14
+L,1,20,3003969,Q10. 請問是否就醫？,stylefontSize=14&stylefontWeight=bold&styletextAlign=left&styleVtextAlign=left&styleVfontSize=14
+D,1,21,3003970,Q10. 其他,stylefontSize=14&stylefontWeight=bold&styletextAlign=left&styleVtextAlign=left&styleVfontSize=14
+L,1,22,3003971,Q11. 就診醫療院所及醫師診斷說明（若有 請於“其他”項目填寫就診醫療院所名稱/及醫生重點診斷說明) ,stylefontSize=14&stylefontWeight=bold&styletextAlign=left&styleVtextAlign=left&styleVfontSize=14
+D,1,23,3003972,Q11. 其他,stylefontSize=14&stylefontWeight=bold&styletextAlign=left&styleVtextAlign=left&styleVfontSize=14
+F,1,1,,基本資訊,cs=2&textAlign=center&backgroundColor=#6e99c8&fontWeight=bold&color=#FFFFFF&fontSize=18
+F,1,9,,防疫調查資訊,cs=2&textAlign=center&backgroundColor=#6e99c8&fontWeight=bold&color=#FFFFFF&fontSize=18
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+IR,%7B%22rules%22%3A%5B%7B%22cons%22%3A%5B%7B%22domainId%22%3A3003971%2C%22value%22%3A%22%E5%85%B6%E4%BB%96%EF%BC%9A%22%2C%22operator%22%3A%22ffEquals%22%7D%5D%2C%22conLogic%22%3A%22AND%22%2C%22actions%22%3A%5B%7B%22domainId%22%3A3003972%2C%22action%22%3A%22show%22%2C%22actionValue%22%3A%22%22%7D%5D%2C%22actSubtableRoot%22%3A-1%7D%2C%7B%22cons%22%3A%5B%7B%22domainId%22%3A3003969%2C%22value%22%3A%22%E5%85%B6%E4%BB%96%EF%BC%9A%22%2C%22operator%22%3A%22ffEquals%22%7D%5D%2C%22conLogic%22%3A%22AND%22%2C%22actions%22%3A%5B%7B%22domainId%22%3A3003970%2C%22action%22%3A%22show%22%2C%22actionValue%22%3A%22%22%7D%5D%2C%22actSubtableRoot%22%3A-1%7D%2C%7B%22cons%22%3A%5B%7B%22domainId%22%3A3003967%2C%22value%22%3A%22%E5%85%B6%E4%BB%96%EF%BC%9A%22%2C%22operator%22%3A%22ffContains%22%7D%5D%2C%22conLogic%22%3A%22AND%22%2C%22actions%22%3A%5B%7B%22domainId%22%3A3003968%2C%22action%22%3A%22show%22%2C%22actionValue%22%3A%22%22%7D%5D%2C%22actSubtableRoot%22%3A-1%7D%2C%7B%22cons%22%3A%5B%7B%22domainId%22%3A3003959%2C%22value%22%3A%22%E6%98%AF(%E8%AB%8B%E7%B9%BC%E7%BA%8C%E5%A1%AB%E7%AD%94Q2)%22%2C%22operator%22%3A%22ffEquals%22%7D%5D%2C%22conLogic%22%3A%22AND%22%2C%22actions%22%3A%5B%7B%22domainId%22%3A3003960%2C%22action%22%3A%22show%22%2C%22actionValue%22%3A%22%22%7D%2C%7B%22domainId%22%3A3003961%2C%22action%22%3A%22show%22%2C%22actionValue%22%3A%22%22%7D%2C%7B%22domainId%22%3A3003962%2C%22action%22%3A%22show%22%2C%22actionValue%22%3A%22%22%7D%2C%7B%22domainId%22%3A3003963%2C%22action%22%3A%22show%22%2C%22actionValue%22%3A%22%22%7D%5D%2C%22actSubtableRoot%22%3A-1%7D%5D%7D
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+WV,banner=default/banner8.png&bannerType=select
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,20007_Sheet20007_index.nui
+QS,1
+SHEET_SCOPE_START
+

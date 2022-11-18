@@ -1,0 +1,59 @@
+N,Donations,
+FS,2
+DS,2
+W,1=53&2=93&3=53&4=93,2=11&3=11&4=11&5=11&6=11&8=11.333328247070312&9=11.333328247070312&10=11.333328247070312&11=11.333328247070312&12=11.333328247070312&14=11.333328247070312&15=11.333328247070312&16=11.333328247070312&17=11.333328247070312&18=11.333328247070312
+TF,2002613
+KF,2002618
+SF,2002613
+S,2002614,,Credit/Debit Card,Paypal,Wire Transfer
+S,2002741,standard/ragicnonprofit/10002,
+S,2002789,,Donation,Fundraising Event
+S,2002790,standard/ragicnonprofit/10006,
+S,2002659,standard/ragicnonprofit/10003,
+S,2002660,,One-Time,Regular,Anonymous
+S,2002706,standard/ragicnonprofit/10004,
+S,2002664,,Agriculture,Construction,E-commerce,Education,Financial Services,Mechanical and Electrical Engineering,Media and Journalism,Medical and Health Services,Other,Pharmaceutical,Public Services,Retail %26 Consumer Industry,Tourism%26#44; Hotels%26#44; Catering,Transportation
+A,NULL=0&MANAGER=6&USER=3&EVERYONE=0,0,3,157507125
+A2,
+D,1,2,2002613,Donation ID,ag={0`number`00000}&noDup=true
+L,3,2,2002614,Payment Method,userOps=true
+D,1,3,2002615,Date,fmt_d=MM/dd/yyyy
+L,3,3,2002741,In benefit of,s=2002628&stf=2002625&mvp=/ragicnonprofit|10002_Sheet10002&lnls=true&lnlsselected=true
+D,1,4,2002654,Amount,fmt_n_ts=`&fmt_n_ds=.&fmt_n=$#`####.##
+D,3,4,2002742,Program Name,vd=2002626&l=2002741
+L,1,5,2002789,Donation Source,userOps=true
+U,3,5,2002658,Attachment,multipleFiles=true
+L,1,6,2002790,Fundraising Event ID,text=1&s=2002754&stf=2002747&mvp=/ragicnonprofit|10006_Sheet10006
+D,3,6,2002794,Event Name,vd=2002749&l=2002790
+L,1,9,2002659,Sponsor ID,text=1&s=2002640&stf=2002635&mvp=/ragicnonprofit|10003_Sheet10003
+L,3,9,2002660,Sponsor Type,vd=2002636&l=2002659
+D,1,10,2002661,Name,vd=2002637&l=2002659
+D,3,10,2002662,Phone Number,phone=1&phonefmt=XXXXXXXXXX&vd=2002638&l=2002659
+D,1,11,2002668,Last Name,vd=2002639&l=2002659
+D,3,11,2002669,Email Address,email=2&vd=2002641&l=2002659
+D,1,12,2002792,Notes,cs=3
+L,1,15,2002706,Company ID,s=2002687&stf=2002684&mvp=/ragicnonprofit|10004_Sheet10004
+D,3,15,2002665,Email Address,email=2&vd=2002688&l=2002706
+D,1,16,2002663,Company Name,vd=2002685&l=2002706
+D,3,16,2002666,Phone Number,phone=1&phonefmt=XXXXXXXXXX&vd=2002689&l=2002706
+L,1,17,2002664,Industry,vd=2002686&l=2002706
+D,3,17,2002667,Website,url=1&vd=2002696&l=2002706
+D,1,18,2002793,Notes,cs=3
+F,1,1,,Donation Details,cs=4&textAlign=center&backgroundColor=#dcdcfb&fontWeight=bold
+F,1,8,,Individual Sponsor Information,cs=4&textAlign=center&backgroundColor=#dcdcfb&fontWeight=bold
+F,1,14,,Corporate Sponsor Information,cs=4&textAlign=center&backgroundColor=#dcdcfb&fontWeight=bold
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10001_Sheet10001_index.nui
+QS,1
+SCRIPT_START
+
+SHEET_SCOPE_START
+

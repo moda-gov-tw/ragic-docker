@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+  <name>人資</name>
+  <desc />
+  <publisher />
+  <createDate />
+  <updateDate />
+  <version />
+  <price />
+  <status />
+  <sourcePath />
+  <appId />
+  <forms seq="9">
+    <form sheetIndex="20001" type="NUI" seq="3">加班申請單</form>
+    <form sheetIndex="20003" type="NUI" seq="4">請假單</form>
+    <form sheetIndex="20004" type="NUI" seq="1">人事資料表</form>
+    <form sheetIndex="20005" type="NUI" seq="2">工時表</form>
+    <form sheetIndex="20006" type="NUI" seq="5">徵才職缺提報與進度（內部用）</form>
+    <form sheetIndex="20007" type="NUI" seq="7">應徵履歷表</form>
+    <form sheetIndex="20010" type="NUI" seq="6">職缺說明</form>
+    <form sheetIndex="20009" type="NUI" seq="8">應徵者資料管理</form>
+    <form sheetIndex="20013" type="NUI" seq="9">考勤表</form>
+    <form sheetIndex="20016" type="NUI" seq="10">人事資料表 copy</form>
+  </forms>
+</module>

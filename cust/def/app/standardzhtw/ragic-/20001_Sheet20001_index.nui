@@ -1,0 +1,34 @@
+N,場地列表,
+FS,2
+DS,2
+W,1=90&2=160&3=160&4=160&5=160,8=24
+TF,3004261
+KF,3004267
+SF,3004261
+ST,1,9,3004273,3004269,,
+A,null=0&MANAGER=6&USER=3&EVERYONE=0,0,3,1001080637
+A2,
+D,1,1,3004261,場地編號,ag={0`number`00000}&stylefontWeight=bold&styleVfontWeight=bold&styletextAlign=left&styleVtextAlign=left
+G,3,1,3004262,場地圖片,multipleImages=true&fixImageMax=true&stylefontWeight=bold&styleVfontWeight=bold&styletextAlign=left&styleVtextAlign=left
+D,1,2,3004263,場地名稱,noDup=true&stylefontWeight=bold&styleVfontWeight=bold&styletextAlign=left&styleVtextAlign=left
+D,1,4,3004264,可容納人數,fmt_n=#`###&stylefontWeight=bold&styleVfontWeight=bold&styletextAlign=left&styleVtextAlign=left
+D,1,5,3004265,地址,addr=1&stylefontWeight=bold&styleVfontWeight=bold&styletextAlign=left&styleVtextAlign=left
+D,1,6,3004266,備註,stylefontWeight=bold&styleVfontWeight=bold&styletextAlign=left&styleVtextAlign=left
+D,1,9,3004268,預約人,email=2&noclone=true&ro=true&stylefontWeight=bold&styletextAlign=left&styleVfontWeight=bold&styleVtextAlign=left
+D,2,9,3004270,開始時間,fmt_d=yyyy/MM/dd HH:mm:ss&noclone=true&ro=true&stylefontWeight=bold&styletextAlign=left&styleVfontWeight=bold&styleVtextAlign=left
+D,3,9,3004271,結束時間,fmt_d=yyyy/MM/dd HH:mm:ss&noclone=true&ro=true&stylefontWeight=bold&styletextAlign=left&styleVfontWeight=bold&styleVtextAlign=left
+D,4,9,3004322,總時數,fmt_n=#`###.##&f=(C9-B9)*24&ro=true&stylefontWeight=bold&styletextAlign=left&styleVfontWeight=bold&styleVtextAlign=left
+D,5,9,3004272,備註,noclone=true&ro=true&stylefontWeight=bold&styletextAlign=left&styleVfontWeight=bold&styleVtextAlign=left
+F,1,8,,預約明細,cs=5&background=#0055BB&color=#ffffff&fontWeight=bold&textAlign=center&fontSize=18
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+IR,%7B%22rules%22%3A%5B%7B%22cons%22%3A%5B%7B%22domainId%22%3A3004271%2C%22value%22%3A%22%24PAST%22%2C%22isSubtable%22%3Atrue%2C%22operator%22%3A%22Special%22%7D%5D%2C%22conLogic%22%3A%22OR%22%2C%22actions%22%3A%5B%7B%22domainId%22%3A3004273%2C%22action%22%3A%22valueColor%22%2C%22actionValue%22%3A%22%23C0C0C0%22%2C%22isSubtable%22%3Atrue%7D%5D%2C%22actSubtableRoot%22%3A3004273%7D%5D%7D
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=theme20
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,20001_Sheet20001_index.nui
+QS,1

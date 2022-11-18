@@ -1,0 +1,147 @@
+N,Applicant Interview Record,
+FS,2
+DS,2
+W,1=48&2=90&3=88&4=97&5=49&6=20&8=-97&9=170&10=56&undefined=0,8=100&16=128&24=86&37=26&
+TF,2001328
+KF,2001327
+SF,2001328
+ST,1,42,2001343,,,
+ST,1,48,2001350,,,
+ST,1,54,2001360,,,
+S,2001473,,No,Yes
+S,2001364,standard/ragic-setup/1,
+S,2001386,standard/ragic-setup/2,
+S,2001387,standard/ragic-setup/1,
+S,2001369,,No,Yes
+S,2001371,,No,Yes
+S,2001372,,No,Yes
+S,2001375,,Offer candidate,Reserve candidate,Unsuccessful candidate
+S,2001376,,Yes,No
+S,2001329,,Direct Application,Employee Referral,Recruitment Agency,Advertising
+S,2001330,standard/ragichr/10005,
+S,2001339,,Permanent,Contract,Part Time,Internship
+S,2001321,,Male,Female
+S,2001331,,Unemployed,Employed,Self-employed
+S,2001334,,Primary Education,Secondary Education,Bachelor,Master,Doctoral
+S,2001349,,Less than 10 employees,11-50 employees,51-100 employees,101-500 employees,501-1000 employees,More than1000 employees
+S,2001351,,Real Estate,Accounting,Agencies,Healthcare %26 Life Sciences,Consulting,Nonprofit,Education,Legal,Construction,Media,Government,Retail,EC,Consumer Goods,Manufacturing
+S,2001355,,Yes,No
+S,2001358,,Primary Education,Secondary Education,Bachelor,Master,Doctoral
+S,2001362,,Yes,No
+A,NULL=0&MANAGER=6&HR=6&USER=1&EVERYONE=0,0,3,168274641
+A2,
+L,1,2,2001473,Invite to Interview?,checkbox=1&dv=No
+L,1,3,2001364,Interviewer,usrref=1
+D,3,3,2001385,Company,vd=2001294&l=2001330&ro=true
+L,1,4,2001386,Department,grpref=2&vd=2001295&l=2001330
+L,3,4,2001387,Department Contact,usrref=1&vd=2001296&l=2001330
+D,1,5,2001567,Contact for Applicants,vd=2001564&l=2001330
+D,3,5,2001568,Contact Information,vd=2001565&l=2001330
+D,1,8,2001367,Note,cs=3
+D,1,10,2001368,Interview Date/Time,fmt_d=yyyy/MM/dd HH:mm
+L,3,10,2001369,Notify by E-Mail,checkbox=1&dv=No
+D,1,11,2001370,Interview Location,cs=3
+L,3,12,2001371,Call Applicant,checkbox=1&dv=No
+L,3,13,2001372,Interview Invitation Accepted,checkbox=1&dv=No
+D,1,16,2001373,Evaluation,cs=3
+L,1,17,2001375,Output,
+L,3,17,2001376,Accept Job Offer,styleVbackgroundColor=#FFFFFF&stylebackgroundColor=#9999FF
+D,1,18,2001374,Employee Number,
+D,3,18,2001377,Salary,
+D,1,19,2001378,On Board Date,fmt_d=yyyy/MM/dd HH:mm
+D,3,19,2001379,Location,
+D,1,20,2001380,Note,cs=3
+G,1,24,2001316,Photo,ro=true
+D,3,24,2001328,Applicant No.,ro=true
+D,1,25,2001317,First Name,ro=true
+L,3,25,2001329,Source,ro=true
+D,1,26,2001318,Last Name,ro=true
+L,3,26,2001330,Position No.,ro=true&mvp=/ragichr|10008_Sheet10008&s=2001297&stf=2001298
+D,1,27,2001319,Full Name,ro=true
+D,3,27,2001569,Application Title,ro=true&l=2001330&vd=2001301
+D,1,28,2001320,Personal ID,text=1&ro=true
+L,3,28,2001339,Job Type,ro=true
+L,1,29,2001321,Gender,ro=true
+L,3,29,2001331,Status,ro=true
+D,1,30,2001322,Date of Birth,fmt_d=yyyy/MM/dd&ro=true
+D,3,30,2001332,Expected Salary,ro=true
+D,1,31,2001323,Age,fmt_n=0.00&f=(TODAY() -A30)/365.25&ro=true
+D,3,31,2001333,Available From,fmt_d=yyyy/MM/dd&ro=true
+D,1,32,2001324,Mobile,phone=1&phonefmt=XXX-XXX-XXXX&ro=true
+L,3,32,2001334,Education Level,ro=true
+D,1,33,2001325,E-Mail,email=2&ro=true
+D,3,33,2001335,Seniority,fmt_n=0.00&f=C48&ro=true
+D,1,34,2001326,Address,addr=1&ro=true
+D,1,36,2001336,Driver's License,cs=3&ro=true
+D,1,37,2001337,Other Licenses and Skills,cs=3&ro=true
+D,1,38,2001338,Bio,cs=3&ro=true
+U,1,39,2001537,CV/Resume Attached,ro=true&help=upload a CV/resume file if you have one.
+U,3,39,2001538,Bio File Attached,help=upload a bio file if you have one.&ro=true
+D,1,42,2001340,No.,ag={0`number`00000}&ro=true
+U,2,42,2001341,File Attached,ro=true
+D,3,42,2001342,Note,cs=2&ro=true
+D,1,48,2001344,From,fmt_d=yyyy/MM/dd&ro=true
+D,2,48,2001345,To,fmt_d=yyyy/MM/dd&ro=true
+D,3,48,2001346,Seniority,fmt_n=0.00&f=(B48-A48)/365.25&ro=true
+D,4,48,2001347,Position Title,ro=true
+D,5,48,2001348,Company Name,ro=true
+L,6,48,2001349,Company Scale,ro=true
+L,7,48,2001351,Industry,ro=true
+D,8,48,2001352,Description,
+D,9,48,2001353,Summary,ro=true
+L,10,48,2001355,Management Position?,ro=true
+D,1,54,2001356,Enrollment Date,fmt_d=yyyy/MM/dd&ro=true
+D,2,54,2001357,Graduation Date,fmt_d=yyyy/MM/dd&ro=true
+L,3,54,2001358,Education Level,userOps=true&ro=true
+D,4,54,2001359,School Name,ro=true
+D,5,54,2001361,Major,ro=true
+L,6,54,2001362,Completed,ro=true
+F,3,2,,Make a check mark if the answer is "Yes". Leave the following fields blank if the answer is "No".,cs=5&color=#000099
+F,5,5,,If you would like to change “Contact for Applicants”,cs=5&color=#000099
+F,5,6,,and “Contact Information” before sending out interview,cs=5&color=#000099
+F,5,7,,invitations or offer letters&#44; please directly modify those field values.,cs=5&color=#000099
+F,1,9,,Tracking Record,backgroundColor=#3333FF&color=#FFFFFF&cs=4&textAlign=center
+F,1,15,,Interview Record ,background=#0055BB&color=#ffffff&textAlign=center&cs=4&backgroundColor=#000099
+F,5,15,,Fill out this part after interviewing,color=#000099&cs=3
+F,1,22,,The information below is automatically generated and is read-only in this form. If you want to edit it&#44; please go to “Applicant Resume” sheet.,fontWeight=bold&color=#333333&cs=4
+F,1,23,,Basic Information,background=#333333&color=#ffffff&cs=4&textAlign=center
+F,1,41,,Works,background=#333333&color=#ffffff&textAlign=center&cs=4
+F,1,47,, Work Experience,background=#333333&color=#ffffff&textAlign=center&cs=10
+F,1,53,,Educational Background,background=#333333&color=#ffffff&textAlign=center&cs=6
+K,{"type":"B","seq":"1","name":"Send an Interview Invitation Letter","action":"_RAGIC_AUTOGEN_SEND_CUSTOM_MAIL_16049({id});","confirmBeforeAction":"true","needApproval":"false","hideButton":"false","userGroups":["EVERYONE"]}
+K,{"type":"B","seq":"2","name":"Send a Job Offer Letter","action":"_RAGIC_AUTOGEN_SEND_CUSTOM_MAIL_14830({id});","confirmBeforeAction":"true","needApproval":"false","hideButton":"false","userGroups":["EVERYONE"]}
+K,{"type":"B","seq":"3","name":"Convert this Record to \"Employee Management\" Sheet","action":"_RAGIC_AUTOGEN_CR_49579({id});","confirmBeforeAction":"true","needApproval":"false","hideButton":"false","userGroups":["EVERYONE"]}
+RMD_MAX_SEQ,0
+ET,%5B%7B%22id%22%3A0%2C%22name%22%3Anull%2C%22subject%22%3A%22Invitation%2520to%2520Interview%25C2%25A0--%2520%257B%257B2001368%257D%257D%2520%257B%257BCompany%257D%257D%2520%257B%257B2001569%257D%257D%22%2C%22content%22%3A%22Dear%2520%257B%257BFull%2520Name%257D%257D%252C%253Cbr%252F%253E%253Cbr%252F%253EAs%2520a%2520result%2520of%2520your%2520application%2520for%2520the%2520position%2520of%2520%257B%257B2001330%257D%257D%252C%253Cbr%252F%253E%2520I%2527m%2520pleased%2520to%2520invite%2520you%2520to%2520an%2520interview%2520with%2520%257B%257BCompany%257D%257D%2520on%25C2%25A0%257B%257B2001368%257D%257D.%253Cbr%252F%253E%253Cbr%252F%253EPlease%2520check%2520your%2520information%2520below%253A%253Cbr%252F%253E%253Cbr%252F%253EApplicant%2520Name%253A%2520%257B%257BFull%2520Name%257D%257D%253Cbr%252F%253E%253Cbr%252F%253ECompany%2520Name%253A%2520%257B%257BCompany%257D%257D%253Cbr%252F%253EPosition%2520Title%253A%2520%257B%257B2001569%257D%257D%253Cbr%252F%253EInterview%2520Date%253A%2520%257B%257B2001368%257D%257D%253Cbr%252F%253EInterview%2520Location%253A%2520%257B%257B2001370%257D%257D%253Cbr%252F%253E%253Cbr%252F%253EContact%2520Person%253A%2520%257B%257B2001567%257D%257D%253Cbr%252F%253EContact%2520Information%253A%2520%257B%257B2001568%257D%257D%253Cbr%252F%253E%253Cbr%252F%253EIf%2520you%2520would%2520like%2520to%2520reschedule%2520your%2520interview%252C%253Cbr%252F%253E%2520please%2520contact%2520us%2520to%2520arrange%2520another%2520appointment.%253Cbr%252F%253EWe%2520look%2520forward%2520to%2520meeting%2520you.%253Cbr%252F%253E%253Cbr%252F%253E%25C2%25A0If%2520you%2520have%2520any%2520questions%252C%2520please%2520contact%2520%257B%257B2001567%257D%257D%2520%257B%257B2001568%257D%257D%253Cbr%252F%253E%22%2C%22attributes%22%3A%7B%22type%22%3A%22actionButton%22%2C%22key%22%3A1%7D%2C%22att%22%3A%5B%5D%2C%22receiverList%22%3A%22%257B%257B2001325%257D%257D%22%2C%22replyTo%22%3A%22%257B%257BDEFAULT_REPLY_TO%257D%257D%22%7D%2C%7B%22id%22%3A1%2C%22name%22%3Anull%2C%22subject%22%3A%22Offer%2520Letter%2520from%2520%257B%257BCompany%257D%257D%2520%253A%2520%2520%257B%257B2001569%257D%257D%22%2C%22content%22%3A%22Dear%2520%257B%257BFull%2520Name%257D%257D%252C%253Cbr%252F%253E%253Cbr%252F%253E%257B%257BCompany%257D%257D%2520is%2520pleased%2520to%2520offer%2520you%2520the%2520position%2520of%2520%257B%257B2001330%257D%257D.%2520%253Cbr%252F%253EYour%2520skills%2520and%2520experience%2520will%2520be%2520an%2520ideal%2520fit%2520for%2520our%2520%257B%257B2001386%257D%257D%2520department.%253Cbr%252F%253EAs%2520we%2520discussed%252C%2520your%2520starting%2520date%2520will%2520be%2520%257B%257B2001378%257D%257D.%2520The%2520starting%2520salary%2520is%2520%257B%257B2001377%257D%257D.%2520%253Cbr%252F%253E%253Cbr%252F%253EIf%2520you%2520choose%2520to%2520accept%2520this%2520job%2520offer%252C%2520please%2520contact%2520%257B%257B2001567%257D%257D%2520at%2520your%2520earliest%2520convenience.%2520We%2520look%2520forward%2520to%2520welcoming%2520you%2520to%2520the%2520%257B%257BCompany%257D%257D%2520%2520team.%2520Please%2520let%2520us%2520know%2520if%2520you%2520have%2520any%2520questions%2520or%2520if%2520we%2520can%2520provide%2520any%2520additional%2520information.%253Cbr%252F%253EPlease%2520confirm%2520the%2520information%2520below%253A%253Cbr%252F%253EApplicant%2520Name%253A%2520%257B%257BFull%2520Name%257D%257D%253Cbr%252F%253EApplicant%2520E-Mail%253A%2520%257B%257B2001325%257D%257D%253Cbr%252F%253ECompany%253A%2520%257B%257BCompany%257D%257D%253Cbr%252F%253EDepartment%253A%2520%257B%257B2001386%257D%257D%253Cbr%252F%253EPosition%2520Title%253A%2520%257B%257B2001569%257D%257D%253Cbr%252F%253ESalary%253A%2520%257B%257B2001377%257D%257D%253Cbr%252F%253EOn%2520Board%2520Date%252FTime%253A%2520%257B%257B2001378%257D%257D%253Cbr%252F%253ELocation%253A%2520%257B%257B2001379%257D%257D%253Cbr%252F%253EContact%253A%2520%257B%257B2001567%257D%257D%253Cbr%252F%253EContact%2520Information%253A%2520%257B%257B2001568%257D%257D%253Cbr%252F%253E%253Cbr%252F%253E%25C2%25A0If%2520you%2520have%2520any%2520questions%252C%2520please%2520contact%2520%257B%257B2001567%257D%257D%2520%257B%257B2001568%257D%257D%253Cbr%252F%253E%22%2C%22attributes%22%3A%7B%22type%22%3A%22actionButton%22%2C%22key%22%3A2%7D%2C%22att%22%3A%5B%5D%2C%22receiverList%22%3A%22%257B%257B2001325%257D%257D%22%2C%22replyTo%22%3A%22%257B%257BDEFAULT_REPLY_TO%257D%257D%22%7D%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10009_Sheet10009_index.nui
+QS,1
+SCRIPT_START
+
+SHEET_SCOPE_START
+function _RAGIC_AUTOGEN_CR_49579(nodeId){
+  var result = db.entryCopier(JSON.stringify(
+{"THIS_PATH":"/ragichr/10009","THIS_NODEID":nodeId,"NEW_PATH":"/ragichr/10004","CHECK_MUST_FIELDS":false,"CHECK_VALIDATION_FIELDS":false,"CHECK_ALL_MUST_FIELDS_MAPPED":false,"COPY":{"2000753":"2001317","2000755":"2001318","2000756":"2001319","2000758":"2001322","2000759":"2001323","2000760":"2001316","2000761":"2001321","2000766":"2001374","2000767":"2001386","2000768":"2001330","2000772":"2001329","2000782":"2001325","2000791":"2001348","2000792":"2001347","2000793":"2001344","2000794":"2001345","2000795":"2001352","2000799":"2001359","2000800":"2001358","2000801":"2001361","2000802":"2001356","2000803":"2001357","2000805":"2001362","2000826":"2001324"}}
+  ), response);
+  if(result) return result;
+}//END_RAGIC_AUTOGEN_CR_49579
+
+
+
+
+
+
+function _RAGIC_AUTOGEN_SEND_CUSTOM_MAIL_16049(nodeId){
+  var result = db.sendCustomEmail(JSON.stringify(
+{"THIS_PATH":"/ragichr/10009","THIS_NODE_ID":nodeId,"type":"actionButton","key":1}
+  ), response);
+}//END_RAGIC_AUTOGEN_SEND_CUSTOM_MAIL_16049
+
+
+function _RAGIC_AUTOGEN_SEND_CUSTOM_MAIL_14830(nodeId){
+  var result = db.sendCustomEmail(JSON.stringify(
+{"THIS_PATH":"/ragichr/10009","THIS_NODE_ID":nodeId,"type":"actionButton","key":2}
+  ), response);
+}//END_RAGIC_AUTOGEN_SEND_CUSTOM_MAIL_14830

@@ -1,0 +1,318 @@
+@font-face {
+font-family:'Open Sans';
+src: url('/sims/css/opensans/OpenSans-Regular.eot');                                    /* IE Modes */
+src: local('Open Sans Regular'), local('OpenSans-Regular'),
+url('/sims/css/opensans/OpenSans-Regular.eot?#iefix') format('embedded-opentype'), /* IE */
+url('/sims/css/opensans/OpenSans-Regular.woff') format('woff'),                    /* Modern Browsers */
+url('/sims/css/opensans/OpenSans-Regular.ttf')  format('truetype');                /* Safari, Android, iOS */
+font-style: normal;
+font-weight: 400;
+}
+@font-face {
+font-family:'Open Sans';
+src: url('/sims/css/opensans/OpenSans-Semibold.eot');
+src: local('Open Sans Semibold'), local('OpenSans-Semibold'),
+url('/sims/css/opensans/OpenSans-Semibold.eot?#iefix') format('embedded-opentype'),
+url('/sims/css/opensans/OpenSans-Semibold.woff') format('woff'),
+url('/sims/css/opensans/OpenSans-Semibold.ttf')  format('truetype');
+font-style: normal;
+font-weight: 600;
+}
+@font-face {
+font-family:'Open Sans';
+src: url('/sims/css/opensans/OpenSans-Bold.eot');
+src: local('Open Sans Bold'), local('OpenSans-Bold'),
+url('/sims/css/opensans/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+url('/sims/css/opensans/OpenSans-Bold.woff') format('woff'),
+url('/sims/css/opensans/OpenSans-Bold.ttf')  format('truetype');
+font-style: normal;
+font-weight: 700;
+}
+@font-face {
+font-family:'Open Sans';
+src: url('/sims/css/opensans/OpenSans-ExtraBold.eot');
+src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'),
+url('/sims/css/opensans/OpenSans-ExtraBold.eot?#iefix') format('embedded-opentype'),
+url('/sims/css/opensans/OpenSans-ExtraBold.woff') format('woff'),
+url('/sims/css/opensans/OpenSans-ExtraBold.ttf')  format('truetype');
+font-style: normal;
+font-weight: 800;
+}
+html, body{
+    margin:0;
+    padding:0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background: linear-gradient(to left, #FFC0C2, #FFFFFF) fixed;*/
+}
+.itemlist{
+font-size:16px;
+line-height: 1.5em;
+margin:12px 0 0 0;
+}
+.item{
+float:left;clear:left;margin:12px 0 0 0;
+cursor:pointer;
+}
+.itemName{
+float:left;margin:0 0 0 12px;
+}
+.checkboxlarge{
+border:2px solid #ccc;height:20px;width:20px;border-radius:6px;float:left;
+}
+.templateHelper{
+float:right;margin:18px 0 0 0;color:#888;background:#f6f6f6;padding:25px 12px;border-radius:8px;min-width:200px;
+}
+.inviteButton{
+border:1px solid #bbb;width:140px;padding:8px 25px;font-size:16px;border-radius:3px;color:#999;cursor:pointer;
+}
+.inviteButton:hover{
+background:#f8f8f8;border:1px solid #888;
+}
+.newMain{
+    width: 960px;
+    min-height: 500px !important;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.28);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    background-color: #fff;
+    position: relative;
+}
+.newContent{
+    padding: 69px 40px 69px 40px;
+    max-width: 400px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.thebuttonNext, .thebuttonBack {
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    width: 120px;
+    height: 35px;
+    font-size:15px;
+    font-weight:600;
+    box-sizing: border-box;
+    text-decoration:none;
+    /*letter-spacing: 5px;*/
+    outline: none;
+}
+.thebuttonNext{
+    background-color:#F27079;
+    color:#ffffff;
+}
+.thebuttonNext > span, .thebuttonBack > span{
+    font-size: 16.5px;
+}
+.thebuttonNext:hover {
+    background-color: #ee5668;
+}
+.thebuttonNext:active {
+    background-color:#F27079;
+}
+.thebuttonNext:visited,.thebuttonNext:hover,.thebuttonNext:active,.thebuttonNext:link{text-decoration:none;cursor:pointer;}
+
+.thebuttonNext i{
+    width: 9px;
+}
+.thebuttonBack {
+    margin-right: 15px;
+    background-color: white;
+    border:none;
+    color: #b3b3b3;
+}
+.thebuttonBack:hover {
+    background-color: #eaeaea;
+}
+.thebuttonBack:active {
+    background-color:#f8fff2;
+}
+.thebuttonBack:visited,.thebuttonBack:hover,.thebuttonBack:active,.thebuttonBack:link{text-decoration:none;cursor:pointer;}
+
+.thebuttonBack i{
+    width: 9px;
+}
+
+#invites{
+    width: 580px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 19px;
+}
+#invites label{
+    font-size: 12px;
+}
+.invite-input{
+    display: block;
+    width: 240px;
+    height: 24px;
+    margin:0 0 12px 0;
+    outline: none;
+}
+input.new-custom-input{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    outline: none;
+    border-radius: 0;
+    font-size: 16px;
+    /*padding: 15px 8px;*/
+}
+input.new-custom-input:focus{
+    border-bottom: 3px solid #f27079 !important;
+}
+.fa-plus-circle{
+    cursor: pointer;
+    color: #727272;
+    padding: 3px;
+    border-radius: 5px;
+    transition: all 0.2s;
+}
+.fa-plus-circle:hover{
+    background-color: #eaeaea;
+    color: black;
+}
+.step{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.stepMain {
+    color: #707070;
+    margin-top: 50px;
+    /* IE */
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+}
+.stepFooter{
+    display: flex;
+    align-items: flex-end;
+    flex: 1;
+    /* IE */
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+}
+.stepHeader {
+    font-size:20px;
+    line-height: 1.4;
+    color:#f27079;
+    margin: 0;
+}
+.stepSubHeader{
+    font-size:15px;
+    font-weight:800;
+    line-height: 1.8;
+    margin:8px 0 0 0;
+}
+.highlight{
+    border-bottom: 2px solid #f27079;
+}
+.gridContainer{
+    display: grid;
+    display: -ms-grid;
+    -ms-grid-columns: 280px auto;
+    grid-template-columns: 280px auto;
+    -ms-grid-rows: auto auto;
+    grid-template-rows:auto auto;
+    position: relative;
+}
+.gridContainer video{
+    max-width: 600px;
+    grid-area: 1 / 2 / 3 / 3;
+    /* IE */
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+}
+
+#step6 .stepMain > div {
+    display: none;
+}
+
+#step6 .stepMain.main > div:first-of-type {
+    display: block;
+}
+
+#step6 .stepMain.loading > div:nth-of-type(2) {
+    display: block;
+    margin: 0 0 0 60px;
+}
+
+/* RWD */
+@media screen and (max-width: 964px) {
+    html, body {
+        align-items: flex-start;
+    }
+    .newMain{
+        width: auto !important;
+        max-width: 90vw !important;
+        box-shadow: none;
+    }
+    .newMain > div.newContent{
+        width: 100%;
+    }
+    .desktop_img {
+        display: none !important;
+    }
+    #invites{
+        width: 100%;
+        flex-direction: column;
+    }
+    #invites > div{
+        justify-content: flex-start !important;
+    }
+    #invites > div:first-of-type{
+        max-width: 100% !important;
+        max-height: 270px;
+        overflow-y: auto;
+    }
+    .gridContainer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .stepFooter{
+        display: block;
+        margin-top: 20px;
+    }
+    .gridContainer video{
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 20px 0;
+    }
+
+    #step5 > div.stepMain > div:first-of-type{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width: 320px) {
+    .newContent{
+        padding: 69px 20px 69px 20px;
+    }
+    #invites > div:first-of-type{
+        max-height: 200px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    #step5 > div.stepMain > div:first-of-type{
+        display: block;
+    }
+}

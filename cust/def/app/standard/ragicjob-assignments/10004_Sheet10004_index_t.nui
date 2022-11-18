@@ -1,0 +1,26 @@
+N,Inspection Assignments,
+FS,2
+DS,2
+W,2=61&3=69&4=78&5=72,
+TF,2003118
+KF,2003136
+SF,2003118
+S,2003133,,Not Started,Scheduled,Completed,Paused,Canceled by Customer,Canceled by Us
+A,null=0&MANAGER=6&USER=3&EVERYONE=0,0,2,524722722
+A2,
+D,1,1,2003118,Inspection ID,ag=INS-{1`date`yyyyMM}-{0`number`000}&noDup=true
+D,2,1,2003119,Inspection Date,fmt_d=MM/dd/yyyy&must=true
+D,3,1,2003162,Technician Assigned,vd=2003091&l=2003228
+D,4,1,2003175,Client Name,vd=2003020&l=2003178
+L,5,1,2003133,Inspection Status,userOps=true&dv=Scheduled
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10004_Sheet10004_index_t.nui
+QS,2

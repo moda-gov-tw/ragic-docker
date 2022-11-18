@@ -1,0 +1,41 @@
+N,異常事件記錄表,
+FS,2
+DS,2
+W,,2=10&6=7&8=223&13=224&18=224
+TF,3004917
+KF,3004923
+SF,3004917
+S,3004921,standardzhtw/ragic-setup/1,
+A,null=0&MANAGER=6&USER=3&EVERYONE=0,0,3,1727184030
+A2,
+D,1,1,3004917,紀錄編號,ag={1`date`yyyyMM}-{0`number`000}
+D,3,1,3004918,日期,fmt_d=yyyy/MM/dd&must=true&dv=$DATE
+L,1,2,3004921,人員名稱,usrref=2&dv=$USERNAME&must=true
+D,3,2,3004924,電子郵件信箱,email=2$&vd=1&l=3004921
+D,1,6,3004937,異常項目,cs=3
+D,1,7,3004938,發現時間,fmt_d=yyyy/MM/dd HH:mm a&cs=3
+D,1,8,3004939,事件說明,cs=3
+D,1,12,3004940,排除異常狀況時間,fmt_d=yyyy/MM/dd HH:mm a&cs=3
+D,1,13,3004941,處理步驟說明,cs=3
+D,1,17,3004942,覆核時間,fmt_d=yyyy/MM/dd HH:mm a&cs=3
+D,1,18,3004943,結果說明,cs=3
+F,1,5,,異常原因,cs=4&background=#0055BB&color=#ffffff&textAlign=center&fontWeight=bold
+F,1,11,,處理說明,cs=4&background=#0055BB&color=#ffffff&textAlign=center&fontWeight=bold
+F,1,16,,覆核結果,cs=4&background=#0055BB&color=#ffffff&textAlign=center&fontWeight=bold
+X_MAX_DESIGNER_ID,101
+ACTION_BUTTON_MAX_ID,0
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+MOBCONF,%7B%7D
+NUI_FILE_NAME,20011_Sheet20011_index.nui
+QS,1
+SCRIPT_START
+
+SHEET_SCOPE_START
+

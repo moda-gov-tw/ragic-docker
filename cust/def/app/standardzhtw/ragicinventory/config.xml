@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+  <name>庫存</name>
+  <desc />
+  <publisher />
+  <createDate />
+  <updateDate />
+  <version />
+  <price />
+  <status />
+  <sourcePath />
+  <appId />
+  <forms seq="12">
+    <form sheetIndex="20001" type="NUI" seq="1">倉庫管理</form>
+    <form sheetIndex="20002" type="NUI" seq="2">商品庫存</form>
+    <form sheetIndex="20005" type="NUI" seq="5">入庫單</form>
+    <form sheetIndex="20008" type="NUI" seq="3">倉庫庫存</form>
+    <form sheetIndex="20009" type="NUI" seq="4">出庫單</form>
+    <form sheetIndex="20010" type="NUI" seq="6">調撥作業</form>
+  </forms>
+</module>

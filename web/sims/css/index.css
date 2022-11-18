@@ -1,0 +1,635 @@
+body,p{
+font-family:"Lucida Grande",Tahoma,Arial,sans-serif;
+}
+p,i{
+font-size:12px;
+margin:0 0 2em;
+line-height:150%;
+}
+input{
+border:1px solid #AAAAAA;
+padding:5px;
+_overflow:visible;
+}
+td{
+font-size:12px;
+}
+#top{
+height:59px;
+width:880px;
+font-size:12px;
+font-weight:bold;
+font-family:verdana;
+}
+#topdetail{
+height:110px;
+width:930px;
+font-size:12px;
+font-weight:bold;
+font-family:verdana;
+}
+#toptop{
+float:right;
+height:20px;
+}
+
+#topleft{
+height:89px;
+float:left;
+}
+#top A:link{float:left;color:black}
+#top A:visited{float:left;color:black}
+#top A:hover{float:left;color:black}
+#top A:active{float:left;color:black}
+#topdetail A:link{color:black}
+#topdetail A:visited{color:black}
+#topdetail A:hover{color:black}
+#topdetail A:active{color:black}
+
+
+#whitebar{
+float:left;
+margin:50px 0 0 0;
+height:30px;
+width:680px;
+}
+#whitebar ul{
+height:30px;
+}
+#whitebar li{
+display:inline-block;
+float:left;
+height:30px;
+overflow:hidden;
+margin:0 0 0 30px;
+}
+#whitebar li a{
+overflow:hidden;
+height:30px;
+font-size:12px;
+}
+#whitebar li a:hover{
+text-decoration:none;
+}
+
+
+
+#greybar{
+height:38px;
+width:880px;
+}
+#greybar ul{
+height:38px;
+margin-left:150px;
+}
+#greybar li a{
+overflow:hidden;
+height:38px;
+font-size:16px;
+color:black;
+font-weight:bold;
+font-family:arial;
+}
+#greybar li a:hover{
+text-decoration:none;
+}
+#greybar li{
+display:inline-block;
+float:left;
+height:38px;
+overflow:hidden;
+margin:8px 0 0 36px;
+/*text-indent:-9999px;*/
+}
+.dropTop{
+position:absolute;
+border:1px solid #333333;
+text-align:left;
+margin:0 0 0 -6px;
+width:135px;
+padding:6px 0 6px 0;
+background:white;
+z-index:99;
+}
+#dropTop a{
+color:black;
+}
+#dropTop a:hover{
+text-decoration:none;
+color:#888888;
+}
+.dropItemTop{
+padding:10px 15px 10px 15px;
+cursor:pointer;
+font-weight:normal;
+font-size:12px;
+text-align:left;
+text-indent:0;
+color:black;
+}
+#homeDrop ul{
+position:absolute;
+border-top:5px solid #f3f3f3;
+border-left:5px solid #f3f3f3;
+border-right:5px solid #f3f3f3;
+text-align:left;
+margin:0 0 0 -8px;
+width:135px;
+}
+#homeDrop a{
+color:black;
+font-weight:bold;
+}
+#homeDrop a:hover{
+text-decoration:none;
+color:#888888;
+}
+#homeDrop li{
+padding:10px 15px 10px 15px;
+cursor:pointer;
+font-weight:normal;
+font-size:12px;
+text-align:left;
+text-indent:0;
+color:black;
+border-bottom:1px solid #f3f3f3;
+background-color:white;
+}
+
+#faqlist{
+float:right;
+background:#f3f3f3;
+width:250px;
+padding:20px;
+}
+#faqlist ul li ul li{
+text-indent:12px;
+}
+#faqlist ul{
+font-size:12px;
+line-height:2em;
+}
+#faq{
+margin-right:310px;
+}
+#faq h1{
+font-size:20px;
+}
+
+#banner{
+position:relative;
+height:350px;
+width:880px;
+}
+#welcome{
+position:absolute;
+top:15%;
+left:8%;
+width:800px;
+height:380px;
+/*border:1px solid #333;*/
+z-index:60;
+}
+.welcomeChoice{
+float:left;
+height:80px;
+width:205px;
+_width:225px;
+margin-left:20px;
+padding:10px;
+background-image:url(/sims/img/box.png);
+font-size:12px;
+text-align:left;
+}
+A:link.welcomeLink {color: #c02; font-weight:bold; text-decoration:underline;}
+A:visited.welcomeLink {color: #c02; font-weight:bold; text-decoration:underline;}
+A:active.welcomeLink {color: #c02; font-weight:bold; text-decoration:underline;}
+A:hover.welcomeLink {color: #c02; font-weight:bold; text-decoration:underline;    }
+#tabpan{
+height:36px;
+width:880px;
+margin:15px 0 0;
+border-bottom:1px solid #CCCCCC;
+}
+#tab1,#tab2,#tab3,#galleryTab1,#galleryTab2,#galleryTab3{background-repeat:no-repeat;background-position:10px 3px}
+#tab1{background-image:url(/sims/img/enterprise_icon.png);}
+#tab2{background-image:url(/sims/img/social_icon.gif);}
+#tab3{background-image:url(/sims/img/builder.gif);}
+.tab{
+float:left;
+border-top:1px solid #CCCCCC;
+border-left:1px solid #CCCCCC;
+border-right:1px solid #CCCCCC;
+margin:4px 4px 0 0;
+padding:0 5px;
+_width:160px;
+background-color:#DDDDDD;
+}
+.tabsel{
+border-bottom:1px solid #FFFFFF;
+border-top:1px solid #BBBBBB;
+border-left:1px solid #BBBBBB;
+border-right:1px solid #BBBBBB;
+background-color:white;
+margin-top:1px;
+padding:0 7px 3px;
+}
+.tabtext,.galleryTabText{
+cursor:pointer;
+font-size:13px;
+height:26px;
+line-height:26px;
+margin:3px 0;
+padding:0 2px 0 8px;
+text-indent:30px;
+vertical-align:top;
+}
+.galleryTabText{text-indent:0;}
+#gallery{
+margin:5px 0 0 10px;
+width:880px;
+}
+#homeMain{
+width:880px;
+height:360px;
+}
+#showroom{
+width:880px;
+padding:12px 0 0 0;
+}
+#ragicBuilder,#developers{
+text-align:left;
+padding:12px 0 0 0;
+font-size:13px;
+width:880px;
+height:180px;
+}
+#ragicBuilder a{
+color:black;
+text-decoration:none;
+}
+.indexblock{
+float:left;
+width:193px;
+_width:214px;
+height:131px;
+_height:151px;
+border:1px solid #DDDDDD;
+background-image:url(/sims/img/indexFrontBG.jpg);
+padding:10px 10px 0 10px;
+cursor:pointer;
+}
+h1{
+font-size:1.5em;
+margin-bottom:0.5em;
+padding:0 0 3px;
+font-weight:bold;
+color:#9F0909;
+border-bottom:1px dotted #CCCCCC;
+font-family:"Lucida Grande",Tahoma,Arial,sans-serif;
+}
+h2{
+font-size:14px;
+font-weight:bold;
+margin:0 0 6px 0;
+width:100%;
+text-align:center;
+}
+h3{
+font-size:12px;
+font-weight:bold;
+color:#888888;
+margin:0 0 6px 0;
+width:100%;
+text-align:center;
+}
+#welcomeFooter{
+clear:right;
+padding:10px 0 10px 0;
+font-size:11px;
+text-align:center;
+}
+A:link {color: #047; text-decoration:none;}
+A:visited {color: #047; text-decoration:none;}
+A:active {color: #047; text-decoration:none;}
+A:hover {color: #047; text-decoration:underline;}
+A:link.hidden {color:#000;text-decoration:none;}
+A:visited.hidden {color:#000;text-decoration:none;}
+A:active.hidden {color:#000;text-decoration:none;}
+A:hover.hidden {color:#000;text-decoration:none;}
+.item{
+padding:0 20px 0 0;
+}
+.itemText{
+padding-top:5px;
+}
+.reglable{
+margin:0 50px 0 0;
+font-size:18px;
+}
+
+/*
+* Application Gallery
+*/
+#appLefNav{
+float:left;
+margin:10px 0 0 0;
+border:1px solid #ebebeb;
+width:180px;
+font-size:12px;
+}
+.appRightContent{
+float:left;
+margin:10px 0 0 10px;
+width:636px;
+font-size:12px;
+}
+.appLv01,.appLv02{
+font-size:12px;
+border-bottom:1px solid #ebebeb;
+}
+.appLv01{
+padding:10px 5px 10px 15px;
+}
+.appLv02{
+padding:10px 5px 10px 25px;
+}
+.appHeader{
+float:left;
+margin:0 0 10px 0;
+padding:5px 10px 5px 10px;
+border:1px solid #ebebeb;
+background-image:url(/sims/img/frontbglighter.png);
+font-size:20px;
+font-family:"Lucida Grande",Tahoma,Arial,sans-serif;
+font-weight:bold;
+color:#9F0909;
+width:618px;
+}
+.appContent{
+float:left;
+margin:0 10px 10px 0;
+padding:10px;
+border:1px solid #ebebeb;
+background: url(/sims/img/frontbglighter.png) repeat-x;
+font-family:"Lucida Grande",Tahoma,Arial,sans-serif;
+font-size:12px;
+}
+.appSubcontent{
+float:left;
+width:250px;
+margin:0 10px 10px 10px;
+padding:10px;
+font-family:"Lucida Grande",Tahoma,Arial,sans-serif;
+font-size:12px;
+}
+.appSubcontentText{
+margin:5px 0 0 0;
+}
+.appContentTitle{
+margin:0 15px 15px 15px;
+font-size:15px;
+font-weight:bold;
+}
+a.appContentSubtitle{
+font-size:12px;
+font-weight:bold;
+color:#000000;
+text-decoration:underline;
+margin:0 0 15px 0;
+}
+.appContentText{
+margin:0 15px 15px 15px;
+}
+
+
+#tourContainer{
+min-height:550px;
+margin:0 0 3em 0;
+padding:1em 0 1em 0;
+}
+#tourLeft{
+float:left;
+min-height:520px;
+width:190px;
+border:1px solid #BBBBBB;
+border-right:0 none;
+border-bottom:0 none;
+}
+.tourLeftNav,.tourLeftNavSelected{
+-moz-outline:0px none; outline:0 none;
+display:block;
+padding:15px;
+border-bottom:1px solid #BBBBBB;
+border-right:1px solid #BBBBBB;
+line-height:19px;
+height:19px;
+background:#efefef;
+font-family:"Lucida Grande",Tahoma,Arial,sans-serif;
+font-size:12px;
+font-weight:bold;
+color:#000000;
+}
+.tourLeftNavSelected{
+border-right:0 none;
+background:none;
+}
+.tourIcon{
+margin:0 7px 0 0;
+}
+#tourRight{
+float:left;
+padding:10px 0 0 30px;
+width:600px;
+border-top:1px solid #BBBBBB;
+}
+#tourContainer h1{
+font-family:"Lucida Grande",Tahoma,Arial,sans-serif;
+float:left;
+font-size:15px;
+color:#D80c0c;
+font-weight:bold;
+border:none;
+margin:30px 0 0 0;
+}
+.tourimg{
+float:left;
+margin:20px 0 20px 0;
+}
+.tourTextContainer{
+float:right;
+}
+.tourText{
+float:left;
+clear:left;
+width:250px;_width:230px;
+margin:2em 0 0 0;
+font-family:"Lucida Grande",Tahoma,Arial,sans-serif;
+font-size:12px;
+line-height:150%;
+}
+
+
+#featureList h1,#featureList h2,#featureList h3{
+font-family:"Lucida Grande",Tahoma,Arial,sans-serif;
+color:black;
+font-weight:bold;
+border:none;
+text-align:left;
+}
+#featureList h1{
+margin:30px 0 0 0;
+font-size:20px;
+}
+#featureList h2{
+margin:25px 0 0 0;
+font-size:15px;
+}
+#featureList li{
+font-size:12px;
+margin:5px 0 5px 3em;
+padding:0 0 0 18px;
+background: url(/hp/img/red_dot_small.png) no-repeat 0 4px;
+}
+#featureList p{
+margin:1em 0 1em 1em;
+}
+#featureList img{
+margin:0 10px 0 0;
+position:relative;
+top:2px;
+}
+#featureList{
+margin:0 0 6em 0;
+}
+#pricingTable td{
+padding:5px;
+border:1px solid #efefef;
+text-align:center;
+}
+.pricingProduct{
+font-size:20px;
+color:#D80C0C;
+}
+.pricingPrice{
+font-size:20px;
+margin:3px 0 3px 0;
+color:#333333;
+}
+.pricingSignup{
+height:60px;
+}
+#pricingTable a{text-decoration:none;color:white;}
+.pricingDesc{
+line-height:20px;
+vertical-align:top;
+}
+
+.signupButtonUp{background-image:url(/hp/img/bluebutton.png);cursor:pointer;}
+.signupButtonDn{background-image:url(/hp/img/redbutton.png);cursor:pointer;}
+.signupButtonMy{background-image:url(/hp/img/greybutton.png);}
+.signupButtonUp,.signupButtonDn,.signupButtonMy{
+display:block;
+background-repeat:no-repeat;
+background-position: 50% 0;
+height:26px;_height:36px;
+font-size:13px;
+font-family:verdana;
+padding:8px 0 0 3px;
+}
+
+#upgradeTable td{
+border:1px solid #cccccc;
+padding:5px 20px 5px 20px;
+}
+#upgradeTable span{
+float:left;
+margin:12px 20px 12px 20px;
+font-family:Lucida Grande;
+}
+.upgradeHeader{
+background:#ccddee;
+}
+#regTable td{
+height:60px;
+vertical-align:top;
+}
+#regTable div{
+color:#888888;
+}
+
+#videoToc span{
+float:left;
+color:#bbbbbb;
+font-size:18px;
+}
+#videoToc ul{
+float:left;
+clear:left;
+margin:10px 0 0 10px;
+width:200px;
+}
+#videoToc li{
+float:left;
+clear:left;
+font-size:12px;
+font-weight:bold;
+}
+#videoToc ul li div{float:left;clear:left;color:#888888;font-weight:normal;margin:6px 0 0 0;}
+#videoToc img {float:right;border:3px groove #888888;}
+
+#videoToc A span{font-size:12px;}
+#videoToc A {
+color: #efefef;
+text-decoration:none;
+float:left;
+height:45px;
+width:200px;
+background:#444444;
+margin:0 0 8px 0;
+padding:5px 12px 5px 12px;
+}
+#videoToc A:hover {background:#555555;}
+
+.learnTab{
+font-family:arial;
+font-weight:bold;
+font-size:26px;
+margin:8px 20px 8px 20px;
+color:#555555;
+}
+
+#moreDocuments li{
+float:left;
+margin:20px 30px;
+width:390px;
+height:80px;
+}
+#moreDocuments li p a{
+color:#365EBF;
+}
+#moreDocuments li h2{
+text-align:left;
+}
+#moreDocuments li h2 a{
+font-size:15px;
+font-family:arial;
+font-weight:bold;
+color:#8C0C0C;
+}
+.clearfix:after {
+visibility: hidden;
+display: block;
+font-size: 0;
+content: " ";
+clear: both;
+height: 0;
+}
+
+.clearfix {display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+

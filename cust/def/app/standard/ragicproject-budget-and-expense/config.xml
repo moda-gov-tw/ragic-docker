@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+  <name>Project Budget and Expense</name>
+  <desc />
+  <publisher />
+  <createDate />
+  <updateDate />
+  <version />
+  <price />
+  <status />
+  <sourcePath />
+  <appId />
+  <forms seq="5">
+    <form sheetIndex="10001" type="NUI" seq="1">Projects</form>
+    <form sheetIndex="10003" type="NUI" seq="3">Budget Statement</form>
+    <form sheetIndex="10004" type="NUI" seq="4">Billing Statement</form>
+    <form sheetIndex="10002" type="NUI" seq="2">Income Statement</form>
+    <form sheetIndex="10005" type="NUI" seq="5">Billing Statement (Accountant Only)</form>
+  </forms>
+</module>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+  <name>輕鬆訂便當</name>
+  <desc />
+  <publisher />
+  <createDate />
+  <updateDate />
+  <version />
+  <price />
+  <status />
+  <sourcePath />
+  <appId />
+  <forms seq="21">
+    <form sheetIndex="20001" type="NUI" seq="3">便當飲料店家列表</form>
+    <form sheetIndex="20003" type="NUI" seq="4">便當飲料店菜色清單</form>
+    <form sheetIndex="20005" type="NUI" seq="1">個人訂購單 (訂餐填單來這裡)</form>
+    <form sheetIndex="20007" type="NUI" seq="2">個人訂購細項</form>
+    <form sheetIndex="20008" type="NUI" seq="5">統整訂購單 (負責人每次開放訂餐時開立)</form>
+  </forms>
+</module>

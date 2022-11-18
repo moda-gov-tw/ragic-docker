@@ -1,0 +1,50 @@
+N,便當飲料店家列表,
+FS,2
+DS,2
+W,2=31&3=25&4=165&5=31&6=40&7=111&undefined=0,2=14&3=15&4=15&6=15&7=15&11=15&16=9&17=18
+TF,3002336
+KF,3002349
+SF,3002336
+ST,1,11,3002350,,,
+ST,1,17,3002571,,,
+S,3002338,,台式,日式,義大利麵,飲料
+S,3002375,standardzhtw/ragic-setup/1,
+S,3002376,,1,2,3,4,5
+A,NULL=0&MANAGER=6&USER=3&EVERYONE=0,0,3,555336904
+A2,
+D,1,2,3002336,  店家編號,ag={0`number`#}&noDup=true&ro=true&stylebackgroundColor=#FFDCE5&stylecolor=#666666&stylefontWeight=bold&styletextAlign=left&stylefontSize=14&styleVfontWeight=bold&styleVfontSize=14&styleVcolor=#666666
+D,3,2,3002380,給分加總,f=F17&fmt_n=#`###.#####&hide=true&stylebackgroundColor=#FFDCE5&stylecolor=#666666&stylefontWeight=bold&styletextAlign=left&stylefontSize=14&styleVfontWeight=bold&styleVfontSize=14&styleVcolor=#666666
+D,1,3,3002337,  店家名稱,stylebackgroundColor=#FFDCE5&stylecolor=#666666&stylefontWeight=bold&styletextAlign=left&stylefontSize=14&styleVfontWeight=bold&styleVfontSize=14&styleVcolor=#666666&mobile_title=true
+D,3,3,3002381,給分分母,f=COUNT(F17)&fmt_n=#`###.#####&hide=true&stylebackgroundColor=#FFDCE5&stylecolor=#666666&stylefontWeight=bold&styletextAlign=left&stylefontSize=14&styleVfontWeight=bold&styleVfontSize=14&styleVcolor=#666666
+L,1,4,3002338,  店家類型,userOps=true&stylebackgroundColor=#FFDCE5&stylecolor=#666666&stylefontWeight=bold&styletextAlign=left&stylefontSize=14&styleVfontWeight=bold&styleVfontSize=14&styleVcolor=#666666
+D,3,4,3002367,  使用者評分,userOps=true&help=代表使用者平均打分，得分越高代表越推薦&fmt_n=0.00&f=C2/C3&ro=true&stylebackgroundColor=#FFDCE5&stylecolor=#666666&stylefontWeight=bold&styletextAlign=left&stylefontSize=14&styleVfontWeight=bold&styleVfontSize=14&styleVcolor=#666666
+D,1,6,3002339,  電話,phone=1&phonefmt=XXX-XXX-XXXX&cs=2&stylebackgroundColor=#FFDCE5&stylecolor=#666666&stylefontWeight=bold&styletextAlign=left&stylefontSize=14&styleVfontWeight=bold&styleVfontSize=14&styleVcolor=#666666
+D,1,7,3002340,  地址,addr=1&cs=2&stylebackgroundColor=#FFDCE5&stylecolor=#666666&stylefontWeight=bold&styletextAlign=left&stylefontSize=14&styleVfontWeight=bold&styleVfontSize=14&styleVcolor=#666666
+D,1,8,3002341,  備註,cs=4&stylebackgroundColor=#FFDCE5&stylecolor=#666666&stylefontWeight=bold&styletextAlign=left&stylefontSize=14&styleVfontWeight=bold&styleVfontSize=14&styleVcolor=#666666
+D,1,11,3002342,  品項編號,ag=D-{0`number`00000}&stylebackgroundColor=#FFDCE5&stylecolor=#666666&stylefontWeight=bold&styletextAlign=left&stylefontSize=14&styleVfontWeight=bold&styleVfontSize=14&styleVcolor=#666666
+D,2,11,3002343,  菜色,stylebackgroundColor=#FFDCE5&stylecolor=#666666&stylefontWeight=bold&styletextAlign=left&stylefontSize=14&styleVfontWeight=bold&styleVfontSize=14&styleVcolor=#666666
+D,3,11,3002344,  單價,fmt_n=$#`###&stylebackgroundColor=#FFDCE5&stylecolor=#666666&stylefontWeight=bold&styletextAlign=left&stylefontSize=14&styleVfontWeight=bold&styleVfontSize=14&styleVcolor=#666666
+D,4,11,3002345,  描述,stylebackgroundColor=#FFDCE5&stylecolor=#666666&stylefontWeight=bold&styletextAlign=left&stylefontSize=14&styleVfontWeight=bold&styleVfontSize=14&styleVcolor=#666666
+G,5,11,3002346,  圖片,stylebackgroundColor=#FFDCE5&stylecolor=#666666&stylefontWeight=bold&styletextAlign=left&stylefontSize=14&styleVfontWeight=bold&styleVfontSize=14&styleVcolor=#666666
+D,6,11,3002347,店家名稱,hide=true&f=A3&stylebackgroundColor=#FFDCE5&stylecolor=#666666&stylefontWeight=bold&styletextAlign=left&stylefontSize=14&styleVfontWeight=bold&styleVfontSize=14&styleVcolor=#666666
+D,7,11,3002348,店家菜色,hide=true&f=F11+B11&stylebackgroundColor=#FFDCE5&stylecolor=#666666&stylefontWeight=bold&styletextAlign=left&stylefontSize=14&styleVfontWeight=bold&styleVfontSize=14&styleVcolor=#666666
+D,1,17,3002374,給分日期,fmt_d=yyyy/MM/dd&dv=#DATE&stylebackgroundColor=#FFDCE5&stylecolor=#666666&stylefontWeight=bold&styletextAlign=left&stylefontSize=14&styleVfontWeight=bold&styleVfontSize=14&styleVcolor=#666666
+L,2,17,3002375,給分人,usrref=2&dv=$USER&stylebackgroundColor=#FFDCE5&stylecolor=#666666&stylefontWeight=bold&styletextAlign=left&stylefontSize=14&styleVfontWeight=bold&styleVfontSize=14&styleVcolor=#666666
+L,3,17,3002376,給分（1-5分）,stylebackgroundColor=#FFDCE5&stylecolor=#666666&stylefontWeight=bold&styletextAlign=left&stylefontSize=14&styleVfontWeight=bold&styleVfontSize=14&styleVcolor=#666666
+D,4,17,3002378,評語,cs=2&stylebackgroundColor=#FFDCE5&stylecolor=#666666&stylefontWeight=bold&styletextAlign=left&stylefontSize=14&styleVfontWeight=bold&styleVfontSize=14&styleVcolor=#666666
+D,5,17,3002379,給分 數字欄位,fmt_n=0&f=C17&hide=true
+F,1,1,,[img]https://www.ragic.com/sims/file.jsp?a=blogman&f=Bento+Banner+3.PNG[/img],cs=5&color=#FFFFFF&backgroundColor=#DF7380&textAlign=left&fontSize=14
+F,5,2,, ,cs=1
+F,1,10,,[img]https://www.ragic.com/sims/file.jsp?a=blogman&f=Bento+Banner+4.PNG[/img],cs=5&color=#FFFFFF&backgroundColor=#DF7380&fontWeight=bold&textAlign=left&fontSize=14
+F,1,16,,[img]https://www.ragic.com/sims/file.jsp?a=blogman&f=Bento+Banner+7.PNG[/img],cs=5&backgroundColor=#DF7380&color=#FFFFFF
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=true
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,20001_Sheet20001_index.nui
+QS,1

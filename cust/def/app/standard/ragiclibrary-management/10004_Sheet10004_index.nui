@@ -1,0 +1,64 @@
+N,Book Reservation,
+FS,2
+DS,2
+W,1=62&2=98&3=55&4=128,
+TF,2002927
+KF,2002936
+SF,2002927
+S,2002928,standard/ragiclibrary-management/10001,
+S,2002930,,Action Adventure,Biography,Business/Finance,Children’s,Cultural/Social Issues,Fantasy and Science Fiction,General Nonfiction,Health %26 Fitness,History,Horror,Literary Fiction,Memoir,Picture Book,Religion/Spirituality,Romance,Science Fiction,Self-Help,Thrillers/Suspense
+S,2002962,,Canceled
+S,2002932,standard/ragiclibrary-management/10003,
+A,null=0&MANAGER=6&USER=3&EVERYONE=0,0,3,1704466211
+A2,
+D,1,1,2002927,Reservation ID,ag={0`number`00000}
+L,3,1,2002928,Book ID,s=2002822&stf=2002817&mvp=/ragiclibrary-management|10001_Sheet10001&mvpf=2002937|3|$2002939%262002831|1|Available&lnls=true
+D,1,2,2002938,Reservation Date,fmt_d=MM/dd/yyyy&dv=$DATE
+D,3,2,2002929,Title,vd=2002818&l=2002928
+D,1,3,2002939,Reserved from,fmt_d=MM/dd/yyyy&must=true
+D,3,3,2002931,Author,vd=2002820&l=2002928
+D,1,4,2002940,To,must=true&fmt_d=MM/dd/yyyy
+L,3,4,2002930,Genre,vd=2002830&l=2002928
+D,1,5,2002951,Book Status,text=1&dv=Reserved&f=IF(C5="Canceled"`"Available"`"Reserved")
+L,3,5,2002962,Cancel Reservation?,
+L,1,9,2002932,Member ID,s=2002858&stf=2002855&mvp=/ragiclibrary-management|10003_Sheet10003&lnls=true
+D,1,10,2002933,First Name,vd=2002856&l=2002932
+D,1,11,2002934,Last Name,vd=2002857&l=2002932
+D,1,12,2002935,Email,email=2&vd=2002860&l=2002932
+D,1,13,2002960,Phone Number,phone=1&phonefmt=XXXXXXXXXX&vd=2002861&l=2002932
+D,1,15,2002952,'Update Book Status' executed time,fmt_d=yyyy/MM/dd HH:mm&ro=true&hide=true
+F,1,8,,Reserved By,cs=2&backgroundColor=#d4b496&textAlign=center
+X_MAX_DESIGNER_ID,101
+K,{"type":"B","seq":"1","name":"Update Book Status","action":"_RAGIC_AUTOGEN_ENTRY_UPDATER_25280({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"true","userGroups":["EVERYONE","SYSAdmin"],"checkIfUserCanEdit":false}
+K,{"type":"B","seq":"2","name":"Create Borrowing Card","action":"_RAGIC_AUTOGEN_CR_97414({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"false","userGroups":["EVERYONE","SYSAdmin"],"checkIfUserCanEdit":false}
+RMD_MAX_SEQ,0
+IR,%7B%22rules%22%3A%5B%7B%22cons%22%3A%5B%7B%22domainId%22%3A2002962%2C%22value%22%3A%22Canceled%22%2C%22operator%22%3A%22ffEquals%22%7D%5D%2C%22conLogic%22%3A%22AND%22%2C%22actions%22%3A%5B%7B%22domainId%22%3A2002951%2C%22action%22%3A%22hide%22%2C%22actionValue%22%3A%22%22%7D%5D%2C%22actSubtableRoot%22%3A-1%7D%5D%7D
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10004_Sheet10004_index.nui
+QS,1
+SCRIPT_START
+_RAGIC_AUTOGEN_ENTRY_UPDATER_25280(param.getNewNodeId(2002936));
+SHEET_SCOPE_START
+function _RAGIC_AUTOGEN_ENTRY_UPDATER_25280(nodeId){
+  // WARNING: Please DO NOT edit auto-generated script.
+  var result = db.entryUpdater(JSON.stringify(
+{"THIS_PATH":"/ragiclibrary-management/10004","UPDATE_PATH":"/ragiclibrary-management/10001","THIS_NODE_ID":nodeId,"MATCH":{"2002817":"2002928"},"ACTIONS":[{"THIS_NUMBER_FIELD":"2002951","UPDATE_ACTION":"SET","UPDATE_NUMBER_FIELD":"2002831"}],"MULTI_FIELDS":true,"LAST_UPDATE_FIELD":"2002952","RECALCULATE":false,"CHECK_USER_GROUPS":false,"CHECK_MUST_FIELDS":false,"CHECK_VALIDATION_FIELDS":false,"FAILED_IF_NO_RECORD_UPDATED":false,"LOAD_DEFAULT_VALUES_ON_TARGET":false,"LOAD_DEFAULT_VALUES_ON_THIS_SHEET":false}
+  ), response);
+}//END_RAGIC_AUTOGEN_ENTRY_UPDATER_25280
+
+
+
+
+function _RAGIC_AUTOGEN_CR_97414(nodeId){
+  // WARNING: Please DO NOT edit auto-generated script.
+  var result = db.entryCopier(JSON.stringify(
+{"THIS_PATH":"/ragiclibrary-management/10004","THIS_NODEID":nodeId,"NEW_PATH":"/ragiclibrary-management/10002","CHECK_MUST_FIELDS":false,"CHECK_VALIDATION_FIELDS":false,"CHECK_ALL_MUST_FIELDS_MAPPED":false,"SILENT":false,"RECAL_ALL_FORMULAS":true,"EXEC_WORKFLOW":true,"LOCK_SOURCE":false,"COPY":{"2002823":"2002932","2002824":"2002933","2002825":"2002934","2002827":"2002935","2002854":"2002929","2002869":"2002928","2002872":"2002931","2002904":"2002930"},"APPLY_SUBTABLE_FILTERS":false,"APPLY_SUBTABLE_GROUPING":false}
+  ), response);
+  if(result) return result;
+}//END_RAGIC_AUTOGEN_CR_97414

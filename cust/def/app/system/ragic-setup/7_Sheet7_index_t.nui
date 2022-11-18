@@ -1,0 +1,18 @@
+N,Global Constants,Define and use constant values in formulas and Javascript Workflow
+FS,2
+DS,2
+W,undefined=0,
+TF,200072
+KF,200071
+SF,200072
+S,200074,,Text,Number,Array
+A,MANAGER=6&USER=3&EVERYONE=0,0,2,1366304023
+A2,
+D,1,1,200072,Constant name,
+D,2,1,200073,Constant value,
+L,3,1,200074,Constant type,dv=Text
+D,4,1,200075,Effective date (GMT),fmt_d=yyyy/MM/dd
+D,5,1,200076,Expiry date (GMT),fmt_d=yyyy/MM/dd
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+QS,0

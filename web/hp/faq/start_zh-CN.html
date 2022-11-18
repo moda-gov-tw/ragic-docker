@@ -1,0 +1,239 @@
+<html>
+<head>
+    <title>Ragic FAQ</title>
+    <link rel="stylesheet" type="text/css" href="/intl/common/indexv5.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!--<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800,600,700' rel='stylesheet' type='text/css'>-->
+    <style>
+        h2{font-weight:600;font-size:20px;margin:25px 0 25px 0;padding:50px 0 0 0;}
+        h3{font-weight:300;font-size:20px;margin:15px 10px 0;padding:20px 0 0 0;}
+        p{margin:25px 0 25px 0;width:700px;}
+        img{margin:25px;border:1px solid #aaa;display:block;}
+        ul{margin:25px 0 0 0;padding: 0 0 0 12px;list-style: none;line-height: 150%;font-size:14px;}
+    </style>
+</head>
+<body style="margin:25px;">
+
+<h1 style="font-size:26px;font-weight:700;">Ragic Frequently Asked Questions</h1>
+<h3>Using Ragic</h3>
+<ul>
+    <li><a href="#1">1. 如何删除表单或是一个上面的页签？</a></li>
+    <li><a href="#2">2. 怎么调整保存格的高度或是宽度呢？</a></li>
+    <li><a href="#3">3. 能够将不同表单的字段的数据互相做连结吗？</a></li>
+    <li><a href="#4">4. 如何汇入手上Excel或是CSV的数据呢？</a></li>
+    <li><a href="#5">5. 如何把表单嵌入到我的网站？</a></li>
+    <li><a href="#6">6. 可以上传档案，图片，或是影片到Ragic上吗？</a></li>
+    <li><a href="#7">7. 我可以把数据存成Excel吗？</a></li>
+    <li><a href="#8">8. 我可以自行开发HTML页面来将数据写入Ragic表单中吗？</a></li>
+    <li><a href="#9">9. 我要怎么备份我的数据呢？</a></li>
+    <li><a href="#10">10. Ragic有没有智慧型手机的app？</a></li>
+</ul>
+
+<h3>Privacy & Sharing</h3>
+<ul>
+    <li><a href="#11">11. 如何让别人也看到表单上的数据？</a></li>
+    <li><a href="#12">12. 同时两个人更新同一笔数据会怎么样？</a></li>
+    <li><a href="#13">13. 要怎么把我同事加到数据库里面呢？</a></li>
+    <li><a href="#14">14. 是否能够只有某些人看得到某些字段？</a></li>
+    <li><a href="#15">15. 可以设定每个人能看得到哪几笔数据吗？</a></li>
+    <li><a href="#16">16. 我有很多厂商或是客户的外人偶尔会使用我们的数据库，有办法买少一点使用者吗？</a></li>
+</ul>
+
+<h3>Subscriptions</h3>
+<ul>
+    <li><a href="#17">17. 简易版跟专业版差别在哪呢？</a></li>
+    <li><a href="#18">18. 要如何开始正式付款使用或是升级我的Ragic？</a></li>
+    <li><a href="#19">19. 正式使用后，免费试用的天数会不见吗？</a></li>
+    <li><a href="#20">20. 保存空间用完了会怎么样？</a></li>
+</ul>
+
+<a name="1"></a>
+<h2>如何删除表单或是一个上面的页签？</h2>
+<p>将鼠标移到功能表中您想要删除的表单或页签上，右方将会出现一小箭头图示，点选箭头，再选择「删除」即可；或者直接在您想要删除的表单或页签上，点选鼠标右键，接着选择「删除」亦可。</p>
+<p>如果您不小心删除了表单或页签想要复原，您可以与我们联络support@ragic.com，我们将立即帮您处理。</p>
+<img src="img/delete1.png"/>
+<img src="img/delete2.png"/>
+
+<a name="2"></a>
+<h2>怎么调整保存格的高度或是宽度呢？</h2>
+<p>要修改保存格的高度与宽度，您可以先进入设计模式(点选表单上「修改设计」)，接着就像使用Excel一样，将鼠标移到最上方A、B、C…每栏的边界处，鼠标将变为双箭头，此时即可利用拖拉方式，设定保存格的宽度；同样的，移到最左方1、2、3…栏的边界处，即可以调整保存格的高度。</p>
+<p>调整完毕后记得「保存」，之后每个人所看到的这张表单，都将会是您调整过后的样子。</p>
+<p>您也可以在一般浏览时，利用上述方式调整保存格的高度及宽度，以便观看，但这些调整在下次进来这张表单时不会被记住。</p>
+<img src="img/width.png"/>
+
+<a name="3"></a>
+<h2>能够将不同表单的字段的数据互相做连结吗？</h2>
+<p>当然可以，这是Ragic最大的特色!</p>
+<p>将不同表单的字段互相连结，仅需要2步, 我们以Sales表单及Customer表单为例:</p>
+
+<p><b>1. Linked Fields:</b> 假设我们在Sales表单新增一Customer字段，提供使用者在新增订单时选择客户之用，Customer字段的数据来源为Customer表单. 我们称此Customer字段为linked field.</p>
+<p>你会发现Customer字段的数据内容为Customer Id，即Customer表单中的第一个字段，在Ragic，表单的第一个字段我们称做 <b>Key Field</b>, 在设计模式时为该字段为深蓝色。 Linked Fields会关联到另一个表单的Key Field, 就像Sales表单的Customer字段关联到Customer表单的Customer Id。</p>
+<img src="img/Link1.png"/>
+
+<p><b>2. Loaded Fields:</b> 当使用者在Sales表单中的Customer字段选择了一个客户，Ragic可以连带地将他在Customer表单中的电话、住址等数据带入Sales表单中。这可以大大减少数据输入的时间，让你的系统看起来更聪明，我们称这些自动带入的字段为loaded fields.</p>
+<p>Linked Field及Loaded Fields的设定很简单，使用我们的<b>连结管理</b>便可轻松完成(在设计模式，点选「连结其它表单」按钮，即可进入<b>连结管理</b>)。</p>
+<img src="img/Link2.png"/>
+
+<p>在连结管理中，您必须先设定<b>Linked Field</b>，首先，在左边画面(即您正在设计的表单)，点选您既有的字段(Ex.Customer) 或任何一个空白保存格，接着，系统便会自动将它与右方表单中的Key field相连结(如同我们之前所说的，Linked Field必定与Key Field相连)。</p>
+<img src="img/Link3.png"/>
+
+<p>接着您可以设定<b>Loaded Fields</b>，设定的方式与刚刚一样，在左方点选您既有的字段或任何一个空白保存格，接着点选右方您希望自动带入的字段。</p>
+<img src="img/Link4.png"/>
+
+<p>当左方为空白保存格时，连结管理员会自动帮您新增该字段。</p>
+
+<a name="4"></a>
+<h2>如何汇入手上Excel或是CSV的数据呢？</h2>
+<p>Ragic有很方便的数据汇入精灵，可以帮助使用者将既有的Excel或CSV数据汇入Ragic数据库。如果您已经设计好表单，想汇入数据，您可点选表单上方「工具」按钮，选择「汇入\从Excel汇入数据」，接着依照汇入精灵的引导，一步步设定即可完成数据汇入。</p>
+<p>如果您尚未设计表单，您也可以直接使用Excel或CSV来建立表单；您可点选点选表单上方「工具」按钮，选择「汇入\用Excel建立新表单」，一样依照汇入精灵的引导，一步步设定即可完成表单的建立同时汇入数据。</p>
+<img src="img/Import.png"/>
+<img src="img/Import2.png"/>
+
+<a name="5"></a>
+<h2>如何把表单嵌入到我的网站？</h2>
+<p>要将Ragic表单嵌入到网站非常简单，点选表单上的「工具」按钮(如下图)，选择「嵌入这张表单」，接着会出现一讯息方块，里面含有一段HTML嵌入语法；将讯息方块中的嵌人语法复制下来，到您的网店或部落格贴上，其它访客便能使用您在Ragic建立的表单啰!</p>
+<p>您也可以利用讯息方块下方的选项，进一步设定表单在您的网站或部落格中要显示的样子。</p>
+<img src="img/embed1.png"/>
+<img src="img/embed2.png"/>
+
+<a name="6"></a>
+<h2>可以上传档案，图片，或是影片到Ragic上吗？</h2>
+<p>可以，所有的档案类型都可以上传到您的Ragic。设计时，只要将您的字段「输入型态」选为<b>档案上传</b>或<b>图片上传</b>；或者从左方「新增元件」页签中，拖拉一个「档案上传」或「图片上传」元件到您的表单中，即可拥有档案上传/图片上传功能。</p>
+<p>使用时，使用者只要点击该字段，便会出现档案上传视窗供使用者上传档案或图片。数据保存后，如为档案，该字段会以超连结呈现，当使用者点选超连结，即可下载该档案；如为图片，则直接显示于保存格中，而当使用者点选图片时，即可下载该图片的全幅档案。</p>
+<img src="img/upload1.png"/>
+<img src="img/upload2.png"/>
+
+<a name="7"></a>
+<h2>我可以把数据存成Excel吗？</h2>
+<p>可以，只要点选「工具」按钮，选择「下载\下载成Excel档案」就可以啰。Ragic同时也提供「友善打印」功能，一样在「工具」，选择「下载\友善打印」即可。</p>
+<p>不论在表单页还是列表页，您都可以将表单内容存成Excel；在表单页，存的是一笔数据，而在列表页，则是该表单所有的数据哦!</p>
+<img src="img/output.png"/>
+
+<a name="8"></a>
+<h2>我可以自行开发HTML页面来将数据写入Ragic表单中吗？</h2>
+<p>如果您会开发HTML表单，那么要写入Ragic表单非常简单，我们来看一个例子，假设您要新增数据到「范例：竉物店」中的<a href="/start/petstore/1">merchandise表单</a>：</p>
+<p>1. 找出您要透过HTML表单来储存的字段，并记下它们的<b>字段编号</b>，字段编号位于设计模式中，域名的下方。</p>
+
+<img src="img/html.png"/>
+
+<p>2. 建立您的HTML表单如下，在HTML表单中每个字段的name需使用上面所说的字段编号，它会以参数方式传入Ragic，Ragic藉由字段编号得知HTML字段与Ragic字段的对应关系；表单送出时，送出的Action为Ragic表单的API网址(即该Ragic表单的网址，惟将www.ragic.com 換成 <b>api.ragic.com</b>).</p>
+<pre style="background:#efefef;width:800px;padding:25px;">
+  &lt;!-- Your HTML form saves data to the same form URL, except change www.ragic.com to api.ragic.com --&gt;
+  &lt;!-- Adding the web parameter means that api server returns html instead of default JSON --&gt;
+  &lt;form action="http://api.ragic.com/start/petstore/1?html" method="POST"&gt;
+
+    &lt;!-- Put down the field id as the parameter name for each field to map them to a field on the Ragic form --&gt;
+    &lt;p&gt;Item Id: &lt;input type="text" name="1000001" /&gt;&lt;/p&gt;
+    &lt;p&gt;Item Name: &lt;input type="text" name="1000003" /&gt;&lt;/p&gt;
+    &lt;p&gt;Item Price: &lt;input type="text" name="1000005" /&gt;&lt;/p&gt;
+
+    &lt;!-- Selections work the same way, just pass the selection value as parameter value --&gt;
+    &lt;p&gt;Item Category:
+      &lt;input type="radio" name="1000002" value="Dog" /&gt; Dog
+      &lt;input type="radio" name="1000002" value="Cat" /&gt; Cat
+    &lt;/p&gt;
+  &lt;/form&gt;
+</pre>
+<p>3. 确认Ragic表单的权限设定，用户仍需拥有Ragic表单访问权限，才能从HTML表单将数据存入Ragic，如果您的表单是开放大众使用的，我们建议您可将该表单的<b>所有人</b>群组设为<b>布告栏式使用者</b>.</p>
+<img src="img/rights.png"/>
+
+<a name="9"></a>
+<h2>我要怎么备份我的数据呢？</h2>
+<p>Ragic servers每天都会自动进行备份，如果您有特殊的需求，Ragic也提供各用户手动备份的功能，您可从「功能捷径」选择<b>数据</b>，进入数据库相关页面。</p>
+<img src="img/backup1.png"/>
+<img src="img/backup2.png"/>
+<p>接着选择<b>下载帐号数据备份</b>，下载备份档。</p>
+<img src="img/backup3.png"/>
+<img src="img/backup4.png"/>
+<p>备份档为数据库的压缩备份，仅为数据库还原所使用，如果您需要可阅读的数据，您可参考<a href="#8">8. 我可以把数据存成Excel吗？</a>，在列表页利用<b>「下载\下载成Excel档案」</b>或<b>「下载\下载成纯文字档案」</b>功能，将Ragic数据库中的数据备份出来。</p>
+<img src="img/backup5.png"/>
+
+<a name="10"></a>
+<h2>Ragic有没有智慧型手机的app？</h2>
+<p>Ragic有一个Android app，您可以到这边下载，或是直接在Google Play上搜索 "Ragic"。我们的iOS iPhone/iPad app即将上线，上线前您可以直接用手机上的浏览器登录 www.ragic.com 也可以直接浏览编辑数据。</p>
+
+<a name="11"></a>
+<h2>如何让别人也看到表单上的数据？</h2>
+<p>很简单，只要提供您表单的网址，即可让其它人看到这张表单的数据，Ragic每一个帐号、每一张表单甚至每一笔数据，都有一个独立的网址，您可在浏览器的网址列取得它.</p>
+<img src="img/url1.png"/>
+<p>不过，由于不是每个人都有Ragic帐号，如果您要提供没有帐号的人也能查看，您必须先修改该表单的权限(在设计模式中，点选「表单设定」页签，接着点选「存取权限」页签)。</p>
+<p>在这里，您可以看到您的帐号下所有的群组，在这张表单的权限为何，在此Ragic提供了一个特别的群组「所有人」，意即不论是否为Ragic的使用者，是否为您的使用者均属此群组。</p>
+<img src="img/url2.png"/>
+<p>您可以为每个群组设定其在这张表单的存取角色为何，如果有使用者分属于2个群组，则他的权限会以2个群组中存取权限较高的为主。</p>
+<p>每次权限设定后，记得「保存」您的设计，以便生效；列表页与表单页的存取权限是相同的，您只需要设定其中之一即可。</p>
+<img src="img/url3.png"/>
+<p>权限设定后，如有人仍无法存取表单，可请他登出后重新登入，让权限重新生效。</p>
+
+<a name="12"></a>
+<h2>同时两个人更新同一笔数据会怎么样？</h2>
+<p>当使用者开始编辑数据时，该笔数据便会被Ragic锁定，如同时间有另一位使用者要编辑同一笔数据时，Ragic会提示该使用者该笔数据正在编辑中，该使用者应等到前一位使用者保存或取消，才能开始编辑，以避免数据互相覆盖。</p>
+<p>但在某些特殊情况下(如联络不到使用中的人又急须修正数据..)，Ragic也允许使用者手动取消锁定，唯必须注意的是，取消锁定后，该笔数据将会以最后编辑保存的内容为主，原使用者所输入到一半的数据，有可能有数据覆盖的风险。</p>
+<img src="img/lock.png"/>
+
+<a name="13"></a>
+<h2>要怎么把我同事加到数据库里面呢？</h2>
+<p>点选功能表中的「设定」页签，选择「使用者管理」，您将进入到使用者管理页面，您会看到您帐号下所有的使用者，在此点选「+新增」，接着填写该使用者数据即可。</p>
+<img src="img/user1.png"/>
+<img src="img/user2.png"/>
+<p>保存后，Ragic会自动发送一封Eamil (内含暂时密码)给该使用者，以便该使用者第一次登入Ragic。登入后，该使用者可自行俢改密码。</p>
+<img src="img/user3.png"/>
+
+<a name="14"></a>
+<h2>是否能够只有某些人看得到某些字段？</h2>
+<p>可以，我们可以利用「复制工作表」来达成。有些时候，相同的表单，可能因使用者角色的不同，所能看到的字段也不同，利用「复制工作表」，我们可以快速复制一张表单的设计，再增删部份字段即可。</p>
+<p>将鼠标移到功能表中您想要复制的表单上，点选鼠标右键，选择「复制工作表」(或者点选右方小箭头，再选择「复制工作表」)，Ragic便可复制产生另一个相同的表单，两张表单将存取同一份数据库中的数据，不论您在哪一张表单中输入数据，二张表单都能看到您所新增的数据；同样的，当您在其中一张表单删除某一笔数据，另一张表单中也不会再看到该笔数据。</p>
+<img src="img/diffields1.png"/>
+<p>表单复制后，我们接着便可为这二张表单设计不同的存取权限，Ex.第一张表单仅能给A群组存取，第二张表单则给B群组使用。</p>
+<img src="img/diffields2.png"/>
+<p>最后您可以设计这二张表单，新增或移除些字段，让它们拥有不同的显示内容了。</p>
+
+<a name="15"></a>
+<h2>可以设定每个人能看得到哪几笔数据吗？</h2>
+<p>可以，每张表单都能设定每个群组所扮演的角色为何，每位使用者依照他所属的群组，会在不同的表单中取得不同的角色，当使用者角色为<b>问卷式使用者</b>，他只能存取<b>自己</b>所新增的数据；而当使用者角色为<b>布告栏式使用者</b>，则他可以<b>看到所有</b>的数据，但是只能<b>编辑</b>自己新增的数据。</p>
+<img src="img/diffentry1.png"/>
+<p>一般而言，使用者只能存取自己所新增的数据，但有些设计可能会有例外。当表单中有<b>选择使用者</b>或<b>选择群组</b>字段时，如又勾选了<b>选定使用者有数据权限</b>，则届时，该笔数据的拥有者将会变成该字段所指定的人或该群组下所有的人。</p>
+<img src="img/diffentry2.png"/>
+
+<a name="16"></a>
+<h2>我有很多厂商或是客户的外人偶尔会使用我们的数据库，有办法买少一点使用者吗？</h2>
+<p>有几个方法能够帮助您处理大量使用者的情况</p>
+<p><b>1. 公开表单:</b> 您可以设计您的表单为公开表单，即任何人不需登入Ragic即可使用。如果您的系统不需要特别的权限，您可将您的表单存取权限设定为<b>所有人</b>都是<b>问卷式使用者</b>，那么每个人都将能填写表单；如果设成<b>布告栏使用者</b>，那么每个人不仅能填写表单，还能看到其他人所填写的内容。</p>
+<p>如果您需要在数据输入后，随时了解该笔数据的最新情况，那么您可以考虑接下来的做法：E-mail认证。</p>
+
+<img src="img/externalusers1.png"/>
+
+<p><b>2. E-mail 认证:</b> Ragic有一个很简单的方法，能够提供非Ragic的使用者，暂时拥有Ragic的存取权限。您可在表单中设计一Email字段，在「字段设定」页签中的「其它」页签，勾选其<b>Email认证</b>属性，之后每当表单存盘时，系统便会自动发送Email至该字段所填写的Email位址，Email中会提供本表单连结，让收件者可利用该连结登入Ragic.</b></p>
+<p>透过Email认证，Ragic可以知道登入者是谁(不论是否拥有Ragic帐号)，可以判断登入者的存取权限。本功能通常是为了让使用者了解他所新增的数据，是否有变更。</p>
+<p>这种方法的缺点是 (1) 这些使用者总是得透过Email来连结Ragic (2) 这些使用者无法以群组加以管理其在Ragic的使用权限。</p>
+
+<img src="img/externalusers2.png"/>
+
+<p><b>3. 大量授权:</b> 虽然 Ragic的收费并不昂贵，但当您需要大量帐号时，加起来也不便宜，因此Ragic另有优惠的大量授权方案，以及私有主机方案，提供选择。您可以联络 <b>sales@ragic.com</b>，告诉我们您的需求，我们将帮助您选择最适合的授权方案。</p>
+
+<a name="17"></a>
+<h2>简易版跟专业版差别在哪呢？</h2>
+<p>1. 简易版有5张表单的限制而专业版则没有限制，表单指的是您所设计的使用者输入介面，而非数据，假设Customer表单中有100笔客户数据，这样只算是1张表单。</p>
+<p>2. 简易版不支援<b>server-side Javascript 工作流程</b>，在专业版中，所有的表单都能透过<b>server-side Javascript 工作流程</b>撰写程式，来处理复杂的商业逻辑。基本上，任何Ragic Builder现行功能无法满足的需求，您都可以透过撰写<b>server-side Javascript 工作流程</b>来解决。</p>
+
+<a name="18"></a>
+<h2>要如何开始正式付款使用或是升级我的Ragic？</h2>
+<p>点选Ragic右上方「升级正式版!」，选择您要升级的Ragic版本。</p>
+<img src="/hp/faq/img/Pricing.png"/>
+<p>您会被导引至加密的线上刷卡页面，您的Ragic帐号将会在付款后自动升级</p>
+<img src="/hp/faq/img/upgrade.png"/>
+<p>您也可以随时从 [开始使用Ragic] => [Ragic帐号设定] => [帐号付款]，来进行<b>升级 / 购买</b>。</p>
+<img src="/hp/faq/img/account billing.png"/>
+
+<a name="19"></a>
+<h2>正式使用后，免费试用的天数会不见吗？</h2>
+<p>不用担心，试用期不会因为您升级正式版而消失哦，正式版的起算时间，会在试用期满之后才开始计算。</p>
+
+<a name="20"></a>
+<h2>保存空间用完了会怎么样？</h2>
+<p>Ragic的上限多半是「软性上限」，也就是说当您的应用超过上限时，并不会马上停止运作。我们会e-mail通知您需要升级您的帐户以满足现阶段的使用量。</p>
+
+<!-- padding -->
+<div style="height:500px;"></div>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+N,Members|zh-TW=會員,Member registration form<br>
+FS,0
+DS,2
+W,2=194,17=130
+A,MANAGER=6&EVERYONE=1&USER=1,0,3,357258847
+D,1,1,1,E-mail,
+D,1,2,4,User Name,
+D,1,3,2,Password,pwd=1
+F,1,7,,You can place the Web Form plug-in of this form to your website to enable visitors to register as an external user to your Ragic application,color=#3366FF
+F,1,8,,Your account can have unlimited free external users in your Ragic application.,color=#3366FF
+F,1,9,,External users have free access to all of your web plug-ins&#44; but not your Ragic applications here.,color=#3366FF
+F,1,10,,You can add more fields to this form for your users to fill out when registering through this form.,color=#3366FF
+K,F,1,Reset Password,/sims/reg/userPwdReset.jsp?emailNodeId={id}
+MSG,0,Register success! You will be redirected to the log in page.
+PRE_WORKFLOW_START
+/*
+* Please do not edit, this is necessary to manage users in Ragic application.
+*/
+var newEmail=param.getNewValue(1);
+//check if the user already exist locally
+if(db.getNodeId(1,newEmail)!=-1){
+  response.setStatus('ERROR');
+  response.setMessage('This e-mail already exists in your database.');
+}
+
+
+
+SCRIPT_START
+/*
+* Please do not edit, this is necessary to enable created users to log on to Ragic.
+*/
+var oldEmail=param.getOldValue(1);
+var newEmail=param.getNewValue(1);
+var password=param.getNewValue(2);
+
+//we do not allow changing e-mail after register
+//no old e-mail, meaning creating new entry
+if(!oldEmail){
+  user.registerUserToMainAccountDatabase(newEmail,password,false);
+}
+else if(!oldEmail.toString().equals(newEmail.toString())){
+  db.updateNode(1,param.getOldNodeId(1),oldEmail);
+  response.setStatus('WARN');
+  response.setMessage('You cannot edit user e-mail once it has been created.');
+}
+
+

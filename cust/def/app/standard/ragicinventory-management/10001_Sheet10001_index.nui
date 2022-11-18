@@ -1,0 +1,28 @@
+N,Locations,
+FS,2
+DS,2
+W,1=16&2=157&3=23&4=154&undefined=0,6=28
+TF,2000959
+KF,2000969
+SF,2000959
+S,2000960,standard/ragic-setup/1,
+S,2000965,standard/ragic-setup/1,
+S,2000967,standard/ragic-setup/1,
+A,MANAGER=6&EVERYONE=0&NULL=0&USER=3,0,3,301434067
+A2,
+D,1,2,2000959,Location Code,must=true&noDup=true
+L,3,2,2000960,Contact Person,usrref=2
+D,1,3,2000961,Location Name,must=true
+D,3,3,2000962,Phone Number,phone=1&vd=613&l=2000960
+D,1,4,2000963,Location Address,addr=1&cs=3
+D,1,6,2000964,Remarks,cs=3
+L,1,9,2000965,Created By,ro=true&usrref=2&dv=$USER
+D,3,9,2000966,Creation Time,fmt_d=yyyy/MM/dd HH:mm&ro=true&dv=$DATETIME
+L,1,10,2000967,Last Modified By,ro=true&usrref=2&dv=#USER
+D,3,10,2000968,Last Modified Time,fmt_d=yyyy/MM/dd HH:mm&ro=true&dv=#DATETIME
+F,1,1,,Location Information,backgroundColor=#4a6681&color=#FFFFFF&textAlign=center&fontWeight=bold&cs=4
+F,1,8,,Entry Log,backgroundColor=#4a6681&color=#FFFFFF&textAlign=center&fontWeight=bold&cs=4
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+QS,1

@@ -1,0 +1,83 @@
+N,Leads,
+FS,2
+DS,2
+W,1=16&2=102&3=53&4=123&5=-57&6=23&7=6&undefined=0,15=44&17=65
+TF,2000165
+KF,2000187
+SF,2000165
+ST,1,20,2000824,,,
+S,2000170,,Agriculture,Apparel,Banking,Biotechnology,Chemicals,Communications,Construction,Consulting,Education,Electronics,Energy,Engineering,Entertainment,Environmental,Finance,Food %26 Beverage,Government,Healthcare,Hospitality,Insurance,Machinery,Manufacturing,Media,Not for profit,Other,Recreation,Retail,Shipping,Technology,Telecommunications,Transportation,Utilities
+S,2000168,standard/ragic-setup/1,
+S,2000171,,Contacted,Open,Qualified,Unqualified
+S,2000164,,Advertisement,Employee Referral,External Referral,Partner,Public Relations,Seminar - Internal,Seminar - Partners,Trade Show,Web,Word of mouth,Other
+A,MANAGER=6&USER=3&EVERYONE=0,0,3,1748027611
+A2,
+D,1,2,2000163,First Name,
+D,3,2,2000167,Company,must=true
+D,6,2,2000165,Lead No.,ag=L-{0`number`00000}
+D,1,3,2000166,Last Name,
+L,3,3,2000170,Industry,
+L,6,3,2000168,Lead Owner,dv=$USER&usrref=1
+D,1,4,2000169,Full Name,f=A2+" "+A3&must=true&stylefontWeight=bold
+D,3,4,2000173,Number of Employees,fmt_n=#`###
+D,6,4,2000284,Last Contact Date,fmt_d=yyyy/MM/dd&f=LAST(D20)
+D,1,5,2000172,Title,
+D,3,5,2000175,Department,
+L,6,5,2000171,Lead Status,must=true
+D,1,6,2000174,E-mail,email=2
+D,3,6,2000177,Reports To,
+D,1,7,2000176,Phone,phonefmt=XXX-XXX-XXXX&phone=1
+L,3,7,2000164,Lead Source,
+D,1,8,2000188,Mobile,phonefmt=XXX-XXX-XXXX&phone=1
+D,3,8,2000179,Origin Campaign,userOps=true
+D,1,9,2000178,Fax,phone=1&phonefmt=XXX-XXX-XXXX
+D,1,12,2000180,Country,
+D,3,12,2000181,Zip Code,
+D,1,13,2000182,State/ Province,
+D,3,13,2000183,City,
+D,1,14,2000184,Street,
+D,1,15,2000185,Full Address,f=A14+" "+C13+" "+A13+" "+C12+" "+A12&addr=1&cs=3
+D,1,17,2000186,Note,cs=3
+D,1,20,2000819,Follow-up #,ag=F-{1`date`yyyyMMdd}-{0`number`000}
+D,2,20,2000820,Description,
+D,3,20,2000821,Result,
+D,4,20,2000822,Date & Time,dv=$DATETIME&fmt_d=yyyy/MM/dd HH:mm
+D,5,20,2000823,Note,cs=3
+F,1,1,,Lead Information,backgroundColor=#eaa930&color=#FFFFFF&fontWeight=bold&textAlign=center&cs=7
+F,1,11,,Address Information,backgroundColor=#eaa930&color=#FFFFFF&fontWeight=bold&textAlign=center&cs=4
+F,1,19,,Follow-up,backgroundColor=#eaa930&color=#FFFFFF&fontWeight=bold&textAlign=center&cs=7
+K,{"type":"B","seq":"1","name":"Create Account","action":"_RAGIC_AUTOGEN_CR_69762({id});","confirmBeforeAction":"false","needApproval":"false","userGroups":["EVERYONE"],"hideButton":"false"}
+K,{"type":"B","seq":"2","name":"Create Contact","action":"_RAGIC_AUTOGEN_CR_16029({id});","confirmBeforeAction":"false","needApproval":"false","userGroups":["EVERYONE"],"hideButton":"false"}
+K,{"type":"B","seq":"4","name":"Lead Status: Qualified","action":"_RAGIC_AUTOGEN_FIELD_UPDATER_35248({id});","confirmBeforeAction":"false","needApproval":"false","userGroups":["EVERYONE"],"hideButton":"false"}
+RMD_MAX_SEQ,0
+ET,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10003_Sheet10003_index.nui
+QS,1
+SCRIPT_START
+
+SHEET_SCOPE_START
+function _RAGIC_AUTOGEN_CR_69762(nodeId){
+  var result = db.entryCopier(JSON.stringify(
+{"THIS_PATH":"/ragicsales/10003","THIS_NODEID":nodeId,"NEW_PATH":"/ragicsales/10001","CHECK_MUST_FIELDS":false,"COPY":{"2000123":"2000167","2000128":"2000170","2000129":"2000173","2000135":"2000180","2000137":"2000181","2000139":"2000182","2000141":"2000183","2000143":"2000184","2000145":"2000185"}}
+  ), response);
+  if(result) return result;
+}//END_RAGIC_AUTOGEN_CR_69762
+
+
+
+function _RAGIC_AUTOGEN_CR_16029(nodeId){
+  var result = db.entryCopier(JSON.stringify(
+{"THIS_PATH":"/ragicsales/10003","THIS_NODEID":nodeId,"NEW_PATH":"/ragicsales/10002","CHECK_MUST_FIELDS":false,"COPY":{"2000147":"2000169","2000148":"2000172","2000149":"2000174","2000150":"2000176","2000151":"2000188","2000152":"2000186","2000153":"2000167","2000159":"2000185","2000160":"2000175","2000161":"2000177","2000162":"2000178"}}
+  ), response);
+  if(result) return result;
+}//END_RAGIC_AUTOGEN_CR_16029
+
+
+function _RAGIC_AUTOGEN_FIELD_UPDATER_35248(nodeId){
+  var result = db.fieldUpdater(JSON.stringify(
+{"THIS_PATH":"/ragicsales/10003","THIS_NODE_ID":nodeId,"UPD_FIELDS":{"2000171":"Qualified"}}
+  ));
+}//END_RAGIC_AUTOGEN_FIELD_UPDATER_35248

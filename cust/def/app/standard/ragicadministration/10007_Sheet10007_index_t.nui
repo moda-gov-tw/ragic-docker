@@ -1,0 +1,19 @@
+N,Asset Management,
+FS,2
+DS,2
+W,1=30&2=100&3=50&4=50&6=100,
+TF,2000307
+KF,2000327
+SF,2000307
+S,2000313,,Computer,Monitor,Other Computer Equipment,Other Equipment,Printer,Tablet,Television,Video Equipment
+A,MANAGER=6&EVERYONE=0&USER=3,0,2,919026958
+A2,
+D,1,1,2000307,Model,
+D,2,1,2000309,Manufacturer #,
+D,3,1,2000312,Asset Tag #,
+L,4,1,2000313,Asset Type,
+D,5,1,2000315,Service Date,fmt_d=yyyy/MM/dd
+D,6,1,2000317,Estimated Replacement Date,fmt_d=yyyy/MM/dd
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+QS,0

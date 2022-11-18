@@ -1,0 +1,80 @@
+N,Sales Order,
+FS,2
+DS,2
+W,1=20&2=44&3=131&4=44&5=36&6=-12&7=76&undefined=0,22=124
+TF,2002482
+KF,2002508
+SF,2002482
+ST,1,12,2002509,,,
+S,2002481,standard/ragicaccounting/10004,
+S,2002510,,Draft,Confirmed,Cancelled,Complete
+S,2002488,standard/ragic-setup/1,
+S,2002494,standard/ragicaccounting/10003,
+S,2002515,standard/ragicaccounting/10004,
+S,2002516,standard/ragicaccounting/10004,
+S,2002517,,Draft,Confirmed,Cancelled,Complete
+S,2002501,,Sales Tax
+S,2002503,,0%
+A,MANAGER=6&USER=3&EVERYONE=0,0,3,390758103
+A2,
+L,1,2,2002481,Client ID,cs=2&text=1&s=2001828&stf=2001822&mvp=/ragicpsi-lite|10001_Sheet10001&mvpf=2001826|1|Yes
+D,4,2,2002482,Sales Order #,ag=SO-{1`date`yyyyMMdd}-{0`number`000}&cs=3
+D,1,3,2002484,Client Name,cs=2&vd=2001824&l=2002481
+D,4,3,2002485,Sales Order Date,fmt_d=yyyy/MM/dd&cs=3&dv=$DATE
+D,1,4,2002487,Contact Name,cs=2&vd=2001841&l=2002481
+L,4,4,2002510,Status,cs=3&dv=Draft
+D,1,5,2002489,Phone,cs=2&phone=1&phonefmt=XXX-XXX-XXXX&vd=2001843&l=2002481
+L,4,5,2002488,Prepared By,dv=$USER&usrref=1&cs=3
+D,1,6,2002491,E-mail,cs=2&email=2&vd=2001844&l=2002481
+D,4,6,2002492,Shipping Date,fmt_d=yyyy/MM/dd&cs=3
+D,1,7,2002511,Ship Via,cs=2
+D,4,7,2002512,Tracking No.,cs=3
+D,1,8,2002513,Address,cs=6&addr=1&vd=2001829&l=2002481
+D,1,9,2002514,Shipping Address,cs=6&addr=1&vd=2001834&l=2002481
+D,1,12,2002493,Item #,dv=$SEQ&fmt_n=#`###
+L,2,12,2002494,Product No.,text=1&s=2001821&stf=2001810&mvp=/ragicpsi-lite|10002_Sheet10002&mvpf=2001816|1|$2002486
+D,3,12,2002495,Product Name,cs=2&vd=2001811&l=2002494
+D,4,12,2002496,Unit Price,fmt_n=$#`####.##&vd=2001817&l=2002494
+D,5,12,2002497,Qty,fmt_n=#`###
+D,6,12,2002498,Subtotal,f=F12*E12&fmt_n=$#`###.##
+L,7,12,2002515,Vendor No.,s=2001828&stf=2001822&mvp=/ragicpsi-lite|10001_Sheet10001&vd=2002479&l=2002494&hide=true
+L,8,12,2002516,Client ID,f=A2&s=2001828&stf=2001822&mvp=/ragicpsi-lite|10001_Sheet10001&hide=true
+L,9,12,2002517,Status,f=D4&hide=true
+D,5,16,2002500,Discount %,fmt_n=0.##%&dv=1&cs=2
+L,1,17,2002501,Tax Type,userOps=true&dv=Sales Tax
+D,5,17,2002502,Total,fmt_n=$#`###.##&f=G12*E16&cs=2
+L,1,18,2002503,Tax Rate,dv=0%&userOps=true
+D,5,18,2002504,Tax,fmt_n=$#`###.##&f=E17*A18&cs=2
+D,5,19,2002505,Shipping / Handling,fmt_n=$#`###.##&cs=2
+D,5,20,2002506,Grand Total,f=E17+E18+E19&fmt_n=$#`###.##&cs=2
+D,1,22,2002507,Remarks,cs=7
+F,1,1,,Quote,backgroundColor=#4c6a99&color=#FFFFFF&cs=7&fontWeight=bold&textAlign=center
+F,1,11,,Sales Items,cs=7&textAlign=center&backgroundColor=#4c6a99&color=#FFFFFF&fontWeight=bold
+X_MAX_DESIGNER_ID,101
+K,{"type":"B","seq":"1","name":"Create Invoice","action":"_RAGIC_AUTOGEN_CR_53577({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"false","userGroups":["EVERYONE","SYSAdmin"]}
+K,{"type":"B","seq":"2","name":"Status=Complete","action":"_RAGIC_AUTOGEN_FIELD_UPDATER_70565({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"false","userGroups":["EVERYONE"]}
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=true
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10003_Sheet10003_index.nui
+QS,1
+SHEET_SCOPE_START
+function _RAGIC_AUTOGEN_FIELD_UPDATER_70565(nodeId){
+  var result = db.fieldUpdater(JSON.stringify(
+{"THIS_PATH":"/ragicpsi-lite/10003","THIS_NODE_ID":nodeId,"UPD_FIELDS":{"2002510":"Complete"},"SUBTABLE_UPDATE_POLICY":"FORCE_CREATE","RECALCULATE":true}
+  ), response);
+}//END_RAGIC_AUTOGEN_FIELD_UPDATER_70565
+
+
+
+function _RAGIC_AUTOGEN_CR_53577(nodeId){
+  var result = db.entryCopier(JSON.stringify(
+{"THIS_PATH":"/ragicpsi-lite/10003","THIS_NODEID":nodeId,"NEW_PATH":"/ragicaccounting/10008","CHECK_MUST_FIELDS":false,"CHECK_VALIDATION_FIELDS":false,"CHECK_ALL_MUST_FIELDS_MAPPED":false,"SILENT":false,"RECAL_ALL_FORMULAS":true,"EXEC_WORKFLOW":true,"COPY":{"2001926":"2002481","2001927":"2002484","2001929":"2002489","2001930":"2002491","2001935":"2002493","2001936":"2002494","2001937":"2002495","2001938":"2002496","2001939":"2002497","2001940":"2002498","2001942":"2002502","2001943":"2002501","2001944":"2002504","2001945":"2002503","2001946":"2002500","2001948":"2002506"}}
+  ), response);
+  if(result) return result;
+}//END_RAGIC_AUTOGEN_CR_53577

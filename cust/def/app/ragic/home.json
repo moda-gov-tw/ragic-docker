@@ -1,0 +1,78 @@
+{
+  "dbConfig": {"maxDomainId": 1000001},
+  "menuv2_1": {"menuSets": [{
+    "id": "1",
+    "name": "$defalul_menuset",
+    "web": true,
+    "mobile": true,
+    "tabs": [
+      {
+        "name": "$tab_start",
+        "path": "/start",
+        "type": "tab",
+        "startTab": true,
+        "items": [
+          {
+            "name": "$start_install",
+            "type": "script",
+            "script": "initTemplateLibrary();"
+          },
+          {
+            "id": "4",
+            "name": "$start_create",
+            "type": "url",
+            "url": "/start",
+            "groupsName": "",
+            "urlType": "webURL"
+          },
+          {
+            "id": "5",
+            "name": "$start_config",
+            "type": "url",
+            "url": "/ragic-setup/1",
+            "groupsName": "",
+            "urlType": "webURL"
+          }
+        ]
+      },
+      {
+        "name": "Ragic Server Management",
+        "path": "/adm",
+        "type": "tab",
+        "items": [
+          {
+            "name": "Account Monitor",
+            "type": "sheet",
+            "path": "/adm",
+            "si": 1
+          },
+          {
+            "name": "DB Monitor",
+            "type": "sheet",
+            "path": "/adm",
+            "si": 3
+          },
+          {
+            "name": "User Monitor",
+            "type": "sheet",
+            "path": "/adm",
+            "si": 2
+          },
+          {
+            "name": "Follow Up",
+            "type": "sheet",
+            "path": "/adm",
+            "si": 6
+          }
+        ]
+      },
+      {
+        "name": "$tab_report",
+        "path": "Report",
+        "type": "tab",
+        "reportTab": true,
+        "items": []
+      }
+    ]
+  }]}
+}

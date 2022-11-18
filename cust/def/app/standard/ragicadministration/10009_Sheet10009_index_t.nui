@@ -1,0 +1,29 @@
+N,Office Supplies - Request Form,
+FS,2
+DS,2
+W,1=59&2=16&3=89&5=17&6=60&7=20,
+TF,2000334
+KF,2000343
+SF,2000334
+S,2000336,standard/ragic-setup/1,
+S,2000369,,Processing,Complete,Cancel
+A,MANAGER=6&USER=3&EVERYONE=0,0,2,756740612
+A2,
+D,1,1,2000334,Request Number,ro=true&ag={0`number`00000}
+D,2,1,2000335,Request Date,dv=$DATE&ro=true&fmt_d=yyyy/MM/dd
+L,3,1,2000336,Request by,dv=$USER&ro=true&usrref=2
+D,4,1,2000337,Department,ro=true&vd=611&l=2000336
+L,5,1,2000369,Request Status,dv=Processing
+D,6,1,2000346,Update Stock Date,ro=true&fmt_d=yyyy/MM/dd HH:mm
+X,Open request,102,2000369|1|Processing,1,%7B%22emails%22%3A%5B%5D%7D,%7B%7D
+X_MAX_DESIGNER_ID,102
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10009_Sheet10009_index_t.nui
+QS,0

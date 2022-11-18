@@ -1,0 +1,30 @@
+N,Booking Details,For internal / external / guest users
+FS,2
+DS,2
+W,3=97&4=97&5=35,
+TF,2003359
+KF,2003360
+SF,2003359
+S,2003356,standard/ragicreservation-system-internal-guest/10001,
+A,null=0&MANAGER=6&USER=3&X-USER=1&EVERYONE=1,1,2,1206916426
+A2,
+D,1,1,2003361,Booked By,email=2&ro=true&stylefontWeight=bold&styletextAlign=left&styleVfontWeight=bold&styleVtextAlign=left
+L,2,1,2003356,Room,s=2003354&stf=2003341&mvp=/ragicreservation-system-internal-guest|10001_Sheet10001&ro=true&stylefontWeight=bold&styletextAlign=left&styleVfontWeight=bold&styleVtextAlign=left
+D,3,1,2003357,Start Time,fmt_d=yyyy/MM/dd HH:mm:ss&ro=true&stylefontWeight=bold&styletextAlign=left&styleVfontWeight=bold&styleVtextAlign=left
+D,4,1,2003358,End Time,fmt_d=yyyy/MM/dd HH:mm:ss&ro=true&stylefontWeight=bold&styletextAlign=left&styleVfontWeight=bold&styleVtextAlign=left
+D,5,1,2003359,Remarks,ro=true&stylefontWeight=bold&styletextAlign=left&styleVfontWeight=bold&styleVtextAlign=left
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=theme19
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10002_Sheet10002_index_t.nui
+QS,0
+SCRIPT_START
+
+SHEET_SCOPE_START
+

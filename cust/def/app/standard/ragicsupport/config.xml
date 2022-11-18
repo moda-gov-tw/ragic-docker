@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+  <name>Support</name>
+  <desc />
+  <publisher />
+  <createDate />
+  <updateDate />
+  <version />
+  <price />
+  <status />
+  <sourcePath />
+  <appId />
+  <forms seq="8">
+    <form sheetIndex="10001" type="NUI" seq="1">Customer Service Tickets</form>
+    <form sheetIndex="10002" type="NUI" seq="2">Support Knowledge Base </form>
+  </forms>
+</module>
+

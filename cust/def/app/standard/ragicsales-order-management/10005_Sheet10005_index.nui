@@ -1,0 +1,133 @@
+N,Delivery Note,
+FS,2
+DS,2
+W,1=24&2=36&3=181&4=90&5=8&6=38&7=13&8=121&undefined=0,11=19&&24=46
+TF,2000954
+KF,2000926
+SF,2000954
+ST,1,14,2000953,,,
+S,2000916,standard/ragicsales-order-management/10004,
+S,2000918,
+S,2000920,standard/ragiclegal/10002,
+S,2000955,standard/ragic-setup/1,
+S,2000923,,Airmail
+S,2000936,standard/ragicsales/10009,
+S,2000941,standard/ragicinventory-management/10002,
+S,2001961,
+S,2000943,,Sales Tax
+S,2000945,,0%
+S,2000957,,Complete
+S,2000949,standard/ragic-setup/1,
+S,2000951,standard/ragic-setup/1,
+A,MANAGER=6&USER=3&EVERYONE=0,0,3,1138937025
+A2,
+D,2,1,2001962,Delivery Note,
+D,1,2,2000954,Delivery Note #,ag=D-{1`date`yyyyMMdd}-{0`number`000}&noDup=true&cs=2
+L,4,2,2000916,Sales Order #,cs=3&s=2000906&stf=2000877&mvp=/ragicsales-order-management|10004_Sheet10004&ro=true&noSyncName=true
+D,1,3,2000917,Sales Order Date,cs=2&fmt_d=yyyy/MM/dd&vd=2000879&l=2000916&ro=true&noSyncName=true
+L,4,3,2000918,Order Category,cs=3&vd=2000878&l=2000916&ro=true
+L,1,6,2000920,Customer ID,cs=2&s=2000153&stf=2000130&mvp=/ragicsales-order-management|10003_Sheet10003&vd=2000881&l=2000916&ro=true
+D,4,6,2000921,Customer Name,cs=3&vd=2000883&l=2000916&ro=true
+D,1,7,2000928,Phone,cs=2&phone=1&phonefmt=XXX-XXX-XXXX&vd=2000885&l=2000916&ro=true
+L,4,7,2000955,Account Owner,usrref=1&vd=2000882&l=2000916&cs=3&ro=true
+D,1,8,2001113,Mobile,phone=1&phonefmt=XXX-XXX-XXXX&vd=2000887&l=2000916&cs=2&ro=true
+D,4,8,2001112,Estimated Delivery Date,cs=3&fmt_d=yyyy/MM/dd&vd=2000891&l=2000916&ro=true
+D,1,9,2000931,E-mail,cs=2&email=2&vd=2000888&l=2000916&ro=true
+L,4,9,2000923,Ship Via,cs=3&vd=2000890&l=2000916&ro=true
+D,1,10,2000933,Recipient,cs=2&vd=2000910&l=2000916&ro=true
+D,4,10,2000956,Actual Delivery Date,fmt_d=yyyy/MM/dd&cs=3&ro=true&noSyncName=true
+D,1,11,2000934,Shipping Address,cs=6&addr=1&vd=2000892&l=2000916&ro=true
+D,1,14,2000935,#,fmt_n=#`###&dv=$SEQ
+L,2,14,2000936,Product #,s=2000852&stf=2000842&mvp=/ragicsales-order-management|10002_Sheet10002&must=true
+D,3,14,2000937,Product Name,vd=2000843&l=2000936
+D,4,14,2001382,Specification,vd=2001292&l=2000936
+D,5,14,2000938,Unit Price,fmt_n=$#`###.#####&vd=2000844&l=2000936
+D,6,14,2000939,Qty,fmt_n=#`###
+D,7,14,2000940,Subtotal,f=E14*F14&fmt_n=$#`###.#####
+L,8,14,2000941,Product No*,stf=2000211&mvp=/ragicsales-order-management|10001_Sheet10001&vd=2000224&l=2000936&s=2000224&hide=true&must=true&stylecolor=#CC0000&stylefontWeight=bold&stylebackgroundColor=#CC0000&styleVbackgroundColor=#FF6666
+L,9,14,2001961,Unit*,vd=2001958&l=2000936&hide=true
+D,6,18,2000946,Discount % Off,fmt_n=0.##%&ro=true
+L,1,19,2000943,Tax Category,vd=2000900&l=2000916&ro=true
+D,6,19,2000942,Total,fmt_n=$#`###.##&f=G14*(1-F18)
+L,1,20,2000945,Tax Rate,vd=2000902&l=2000916&ro=true
+D,6,20,2000944,Tax,fmt_n=$#`###.##&f=F19*A20
+L,1,21,2000957,Status*,dv=Complete&hide=true
+D,6,21,2000947,Shipping / Handling,fmt_n=$#`###.##
+D,6,22,2000922,Amount Due,f=F19+F20+F21&fmt_n=$#`###.##
+D,1,24,2000948,Remarks,cs=6
+L,1,27,2000949,Created By,usrref=2&dv=$USER&ro=true&cs=2
+D,4,27,2000950,Creation Time,fmt_d=yyyy/MM/dd HH:mm&dv=$DATETIME&ro=true&cs=3
+L,1,28,2000951,Last Modified By,usrref=2&dv=#USER&cs=2&ro=true
+D,4,28,2000952,Last Modified Time,fmt_d=yyyy/MM/dd HH:mm&ro=true&cs=3&dv=#DATETIME
+D,1,32,2000958,Actual Delivery Date*,fmt_d=yyyy/MM/dd HH:mm&ro=true&hide=true
+F,1,1,,Delivery Note,backgroundColor=#513951&color=#FFFFFF&cs=7&textAlign=center&fontWeight=bold
+F,1,5,,Customer & Shipping Information,backgroundColor=#513951&color=#FFFFFF&cs=7&textAlign=center&fontWeight=bold
+F,1,13,,Sales Information,backgroundColor=#513951&color=#FFFFFF&fontWeight=bold&cs=7&textAlign=center
+F,1,26,,Entry Log,backgroundColor=#513951&color=#FFFFFF&fontWeight=bold&cs=7&textAlign=center
+X_MAX_DESIGNER_ID,101
+K,{"type":"B","seq":"1","name":"Create Stock Out","action":"_RAGIC_AUTOGEN_CR_21742({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"false","userGroups":["EVERYONE"],"checkIfUserCanEdit":false}
+K,{"type":"B","seq":"2","name":"Delivery Complete","action":"_RAGIC_AUTOGEN_FIELD_UPDATER_30002({id});","confirmBeforeAction":"false","needApproval":"false","userGroups":["EVERYONE"],"hideButton":"true","checkIfUserCanEdit":false}
+K,{"type":"B","seq":"3","name":"Update SO","action":"_RAGIC_AUTOGEN_ENTRY_UPDATER_36673({id});","confirmBeforeAction":"false","needApproval":"false","userGroups":["EVERYONE"],"hideButton":"true","checkIfUserCanEdit":false}
+K,{"type":"B","seq":"4","name":"Update Delivery Complete Date (& SO)","action":"_RAGIC_AUTOGEN_MERGED_BUTTON_17194({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"false","userGroups":["EVERYONE"],"checkIfUserCanEdit":false}
+K,{"type":"B","seq":"5","name":"E-mail this Delivery Note","action":"_RAGIC_AUTOGEN_SEND_CUSTOM_MAIL_89003({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"false","userGroups":["EVERYONE"],"checkIfUserCanEdit":false}
+K,{"type":"B","seq":"6","name":"Create Product Invoice","action":"_RAGIC_AUTOGEN_CR_60240({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"false","userGroups":["EVERYONE"],"checkIfUserCanEdit":false}
+RMD_MAX_SEQ,0
+ET,%5B%7B%22id%22%3A0%2C%22name%22%3Anull%2C%22subject%22%3A%22%257B%257BUSER_NAME%257D%257D%2520has%2520sent%2520you%2520%255B%257B%257BTITLE_FIELD%257D%257D%255D%253A%2520%257B%257BTITLE_VALUE%257D%257D%22%2C%22content%22%3A%22Hi%2520%257B%257B2000921%257D%257D%252C%2520%253Cbr%252F%253E%253Cbr%252F%253EThank%2520you%2520for%2520your%2520order%252C%2520your%2520order%2520has%2520been%2520despatched%2520from%2520our%2520warehouse.%2520Detailed%2520information%2520are%2520stated%2520below%253A%253Cbr%252F%253E%253Cbr%252F%253EDelivery%2520Note%2520%2523%253A%2520%257B%257B2000954%257D%257D%253Cbr%252F%253ESales%2520Order%2520%2523%253A%2520%257B%257B2000916%257D%257D%253Cbr%252F%253ESales%2520Order%2520Date%253A%2520%257B%257B2000917%257D%257D%253Cbr%252F%253EOrder%2520Category%253A%2520%257B%257B2000918%257D%257D%253Cbr%252F%253ECustomer%2520Name%253A%2520%257B%257B2000921%257D%257D%253Cbr%252F%253EPhone%253A%2520%257B%257B2000928%257D%257D%253Cbr%252F%253EMobile%253A%2520%257B%257B2001113%257D%257D%253Cbr%252F%253EE-mail%253A%2520%257B%257B2000931%257D%257D%253Cbr%252F%253EAccount%2520Owner%253A%2520%257B%257B2000955%257D%257D%253Cbr%252F%253EShip%2520Via%253A%2520%257B%257B2000923%257D%257D%253Cbr%252F%253ERecipient%253A%2520%257B%257B2000933%257D%257D%253Cbr%252F%253EActual%2520Delivery%2520Date%253A%2520%257B%257B2000956%257D%257D%253Cbr%252F%253EShipping%2520Address%253A%2520%257B%257B2000934%257D%257D%253Cbr%252F%253ETotal%253A%2520%257B%257B2000942%257D%257D%253Cbr%252F%253ETax%2520Category%253A%2520%257B%257B2000943%257D%257D%253Cbr%252F%253ETax%253A%2520%257B%257B2000944%257D%257D%253Cbr%252F%253ETax%2520Rate%253A%2520%257B%257B2000945%257D%257D%253Cbr%252F%253EDiscount%2520%2525%253A%2520%257B%257B2000946%257D%257D%253Cbr%252F%253EShipping%2520%252F%2520Handling%253A%2520%257B%257B2000947%257D%257D%253Cbr%252F%253EAmount%2520Due%253A%2520%257B%257B2000922%257D%257D%253Cbr%252F%253ERemarks%253A%2520%257B%257B2000948%257D%257D%253Cbr%252F%253EStatus%253A%2520%257B%257B2000957%257D%257D%253Cbr%252F%253ESO%2520Updated%2520Time%253A%2520%257B%257B2000958%257D%257D%253Cbr%252F%253ELast%2520Modified%2520Time%253A%2520%257B%257B2000952%257D%257D%253Cbr%252F%253E%253Cbr%252F%253E%253Cb%253EPlease%2520do%2520not%2520reply%2520to%2520this%2520email%252C%2520this%2520is%2520an%2520automated%2520message.%253C%252Fb%253E%253C%252Fdiv%253E%22%2C%22attributes%22%3A%7B%22type%22%3A%22actionButton%22%2C%22key%22%3A5%7D%2C%22att%22%3A%5B%5D%2C%22receiverList%22%3A%22%257B%257B2000931%257D%257D%22%7D%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10005_Sheet10005_index.nui
+QS,1
+SCRIPT_START
+
+SHEET_SCOPE_START
+function _RAGIC_AUTOGEN_FIELD_UPDATER_30002(nodeId){
+  var result = db.fieldUpdater(JSON.stringify(
+{"THIS_PATH":"/ragicsales-order-management/10005","THIS_NODE_ID":nodeId,"UPD_FIELDS":{"2000956":"{{TODAY}}"}}
+  ));
+}//END_RAGIC_AUTOGEN_FIELD_UPDATER_30002
+
+
+
+
+function _RAGIC_AUTOGEN_ENTRY_UPDATER_36673(nodeId){
+  var result = db.entryUpdater(JSON.stringify(
+{"THIS_PATH":"/ragicsales-order-management/10005","UPDATE_PATH":"/ragicsales-order-management/10004","THIS_NODE_ID":nodeId,"MATCH":{"2000877":"2000916"},"ACTIONS":[{"THIS_NUMBER_FIELD":"2000956","UPDATE_ACTION":"SET","UPDATE_NUMBER_FIELD":"2001114"},{"THIS_NUMBER_FIELD":"2000957","UPDATE_ACTION":"SET","UPDATE_NUMBER_FIELD":"2000880"}],"MULTI_FIELDS":true,"LAST_UPDATE_FIELD":"2000958","RECALCULATE":false}
+  ), response);
+}//END_RAGIC_AUTOGEN_ENTRY_UPDATER_36673
+
+
+function _RAGIC_AUTOGEN_CR_21742(nodeId){
+  var result = db.entryCopier(JSON.stringify(
+{"TEMPLATE_NAME":"Inventory", "TEMPLATE_SHEET_NAME":"Stock Out", "THIS_PATH":"/ragicsales-order-management/10005","THIS_NODEID":nodeId,"NEW_PATH":"/ragicinventory-management/10005","CHECK_MUST_FIELDS":false,"COPY":{"2001028":"2000954","2001032":"2000941","2001033":"2000937","2001037":"2000939","2001383":"2001382"}}
+  ), response);
+  if(result) return result;
+}//END_RAGIC_AUTOGEN_CR_21742
+
+
+
+function _RAGIC_AUTOGEN_SEND_CUSTOM_MAIL_89003(nodeId){
+  var result = db.sendCustomEmail(JSON.stringify(
+{"THIS_PATH":"/ragicsales-order-management/10005","THIS_NODE_ID":nodeId,"type":"actionButton","key":5}
+  ), response);
+}//END_RAGIC_AUTOGEN_SEND_CUSTOM_MAIL_89003
+
+
+function _RAGIC_AUTOGEN_MERGED_BUTTON_17194(nodeId){
+  db.executeMergedActionButtons(JSON.stringify(
+{"THIS_NODE_ID":nodeId,"THIS_PATH":"/ragicsales-order-management","THIS_SHEETINDEX":10005,"ACTIONS":["_RAGIC_AUTOGEN_FIELD_UPDATER_30002","_RAGIC_AUTOGEN_ENTRY_UPDATER_36673"]}
+  ), response);
+  response.setDisplayButtonNameAsMessage(true)
+}//END_RAGIC_AUTOGEN_MERGED_BUTTON_17194
+
+
+
+function _RAGIC_AUTOGEN_CR_60240(nodeId){
+  var result = db.entryCopier(JSON.stringify(
+{"TEMPLATE_NAME":"Accounting (Integrate)", "TEMPLATE_SHEET_NAME":"Product Invoice","THIS_PATH":"/ragicsales-order-management/10005","THIS_NODEID":nodeId,"NEW_PATH":"/ragicaccounting-integrate/10003","CHECK_MUST_FIELDS":false,"CHECK_VALIDATION_FIELDS":false,"CHECK_ALL_MUST_FIELDS_MAPPED":false,"SILENT":false,"RECAL_ALL_FORMULAS":true,"EXEC_WORKFLOW":true,"COPY":{"2002105":"2000935","2002106":"2000936","2002107":"2000937","2002108":"2001382","2002109":"2000938","2002110":"2000939","2002111":"2000940","2002112":"2000941","2002113":"2001961","2002114":"2000946","2002115":"2000943","2002116":"2000942","2002117":"2000945","2002118":"2000944","2002120":"2000947","2002121":"2000922","2002132":"2000920","2002133":"2000921","2002134":"2000954"}}
+  ), response);
+  if(result) return result;
+}//END_RAGIC_AUTOGEN_CR_60240

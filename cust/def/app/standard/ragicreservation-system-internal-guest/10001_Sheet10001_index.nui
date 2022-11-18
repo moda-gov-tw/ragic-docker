@@ -1,0 +1,38 @@
+N,Venues,
+FS,2
+DS,2
+W,1=90&2=160&3=160&4=160&5=160,8=24
+TF,2003339
+KF,2003354
+SF,2003339
+ST,1,9,2003360,2003356,,
+A,null=0&MANAGER=6&USER=3&EVERYONE=0,0,3,1675074141
+A2,
+D,1,1,2003339,No.,ag={0`number`00000}&stylefontWeight=bold&styletextAlign=left&styleVfontWeight=bold&styleVtextAlign=left
+G,3,1,2003340,Image,multipleImages=true&fixImageMax=true&stylefontWeight=bold&styletextAlign=left&styleVfontWeight=bold&styleVtextAlign=left
+D,1,2,2003341,Name,noDup=true&stylefontWeight=bold&styletextAlign=left&styleVfontWeight=bold&styleVtextAlign=left
+D,1,4,2003343,Capacity,fmt_n=#`###&stylefontWeight=bold&styletextAlign=left&styleVfontWeight=bold&styleVtextAlign=left
+D,1,5,2003344,Address,addr=1&stylefontWeight=bold&styletextAlign=left&styleVfontWeight=bold&styleVtextAlign=left
+D,1,6,2003345,Remarks,stylefontWeight=bold&styletextAlign=left&styleVfontWeight=bold&styleVtextAlign=left
+D,1,9,2003361,Booked By,email=2&ro=true&noclone=true&stylefontWeight=bold&styletextAlign=left&styleVfontWeight=bold&styleVtextAlign=left
+D,2,9,2003357,Start Time,fmt_d=yyyy/MM/dd HH:mm:ss&ro=true&noclone=true&stylefontWeight=bold&styletextAlign=left&styleVfontWeight=bold&styleVtextAlign=left
+D,3,9,2003358,End Time,fmt_d=yyyy/MM/dd HH:mm:ss&ro=true&noclone=true&stylefontWeight=bold&styletextAlign=left&styleVfontWeight=bold&styleVtextAlign=left
+D,4,9,2003362,Duration (Hours),fmt_n=#`###.##&ro=true&f=(C9-B9)*24&stylefontWeight=bold&styletextAlign=left&styleVtextAlign=left&styleVfontWeight=bold
+D,5,9,2003359,Remarks,ro=true&noclone=true&stylefontWeight=bold&styletextAlign=left&styleVfontWeight=bold&styleVtextAlign=left
+F,1,8,,Booking Details,cs=5&background=#0055BB&color=#ffffff&fontWeight=bold&textAlign=center&fontSize=18
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+IR,%7B%22rules%22%3A%5B%7B%22cons%22%3A%5B%7B%22domainId%22%3A2003358%2C%22value%22%3A%22%24PAST%22%2C%22isSubtable%22%3Atrue%2C%22operator%22%3A%22Special%22%7D%5D%2C%22conLogic%22%3A%22AND%22%2C%22actions%22%3A%5B%7B%22domainId%22%3A2003360%2C%22action%22%3A%22valueColor%22%2C%22actionValue%22%3A%22%23C0C0C0%22%2C%22isSubtable%22%3Atrue%7D%5D%2C%22actSubtableRoot%22%3A2003360%7D%5D%7D
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=theme20
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10001_Sheet10001_index.nui
+QS,1
+SCRIPT_START
+
+SHEET_SCOPE_START
+

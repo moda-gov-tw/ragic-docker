@@ -1,0 +1,70 @@
+N,Materials Return,
+FS,2
+DS,2
+W,1=15&2=132&3=35&4=10&5=57&6=26&7=-20&8=137&undefined=0,
+TF,2001683
+KF,2001696
+SF,2001683
+ST,1,7,2001697,,,
+S,2001684,standard/ragic-setup/1,
+S,2001686,standard/ragicproduction-management/10008,
+S,2001688,standard/ragicinventory-management/10002,
+S,2001691,standard/ragicinventory-management/10001,
+S,2001693,standard/ragicinventory-management/10003,
+S,2001698,standard/ragic-setup/1,
+A,NULL=0&MANAGER=6&USER=3&EVERYONE=0,0,3,1848481281
+A2,
+D,1,2,2001683,Return #,ag=MRT-{1`date`yyyyMMdd}-{0`number`000}&cs=3
+L,5,2,2001684,Created By,cs=3&usrref=2&dv=$USER
+D,1,3,2001685,Date,fmt_d=MM/dd/yyyy&cs=3
+L,5,3,2001686,Related Work Order #,cs=3&s=2001654&stf=2001640&mvp=/ragicproduction-management|10008_Sheet10008&must=true
+D,1,4,2001687,Remarks,cs=7
+L,1,7,2001688,Material No.,s=2000224&stf=2000211&mvp=/ragicproduction-management|10001_Sheet10001&must=true
+D,2,7,2001689,Material Name,vd=2000213&l=2001688&ro=true
+D,3,7,2001690,Specification,vd=2000840&l=2001688&ro=true
+L,4,7,2001691,Location Code,s=2000969&stf=2000959&mvp=/ragicinventory-management|10001_Sheet10001&must=true
+D,5,7,2001692,Location Name,vd=2000961&l=2001691&ro=true
+L,6,7,2001693,Inventory No.,s=2000988&stf=2000982&mvp=/ragicinventory-management|10003_Sheet10003&must=true&mvpf=2000224|1|$2001688%262000980|1|$2001691
+D,7,7,2001694,Qty,fmt_n_ts=`&fmt_n_ds=.&fmt_n=#`####.##&must=true
+D,8,7,2001695,Note,
+D,1,13,2001802,Return Sent Time,fmt_d=yyyy/MM/dd HH:mm&ro=true&cs=3&stylefontSize=11
+D,5,13,2001803,Update Work Order Time,fmt_d=yyyy/MM/dd HH:mm&ro=true&cs=3&stylefontSize=12
+L,1,14,2001698,Last Modified By,cs=3&usrref=2&dv=#USER&ro=true&stylefontSize=12
+D,5,14,2001699,Last Modified Time,fmt_d=yyyy/MM/dd HH:mm&dv=#DATETIME&ro=true&cs=3
+F,1,1,,Material Return Information,cs=8&backgroundColor=#3067a6&color=#FFFFFF&fontWeight=bold&textAlign=center
+F,1,6,,Return Items,cs=8&backgroundColor=#3067a6&color=#FFFFFF&fontWeight=bold&textAlign=center
+K,{"type":"B","seq":"1","name":"Send Material Return","action":"_RAGIC_AUTOGEN_ENTRY_UPDATER_48193({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"false","userGroups":["EVERYONE"]}
+K,{"type":"B","seq":"2","name":"Reverse Send Material Return","action":"_RAGIC_AUTOGEN_ENTRY_UPDATER_48193_REVERSE({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"false","userGroups":["EVERYONE"]}
+K,{"type":"B","seq":"3","name":"Update Work Order Qty Received","action":"_RAGIC_AUTOGEN_ENTRY_UPDATER_35232({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"false","userGroups":["EVERYONE"]}
+K,{"type":"B","seq":"4","name":"Reverse Update Work Order Qty Received","action":"_RAGIC_AUTOGEN_ENTRY_UPDATER_35232_REVERSE({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"false","userGroups":["EVERYONE"]}
+RMD_MAX_SEQ,0
+ET,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10009_Sheet10009_index.nui
+QS,1
+SHEET_SCOPE_START
+function _RAGIC_AUTOGEN_ENTRY_UPDATER_48193(nodeId){
+  var result = db.entryUpdater(JSON.stringify(
+{"THIS_PATH":"/ragicproduction-management/10009","UPDATE_PATH":"/ragicinventory-management/10003","THIS_NODE_ID":nodeId,"MATCH":{"2000224":"2001688","2000980":"2001691","2000982":"2001693"},"ACTIONS":[{"THIS_NUMBER_FIELD":"2001694","UPDATE_ACTION":"ADD","UPDATE_NUMBER_FIELD":"2000983"}],"MULTI_FIELDS":true,"LAST_UPDATE_FIELD":"2001802","RECALCULATE":true,"CHECK_USER_GROUPS":false,"CHECK_MUST_FIELDS":false,"CHECK_VALIDATION_FIELDS":false}
+  ), response);
+}//END_RAGIC_AUTOGEN_ENTRY_UPDATER_48193
+
+function _RAGIC_AUTOGEN_ENTRY_UPDATER_48193_REVERSE(nodeId){
+  var result = db.entryUpdater(JSON.stringify(
+{"THIS_PATH":"/ragicproduction-management/10009","UPDATE_PATH":"/ragicinventory-management/10003","THIS_NODE_ID":nodeId,"MATCH":{"2000224":"2001688","2000980":"2001691","2000982":"2001693"},"ACTIONS":[{"THIS_NUMBER_FIELD":"2001694","UPDATE_ACTION":"SUBSTRACT","UPDATE_NUMBER_FIELD":"2000983"}],"MULTI_FIELDS":true,"LAST_UPDATE_FIELD":"2001802","RECALCULATE":true,"CHECK_USER_GROUPS":false,"CHECK_MUST_FIELDS":false,"CHECK_VALIDATION_FIELDS":false,"REVERSE":true}
+  ), response);
+}//END_RAGIC_AUTOGEN_ENTRY_UPDATER_48193
+
+function _RAGIC_AUTOGEN_ENTRY_UPDATER_35232(nodeId){
+  var result = db.entryUpdater(JSON.stringify(
+{"THIS_PATH":"/ragicproduction-management/10009","UPDATE_PATH":"/ragicproduction-management/10010","THIS_NODE_ID":nodeId,"MATCH":{"2001654":"2001686","2001656":"2001688"},"ACTIONS":[{"THIS_NUMBER_FIELD":"2001694","UPDATE_ACTION":"SUBSTRACT","UPDATE_NUMBER_FIELD":"2001661"}],"MULTI_FIELDS":true,"LAST_UPDATE_FIELD":"2001803","RECALCULATE":true,"CHECK_USER_GROUPS":false,"CHECK_MUST_FIELDS":false,"CHECK_VALIDATION_FIELDS":false}
+  ), response);
+}//END_RAGIC_AUTOGEN_ENTRY_UPDATER_35232
+
+function _RAGIC_AUTOGEN_ENTRY_UPDATER_35232_REVERSE(nodeId){
+  var result = db.entryUpdater(JSON.stringify(
+{"THIS_PATH":"/ragicproduction-management/10009","UPDATE_PATH":"/ragicproduction-management/10010","THIS_NODE_ID":nodeId,"MATCH":{"2001654":"2001686","2001656":"2001688"},"ACTIONS":[{"THIS_NUMBER_FIELD":"2001694","UPDATE_ACTION":"ADD","UPDATE_NUMBER_FIELD":"2001661"}],"MULTI_FIELDS":true,"LAST_UPDATE_FIELD":"2001803","RECALCULATE":true,"CHECK_USER_GROUPS":false,"CHECK_MUST_FIELDS":false,"CHECK_VALIDATION_FIELDS":false,"REVERSE":true}
+  ), response);
+}//END_RAGIC_AUTOGEN_ENTRY_UPDATER_35232

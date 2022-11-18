@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+  <name>薪酬管理</name>
+  <desc />
+  <publisher />
+  <createDate />
+  <updateDate />
+  <version />
+  <price />
+  <status />
+  <sourcePath />
+  <appId />
+  <forms seq="49">
+    <form sheetIndex="20001" type="NUI" seq="1">薪資結構</form>
+    <form sheetIndex="20002" type="NUI" seq="2">健保級距對照表</form>
+    <form sheetIndex="20003" type="NUI" seq="3">勞保級距對照表</form>
+    <form sheetIndex="20004" type="NUI" seq="4">參數</form>
+    <form sheetIndex="20005" type="NUI" seq="5">薪資單</form>
+    <form sheetIndex="20006" type="NUI" seq="6">年資特休對照</form>
+    <form sheetIndex="20007" type="NUI" seq="7">假別管理</form>
+    <form sheetIndex="20008" type="NUI" seq="8">請假單</form>
+    <form sheetIndex="20009" type="NUI" seq="9">加班申請單</form>
+    <form sheetIndex="20010" type="NUI" seq="10">人事資料表</form>
+    <form sheetIndex="20011" type="NUI" seq="11">假期管理</form>
+    <form sheetIndex="20012" type="NUI" seq="12">假期細節</form>
+  </forms>
+</module>

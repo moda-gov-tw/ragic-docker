@@ -1,0 +1,31 @@
+N,Opportunities,
+FS,2
+DS,2
+W,1=18&2=86&3=75&4=11&5=60&6=21&7=48&8=-25&9=17,
+TF,2000189
+KF,2000210
+SF,2000189
+S,2000190,standard/ragiclegal/10002,
+S,2000192,standard/ragicsales/10002,
+S,2000193,standard/ragic-setup/1,
+S,2000195,,Existing Business,New Business
+S,2000204,,Prospecting,Qualification,Needs Analysis,Value Proposition,Id. Decision Makers,Perception Analysis,Proposal/Price Quote,Negotiation/Review,Closed Won,Closed Lost
+A,MANAGER=6&USER=3&EVERYONE=0,0,2,2021233851
+A2,
+D,1,1,2000191,Opportunity #,ag=O-{0`number`00000}
+D,2,1,2000189,Opportunity Name,must=true
+L,3,1,2000190,Account Name,stf=2000123&s=2000153&mvp=/ragicsales|10001_Sheet10001&must=true
+L,4,1,2000192,Contact,stf=2000147&s=2000154&mvp=/ragicsales|10002_Sheet10002
+L,5,1,2000193,Opportunity Owner,dv=$USER&must=true&usrref=1
+L,6,1,2000195,Type,
+L,7,1,2000204,Stage,must=true
+D,8,1,2000202,Amount,fmt_n=$#`###.##
+D,9,1,2000200,Probability %,fmt_n=0%
+D,10,1,2000206,Close Date,fmt_d=yyyy/MM/dd
+RMD_MAX_SEQ,0
+ET,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+NUI_FILE_NAME,10004_Sheet10004_index_t.nui
+QS,3

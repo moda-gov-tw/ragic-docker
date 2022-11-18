@@ -1,0 +1,29 @@
+N,Foster Care,
+FS,2
+DS,2
+W,2=71&3=59&4=88&5=82&6=72,
+TF,2003447
+KF,2003451
+SF,2003447
+S,2003466,,Cat,Dog
+S,2003607,,In Foster Home,Back to Shelter
+A,null=0&MANAGER=6&USER=3&EVERYONE=0,0,2,480356573
+A2,
+D,1,1,2003445,Application ID,ag=FA-{0`number`00000}
+D,2,1,2003452,Application Date,fmt_d=MM/dd/yyyy&dv=$DATE
+D,3,1,2003447,Name,
+D,4,1,2003503,Last Name,
+M,5,1,2003466,Looking to foster,userOps=true
+L,6,1,2003607,Current Location of the Foster,userOps=true
+X_MAX_DESIGNER_ID,101
+RMD_MAX_SEQ,0
+ET,%5B%5D
+APPSEQ,%5B%5D
+WEBFORMSEQ,%5B%5D
+EPFV,%5B%5D
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+MOBCONF,%7B%7D
+NUI_FILE_NAME,10002_Sheet10002_index_t.nui
+QS,2

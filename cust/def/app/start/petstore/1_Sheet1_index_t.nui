@@ -1,0 +1,12 @@
+N,Merchandise,Ragic Pet Store is a sample application designed to show you how a simple Ragic application works
+FS,0
+DS,2
+W,1=66&2=243&3=42,
+KF,2000001
+S,1000002,,Dog,Cat,Frog,Fish
+A,MANAGER=6&EVERYONE=3&USER=3,3,2,1946986612
+D,1,1,1000001,Item Id,
+D,2,1,1000003,Item Name,
+L,3,1,1000002,Item Category,
+D,4,1,1000004,Quantity Left,fmt_n=#`###
+D,5,1,1000005,Item Price,fmt_n=$#`###.##

@@ -1,0 +1,87 @@
+N,使用者,Ragic会寄一封信给新增的使用者，并带领他们完成新使用者的设置。
+FS,0
+DS,2
+W,1=28&2=194&3=-67&4=13&5=188,15=60
+TF,1
+SF,1
+S,3,,Accounting,EVERYONE,HR,IT,Management,SYSAdmin,Sales,User,X-User
+S,31,,NORMAL,SUSPENDED
+S,43,,External,Internal
+S,620,system/ragic-setup/1,
+S,86,system/ragic-setup/1,
+S,888,
+A,MANAGER=0&USER=0&EVERYONE=0,0,3,909686615
+A2,
+D,1,2,1,电子邮件信箱,help=登录用的电子邮件信箱。&noDup=true&noclone=true&email=2$&must=true
+G,4,2,618,照片,
+D,1,3,4,使用者姓名,help=使用者全名&must=true&noSyncName=true&noDup=true
+M,1,4,3,群组,help=勾选"SYSAdmin"群组以赋予该使用者设计表单的权限。各表单的存取权限将根据使用者群组作设置。&dv=User
+D,1,7,608,员工工号,
+L,4,7,31,状态,help=使用者离职后可将使用者状态设置为"Suspend"&dv=NORMAL&must=true
+D,1,8,609,职称,
+D,4,8,10,系统备注,help=新增使用者成功与否的系统讯息&ro=1&noclone=true
+D,1,9,610,公司,
+L,4,9,43,内部/外部,ro=1&noclone=true&dv=Internal
+D,1,10,611,部门,
+D,1,11,612,处,
+L,1,12,620,直属主管,usrref=2
+L,1,13,86,代理人,usrref=2
+L,1,14,888,自动通知代理人,text=1&checkbox=1&dv=No
+D,1,15,622,身份提供者(IDP)提供之使用者识别值,
+D,1,17,613,联络电话,phone=1
+D,1,18,614,分机,
+D,1,19,615,传真,phone=1
+D,1,20,616,移动电话,phone=1
+D,1,21,617,邮寄地址,addr=1
+D,1,24,619,签名,sig=1
+F,1,1,,内部使用者设置,cs=5&color=#FFFFFF&backgroundColor=#003366
+F,1,6,,员工信息,cs=2&color=#FFFFFF&backgroundColor=#0066cc
+F,4,6,,系统信息,cs=2&color=#FFFFFF&backgroundColor=#0066cc
+F,1,16,,联络信息,color=#FFFFFF&backgroundColor=#0066cc&cs=2
+F,1,23,,签名,color=#FFFFFF&backgroundColor=#0066cc&cs=2
+K,{"type":"F","seq":"1","name":"重设密码","action":"/sims/reg/userPwdReset.jsp?emailNodeId={id}","confirmBeforeAction":"false","needApproval":"false","hideButton":"false"}
+K,{"type":"F","seq":"2","name":"数据管理者权限转移","action":"/sims/v5Module/dataOwnerTrans.jsp?id={id}","confirmBeforeAction":"false","needApproval":"false","hideButton":"false"}
+K,{"type":"F","seq":"3","name":"更改Email","action":"/sims/v5Module/changeEmail.jsp?id={id}","confirmBeforeAction":"false","needApproval":"false","hideButton":"false"}
+K,{"type":"B","seq":"4","name":"停用","action":"_RAGIC_AUTOGEN_FIELD_UPDATER_62388({id});","confirmBeforeAction":"false","needApproval":"false","hideButton":"false","userGroups":["EVERYONE"]}
+K,{"type":"F","seq":"5","name":"重送邀请信","action":"/sims/mmailer/customTemplate/newUser/resendInviteEmail.jsp?p=/ragic-setup%26si=1%26ni={id}%26plainTextMode=true","confirmBeforeAction":"true","needApproval":"false","hideButton":"false","userGroups":["EVERYONE","SYSAdmin"]}
+CUST_THEME=
+CASCADING_FORMULA_RECAL=false
+RECAL_PARENT_FORMULA=true
+QS,1
+SCRIPT_START
+/*
+* Please do not edit, this is necessary to enable created users to log on to Ragic.
+*/
+var oldEmail=param.getOldValue(1);
+var newEmail=param.getNewValue(1);
+if(newEmail) newEmail=newEmail.trim();
+var status=param.getNewValue(31);
+var userNodeId=param.getOldNodeId(1);
+
+if(oldEmail && !oldEmail.toString().equals(newEmail.toString())){
+  db.updateNode(1,userNodeId,oldEmail.trim());
+  response.setStatus('WARN');
+  response.setMessage('电子邮件信箱不能修改，请建立一个新的使用者并且把旧的设置为Suspend即可。');
+}
+//suspending old user
+else if(oldEmail && status=='SUSPENDED'){
+  //cancel notification
+  user.changeNotificationSubscription(newEmail,true);
+}
+//make sure the user is registered in the main account database
+else {
+  //make sure email is trimmed
+  db.updateNode(1,userNodeId,newEmail);
+
+  //register to account db
+  user.registerUserToMainAccountDatabase(newEmail,true);
+
+  //reload the user in session
+  user.reload(newEmail);
+}
+SHEET_SCOPE_START
+function _RAGIC_AUTOGEN_FIELD_UPDATER_62388(nodeId){
+  var result = db.fieldUpdater(JSON.stringify(
+    {"THIS_PATH":"/ragic-setup/1","THIS_NODE_ID":nodeId,"UPD_FIELDS":{"31":"SUSPENDED"}}
+  ), response);
+}//END_RAGIC_AUTOGEN_FIELD_UPDATER_62388
