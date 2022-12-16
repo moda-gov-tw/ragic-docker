@@ -14,7 +14,7 @@ WORKDIR /srv
 COPY --from=unzipper /srv/ragic /srv/ragic
 RUN cd ragic && mv conf conf_default && mv cust cust_default && rm -rf log && chmod +x bin/*
  
-RUN apt-get install -y locales
+RUN apt-get update -y && apt-get install -y locales
 RUN sed -i '/en_US.UTF-8/s/^# //g' /etc/locale.gen && locale-gen
 RUN apt-get clean autoclean && apt-get autoremove -y && rm -rf /var/lib/{apt,dpkg,cache,log}/
 COPY docker-entrypoint.sh /
