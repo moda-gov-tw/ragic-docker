@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  ragic:
+    image: modagovtw/ragic:20230330
+    ports:
+      - "80:80"
+    volumes:
+      - ./volumes:/srv/ragic/volumes

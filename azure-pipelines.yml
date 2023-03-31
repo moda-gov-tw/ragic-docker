@@ -1,0 +1,98 @@
+# Docker
+# Build a Docker image
+# https://docs.microsoft.com/azure/devops/pipelines/languages/docker
+
+trigger:
+- main
+
+resources:
+- repo: self
+
+schedules:
+- cron: '0 0 * * *'
+  displayName: Daily build
+  branches:
+    include:
+    - main
+
+variables:
+  image: 'modagovtw/ragic'
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+parameters:
+- name: updateImage
+  displayName: Update Image
+  type: boolean
+  default: false
+- name: deployGKE
+  displayName: Deploy to GKE
+  type: boolean
+  default: false
+
+stages:
+- stage: updateImage
+  condition: or(eq(${{ parameters.updateImage }}, true), eq(variables['Build.Reason'], 'Schedule'))
+  jobs:
+  - job: updateImage 
+    steps:
+    - script: |
+        arch
+        wget https://s3.amazonaws.com/staticragic/RagicBuilder.zip
+        unzip RagicBuilder.zip -d ragic
+      displayName: Download source code
+    - script: |
+        buildDate=$(cat ragic/conf/version.json | jq -r '.buildDate')
+        tag=$(date -d "$buildDate" +%Y%m%d)
+        echo $tag
+        echo "##vso[task.setvariable variable=tag]$tag"
+      displayName: Get code version
+    - script: |
+        docker manifest inspect $(image):$(tag) || echo "##vso[task.setvariable variable=doPush]Yes"
+      displayName: Check image tag exist
+    - task: Docker@2
+      displayName: Build & Push image
+      condition: eq(variables.doPush, 'Yes')
+      inputs:
+        command: buildAndPush
+        dockerfile: '**/ragic/Dockerfile'
+        repository: $(image)
+        containerRegistry: 'dockerhub'
+        tags: |
+          $(tag)
+          latest
+- stage: deployGKE
+  condition: eq(${{ parameters.deployGKE }}, true)
+  variables:
+  - group: env
+  jobs:
+  - job: deployGKE
+    steps:
+    - task: DownloadSecureFile@1
+      name: GCPsecret
+      inputs:
+        secureFile: 'gcp.json'
+    - task: DownloadSecureFile@1
+      name: SSLcert
+      inputs:
+        secureFile: 'cert.pem'
+    - task: DownloadSecureFile@1
+      name: SSLkey
+      inputs:
+        secureFile: 'cert.key'
+    - script: | 
+        echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
+        curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key --keyring /usr/share/keyrings/cloud.google.gpg add -
+        sudo apt-get update && sudo apt-get install -y google-cloud-sdk-gke-gcloud-auth-plugin
+      displayName: Install dependency packages  # https://cloud.google.com/blog/products/containers-kubernetes/kubectl-auth-changes-in-gke
+    - script: |
+        gcloud auth login --cred-file $(GCPsecret.secureFilePath)
+        gcloud container clusters get-credentials $(GKE_NAME) --region $(GKE_REGION) --project $(GCP_PROJECT)
+      displayName: Gcloud login
+    - script: |
+        kubectl create secret tls cert-ragic --cert=$(SSLcert.secureFilePath) --key=$(SSLkey.secureFilePath) \
+          --dry-run=client -o yaml | kubectl apply -f -
+        export DOMAIN=$(DOMAIN)
+        envsubst < gke.yml | kubectl apply -f -
+      displayName: Deploy to K8s
