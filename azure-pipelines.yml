@@ -88,6 +88,8 @@ stages:
       displayName: Install dependency packages  # https://cloud.google.com/blog/products/containers-kubernetes/kubectl-auth-changes-in-gke
     - script: |
         gcloud auth login --cred-file $(GCPsecret.secureFilePath)
+        ip=$(curl ifconfig.io)
+        gcloud container clusters update $(GKE_NAME) --region $(GKE_REGION) --enable-master-authorized-networks --master-authorized-networks $ip/32
         gcloud container clusters get-credentials $(GKE_NAME) --region $(GKE_REGION) --project $(GCP_PROJECT)
       displayName: Gcloud login
     - script: |
