@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: pvc-ragic-rwo
+  name: pvc-ragic-enterprise-multishare-rwx
 spec:
   accessModes:
-    - ReadWriteOnce
+    - ReadWriteMany
   resources:
     requests:
-      storage: 30Gi
-  storageClassName: standard-rwo
+      storage: 100Gi
+  storageClassName: enterprise-multishare-rwx
 
 ---
 apiVersion: apps/v1
@@ -28,7 +28,7 @@ spec:
       volumes:
       - name: pvc-ragic-vol
         persistentVolumeClaim:
-          claimName: pvc-ragic-rwo
+          claimName: pvc-ragic-enterprise-multishare-rwx
       containers:
       - name: ragic
         image: modagovtw/ragic:20230330
