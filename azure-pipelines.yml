@@ -97,5 +97,6 @@ stages:
         kubectl create secret tls cert-ragic --cert=$(SSLcert.secureFilePath) --key=$(SSLkey.secureFilePath) \
           --dry-run=client -o yaml | kubectl apply -f -
         export DOMAIN=$(DOMAIN)
-        envsubst < gke.yml | kubectl apply -f -
+        export TUNNEL_TOKEN=$(TUNNEL_TOKEN)
+        envsubst < gke-with-cftunnel.yml | kubectl apply -f -
       displayName: Deploy to K8s
