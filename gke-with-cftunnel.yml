@@ -30,7 +30,7 @@ spec:
       containers:
       - name: cloudflared
         image: cloudflare/cloudflared:latest
-        command: ["tunnel", "run"]
+        command: ["cloudflared", "tunnel", "run"]
         env:
         - name: TUNNEL_TOKEN
           value: $TUNNEL_TOKEN
