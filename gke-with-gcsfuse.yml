@@ -61,7 +61,7 @@ spec:
           privileged: true
           capabilities:
             add:
-            - SYS_ADMI
+            - SYS_ADMIN
         ports:
         - containerPort: 80
         resources:
