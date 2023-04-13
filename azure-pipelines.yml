@@ -74,7 +74,7 @@ stages:
     - script: |
         arch
         wget https://s3.amazonaws.com/staticragic/RagicBuilder.zip
-        unzip RagicBuilder.zip -d ragic
+        unzip RagicBuilder.zip -d ragic-gcsfuse
       displayName: Download source code
     - script: |
         buildDate=$(cat ragic/conf/version.json | jq -r '.buildDate')
