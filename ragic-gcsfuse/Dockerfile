@@ -17,6 +17,7 @@ RUN apt-get clean autoclean && apt-get autoremove -y && rm -rf /var/lib/{apt,dpk
 RUN set -e; \
     apt-get update -y && apt-get install -y \
     curl \
+    gnupg \
     tini \
     lsb-release; \
     gcsFuseRepo=gcsfuse-`lsb_release -c -s`; \
