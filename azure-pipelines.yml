@@ -78,7 +78,7 @@ stages:
       displayName: Download source code
     - script: |
         buildDate=$(cat ragic/conf/version.json | jq -r '.buildDate')
-        tag=$(date -d "$buildDate" +%Y%m%d)
+        tag="$(date -d "$buildDate" +%Y%m%d)-gcsfuse"
         echo $tag
         echo "##vso[task.setvariable variable=tag]$tag"
       displayName: Get code version
@@ -94,7 +94,7 @@ stages:
         repository: $(image)
         containerRegistry: 'dockerhub'
         tags: |
-          $(tag)-gcsfuse
+          $(tag)
 - stage: deployGKE
   condition: eq(${{ parameters.deployGKE }}, true)
   variables:
