@@ -27,7 +27,7 @@ parameters:
   type: boolean
   default: false
 - name: updateImageGcsfuse
-  displayName: Update Image
+  displayName: Update Image Gcsfuse
   type: boolean
   default: false
 - name: deployGKE
