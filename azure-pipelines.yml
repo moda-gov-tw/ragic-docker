@@ -26,6 +26,10 @@ parameters:
   displayName: Update Image
   type: boolean
   default: false
+- name: updateImageGcsfuse
+  displayName: Update Image
+  type: boolean
+  default: false
 - name: deployGKE
   displayName: Deploy to GKE
   type: boolean
@@ -63,7 +67,7 @@ stages:
           $(tag)
           latest
 - stage: updateImageGcsfuse
-  condition: or(eq(${{ parameters.updateImage }}, true), eq(variables['Build.Reason'], 'Schedule'))
+  condition: or(eq(${{ parameters.updateImageGcsfuse }}, true), eq(variables['Build.Reason'], 'Schedule'))
   jobs:
   - job: updateImage 
     steps:
