@@ -10,7 +10,7 @@ resources:
 
 schedules:
 - cron: '0 */12 * * *'
-  displayName: Daily build
+  always: true
   branches:
     include:
     - main
