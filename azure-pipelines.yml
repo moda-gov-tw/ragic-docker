@@ -9,7 +9,7 @@ resources:
 - repo: self
 
 schedules:
-- cron: '0 0 * * *'
+- cron: '0 */12 * * *'
   displayName: Daily build
   branches:
     include:
@@ -24,10 +24,6 @@ pool:
 parameters:
 - name: updateImage
   displayName: Update Image
-  type: boolean
-  default: false
-- name: updateImageGcsfuse
-  displayName: Update Image Gcsfuse
   type: boolean
   default: false
 - name: deployGKE
@@ -66,35 +62,6 @@ stages:
         tags: |
           $(tag)
           latest
-- stage: updateImageGcsfuse
-  condition: or(eq(${{ parameters.updateImageGcsfuse }}, true), eq(variables['Build.Reason'], 'Schedule'))
-  jobs:
-  - job: updateImage 
-    steps:
-    - script: |
-        arch
-        wget https://s3.amazonaws.com/staticragic/RagicBuilder.zip
-        unzip RagicBuilder.zip -d ragic-gcsfuse
-      displayName: Download source code
-    - script: |
-        buildDate=$(cat ragic/conf/version.json | jq -r '.buildDate')
-        tag="$(date -d "$buildDate" +%Y%m%d)-gcsfuse"
-        echo $tag
-        echo "##vso[task.setvariable variable=tag]$tag"
-      displayName: Get code version
-    - script: |
-        docker manifest inspect $(image):$(tag) || echo "##vso[task.setvariable variable=doPush]Yes"
-      displayName: Check image tag exist
-    - task: Docker@2
-      displayName: Build & Push image
-      condition: eq(variables.doPush, 'Yes')
-      inputs:
-        command: buildAndPush
-        dockerfile: '**/ragic-gcsfuse/Dockerfile'
-        repository: $(image)
-        containerRegistry: 'dockerhub'
-        tags: |
-          $(tag)
 - stage: deployGKE
   condition: eq(${{ parameters.deployGKE }}, true)
   variables:
