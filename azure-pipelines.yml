@@ -73,14 +73,6 @@ stages:
       name: GCPsecret
       inputs:
         secureFile: 'gcp.json'
-    - task: DownloadSecureFile@1
-      name: SSLcert
-      inputs:
-        secureFile: 'cert.pem'
-    - task: DownloadSecureFile@1
-      name: SSLkey
-      inputs:
-        secureFile: 'cert.key'
     - script: | 
         echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
         curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key --keyring /usr/share/keyrings/cloud.google.gpg add -
@@ -94,8 +86,6 @@ stages:
         gcloud container clusters get-credentials $(GKE_NAME) --region $(GKE_REGION)
       displayName: Gcloud login
     - script: |
-        kubectl create secret tls cert-ragic --cert=$(SSLcert.secureFilePath) --key=$(SSLkey.secureFilePath) \
-          --dry-run=client -o yaml | kubectl apply -f -
         export DOMAIN=$(DOMAIN)
         export TUNNEL_TOKEN=$(TUNNEL_TOKEN)
         envsubst < gke-with-cftunnel.yml | kubectl apply -f -

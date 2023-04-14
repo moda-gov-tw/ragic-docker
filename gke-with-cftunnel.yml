@@ -84,23 +84,3 @@ spec:
     targetPort: 80
   selector:
     app: pod-ragic
-
----
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  name: ingress-ragic
-spec:
-  tls:
-  - secretName: cert-ragic
-  rules:
-  - host: $DOMAIN
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: service-ragic
-            port:
-              number: 80
