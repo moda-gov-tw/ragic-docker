@@ -59,6 +59,7 @@ spec:
         image: modagovtw/ragic:20230413
         ports:
         - containerPort: 80
+        - containerPort: 443
         resources:
           requests:
             cpu: 1000m
@@ -82,5 +83,8 @@ spec:
   - port: 80
     protocol: TCP
     targetPort: 80
+  - port: 443
+    protocol: TCP
+    targetPort: 443
   selector:
     app: pod-ragic
