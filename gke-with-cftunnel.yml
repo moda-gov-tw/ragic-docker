@@ -56,13 +56,13 @@ spec:
           claimName: pvc-ragic-standard
       containers:
       - name: ragic
-        image: modagovtw/ragic:20230330
+        image: modagovtw/ragic:20230413
         ports:
         - containerPort: 80
         resources:
           requests:
-            cpu: 1250m
-            memory: 8Gi
+            cpu: 1000m
+            memory: 5Gi
         readinessProbe:
           httpGet:
             path: /default/home
