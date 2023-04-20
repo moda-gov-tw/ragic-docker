@@ -60,8 +60,14 @@ spec:
         ports:
         - containerPort: 80
         - containerPort: 443
+        env:
+        - name: JAVA_OPTS
+          value: "-Xms4g -Xmx4g"
         resources:
           requests:
+            cpu: 1000m
+            memory: 5Gi
+          limits:
             cpu: 1000m
             memory: 5Gi
         readinessProbe:
