@@ -56,7 +56,7 @@ spec:
           claimName: pvc-ragic-standard
       containers:
       - name: ragic
-        image: modagovtw/ragic:20230413
+        image: modagovtw/ragic:20230420
         ports:
         - containerPort: 80
         - containerPort: 443
