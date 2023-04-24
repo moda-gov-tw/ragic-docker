@@ -9,7 +9,9 @@ WORKDIR /srv/ragic
 COPY . /srv/ragic
 RUN mv conf conf_default && mv cust cust_default && rm -rf log && chmod +x bin/*
  
-RUN apt-get update -y && apt-get install -y locales && apt-get upgrade -y
+# locales解決中文亂碼問題
+# fontconfig解決Excel無法下載問題
+RUN apt-get update -y && apt-get install -y locales fontconfig && apt-get upgrade -y
 RUN sed -i '/en_US.UTF-8/s/^# //g' /etc/locale.gen && locale-gen
 RUN apt-get clean autoclean && apt-get autoremove -y && rm -rf /var/lib/{apt,dpkg,cache,log}/
 COPY docker-entrypoint.sh /
