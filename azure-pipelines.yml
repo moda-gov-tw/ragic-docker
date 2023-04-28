@@ -48,6 +48,11 @@ stages:
         echo $tag
         echo "##vso[task.setvariable variable=tag]$tag"
       displayName: Get code version
+    - task: Docker@2
+      displayName: Login
+      inputs:
+        command: login
+        containerRegistry: 'dockerhub'
     - script: |
         docker manifest inspect $(image):$(tag) || echo "##vso[task.setvariable variable=doPush]Yes"
       displayName: Check image tag exist
