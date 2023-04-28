@@ -12,3 +12,9 @@ kubectl create secret tls cert-ragic --cert=$CERT_PATH --key=$KEY_PATH
 export DOMAIN=ragic.example.com
 envsubst < gke.yml | kubectl apply -f -
 ```
+或使用helm
+
+```
+helm repo add moda https://moda-gov-tw.github.io/helm-charts
+helm install ragic moda/ragic
+```
